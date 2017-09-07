@@ -9,11 +9,7 @@
 .hero {
   
   min-height: 460px;
-  background: linear-gradient(
-    330deg,
-    #0dcfce,
-    #183789
-  );
+  background: $gradient-lagoon;
 }
 
 
@@ -46,7 +42,7 @@
 
   @mixin item-layout {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     min-height: 60px;
     margin: 0 10px;
     padding: 0 5px;
@@ -77,6 +73,7 @@
     @include item-text;
     
     flex: 1;
+    align-items: center;
   }
 
 
@@ -97,6 +94,13 @@
       border-bottom-color: rgba($white, 0.25);
     }
   }
+
+  &__item-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 
@@ -107,29 +111,14 @@
 
 .hero__text {
   @include layout-section;
-  padding: 80px 25px;
+  padding: 40px 200px 60px 25px;
 }
 
 
 .heading-hero {
   color: $white;
-  font-size: 88px;
-  font-weight: 200;
-}
-
-
-.text-cursor {
-  position: relative;
-  display: inline-block;
-  width: 1em;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width:  100%;
-    height: 100%;
-    border-bottom: 0.05em solid;
-  }
+  font-size: 72px;
+  font-weight: 100;
 }
 
 

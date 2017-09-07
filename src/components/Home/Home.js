@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 
@@ -8,10 +9,10 @@ const MainNav = () => (
       Axel Springer / Ideas Engineering
     </li>
     <li className="main-nav__item main-nav__item__active">
-      People
+      <Link className="main-nav__item-link" to="#">People</Link>
     </li>
     <li className="main-nav__item">
-      Contact
+    <Link className="main-nav__item-link" to="/contact">Contact</Link>
     </li>
   </ul>
 );
