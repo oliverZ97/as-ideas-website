@@ -1,0 +1,8 @@
+/**
+ * Enable Smoothing of Fonts on Webkit Browsers
+ *
+ */
+@mixin font-smoothing {
+  -webkit-font-smoothing:  antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
