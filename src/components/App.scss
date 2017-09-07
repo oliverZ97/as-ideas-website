@@ -1,5 +1,9 @@
 @import "./styles/settings.scss";
+@import "./../node_modules/include-media/dist/include-media";
 
 * {
   color: $color;
+  @include media(">phone", "<=tablet") {
+    color: green;
+  }
 }
