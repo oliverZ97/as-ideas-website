@@ -1,15 +1,40 @@
-import React, { Component } from "react";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+
 import "sanitize.css";
 import "./App.css";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        Hello World
-      </div>
-    );
-  }
-}
+
+const App = () => (
+  <Router>
+    <Switch>
+      <Route exact path="/" component= {Home} />
+      <Route path="/contact" component={Contact} />
+      <Route component={NoMatch} />
+    </Switch>
+  </Router>
+);
+
+
+const Home = () => (
+  <div>
+    Hello World
+  </div>
+);
+
+
+const Contact = () => (
+  <div>
+    Contact
+  </div>
+);
+
+
+const NoMatch = ({ location }) => (
+  <div>
+    404: {location.pathname}
+  </div>
+);
+
 
 export default App;
