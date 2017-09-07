@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./Home/Home";
 
 import "sanitize.css";
 import "./App.css";
@@ -13,13 +14,6 @@ const App = () => (
       <Route component={NoMatch} />
     </Switch>
   </Router>
-);
-
-
-const Home = () => (
-  <div>
-    Hello World
-  </div>
 );
 
 
