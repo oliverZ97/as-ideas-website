@@ -21,9 +21,12 @@ const MainNav = () => (
 const HeroText = () => {
   return (
     <div className="hero__text">
-      <h1 className="heading-hero has-cursor">
+      <h1 className="hero-heading has-cursor">
         We drive Axel Springer's digitalization 
       </h1>
+      <p className="hero-intro">
+        And we can be cool for you too
+      </p>
     </div>
   );
 };

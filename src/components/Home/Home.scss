@@ -24,6 +24,28 @@
 }
 
 
+@mixin vertical-stack-flush-margins {
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+@mixin horizontal-stack-flush-margins {
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+
 /**
  * Main Navigation
  *
@@ -41,23 +63,18 @@
 
 
   @mixin item-layout {
+
+    @include horizontal-stack-flush-margins;
+
     display: flex;
     align-items: stretch;
     min-height: 60px;
-    margin: 0 10px;
-    padding: 0 5px;
-
-    &:first-of-type {
-      margin-left: 0;
-    }
-
-    &:last-of-type {
-      margin-right: 0;
-    }
+    margin: 0 20px;
   }
 
 
   @mixin item-text {
+    
     font-family: $fontstack-mono;
     font-size: 13px;
     color: $white;
@@ -81,20 +98,39 @@
     
     @include item-layout;
     @include item-text;
-    
+
+    position: relative;
     border-bottom: 1px solid transparent;
-    transition: all 250ms ease;
     cursor: pointer;
 
-    &__active {
-      border-bottom-color: $white;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left:   -10%;
+      bottom: 0;
+      width:  120%;
+      height: 1px;
+      background-color: transparent;
+      transition: all 250ms ease;
     }
 
+
+    &__active {
+      &::after {
+        background-color: $white;
+      }
+    }
+
+
     &:hover:not(&__active) {
-      border-bottom-color: rgba($white, 0.25);
+      &::after {
+        background-color: rgba($white, 0.25);
+      }
     }
   }
 
+  
   &__item-link {
     display: flex;
     align-items: center;
@@ -110,19 +146,40 @@
  */
 
 .hero__text {
+
   @include layout-section;
-  padding: 40px 200px 60px 25px;
+  
+  padding: 120px 20px;
+  padding-right: 200px;
 }
 
 
-.heading-hero {
+.hero-heading {
+  
+  @include vertical-stack-flush-margins;
+
+  margin: 32px 0;
   color: $white;
   font-size: 72px;
   font-weight: 100;
 }
 
 
+.hero-intro {
+  
+  @include vertical-stack-flush-margins;
+
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: $white;
+  letter-spacing: 0.05em;
+  opacity: 0.66;
+}
+
+
 .has-cursor {
+  
   position: relative;
   
   &::after {
