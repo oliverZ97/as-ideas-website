@@ -42,9 +42,48 @@ const Hero = () => {
 };
 
 
+const IdeasIntro = () => (
+  <div className="l-container">
+    <div className="grid">
+      <div className="col-3" data-push-left="off-5_xs-0">
+        Nice
+      </div>
+      <div className="col-3">
+        Nice
+      </div>
+    </div>
+  </div>
+);
+
+
+const Products = () => (
+  <div className="l-container">
+  <div className="grid">
+    <div className="col-4">
+      <h2 className="h1 has-cursor has-cursor--400">
+        Newsfinder
+      </h2>
+      <p className="intro">
+        We empower editors to react faster and better to the current issues.
+      </p>
+    </div>
+    <div className="col-5" data-push-left="off-1_xs-0">
+      <p className="product-intro">
+        Editors can create their own dashboard for a thematic search through their own or third-party publications. Google Trends, an article preview and the translation of all articles into English at the push of a button round off our service for the editor of today.
+      </p>
+      <p className="product-intro">
+        Editors can create their own dashboard for a thematic search through their own or third-party publications. Google Trends, an article preview and the translation of all articles into English at the push of a button round off our service for the editor of today.
+      </p>
+    </div>
+  </div>
+</div>
+);
+
+
 const Home = () => (
   <div>
     <Hero />
+    <Products />
   </div>
 );
 

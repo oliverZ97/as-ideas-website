@@ -121,3 +121,16 @@
   padding: 120px 100px;
   padding-right: 200px;
 }
+
+
+/**
+ * Layout Helper
+ *
+ */
+
+.l-container {
+
+  @include layout-section;
+
+  padding: 60px 20px;
+}
