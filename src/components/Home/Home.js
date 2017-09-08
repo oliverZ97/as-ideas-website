@@ -3,19 +3,21 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 
-const MainNav = () => (
-  <ul className="main-nav">
-    <li className="main-nav__logo">
-      Axel Springer / Ideas Engineering
-    </li>
-    <li className="main-nav__item main-nav__item__active">
-      <Link className="main-nav__item-link" to="#">People</Link>
-    </li>
-    <li className="main-nav__item">
-    <Link className="main-nav__item-link" to="/contact">Contact</Link>
-    </li>
-  </ul>
-);
+const MainNav = ({ pathname }) => {
+  return (
+    <ul className="main-nav">
+      <li className="main-nav__logo">
+        Axel Springer / Ideas Engineering
+      </li>
+      <li className={pathname === "/people" ? `main-nav__item main-nav__item__active` : `main-nav__item`}>
+        <Link className="main-nav__item-link" to="#">People</Link>
+      </li>
+      <li className={pathname === "/contact" ? `main-nav__item main-nav__item__active` : `main-nav__item`}>
+        <Link className="main-nav__item-link" to="/contact">Contact</Link>
+      </li>
+    </ul>
+  )
+};
 
 
 const HeroText = () => {
@@ -36,28 +38,14 @@ const HeroText = () => {
 };
 
 
-const Hero = () => {
+const Hero = (props) => {
   return (
     <div className="hero">
-      <MainNav />
+      <MainNav {...props} />
       <HeroText />
     </div>
   );
 };
-
-
-const IdeasIntro = () => (
-  <div className="l-container">
-    <div className="grid">
-      <div className="col-3" data-push-left="off-5_xs-0">
-        Nice
-      </div>
-      <div className="col-3">
-        Nice
-      </div>
-    </div>
-  </div>
-);
 
 
 const ProductNewsfinder = () => (
@@ -155,12 +143,14 @@ const Products = () => (
 );
 
 
-const Home = () => (
-  <div>
-    <Hero />
-    <Products />
-  </div>
-);
+const Home = ({ location }) => {
+  return (
+    <div>
+      <Hero pathname={location.pathname} />
+      <Products />
+    </div>
+  )
+};
 
 
 export default Home;
