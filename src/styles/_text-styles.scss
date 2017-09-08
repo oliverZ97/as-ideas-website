@@ -1,0 +1,44 @@
+@import "./mixins.scss";
+
+
+/**
+ * Text Styles
+ *
+ */
+
+.hero-heading {
+    
+  @include vertical-stack-flush-margins;
+
+  margin: 32px 0;
+  color: $white;
+  font-size: 72px;
+  font-weight: 100;
+}
+  
+  
+.hero-intro {
+  
+  @include vertical-stack-flush-margins;
+
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: $white;
+  letter-spacing: 0.05em;
+  opacity: 0.66;
+}
+  
+  
+.has-cursor {
+  
+  position: relative;
+  
+  &::after {
+    content: "";
+    display: inline-block;
+    margin: 0 0.125em;
+    width: 1em;
+    border-bottom: 0.033em solid;
+  }
+}

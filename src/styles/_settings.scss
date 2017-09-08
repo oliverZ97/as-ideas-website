@@ -16,7 +16,29 @@ $gradient-lagoon: linear-gradient(330deg,#0dcfce,#183789);
  * see here: https://github.com/eduardoboucas/include-media
  */
 
-$breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px);
+$breakpoints: (
+  desktop: 64em,
+  tablet:  48em, 
+  phone:   35.5em, 
+  lg: 80em,
+  md: 64em,
+  sm: 48em,
+  xs: 35.5em
+);
+
+
+/**
+ * Grid Settings
+ * To manage grids, I use "gridlex", 
+ * see here: https://github.com/devlint/gridlex
+ */
+
+ $gl-mq-list: (
+  lg: "screen and (max-width: 80em)",   // max 1280px
+  md: "screen and (max-width: 64em)",   // max 1024px
+  sm: "screen and (max-width: 48em)",   // max 768px
+  xs: "screen and (max-width: 35.5em)"  // up to 568px
+);
 
 
 /**
@@ -24,7 +46,7 @@ $breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px);
  * Define Fontstack
  */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500|Roboto:100,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto:100,300,400,500,700');
 
 $fontstack: Roboto, "Neue Helvetica", Helvetica, Arial, sans-serif;
 $fontstack-mono: "Roboto Mono", monospace;
