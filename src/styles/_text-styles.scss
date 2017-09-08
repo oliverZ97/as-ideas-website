@@ -55,12 +55,12 @@
   @include vertical-stack-flush-margins;
   
   margin: 40px 0;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 400;
 }
 
 
-.intro {
+.hx-intro {
 
   @include vertical-stack-flush-margins;
 
@@ -100,6 +100,11 @@
 
 
 .product-intro {
+
+  @include vertical-stack-flush-margins;
+  
+  font-size: 16px;
+  
   @extend .text--300;
   @extend .text--clr-2;
   @extend .text--lh-lg;
