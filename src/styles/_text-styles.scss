@@ -25,6 +25,7 @@
   font-size: 18px;
   font-weight: 300;
   color: $white;
+  line-height: 1.4;
   letter-spacing: 0.05em;
   opacity: 0.66;
 }
@@ -47,6 +48,16 @@
       border-bottom-width: 0.1em;
     }
   }
+}
+
+
+.h0 {
+  @include vertical-stack-flush-margins;
+  
+  margin: 40px 0;
+  font-size: 42px;
+  font-weight: 200;
+  color: $white;
 }
 
 

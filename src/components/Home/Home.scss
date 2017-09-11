@@ -1,7 +1,7 @@
 @import "./../../styles/settings";
 @import "./../../styles/mixins";
 @import "./../../styles/text-styles";
-
+@import "./../node_modules/include-media/dist/include-media";
 
 /**
  * Hero Section
@@ -23,26 +23,27 @@
 .main-nav {
 
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin:  0;
-  padding: 0 40px;
+  padding: 0 20px;
   list-style: none;
+
+  @include media("<=xs") {
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
 
 
   @mixin item-layout {
-
     @include horizontal-stack-flush-margins;
 
     display: flex;
-    align-items: stretch;
-    min-height: 60px;
+    align-items: center;
+    min-height: $main-nav-height;
     margin: 0 20px;
   }
 
 
   @mixin item-text {
-
     font-family: $fontstack-mono;
     font-size: 13px;
     color: $white;
@@ -52,13 +53,12 @@
   }
 
 
-  &__logo {
+  &--right {
+    justify-content: flex-end;
 
-    @include item-layout;
-    @include item-text;
-    
-    flex: 1;
-    align-items: center;
+    @include media("<=xs") {
+      justify-content: center;
+    }
   }
 
 
@@ -66,8 +66,16 @@
     
     @include item-layout;
     @include item-text;
+  }
 
+  
+  &__item-link {
     position: relative;
+    display: flex;
+    align-items: center;
+    min-height: $main-nav-height;
+    text-decoration: none;
+    color: inherit;
     border-bottom: 1px solid transparent;
     cursor: pointer;
 
@@ -76,7 +84,7 @@
       content: "";
       position: absolute;
       left:   -20%;
-      bottom: 0;
+      bottom: -1px;
       width:  140%;
       height: 1px;
       background-color: transparent;
@@ -84,26 +92,18 @@
     }
 
 
-    &__active {
+    &--active {
       &::after {
         background-color: $white;
       }
     }
 
 
-    &:hover:not(&__active) {
+    &:hover:not(&--active) {
       &::after {
         background-color: rgba($white, 0.25);
       }
     }
-  }
-
-  
-  &__item-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
   }
 }
 
@@ -132,4 +132,101 @@
   @include layout-section;
 
   padding: 60px 20px;
+}
+
+
+/**
+ * Color Helper
+ *
+*/
+
+.fill-dark {
+  background-color: $black;
+}
+
+
+/**
+ * Footer
+ *
+*/
+
+.footer-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin:  0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-link {
+  
+  @include horizontal-stack-flush-margins;
+
+  position: relative;
+  margin: 0 10px;
+  padding: 20px 0;
+  font-family: $fontstack-mono;
+  color: rgba($white, 0.66);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 250ms ease;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    left:   -20%;
+    bottom: 0;
+    width:  140%;
+    height: 1px;
+    background-color: transparent;
+    transition: all 250ms ease;
+  }
+
+
+  &:hover {
+
+    color: $white;
+
+    &::after {
+      background-color: rgba($white, 0.5);
+    }
+  }
+}
+
+
+.btn-row {
+  
+  @include vertical-stack-flush-margins;
+
+  margin: 40px 0;
+}
+
+
+.btn {
+  
+  @include horizontal-stack-flush-margins;
+
+  margin: 0 10px;
+  padding: 16px 30px;
+  font-family: $fontstack-mono;
+  font-size: 14px;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid rgba($white, 0.66);
+  cursor: pointer;
+  transition: all 250ms ease;
+
+  &:hover {
+    border-color: $white;
+  }
+
+
+  &:active {
+    color: $clr-text;
+    background-color: $white;
+  }
 }

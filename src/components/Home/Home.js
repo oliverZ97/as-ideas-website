@@ -5,17 +5,25 @@ import "./Home.css";
 
 const MainNav = ({ pathname }) => {
   return (
-    <ul className="main-nav">
-      <li className="main-nav__logo">
-        Axel Springer / Ideas Engineering
-      </li>
-      <li className={pathname === "/people" ? `main-nav__item main-nav__item__active` : `main-nav__item`}>
-        <Link className="main-nav__item-link" to="#">People</Link>
-      </li>
-      <li className={pathname === "/contact" ? `main-nav__item main-nav__item__active` : `main-nav__item`}>
-        <Link className="main-nav__item-link" to="/contact">Contact</Link>
-      </li>
-    </ul>
+    <div className="grid-noGutter-equalHeight">
+      <div className="col-6_xs-12">
+        <ul className="main-nav">
+            <li className="main-nav__item">
+              Axel Springer / Ideas Engineering
+            </li>
+          </ul>
+      </div>
+      <div className="col-6_xs-12">
+        <ul className="main-nav main-nav--right">
+          <li className="main-nav__item">
+            <Link className={pathname === "/people" ? `main-nav__item-link main-nav__item-link--active` : `main-nav__item-link`} to="#">People</Link>
+          </li>
+          <li className="main-nav__item">
+            <Link className={pathname === "/contact" ? `main-nav__item-link main-nav__item-link--active` : `main-nav__item-link`} to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </div>
+    </div>
   )
 };
 
@@ -24,7 +32,7 @@ const HeroText = () => {
   return (
     <div className="l-container">
       <div className="grid">
-        <div className="col-8">
+        <div className="col-8_xs-12">
           <h1 className="hero-heading has-cursor">
             We drive Axel Springer's digitalization 
           </h1>
@@ -143,11 +151,44 @@ const Products = () => (
 );
 
 
+const Footer = () => (
+  <div className="l-container fill-dark">
+    <div className="grid">
+      <div className="col-4_xs-12" data-push-left="off-1_xs-0">
+        <h1 className="h0 has-cursor">
+          We're hiring 
+        </h1>
+        <p className="hero-intro">
+          We are a really nice bunch of people that work on technology. This is still lorem ipsum text. 
+        </p>
+        <div className="btn-row">
+          <button className="btn">
+            Careers
+          </button>
+        </div>
+      </div>
+    </div>
+    <div className="grid">
+      <div className="col" data-push-right="off-1_xs-0">
+        <ul className="footer-nav">
+          <li>
+            <Link to="imprint" className="footer-link">
+             Imprint
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+)
+
+
 const Home = ({ location }) => {
   return (
     <div>
       <Hero pathname={location.pathname} />
       <Products />
+      <Footer />
     </div>
   )
 };
