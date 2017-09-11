@@ -59,7 +59,7 @@ const Hero = (props) => {
 const ProductNewsfinder = () => (
   <div className="l-container">
     <div className="grid">
-      <div className="col-4">
+      <div className="col-4" data-push-left="off-1_xs-0">
         <h2 className="h1 has-cursor has-cursor--400">
           Newsfinder
         </h2>
@@ -80,7 +80,7 @@ const ProductNewsfinder = () => (
 const ProductCEP = () => (
   <div className="l-container">
     <div className="grid">
-      <div className="col-4">
+      <div className="col-4" data-push-left="off-1_xs-0">
         <p className="product-intro">
           This way you always stay ahead of the competition and profit from the uniquely Axel Springer content. This allows you to quickly and clearly view current content.
         </p>
@@ -101,7 +101,7 @@ const ProductCEP = () => (
 const ProductSSO = () => (
   <div className="l-container">
     <div className="grid">
-      <div className="col-4">
+      <div className="col-4" data-push-left="off-1_xs-0">
         <h2 className="h1 has-cursor has-cursor--400">
           Single Sign-on
         </h2>
@@ -122,7 +122,7 @@ const ProductSSO = () => (
 const ProductPayment = () => (
   <div className="l-container">
     <div className="grid">
-      <div className="col-4">
+      <div className="col-4" data-push-left="off-1_xs-0">
         <p className="product-intro">
           Payment and Billing
         </p>
@@ -154,7 +154,7 @@ const Products = () => (
 const Footer = () => (
   <div className="l-container fill-dark">
     <div className="grid">
-      <div className="col-4_xs-12" data-push-left="off-1_xs-0">
+      <div className="col-4_xs-12_sm-12" data-push-left="off-1_xs-0_sm-0">
         <h1 className="h0 has-cursor">
           We're hiring 
         </h1>
