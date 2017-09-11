@@ -16,9 +16,6 @@ const MainNav = ({ pathname }) => {
       <div className="col-6_xs-12">
         <ul className="main-nav main-nav--right">
           <li className="main-nav__item">
-            <Link className={pathname === "/people" ? `main-nav__item-link main-nav__item-link--active` : `main-nav__item-link`} to="#">People</Link>
-          </li>
-          <li className="main-nav__item">
             <Link className={pathname === "/contact" ? `main-nav__item-link main-nav__item-link--active` : `main-nav__item-link`} to="/contact">Contact</Link>
           </li>
         </ul>
