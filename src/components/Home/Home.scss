@@ -127,11 +127,26 @@
  *
  */
 
+.l-container-100 {
+
+  position: relative;
+  width: 100%;
+
+  &--light {
+    background-color: rgba(216, 216, 216, 0.33);
+  }
+}
+
 .l-container {
 
   @include layout-section;
 
+  position: relative;
   padding: 60px 20px;
+
+  &--gap-lg {
+    padding: 115px 20px;
+  }
 }
 
 
@@ -229,4 +244,18 @@
     color: $clr-text;
     background-color: $white;
   }
+}
+
+
+.overflow-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.grid-posAbs-bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
+import newsfinder from "./newsfinder-1x.png";
 
 
 const MainNav = ({ pathname }) => {
@@ -54,20 +55,27 @@ const Hero = (props) => {
 
 
 const ProductNewsfinder = () => (
-  <div className="l-container">
-    <div className="grid">
-      <div className="col-4" data-push-left="off-1_xs-0">
-        <h2 className="h1 has-cursor has-cursor--400">
-          Newsfinder
-        </h2>
-        <p className="hx-intro">
-          We empower editors to react faster and better to the current issues.
-        </p>
+  <div className="l-container-100 l-container-100--light">
+    <div className="l-container l-container--gap-lg">
+      <div className="grid">
+        <div className="col-4" data-push-left="off-1_xs-0">
+          <h2 className="h1 has-cursor has-cursor--400">
+            Newsfinder
+          </h2>
+          <p className="hx-intro">
+            We empower editors to react faster and better to the current issues.
+          </p>
+          <p className="product-intro">
+            Editors can create their own dashboard for a thematic search through their own or third-party publications. Google Trends, an article preview and the translation of all articles into English at the push of a button round off our service for the editor of today.
+          </p>
+        </div>
       </div>
-      <div className="col-5" data-push-left="off-1_xs-0">
-        <p className="product-intro">
-          Editors can create their own dashboard for a thematic search through their own or third-party publications. Google Trends, an article preview and the translation of all articles into English at the push of a button round off our service for the editor of today.
-        </p>
+    </div>
+    <div className="grid-noGutter-noBottom grid-posAbs-bottom">
+      <div className="col-6" data-push-left="off-6_xs-0">
+        <div className="overflow-container">
+          <img src={newsfinder} alt="Newsfinder Product" />
+        </div>
       </div>
     </div>
   </div>
