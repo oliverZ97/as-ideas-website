@@ -8,7 +8,12 @@ const ProductNewsfinder = () => (
     <div className="grid-noGutter-noBottom grid-posAbsolute_bottom">
       <div className="col-6" data-push-left="off-6">
         <div className="overflow-hidden has-box-shadow">
-          <img src={newsfinderImg} width="1600" height="620" />
+          <img 
+            src={newsfinderImg} 
+            width="1600" 
+            height="620" 
+            alt="Newsfinder Productshot" 
+          />
         </div>
       </div>
     </div>
