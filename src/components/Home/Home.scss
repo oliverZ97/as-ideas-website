@@ -12,6 +12,10 @@
 .hero {
   min-height: 460px;
   background: $gradient-lagoon;
+
+  @include media("<=xs") {
+    min-height: auto;
+  }
 }
 
 

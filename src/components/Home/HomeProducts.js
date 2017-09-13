@@ -48,7 +48,7 @@ const ProductNewsfinder = () => (
 const ProductCEP = () => (
   <div className="l-container">
     <div className="grid">
-      <div className="col-4_xs-12" data-push-left="off-1_xs-0">
+      <div className="col-4_xs-12_md-10" data-push-left="off-1_xs-0">
         <h2 className="h1 has-cursor has-cursor--400">
           Content Exchange Platform 
         </h2>
@@ -67,7 +67,7 @@ const ProductCEP = () => (
 const ProductSSO = () => (
   <div className="l-container">
     <div className="grid">
-      <div className="col-4_xs-12" data-push-left="off-1_xs-0">
+      <div className="col-4_xs-12_md-10" data-push-left="off-1_xs-0">
         <h2 className="h1 has-cursor has-cursor--400">
           Single Sign-on
         </h2>
@@ -86,7 +86,7 @@ const ProductSSO = () => (
 const ProductPayment = () => (
   <div className="l-container">
     <div className="grid">
-      <div className="col-4_xs-12" data-push-left="off-1_xs-0">
+      <div className="col-4_xs-12_md-10" data-push-left="off-1_xs-0">
         <h2 className="h1 has-cursor has-cursor--400">
           Payment and Billing 
         </h2>
