@@ -39,7 +39,7 @@ const ProductNewsfinder = () => (
             sources = {[
               {
                 srcSet: `${newsfinderMobile1x} 1x, ${newsfinderMobile2x} 2x`,
-                media: "(max-width: 420px)"
+                media: "(max-width: 35.5em)"
               },
               {
                 srcSet: `${newsfinder1x} 1x, ${newsfinder2x} 2x`

@@ -149,7 +149,7 @@
 
 
 .fav-element__icon {
-  @include vertical-stack-flush-margins;
+  @include horizontal-stack-flush-margins;
   margin: 0 10px;
 }
 
