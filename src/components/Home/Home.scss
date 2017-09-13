@@ -128,6 +128,7 @@
 
 .l-fav-element {
   position: relative;
+  min-height: 550px;
   border-bottom: 1px solid rgba($black, 0.12);
 }
 
@@ -136,6 +137,20 @@
   overflow: hidden;
   background-color: rgba($black, 0.85);
   box-shadow: $box-shadow;
+}
+
+
+.fav-element__icon-row {
+  @include vertical-stack-flush-margins;
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+}
+
+
+.fav-element__icon {
+  @include vertical-stack-flush-margins;
+  margin: 0 10px;
 }
 
 

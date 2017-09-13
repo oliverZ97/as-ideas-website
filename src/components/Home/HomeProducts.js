@@ -1,15 +1,16 @@
 import React from "react";
 import { Picture } from "react-responsive-picture";
-import "./Home.css";
+import { IconGlobe, IconTwitter, IconInstagram, IconNewspaper, IconPhoto } from "./../SVGSprite/SVGSprite";
 import newsfinder1x from "./newsfinder-1x.png";
 import newsfinder2x from "./newsfinder-2x.png";
 import newsfinderMobile1x from "./newsfinder-mobile-1x.png";
 import newsfinderMobile2x from "./newsfinder-mobile-2x.png";
+import "./Home.css";
 
 
 const ProductNewsfinder = () => (
   <div className="l-fav-element">
-    <div className="l-container padding-h-lg">
+    <div className="l-container">
       <div className="grid">
         <div className="col-4_xs-12" data-push-left="off-1_xs-0">
           <h2 className="h1">
@@ -20,6 +21,13 @@ const ProductNewsfinder = () => (
           </p>
           <p className="product-intro">
             Editors can create their own dashboard for a thematic search through their own or third-party publications. Google Trends, an article preview and the translation of all articles into English at the push of a button round off our service for the editor of today.
+          </p>
+          <p className="fav-element__icon-row">
+            <IconTwitter className="fav-element__icon" />
+            <IconInstagram className="fav-element__icon" />
+            <IconPhoto className="fav-element__icon" />
+            <IconGlobe className="fav-element__icon" />
+            <IconNewspaper className="fav-element__icon" />
           </p>
         </div>
       </div>
