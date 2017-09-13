@@ -1,18 +1,27 @@
 import React from "react";
+import { Picture } from "react-responsive-picture";
 import "./Home.css";
-import newsfinderImg from "./newsfinder-2x.png";
+import newsfinder1x from "./newsfinder-1x.png";
+import newsfinder2x from "./newsfinder-2x.png";
+import newsfinderMobile1x from "./newsfinder-mobile-1x.png";
+import newsfinderMobile2x from "./newsfinder-mobile-2x.png";
 
 
 const ProductNewsfinder = () => (
-  <div className="relative fill-dark--9">
-    <div className="grid-noGutter-noBottom grid-posAbsolute_bottom">
+  <div className="l-fav-element">
+    <div className="grid-noGutter-noBottom grid-posAbsolute-bottom">
       <div className="col-6" data-push-left="off-6">
-        <div className="overflow-hidden has-box-shadow">
-          <img 
-            src={newsfinderImg} 
-            width="1600" 
-            height="620" 
-            alt="Newsfinder Productshot" 
+        <div className="fav-element__image-section">
+          <Picture
+            sources = {[
+              {
+                srcSet: `${newsfinderMobile1x} 1x, ${newsfinderMobile2x} 2x`,
+                media: "(max-width: 420px)"
+              },
+              {
+                srcSet: `${newsfinder1x} 1x, ${newsfinder2x} 2x`
+              }
+            ]}
           />
         </div>
       </div>
@@ -40,17 +49,18 @@ const ProductCEP = () => (
   <div className="l-container">
     <div className="grid">
       <div className="col-4" data-push-left="off-1_xs-0">
-        <p className="product-intro">
-          This way you always stay ahead of the competition and profit from the uniquely Axel Springer content. This allows you to quickly and clearly view current content.
-        </p>
-      </div>
-      <div className="col-5" data-push-left="off-1_xs-0">
         <h2 className="h1 has-cursor has-cursor--400">
           Content Exchange Platform 
         </h2>
         <p className="hx-intro">
           Get in contact with your colleagues worldwide and exchange content using our platform.
         </p>
+        <p className="product-intro">
+          This way you always stay ahead of the competition and profit from the uniquely Axel Springer content. This allows you to quickly and clearly view current content.
+        </p>
+      </div>
+      <div className="col-5" data-push-left="off-1_xs-0">
+        
       </div>
     </div>
   </div>
@@ -67,8 +77,6 @@ const ProductSSO = () => (
         <p className="hx-intro">
           We offer all services around registration and login for all customers in the Axel Springer Family.
         </p>
-      </div>
-      <div className="col-5" data-push-left="off-1_xs-0">
         <p className="product-intro">
           This includes newsletter management and automatic login and logout for all linked Axel Springer services.
         </p>
@@ -82,17 +90,15 @@ const ProductPayment = () => (
   <div className="l-container">
     <div className="grid">
       <div className="col-4" data-push-left="off-1_xs-0">
-        <p className="product-intro">
-          Payment and Billing
+        <h2 className="h1 has-cursor has-cursor--400">
+          Payment and Billing 
+        </h2>
+        <p className="hx-intro">
+          We offer all services for payment and billing for all customers in the Axel Springer Family.
         </p>
       </div>
       <div className="col-5" data-push-left="off-1_xs-0">
-        <h2 className="h1 has-cursor has-cursor--400">
-          We offer all services for payment and billing for all customers in the Axel Springer Family. 
-        </h2>
-        <p className="hx-intro">
-          Get in contact with your colleagues worldwide and exchange content using our platform.
-        </p>
+        
       </div>
     </div>
   </div>

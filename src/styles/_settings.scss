@@ -6,6 +6,9 @@
 $white:       rgb(255, 255, 255);
 $black:       rgb(0, 0, 0);
 $clr-text:    rgb(44, 44 ,44);
+$amaranth:    rgb(233, 30, 99);
+
+$h1-color: $amaranth;
 
 $gradient-lagoon: linear-gradient(330deg,#0dcfce,#183789);
 
@@ -70,3 +73,11 @@ $main-nav-height: 60px;
  */
 
 $transition: all 250ms ease;
+
+
+/**
+ * Box Shadow
+ * 
+ */
+
+$box-shadow: 0 4px 20px 0 rgba($black, 0.12);;

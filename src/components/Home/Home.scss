@@ -115,3 +115,23 @@
   padding: 120px 100px;
   padding-right: 200px;
 }
+
+
+/**
+ * Product Images
+ *
+ */
+
+.l-fav-element {
+  position: relative;
+  border-bottom: 1px solid rgba($black, 0.12);
+}
+
+
+.fav-element__image-section {
+  overflow: hidden;
+  background-color: rgba($black, 0.85);
+  box-shadow: $box-shadow;
+}
+
+
