@@ -24,7 +24,7 @@ export const Footer = () => (
       <div className="col" data-push-right="off-1_xs-0">
         <ul className="footer-nav">
           <li>
-            <Link to="imprint" className="footer-link">
+            <Link to="contact" className="footer-link">
               Imprint
             </Link>
           </li>

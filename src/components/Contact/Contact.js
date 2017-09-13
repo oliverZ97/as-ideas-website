@@ -4,15 +4,21 @@ import { Footer } from "./../Footer/Footer";
 import "./Contact.css";
 
 
-const Contact = ({ location }) => {
-  return (
-    <div>
-      <Hero pathname={location.pathname} />
-        We're cool, so get in touch
-      <Footer />
-    </div>
-  )
-};
+class Contact extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
+  render() {
+    return (
+      <div>
+        <Hero pathname={this.props.location.pathname} />
+          We're cool, so get in touch
+        <Footer />
+      </div>
+    );
+  }
+}
 
 
 export default Contact;
