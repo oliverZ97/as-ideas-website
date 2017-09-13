@@ -1,5 +1,5 @@
 @import "./mixins";
-
+@import "./node_modules/include-media/dist/include-media";
 
 /**
  * Layout Helper
@@ -9,7 +9,11 @@
 .l-container {
    @include layout-section;
    padding: 60px 20px;
- }
+
+  @include media("<=xs") {
+    padding: 40px 20px;
+  }
+}
 
 
 .relative {
@@ -27,27 +31,24 @@
   width: 100%;
   left: 0;
   bottom: 0;
+
+  @include media("<=xs") {
+    position: relative;
+  }
 }
 
 
-.padding-h-100 {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-
-.padding-h-110 {
+.padding-h-lg {
   padding-top: 110px;
   padding-bottom: 110px;
+
+  @include media("<=xs") {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 
-.padding-h-120 {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-    
-    
 /**
  * Color Helper
  *
