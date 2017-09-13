@@ -12,7 +12,7 @@ const ProductNewsfinder = () => (
     <div className="l-container padding-h-lg">
       <div className="grid">
         <div className="col-4_xs-12" data-push-left="off-1_xs-0">
-          <h2 className="h1 has-cursor has-cursor--400">
+          <h2 className="h1">
             Newsfinder
           </h2>
           <p className="hx-intro">
@@ -49,7 +49,7 @@ const ProductCEP = () => (
   <div className="l-container">
     <div className="grid">
       <div className="col-4_xs-12_md-10" data-push-left="off-1_xs-0">
-        <h2 className="h1 has-cursor has-cursor--400">
+        <h2 className="h1">
           Content Exchange Platform 
         </h2>
         <p className="hx-intro">
@@ -68,7 +68,7 @@ const ProductSSO = () => (
   <div className="l-container">
     <div className="grid">
       <div className="col-4_xs-12_md-10" data-push-left="off-1_xs-0">
-        <h2 className="h1 has-cursor has-cursor--400">
+        <h2 className="h1">
           Single Sign-on
         </h2>
         <p className="hx-intro">
@@ -87,7 +87,7 @@ const ProductPayment = () => (
   <div className="l-container">
     <div className="grid">
       <div className="col-4_xs-12_md-10" data-push-left="off-1_xs-0">
-        <h2 className="h1 has-cursor has-cursor--400">
+        <h2 className="h1">
           Payment and Billing 
         </h2>
         <p className="hx-intro">
