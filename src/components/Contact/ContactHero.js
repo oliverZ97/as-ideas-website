@@ -1,6 +1,6 @@
 import React from "react";
 import { MainNav } from "./../MainNav/MainNav";
-import "./Home.css";
+import "./Contact.css";
 
 
 const HeroText = () => {
