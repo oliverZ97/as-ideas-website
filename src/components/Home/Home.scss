@@ -1,6 +1,7 @@
 @import "./../../styles/settings";
 @import "./../../styles/mixins";
 @import "./../../styles/text-styles";
+@import "./../../styles/utils";
 @import "./../node_modules/include-media/dist/include-media";
 
 /**
@@ -9,7 +10,6 @@
  */
 
 .hero {
-  
   min-height: 460px;
   background: $gradient-lagoon;
 }
@@ -21,7 +21,6 @@
  */
 
 .main-nav {
-
   display: flex;
   margin:  0;
   padding: 0 20px;
@@ -35,7 +34,6 @@
 
   @mixin item-layout {
     @include horizontal-stack-flush-margins;
-
     display: flex;
     align-items: center;
     min-height: $main-nav-height;
@@ -63,7 +61,6 @@
 
 
   &__item {
-    
     @include item-layout;
     @include item-text;
   }
@@ -114,119 +111,7 @@
  */
 
 .hero__text {
-
   @include layout-section;
-  
   padding: 120px 100px;
   padding-right: 200px;
-}
-
-
-/**
- * Layout Helper
- *
- */
-
-.l-container {
-
-  @include layout-section;
-
-  padding: 60px 20px;
-}
-
-
-/**
- * Color Helper
- *
-*/
-
-.fill-dark {
-  background-color: $black;
-}
-
-
-/**
- * Footer
- *
-*/
-
-.footer-nav {
-  display: flex;
-  justify-content: flex-end;
-  margin:  0;
-  padding: 0;
-  list-style: none;
-}
-
-.footer-link {
-  
-  @include horizontal-stack-flush-margins;
-
-  position: relative;
-  margin: 0 10px;
-  padding: 20px 0;
-  font-family: $fontstack-mono;
-  color: rgba($white, 0.66);
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: $transition;
-
-
-  &::after {
-    content: "";
-    position: absolute;
-    left:   -20%;
-    bottom: 0;
-    width:  140%;
-    height: 1px;
-    background-color: transparent;
-    transition: $transition;
-  }
-
-
-  &:hover {
-
-    color: $white;
-
-    &::after {
-      background-color: rgba($white, 0.5);
-    }
-  }
-}
-
-
-.btn-row {
-  
-  @include vertical-stack-flush-margins;
-
-  margin: 40px 0;
-}
-
-
-.btn {
-  
-  @include horizontal-stack-flush-margins;
-
-  margin: 0 10px;
-  padding: 16px 30px;
-  font-family: $fontstack-mono;
-  font-size: 14px;
-  color: $white;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border: 1px solid rgba($white, 0.66);
-  cursor: pointer;
-  transition: $transition;
-
-  &:hover {
-    border-color: $white;
-  }
-
-
-  &:active {
-    color: $clr-text;
-    background-color: $white;
-  }
 }
