@@ -1,22 +1,30 @@
 import React from "react";
 import "./Home.css";
+import newsfinderImg from "./newsfinder-2x.png";
 
 
 const ProductNewsfinder = () => (
-  <div className="l-container">
-    <div className="grid">
-      <div className="col-4" data-push-left="off-1_xs-0">
-        <h2 className="h1 has-cursor has-cursor--400">
-          Newsfinder
-        </h2>
-        <p className="hx-intro">
-          We empower editors to react faster and better to the current issues.
-        </p>
+  <div className="relative fill-dark--9">
+    <div className="grid-noGutter-noBottom grid-posAbsolute_bottom">
+      <div className="col-6" data-push-left="off-6">
+        <div className="overflow-hidden has-box-shadow">
+          <img src={newsfinderImg} width="1600" height="620" />
+        </div>
       </div>
-      <div className="col-5" data-push-left="off-1_xs-0">
-        <p className="product-intro">
-          Editors can create their own dashboard for a thematic search through their own or third-party publications. Google Trends, an article preview and the translation of all articles into English at the push of a button round off our service for the editor of today.
-        </p>
+    </div>
+    <div className="l-container padding-h-110">
+      <div className="grid">
+        <div className="col-4" data-push-left="off-1_xs-0">
+          <h2 className="h1 has-cursor has-cursor--400">
+            Newsfinder
+          </h2>
+          <p className="hx-intro">
+            We empower editors to react faster and better to the current issues.
+          </p>
+          <p className="product-intro">
+            Editors can create their own dashboard for a thematic search through their own or third-party publications. Google Trends, an article preview and the translation of all articles into English at the push of a button round off our service for the editor of today.
+          </p>
+        </div>
       </div>
     </div>
   </div>
