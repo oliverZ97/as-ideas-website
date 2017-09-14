@@ -16,7 +16,13 @@
 
   @include media("<=xs") {
     justify-content: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba($white, 0.25);
+  }
+
+  &--dark {
+    @include media("<=xs") {
+      border-bottom-color: rgba($black, 0.25);
+    }
   }
 
 
@@ -51,6 +57,11 @@
   &__item {
     @include item-layout;
     @include item-text;
+
+
+    &--dark {
+      color: $black;
+    }
   }
 
   
@@ -97,6 +108,27 @@
       @include media("<=xs") {
         &::after {
           background-color: $white;
+        }
+      }
+    }
+
+
+    &--dark {
+      &.main-nav__item-link--active {
+        &::after {
+          background-color: $black;
+        }
+      }
+
+      &:hover:not(.main-nav__item-link--active) {
+        &::after {
+          background-color: rgba($black, 0.25);
+        }
+  
+        @include media("<=xs") {
+          &::after {
+            background-color: $black;
+          }
         }
       }
     }
