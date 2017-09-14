@@ -1,7 +1,8 @@
 @import "./../../styles/settings";
 @import "./../../styles/mixins";
 @import "./../../styles/text-styles";
-@import "./../node_modules/include-media/dist/include-media";
+@import "./../../styles/utils";
+@import "./node_modules/include-media/dist/include-media";
 
 /**
  * Hero Section
@@ -9,101 +10,11 @@
  */
 
 .hero {
-  
   min-height: 460px;
   background: $gradient-lagoon;
-}
-
-
-/**
- * Main Navigation
- *
- */
-
-.main-nav {
-
-  display: flex;
-  margin:  0;
-  padding: 0 20px;
-  list-style: none;
 
   @include media("<=xs") {
-    justify-content: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  }
-
-
-  @mixin item-layout {
-    @include horizontal-stack-flush-margins;
-
-    display: flex;
-    align-items: center;
-    min-height: $main-nav-height;
-    margin: 0 20px;
-  }
-
-
-  @mixin item-text {
-    font-family: $fontstack-mono;
-    font-size: 13px;
-    color: $white;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-
-
-  &--right {
-    justify-content: flex-end;
-
-    @include media("<=xs") {
-      justify-content: center;
-    }
-  }
-
-
-  &__item {
-    
-    @include item-layout;
-    @include item-text;
-  }
-
-  
-  &__item-link {
-    position: relative;
-    display: flex;
-    align-items: center;
-    min-height: $main-nav-height;
-    text-decoration: none;
-    color: inherit;
-    border-bottom: 1px solid transparent;
-    cursor: pointer;
-
-
-    &::after {
-      content: "";
-      position: absolute;
-      left:   -30%;
-      bottom: -1px;
-      width:  160%;
-      height: 1px;
-      background-color: transparent;
-      transition: $transition;
-    }
-
-
-    &--active {
-      &::after {
-        background-color: $white;
-      }
-    }
-
-
-    &:hover:not(&--active) {
-      &::after {
-        background-color: rgba($white, 0.25);
-      }
-    }
+    min-height: auto;
   }
 }
 
@@ -114,148 +25,42 @@
  */
 
 .hero__text {
-
   @include layout-section;
-  
   padding: 120px 100px;
   padding-right: 200px;
 }
 
 
 /**
- * Layout Helper
+ * Product Images
  *
  */
 
-.l-container-100 {
-
+.l-fav-element {
   position: relative;
-  width: 100%;
-
-  &--light {
-    background-color: rgba(216, 216, 216, 0.33);
-  }
-}
-
-.l-container {
-
-  @include layout-section;
-
-  position: relative;
-  padding: 60px 20px;
-
-  &--gap-lg {
-    padding: 115px 20px;
-  }
+  min-height: 550px;
+  border-bottom: 1px solid rgba($black, 0.12);
 }
 
 
-/**
- * Color Helper
- *
-*/
-
-.fill-dark {
-  background-color: $black;
+.fav-element__image-section {
+  overflow: hidden;
+  background-color: rgba($black, 0.85);
+  box-shadow: $box-shadow;
 }
 
 
-/**
- * Footer
- *
-*/
-
-.footer-nav {
-  display: flex;
-  justify-content: flex-end;
-  margin:  0;
-  padding: 0;
-  list-style: none;
-}
-
-.footer-link {
-  
-  @include horizontal-stack-flush-margins;
-
-  position: relative;
-  margin: 0 10px;
-  padding: 20px 0;
-  font-family: $fontstack-mono;
-  color: rgba($white, 0.66);
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: $transition;
-
-
-  &::after {
-    content: "";
-    position: absolute;
-    left:   -20%;
-    bottom: 0;
-    width:  140%;
-    height: 1px;
-    background-color: transparent;
-    transition: $transition;
-  }
-
-
-  &:hover {
-
-    color: $white;
-
-    &::after {
-      background-color: rgba($white, 0.5);
-    }
-  }
-}
-
-
-.btn-row {
-  
+.fav-element__icon-row {
   @include vertical-stack-flush-margins;
-
+  display: flex;
+  align-items: center;
   margin: 40px 0;
 }
 
 
-.btn {
-  
+.fav-element__icon {
   @include horizontal-stack-flush-margins;
-
   margin: 0 10px;
-  padding: 16px 30px;
-  font-family: $fontstack-mono;
-  font-size: 14px;
-  color: $white;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border: 1px solid rgba($white, 0.66);
-  cursor: pointer;
-  transition: $transition;
-
-  &:hover {
-    border-color: $white;
-  }
-
-
-  &:active {
-    color: $clr-text;
-    background-color: $white;
-  }
 }
 
 
-.overflow-container {
-  width: 100%;
-  overflow: hidden;
-}
-
-
-.grid-posAbs-bottom {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  width: 100%;
-}

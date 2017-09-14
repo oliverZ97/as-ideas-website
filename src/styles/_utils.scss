@@ -1,0 +1,107 @@
+@import "./mixins";
+@import "./node_modules/include-media/dist/include-media";
+
+/**
+ * Layout Helper
+ *
+ */
+
+.l-container {
+   @include layout-section;
+   padding: 60px 20px;
+
+  @include media("<=xs") {
+    padding: 40px 20px;
+  }
+}
+
+
+.grid-posAbsolute-bottom {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+
+  @include media("<=xs") {
+    position: relative;
+  }
+}
+
+
+.padding-h-lg {
+  $padding: 120px;
+  padding-top: $padding;
+  padding-bottom: $padding;
+
+  @include media("<=xs") {
+    $padding: 60px;
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+
+  @include media("<=md", ">=xs") {
+    $padding: 80px;
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+}
+
+
+/**
+ * Color Helper
+ *
+ */
+
+.fill-dark {
+  background-color: $black;
+
+  &--0 {
+    background-color: $black;
+  }
+
+  &--1 {
+    background-color: rgba($black, 0.9);
+  }
+
+  &--2 {
+    background-color: rgba($black, 0.8);
+  }
+
+  &--3 {
+    background-color: rgba($black, 0.7);
+  }
+
+  &--4 {
+    background-color: rgba($black, 0.6);
+  }
+
+  &--5 {
+    background-color: rgba($black, 0.5);
+  }
+
+  &--6 {
+    background-color: rgba($black, 0.4);
+  }
+
+  &--7 {
+    background-color: rgba($black, 0.3);
+  }
+
+  &--8 {
+    background-color: rgba($black, 0.2);
+  }
+
+  &--9 {
+    background-color: rgba($black, 0.1);
+  }
+}
+
+
+/**
+ * Misc
+ *
+ */
+
+.has-box-shadow {
+  box-shadow: 0 4px 20px 0 rgba($black, 0.12);
+}

@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "glamor": "^2.20.40",
     "gridlex": "^2.4.1",
     "include-media": "^1.4.9",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.1.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-responsive-picture": "^2.0.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.13",
     "sanitize.css": "^5.0.0"

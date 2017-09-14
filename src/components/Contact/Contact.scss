@@ -1,0 +1,31 @@
+@import "./../../styles/settings";
+@import "./../../styles/mixins";
+@import "./../../styles/text-styles";
+@import "./../../styles/utils";
+@import "./node_modules/include-media/dist/include-media";
+
+/**
+ * Hero Section
+ *
+ */
+
+.hero {
+  min-height: 460px;
+  background: $gradient-lagoon;
+
+  @include media("<=xs") {
+    min-height: auto;
+  }
+}
+
+
+/**
+ * Hero Text Section
+ *
+ */
+
+.hero__text {
+  @include layout-section;
+  padding: 120px 100px;
+  padding-right: 200px;
+}
