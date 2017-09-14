@@ -14,10 +14,12 @@
   padding: 0 20px;
   list-style: none;
 
+
   @include media("<=xs") {
     justify-content: center;
     border-bottom: 1px solid rgba($white, 0.25);
   }
+
 
   &--dark {
     @include media("<=xs") {
@@ -47,6 +49,7 @@
 
   &--right {
     justify-content: flex-end;
+
 
     @include media("<=xs") {
       justify-content: center;
@@ -89,7 +92,6 @@
       @include media("<=xs") {
         bottom: -2px;
       }
-      
     }
 
 
@@ -120,11 +122,13 @@
         }
       }
 
+
       &:hover:not(.main-nav__item-link--active) {
         &::after {
           background-color: rgba($black, 0.25);
         }
   
+        
         @include media("<=xs") {
           &::after {
             background-color: $black;

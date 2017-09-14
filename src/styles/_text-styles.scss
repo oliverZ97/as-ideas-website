@@ -8,7 +8,7 @@
  */
 
 .hero-heading {
-    
+  
   @include vertical-stack-flush-margins;
 
   margin: 32px 0;
@@ -16,8 +16,14 @@
   font-size: 72px;
   font-weight: 100;
 
+
   @include media("<=xs") {
     font-size: 42px;
+  }
+
+
+  &--dark {
+    color: $black;
   }
 }
   

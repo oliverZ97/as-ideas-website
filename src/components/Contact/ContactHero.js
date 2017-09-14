@@ -7,8 +7,8 @@ const HeroText = () => {
   return (
     <div className="l-container">
       <div className="grid">
-        <div className="col-8_xs-12">
-          <h1 className="hero-heading has-cursor">
+        <div className="col-10_xs-12">
+          <h1 className="hero-heading hero-heading--dark has-cursor">
             We are Ideas engineering. <br />
             Get in touch 
           </h1>
@@ -21,7 +21,7 @@ const HeroText = () => {
 
 export const Hero = (props) => {
   return (
-    <div className="hero">
+    <div className="hero hero--light">
       <MainNav {...props} classAddon="dark" />
       <HeroText />
     </div>

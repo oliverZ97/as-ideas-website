@@ -7,11 +7,23 @@
  */
 
 .l-container {
-   @include layout-section;
-   padding: 60px 20px;
+  @include layout-section;
+  padding: 60px 20px;
+
 
   @include media("<=xs") {
     padding: 40px 20px;
+  }
+
+
+  &--no-gutter {
+    padding-left:  0;
+    padding-right: 0;
+
+
+    @include media("<=xs") {
+      padding: 40px 0;
+    }
   }
 }
 

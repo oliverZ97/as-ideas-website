@@ -1,5 +1,6 @@
 import React from "react";
 import { Hero } from "./ContactHero";
+import { Content } from "./ContactContent";
 import { Footer } from "./../Footer/Footer";
 import "./Contact.css";
 
@@ -13,7 +14,7 @@ class Contact extends React.Component {
     return (
       <div>
         <Hero pathname={this.props.location.pathname} />
-          We're cool, so get in touch
+        <Content />
         <Footer />
       </div>
     );
