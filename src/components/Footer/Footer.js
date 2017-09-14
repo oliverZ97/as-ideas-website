@@ -14,9 +14,14 @@ export const Footer = () => (
           We are a really nice bunch of people that work on technology. This is still lorem ipsum text. 
         </p>
         <div className="btn-row">
-          <button className="btn">
+          <a 
+            className="btn"
+            href="https://career.axelspringer.com/jobangebote/#ideas|engineering"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Careers
-          </button>
+          </a>
         </div>
       </div>
     </div>
