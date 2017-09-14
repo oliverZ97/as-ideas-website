@@ -28,21 +28,21 @@
 }
 
 
-.padding-h-lg {
-  $padding: 120px;
+.padding-h-md {
+  $padding: 40px;
+  $padding-md: 30px;
+  $padding-xs: 20px;
   padding-top: $padding;
   padding-bottom: $padding;
 
   @include media("<=xs") {
-    $padding: 60px;
-    padding-top: $padding;
-    padding-bottom: $padding;
+    padding-top: $padding-xs;
+    padding-bottom: $padding-xs;
   }
 
   @include media("<=md", ">=xs") {
-    $padding: 80px;
-    padding-top: $padding;
-    padding-bottom: $padding;
+    padding-top: $padding-md;
+    padding-bottom: $padding-md;
   }
 }
 

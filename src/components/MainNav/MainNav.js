@@ -32,7 +32,6 @@ export const MainNav = ({ pathname }) => {
    * @param {*} pathname 
    */
   const NavItemContact = (pathname) => {
-    console.log(pathname)
     return pathname === "/contact" ? (
       <li className="main-nav__item">
         <span className={`main-nav__item-link main-nav__item-link--active`}>
