@@ -1,4 +1,4 @@
-# AS Ideas Home Page
+# Ideas Engineering Home Page
 
 This is our long running homepage project. Although we have some repos with different version of our homepage, this should be the most actual one.
 
