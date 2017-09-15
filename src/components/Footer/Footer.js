@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 
 
-export const Footer = () => (
+export const Footer = ({ hideImprint }) => (
   <div className="l-container fill-dark fill-dark--2">
     <div className="grid">
       <div className="col-10_xs-12_sm-12" data-push-left="off-1_xs-0_sm-0" data-push-right="off-1_xs-0_sm-0">
@@ -27,11 +27,13 @@ export const Footer = () => (
           </div>
           <div className="col-6">
             <ul className="footer-nav">
-              <li>
-                <Link to="contact" className="footer-link">
-                  Imprint
-                </Link>
-              </li>
+              { hideImprint === undefined &&
+                <li>
+                  <Link to="contact" className="footer-link">
+                    Imprint
+                  </Link>
+                </li>
+              }
             </ul>
           </div>
         </div>

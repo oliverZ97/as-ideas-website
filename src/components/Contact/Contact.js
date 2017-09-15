@@ -15,7 +15,7 @@ class Contact extends React.Component {
       <div>
         <Hero pathname={this.props.location.pathname} />
         <Content />
-        <Footer />
+        <Footer hideImprint={true} />
       </div>
     );
   }

@@ -96,10 +96,14 @@ const ProductPayment = () => (
     <div className="grid">
       <div className="col-4_xs-12_md-10" data-push-left="off-1_xs-0">
         <h2 className="h1">
-          Payment and Billing 
+          Premium Content Platform 
         </h2>
         <p className="hx-intro">
           We offer all services for payment and billing for all customers in the Axel Springer Family.
+        </p>
+        <p className="product-intro">
+        Create new offerings, target your audience, do payment & billing and have an easy credit management with the #1 software development tool used by various publishers.
+        Premium Content Platform is the complete process solution that empowers teams to generate and handle digital payment systems not with many, but with only one tool at all.
         </p>
       </div>
     </div>
