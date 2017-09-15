@@ -62,6 +62,38 @@ export const Content = () => {
           </div>
         </div>
       </div>
+      <div className="l-container">
+        <div className="grid-spaceAround-noGutter">
+          <div className="col-3_sm-12">
+            <p className="contact__text contact__text--sm">
+              Axel Springer Ideas Engineering GmbH
+            </p>
+            <p className="contact__text contact__text--sm">
+              ein Unternehmen der <span className="no-wrap">Axel Springer SE</span><br />
+              Axel-Springer-Straße 65<br />
+              10888 Berlin
+            </p>
+          </div>
+          <div className="col-3_sm-12">
+            <p className="contact__text contact__text--sm">
+              Geschäftsführer
+            </p>
+            <p className="contact__text contact__text--sm">
+              Samir Fadlallah, <span className="no-wrap">Michael Alber</span>
+            </p>
+          </div>
+          <div className="col-3_sm-12">
+            <span className="contact__text">
+              <p className="contact__text contact__text--sm">
+                Handelsregistereintrag
+              </p>
+              <p className="contact__text contact__text--sm">
+                Amtsgericht Charlottenburg, <span className="no-wrap">Berlin HRB 138466 B</span>
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
