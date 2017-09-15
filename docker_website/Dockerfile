@@ -12,6 +12,7 @@ RUN apt-get -yqq install curl nano
 
 # Stupid cache... NO CACHE FROM HERE ON
 ARG CACHE_DATE=not_a_date
+RUN mkdir -p /var/www
 RUN touch /var/www/version.json
 RUN echo { \"date\": \"$(date +%Y-%m-%d:%H:%M:%S)\", \"version\": \"$GO_PIPELINE_COUNTER\" } >> /var/www/version.json
 
