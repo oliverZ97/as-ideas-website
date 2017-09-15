@@ -4,7 +4,7 @@ import "./Footer.css";
 
 
 export const Footer = () => (
-  <div className="l-container fill-dark">
+  <div className="l-container fill-dark fill-dark--2">
     <div className="grid">
       <div className="col-10_xs-12_sm-12" data-push-left="off-1_xs-0_sm-0" data-push-right="off-1_xs-0_sm-0">
         <h1 className="h0 has-cursor">

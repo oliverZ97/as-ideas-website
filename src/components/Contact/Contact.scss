@@ -38,15 +38,13 @@
 }
 
 
-.responsive-image {
-  width: 100%;
-  height: auto;
-}
-
+/**
+ * Contact Section
+ *
+ */
 
 .contact__image-container {
   position: relative;
-
 
   &::after {
     content: "";
@@ -64,4 +62,73 @@
 .contact__image {
   width: 100%;
   height: auto;
+}
+
+
+.contact__text-container {
+  $border-color: rgba($black, 0.08);
+  display: flex !important;  // overrule gridlex grid framework
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+
+  @include media("<=sm") {
+    min-height: 60px;
+    padding: 0 10px !important;
+    border-bottom: none;
+    
+    &:last-child {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+}
+
+
+.contact__text {
+  font-family: $fontstack-mono;
+  color: $clr-text;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: $transition;
+
+  &:hover:not(span) {
+    border-bottom-color: $black;
+    
+    @include media("<=sm") {
+      border-bottom-color: transparent;
+    }
+  }
+
+  @include media("<=md") {
+    font-size: 14px;
+  }
+  
+  @include media("<=sm") {
+    flex: 1;
+    font-weight: 300;
+  }
+}
+
+
+.contact__icon {
+  @include horizontal-stack-flush-margins;
+  
+  margin: 0 15px;
+  height: 22px;
+  width:  auto;
+  fill: rgba($deeppink, 0.88);
+
+
+  @include media("<=md") {
+    height: 18px;
+  }
+
+  @include media("<=sm") {
+    height: 14px;
+  }
 }

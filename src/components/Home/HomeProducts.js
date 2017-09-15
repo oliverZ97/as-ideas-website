@@ -26,8 +26,8 @@ const ProductNewsfinder = () => (
             <IconTwitter className="fav-element__icon" />
             <IconInstagram className="fav-element__icon" />
             <IconPhoto className="fav-element__icon" />
-            <IconGlobe className="fav-element__icon" />
             <IconNewspaper className="fav-element__icon" />
+            <IconGlobe className="fav-element__icon" />
           </p>
         </div>
       </div>
