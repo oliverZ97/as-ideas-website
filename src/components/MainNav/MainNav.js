@@ -41,7 +41,7 @@ export const MainNav = ({ pathname, cssClassAddon }) => {
     return pathname === "/contact" ? (
       <li className={`main-nav__item ${itemClassAddon}`}>
         <span className={`main-nav__item-link main-nav__item-link--active ${linkClassAddon}`}>
-          Contact
+          About Us / Contact
         </span>
       </li>
     ) :
@@ -51,7 +51,7 @@ export const MainNav = ({ pathname, cssClassAddon }) => {
           className={`main-nav__item-link ${linkClassAddon}`} 
           to="/contact"
         >
-          Contact
+          About Us / Contact
         </Link>
       </li>
     );
