@@ -1,5 +1,6 @@
 import React from "react";
-import { Hero } from "./HomeHero";
+import { Hero } from "./../Hero/Hero";
+import { HeroContent } from "./HomeHero";
 import { Products } from "./HomeProducts";
 import { Footer } from "./../Footer/Footer";
 import "./Home.css";
@@ -8,7 +9,10 @@ import "./Home.css";
 const Home = ({ location }) => {
   return (
     <div>
-      <Hero pathname={location.pathname} />
+      <Hero 
+        wrapped={HeroContent}
+        pathname={location.pathname}
+      />
       <Products />
       <Footer />
     </div>

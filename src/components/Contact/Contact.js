@@ -1,5 +1,6 @@
 import React from "react";
-import { Hero } from "./ContactHero";
+import { Hero } from "./../Hero/Hero";
+import { HeroContent } from "./ContactHero";
 import { Content } from "./ContactContent";
 import { Footer } from "./../Footer/Footer";
 import "./Contact.css";
@@ -13,7 +14,11 @@ class Contact extends React.Component {
   render() {
     return (
       <div>
-        <Hero pathname={this.props.location.pathname} />
+        <Hero 
+          wrapped={HeroContent} 
+          pathname={this.props.location.pathname} 
+          cssClassAddon="light"
+        />
         <Content />
         <Footer hideImprint={true} />
       </div>

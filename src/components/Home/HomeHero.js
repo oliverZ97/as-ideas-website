@@ -1,9 +1,9 @@
 import React from "react";
-import { MainNav } from "./../MainNav/MainNav";
 import "./Home.css";
+import "./../Hero/Hero.css";
 
 
-const HeroText = () => {
+export const HeroContent = () => {
   return (
     <div className="l-container">
       <div className="grid">
@@ -19,16 +19,6 @@ const HeroText = () => {
           </p>
         </div>
       </div>
-    </div>
-  );
-};
-
-
-export const Hero = (props) => {
-  return (
-    <div className="hero">
-      <MainNav {...props} />
-      <HeroText />
     </div>
   );
 };

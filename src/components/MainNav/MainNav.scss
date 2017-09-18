@@ -21,9 +21,19 @@
   }
 
 
-  &--dark {
+  &--light {
     @include media("<=xs") {
       border-bottom-color: rgba($black, 0.25);
+    }
+  }
+
+
+  &--right {
+    justify-content: flex-end;
+
+
+    @include media("<=xs") {
+      justify-content: center;
     }
   }
 
@@ -47,22 +57,12 @@
   }
 
 
-  &--right {
-    justify-content: flex-end;
-
-
-    @include media("<=xs") {
-      justify-content: center;
-    }
-  }
-
-
   &__item {
     @include item-layout;
     @include item-text;
 
 
-    &--dark {
+    &--light {
       color: $black;
     }
   }
@@ -115,7 +115,7 @@
     }
 
 
-    &--dark {
+    &--light {
       &.main-nav__item-link--active {
         &::after {
           background-color: $black;
