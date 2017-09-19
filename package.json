@@ -13,7 +13,8 @@
     "react-responsive-picture": "^2.0.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.13",
-    "sanitize.css": "^5.0.0"
+    "sanitize.css": "^5.0.0",
+    "typed.js": "^2.0.5"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
@@ -24,6 +25,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
