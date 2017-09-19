@@ -1,18 +1,13 @@
 import React from "react";
-import { Hero } from "./../Hero/Hero";
-import { HeroContent } from "./HomeHero";
+import { HomeHero as Hero} from "./HomeHero";
 import { Products } from "./HomeProducts";
 import { Footer } from "./../Footer/Footer";
-import "./Home.css";
 
 
 const Home = ({ location }) => {
   return (
     <div>
-      <Hero 
-        wrapped={HeroContent}
-        pathname={location.pathname}
-      />
+      <Hero pathname={location.pathname} />
       <Products />
       <Footer />
     </div>

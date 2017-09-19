@@ -1,9 +1,10 @@
 import React from "react";
+import { Hero } from "./../Hero/Hero";
 import "./Contact.css";
 import "./../Hero/Hero.css";
 
 
-export const HeroContent = () => {
+const HeroContent = () => {
   return (
     <div className="l-container">
       <div className="grid">
@@ -17,3 +18,12 @@ export const HeroContent = () => {
     </div>
   );
 };
+
+
+export const ContactHero = ({pathname}) => (
+  <Hero 
+    wrapped={HeroContent}
+    pathname={pathname}
+    cssClassAddon="light"
+  /> 
+);

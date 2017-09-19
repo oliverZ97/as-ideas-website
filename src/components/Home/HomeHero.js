@@ -1,4 +1,5 @@
 import React from "react";
+import { Hero } from "./../Hero/Hero";
 import "./Home.css";
 import "./../Hero/Hero.css";
 
@@ -23,3 +24,11 @@ export const HeroContent = () => {
     </div>
   );
 };
+
+
+export const HomeHero = ({pathname}) => (
+  <Hero 
+    wrapped={HeroContent}
+    pathname={pathname}
+  /> 
+);
