@@ -46,9 +46,9 @@ class HeroContent extends Component {
 
   render() {
     return (
-      <div className="l-container">
+      <div className="l-container l-container--lg">
         <div className="grid">
-          <div className="col-9_xs-12">
+          <div className="col-9_xs-12_sm-12_md-12">
             <h1 className="hero-heading has-cursor" ref={(heading) => this.heading = heading}>
               We are Ideas engineering
             </h1>

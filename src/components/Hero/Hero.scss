@@ -24,12 +24,51 @@
   
   
 /**
-  * Hero Text Section
-  *
-  */
+ * Text Styles
+ *
+ */
 
-.hero__text {
-  @include layout-section;
-  padding: 120px 100px;
-  padding-right: 200px;
+ .hero-heading {
+  
+  @include font-smoothing;
+  @include vertical-stack-flush-margins;
+
+  $font-size-xs: 42px;
+  $font-size-lg: 72px;
+  $line-height:  1.2;
+
+  min-height: $font-size-lg * $line-height * 2;
+  margin: 40px 0;
+  color: $white;
+  font-size: $font-size-lg;
+  font-weight: 200;
+  line-height: $line-height;
+
+  @include media("<=xs") {
+    min-height: $font-size-xs * $line-height * 2;
+    font-size: $font-size-xs;
+  }
+
+
+  &--dark {
+    color: $black;
+  }
+}
+  
+  
+.hero-intro {
+
+  @include font-smoothing;
+  @include vertical-stack-flush-margins;
+
+  margin: 16px 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba($white, 0.66);
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+
+  @include media("<=xs") {
+    font-size: 16px;
+  }
 }

@@ -7,46 +7,6 @@
  *
  */
 
-.hero-heading {
-  
-  @include font-smoothing;
-  @include vertical-stack-flush-margins;
-
-  margin: 40px 0;
-  color: $white;
-  font-size: 72px;
-  font-weight: 200;
-
-
-  @include media("<=xs") {
-    font-size: 42px;
-  }
-
-
-  &--dark {
-    color: $black;
-  }
-}
-  
-  
-.hero-intro {
-
-  @include font-smoothing;
-  @include vertical-stack-flush-margins;
-
-  margin: 16px 0;
-  font-size: 20px;
-  font-weight: 400;
-  color: rgba($white, 0.66);
-  line-height: 1.6;
-  letter-spacing: 0.05em;
-
-  @include media("<=xs") {
-    font-size: 16px;
-  }
-}
-  
-  
 .has-cursor {
   
   position: relative;
