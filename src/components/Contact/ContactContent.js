@@ -35,6 +35,30 @@ export const Content = () => {
         </div>
       </div>
       <div className="l-container">
+        <div className="grid-noGutter-spaceAround">
+          <div className="col-10_sm-12">
+            <p className="contact__text-lg">
+              Axel Springer Ideas was founded in 2013 as an in-house incubator. 
+              Our early years were characterized by agile development, rapid growth, and a constantly changing company structure. 
+              One part of the team was focused on founding startups, whereas the other part developed software services for various Axel Springer companies. 
+              After two years, more than 10 of these ideas grew out of Axel Springer Ideas into individual products or companies such as Celepedia, The Iconist, and Upday. 
+              This success led to a realignment, and we decided to focus on our fundamental DNA elements: Ideas and Engineering. 
+              That allowed us to do what we do best: develop software and products.
+            </p>
+            <p className="contact__text-lg">
+              We have developed a digital payment platform that enabled BILD.de and WELT.de to step into the world of paid content. 
+              Since 19x we've facilitated millions of payments for digital content. 
+              In parallel, we develop software solutions and services around digital content. 
+              We are specialized on automated metadata enrichment for videos and pictures. 
+              That allows us to offer products like Newsfinder, a personalized real-time news overview, for our journalist colleagues within Axel Springer.
+            </p>
+            <p className="contact__text-lg">
+              We turn your ideas into great products.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="l-container">
         <div className="grid-middle-spaceAround-noGutter">
           <div className="col-3_sm-12 contact__text-container">
             <IconEnvelope className="contact__icon"/>
@@ -63,8 +87,11 @@ export const Content = () => {
         </div>
       </div>
       <div className="l-container">
-        <div className="grid-center">
-          <div className="col-5_sm-12">
+        <div className="grid-noGutter-spaceAround">
+          <div className="col-10_sm-12">
+            <p className="contact__text-lg">
+              Imprint
+            </p>
             <p className="contact__text contact__text--sm">
               Axel Springer Ideas Engineering GmbH
             </p>
@@ -74,7 +101,7 @@ export const Content = () => {
               10888 Berlin
             </p>
           </div>
-          <div className="col-5_sm-12">
+          <div className="col-10_sm-12">
             <p className="contact__text contact__text--sm">
               Geschäftsführer<br />
               Samir Fadlallah, <span className="no-wrap">Michael Alber</span>

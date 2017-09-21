@@ -54,11 +54,13 @@
 
 
 .contact__text {
+  @include vertical-stack-flush-margins;
+
   font-family: $fontstack-mono;
   color: $clr-text;
   font-size: 18px;
   font-weight: 300;
-  text-align: center;
+  line-height: 1.5;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: $transition;
@@ -94,15 +96,25 @@
   @include horizontal-stack-flush-margins;
   
   margin: 0 15px;
-  height: 22px;
+  height: 16px;
   width:  auto;
   fill: rgba($deeppink, 0.88);
 
   @include media("<=md") {
-    height: 18px;
+    height: 16px;
   }
 
   @include media("<=sm") {
     height: 14px;
   }
+}
+
+
+.contact__text-lg {
+  @include vertical-stack-flush-margins;
+  @include font-smoothing;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
 }

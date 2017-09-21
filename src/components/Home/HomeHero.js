@@ -5,7 +5,7 @@ import "./Home.css";
 import "./../Hero/Hero.css";
 
 
-class HeroContent extends Component {
+class HeroContentHome extends Component {
   componentDidMount() {
     /**
      * Add Typed.js for a little typewriter effect
@@ -61,7 +61,7 @@ class HeroContent extends Component {
             </p>
           </div>
         </div>
-    </div>
+      </div>
     )
   }
 }
@@ -69,7 +69,7 @@ class HeroContent extends Component {
 
 export const HomeHero = ({pathname}) => (
   <Hero 
-    wrapped={HeroContent}
+    wrapped={HeroContentHome}
     pathname={pathname}
   /> 
 );

@@ -17,10 +17,10 @@ const ProductNewsfinder = () => (
             Newsfinder
           </h2>
           <p className="hx-intro">
-            We empower editors to react faster and better to the current issues.
+            Personalised real-time overview of your topics
           </p>
           <p className="product-intro">
-            Editors can create their own dashboard for a thematic search through their own or third-party publications. Google Trends, an article preview and the translation of all articles into English at the push of a button round off our service for the editor of today.
+            The Newsfinder allows Axel Springer employees to create dashboards with real-time overviews for hand-picked topics using keywords or hashtags. Among the wide range of sources are third-party publications, social media channels, and news by press agencies. Automated translations make it even possible to easily review foreign publications.
           </p>
           <p className="fav-element__icon-row">
             <IconTwitter className="fav-element__icon" />
@@ -64,7 +64,7 @@ const ProductCEP = () => (
           Get in contact with your colleagues worldwide and exchange content using our platform.
         </p>
         <p className="product-intro">
-          This way you always stay ahead of the competition and profit from the uniquely Axel Springer content. This allows you to quickly and clearly view current content.
+          Axel Springer has more than 15.000 editors across the globe. We have an enormous content stream varying from classic newspapers and advertorials till blogs and digital video platforms. The Content Exchange Plattform enables sharing content within the Axel Springer family.
         </p>
       </div>
     </div>
@@ -83,7 +83,9 @@ const ProductSSO = () => (
           We offer all services around registration and login for all customers in the Axel Springer Family.
         </p>
         <p className="product-intro">
-          This includes newsletter management and automatic login and logout for all linked Axel Springer services.
+          We are the full-service operator for Axel Springer's Single Sign-On service. 
+          We successfully manage approximately half a million active users, of which approximately 100,000 are active on a daily basis. 
+          Our service securely facilitates account and profile management as well as newsletter subscriptions.
         </p>
       </div>
     </div>
@@ -99,11 +101,10 @@ const ProductPayment = () => (
           Premium Content Platform 
         </h2>
         <p className="hx-intro">
-          We offer all services for payment and billing for all customers in the Axel Springer Family.
+          Payment &amp; billing as a service
         </p>
         <p className="product-intro">
-        Create new offerings, target your audience, do payment & billing and have an easy credit management with the #1 software development tool used by various publishers.
-        Premium Content Platform is the complete process solution that empowers teams to generate and handle digital payment systems not with many, but with only one tool at all.
+          Over the past years, Axel Springer Ideas has operated a payment platform that is fully integrated with the financial infrastructure at Axel Springer. Our Premium Content Platform covers the entire process of digital payment from offering till billing and credit management.
         </p>
       </div>
     </div>
