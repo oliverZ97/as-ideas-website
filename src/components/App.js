@@ -12,16 +12,9 @@ const App = () => (
     <Switch>
       <Route exact path="/" component= {Home} />
       <Route path="/contact" component={Contact} />
-      <Route component={NoMatch} />
+      <Route component={Home} />
     </Switch>
   </Router>
-);
-
-
-const NoMatch = ({ location }) => (
-  <div>
-    404: {location.pathname}
-  </div>
 );
 
 
