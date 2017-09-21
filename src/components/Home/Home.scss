@@ -26,15 +26,55 @@
 
 .fav-element__icon-row {
   @include vertical-stack-flush-margins;
+
+  position: relative;
+  z-index: 100;
   display: flex;
   align-items: center;
-  margin: 40px 0;
+  margin: 20px 0;
+}
+
+
+.fav-element__link {
+  @include horizontal-stack-flush-margins;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width:   40px;
+  height:  40px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  
+
+  &:hover {
+    background-color: rgba($black, 0.125);
+
+
+    & .fav-element__icon {
+      fill: $deeppink;
+    }
+  }
 }
 
 
 .fav-element__icon {
   @include horizontal-stack-flush-margins;
-  margin: 0 10px;
+  fill: rgba($black, 0.88);
+}
+
+
+.fav-element__tooltip {
+  @include font-smoothing;
+
+  max-width: 160px;
+  font-family: $fontstack;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.4;
 }
 
 

@@ -1,4 +1,5 @@
 import React from "react";
+import ReactTooltip from "react-tooltip";
 import { Picture } from "react-responsive-picture";
 import { IconGlobe, IconTwitter, IconInstagram, IconNewspaper, IconPhoto } from "./../SVGSprite/SVGSprite";
 import newsfinder1x from "./newsfinder-1x.png";
@@ -10,6 +11,7 @@ import "./Home.css";
 
 const ProductNewsfinder = () => (
   <div className="l-fav-element">
+    <ReactTooltip className="fav-element__tooltip" />
     <div className="l-container">
       <div className="grid">
         <div className="col-4_xs-12" data-push-left="off-1_xs-0">
@@ -23,11 +25,22 @@ const ProductNewsfinder = () => (
             The Newsfinder allows Axel Springer employees to create dashboards with real-time overviews for hand-picked topics using keywords or hashtags. Among the wide range of sources are third-party publications, social media channels, and news by press agencies. Automated translations make it even possible to easily review foreign publications.
           </p>
           <p className="fav-element__icon-row">
-            <IconTwitter className="fav-element__icon" />
-            <IconInstagram className="fav-element__icon" />
-            <IconPhoto className="fav-element__icon" />
-            <IconNewspaper className="fav-element__icon" />
-            <IconGlobe className="fav-element__icon" />
+            <span>News sources&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <a className="fav-element__link" data-tip="A curated list of Twitter users">
+              <IconTwitter className="fav-element__icon" />
+            </a>
+            <a className="fav-element__link" data-tip="A curated list of Instagram users">
+              <IconInstagram className="fav-element__icon" />
+            </a>
+            <a className="fav-element__link" data-tip="Photo feed of news agencies">
+              <IconPhoto className="fav-element__icon" />
+            </a>
+            <a className="fav-element__link" data-tip="Selected news organizations">
+              <IconNewspaper className="fav-element__icon" />
+            </a>
+            <a className="fav-element__link" data-tip="News agencies">
+              <IconGlobe className="fav-element__icon" />
+            </a>
           </p>
         </div>
       </div>
