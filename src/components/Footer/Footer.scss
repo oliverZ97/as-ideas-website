@@ -18,9 +18,8 @@
   list-style: none;
 
   @include media("<=xs") {
-    @include vertical-stack-flush-margins;
     justify-content: center;
-    margin: 20px 0;
+    margin: 10px 0;
   }
 }
 
