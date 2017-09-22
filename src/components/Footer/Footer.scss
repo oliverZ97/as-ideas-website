@@ -95,9 +95,11 @@
   @include horizontal-stack-flush-margins;
   @include font-smoothing;
   $border-radius: 2px;
+  $border-width:  2px;
   $height: 40px;
 
   position: relative;
+  overflow: hidden;
   z-index: 0;
   display: inline-block;
   min-width: 260px;
@@ -112,10 +114,8 @@
   text-decoration: none;
   border-radius: $border-radius;
   cursor: pointer;
-  transition: $transition;
   background: $gradient-lagoon;
-  overflow: hidden;
-  transition: all 200ms ease;
+  transition: $transition;
 
   @include media("<=xs") {
     width: 100%;
@@ -131,7 +131,7 @@
   }
 
   &::before {
-    $offset: 2px;
+    $offset: $border-width;
     content: "";
     position: absolute;
     z-index: -2;
@@ -146,7 +146,7 @@
 
   &::after {
     content: "";
-    transition: all 200ms ease;
+    transition: $transition;
     position: absolute;
     z-index: -1;
     left: 0;

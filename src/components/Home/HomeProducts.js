@@ -29,7 +29,7 @@ const ProductNewsfinder = () => (
             The Newsfinder allows Axel Springer employees to create dashboards with real-time overviews for hand-picked topics using keywords or hashtags. Among the wide range of sources are third-party publications, social media channels, and news by press agencies. Automated translations make it even possible to easily review foreign publications.
           </p>
           <p className="fav-element__icon-row">
-            <span>News sources&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span>News sources&nbsp;&nbsp;</span>
             <a className="fav-element__link" data-tip="A curated list of Twitter users">
               <IconTwitter className="fav-element__icon" />
             </a>
