@@ -46,22 +46,24 @@
 }
 
 
-.padding-h-md {
-  $padding: 40px;
-  $padding-md: 30px;
-  $padding-xs: 20px;
-  padding-top: $padding;
-  padding-bottom: $padding;
+.margin-h-md {
+  @include vertical-stack-flush-margins;
+  
+  $margin: 40px;
+  $margin-md: 30px;
+  $margin-xs: 20px;
+  margin-top: $margin !important;
+  margin-bottom: $margin !important;
 
-  @include media("<=xs") {
-    padding-top: $padding-xs;
-    padding-bottom: $padding-xs;
-  }
+  // @include media("<=xs") {
+  //   padding-top: $padding-xs;
+  //   padding-bottom: $padding-xs;
+  // }
 
-  @include media("<=md", ">=xs") {
-    padding-top: $padding-md;
-    padding-bottom: $padding-md;
-  }
+  // @include media("<=md", ">=xs") {
+  //   padding-top: $padding-md;
+  //   padding-bottom: $padding-md;
+  // }
 }
 
 

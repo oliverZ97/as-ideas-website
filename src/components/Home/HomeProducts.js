@@ -14,7 +14,7 @@ const ProductNewsfinder = () => (
     <ReactTooltip className="fav-element__tooltip" />
     <div className="l-container">
       <div className="grid-noGutter-noBottom">
-        <div className="col-4_sm-12" data-push-left="off-1_sm-0">
+        <div className="col-4_sm-10_xs-12" data-push-left="off-1_xs-0">
           <h2 className="h1">
             Newsfinder
           </h2>
