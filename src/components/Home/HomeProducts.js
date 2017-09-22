@@ -11,7 +11,7 @@ import "./Home.css";
 
 const ProductNewsfinder = () => (
   <div className="l-fav-element">
-    <ReactTooltip className="fav-element__tooltip" />
+    <ReactTooltip className="fav-element__tooltip" offset="{'top': 10}"/>
     <div className="l-container">
       <div className="grid-noGutter-noBottom">
         <div className="col-4_sm-10_xs-12" data-push-left="off-1_xs-0">

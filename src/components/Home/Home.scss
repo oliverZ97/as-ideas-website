@@ -47,12 +47,10 @@
   padding: 10px;
   cursor: pointer;
   border-radius: 50%;
-  
+  transition: all 250ms ease;
 
   &:hover {
     background-color: rgba($black, 0.125);
-
-
     & .fav-element__icon {
       fill: $deeppink;
     }
