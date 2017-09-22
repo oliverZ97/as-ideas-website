@@ -10,7 +10,7 @@
  *
  */
 
-.contact__image-container {
+.contact__img-box {
   position: relative;
 
   &::after {
@@ -26,34 +26,14 @@
 }
 
 
-.contact__image {
+.contact__img {
   width: 100%;
   height: auto;
 }
 
 
-.contact__text-container {
-  $border-color: rgba($black, 0.08);
-  display: flex !important;  // overrule gridlex grid framework
-  justify-content: center;
-  align-items: center;
-  min-height: 120px;
-  border-top: 1px solid $border-color;
-  border-bottom: 1px solid $border-color;
-
-  @include media("<=sm") {
-    min-height: 60px;
-    padding: 0 10px !important;
-    border-bottom: none;
-    
-    &:last-child {
-      border-bottom: 1px solid $border-color;
-    }
-  }
-}
-
-
-.contact__text {
+@mixin contact__txt {
+  
   @include vertical-stack-flush-margins;
 
   font-family: $fontstack-mono;
@@ -68,18 +48,9 @@
   @include media("<=md") {
     font-size: 14px;
   }
-  
-  @include media("<=sm") {
-    flex: 1;
-    font-weight: 300;
-  }
 
-  &:hover:not(span):not(p) {
-    border-bottom-color: $black;
-    
-    @include media("<=sm") {
-      border-bottom-color: transparent;
-    }
+  @include media("<=sm") {
+    font-weight: 300;
   }
 
   &--sm {
@@ -92,17 +63,54 @@
 }
 
 
+.contact__txt {
+  @include contact__txt;
+}
+
+
+.contact__link {
+  @include contact__txt;
+
+  &:hover {
+    border-bottom-color: $black;
+    
+    @include media("<=sm") {
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+
+.contact__txt-intro {
+  @include vertical-stack-flush-margins;
+  @include font-smoothing;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+
+  @include media("<=xs") {
+    font-size: 16px;
+  }
+}
+
+
+.contact__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 25px;
+  margin-right: 5px;
+}
+
+
 .contact__icon {
   @include horizontal-stack-flush-margins;
   
-  margin: 0 15px;
   height: 16px;
   width:  auto;
   fill: rgba($deeppink, 0.88);
 
-  @include media("<=md") {
-    height: 16px;
-  }
 
   @include media("<=sm") {
     height: 14px;
@@ -110,11 +118,40 @@
 }
 
 
-.contact__text-lg {
+.contact__list {
   @include vertical-stack-flush-margins;
-  @include font-smoothing;
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+  padding: 0;
 
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.4;
+  @include media("<=sm") {
+    display: block;
+  }
+}
+
+
+.contact__list-item {
+  $border-color: rgba($black, 0.08);
+  $border: 1px solid $border-color;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  width: 25%;
+  border-top: $border;
+  border-bottom: $border;
+
+  @include media("<=sm") {
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 50px;
+    padding: 20px;
+    border-bottom: none;
+    
+    &:last-child {
+      border-bottom: $border
+    }
+  }
 }

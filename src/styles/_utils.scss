@@ -128,3 +128,11 @@
 .no-wrap {
   white-space: nowrap;
 }
+
+
+.block-100-sm {
+  @include media("<=sm") {
+    display: block;
+    width: 100%;
+  }
+}
