@@ -47,10 +47,10 @@
   padding: 10px;
   cursor: pointer;
   border-radius: 50%;
-  transition: all 250ms ease;
+  transition: $transition;
 
   &:hover {
-    background-color: rgba($black, 0.125);
+    background-color: rgba($black, 0.08);
     & .fav-element__icon {
       fill: $deeppink;
     }
@@ -61,18 +61,19 @@
 .fav-element__icon {
   @include horizontal-stack-flush-margins;
   fill: rgba($black, 0.88);
+  transition: $transition;
 }
 
 
 .fav-element__tooltip {
   @include font-smoothing;
 
-  max-width: 160px;
+  padding: 10px 12px !important;
   font-family: $fontstack;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 13px !important;
+  font-weight: 400;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.33;
 }
 
 
