@@ -40,7 +40,7 @@
   left: 0;
   bottom: 0;
 
-  @include media("<=xs") {
+  @include media("<=sm") {
     position: relative;
   }
 }

@@ -13,8 +13,8 @@ const ProductNewsfinder = () => (
   <div className="l-fav-element">
     <ReactTooltip className="fav-element__tooltip" />
     <div className="l-container">
-      <div className="grid">
-        <div className="col-4_xs-12" data-push-left="off-1_xs-0">
+      <div className="grid-noGutter-noBottom">
+        <div className="col-4_sm-12" data-push-left="off-1_sm-0">
           <h2 className="h1">
             Newsfinder
           </h2>
@@ -46,7 +46,7 @@ const ProductNewsfinder = () => (
       </div>
     </div>
     <div className="grid-noGutter-noBottom grid-posAbsolute-bottom">
-      <div className="col-6_xs-12" data-push-left="off-6_xs-0">
+      <div className="col-6_sm-12" data-push-left="off-6_sm-0">
         <div className="fav-element__image-section">
           <Picture
             sources = {[
