@@ -10,7 +10,7 @@ const NavItem = ({ name, link, hasActiveState, cssAddon, pathname }) => {
   const itemCSSAddon = cssAddon !== undefined ? `main-nav__item--${cssAddon}` : "";
   const linkCSSAddon = cssAddon !== undefined ? `main-nav__item-link--${cssAddon}` : "";
   
-  // ActiveState describes wheater our nav items have a visible active state or not
+  // Add CSS depending on ActiveState, which describes wheater our nav items have a visible active state or not
   const linkCSSActiveState = hasActiveState === false ? "" : `main-nav__item-link--is-active`;
   
   return activeRoute ? (
