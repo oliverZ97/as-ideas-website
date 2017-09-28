@@ -14,17 +14,17 @@ const NavItem = ({ name, link, hasActiveState, cssAddon, pathname }) => {
   const linkCSSActiveState = hasActiveState === false ? "" : `main-nav__item-link--is-active`;
   
   return activeRoute ? (
-    <li className={`main-nav__item ${itemCSSAddon}`}>
-      <span className={`main-nav__item-link main-nav__item-link--is-active-route ${linkCSSActiveState} ${linkCSSAddon}`}>
+    <li className={`main-nav__item ${itemCSSAddon}`.trim()}>
+      <span className={`main-nav__item-link main-nav__item-link--is-active-route ${linkCSSActiveState} ${linkCSSAddon}`.trim()}>
         {name}
       </span>
     </li>
   ) 
   :
   (
-    <li className={`main-nav__item ${itemCSSAddon}`}>
+    <li className={`main-nav__item ${itemCSSAddon}`.trim()}>
       <Link 
-        className={`main-nav__item-link ${linkCSSAddon}`} 
+        className={`main-nav__item-link ${linkCSSAddon}`.trim()} 
         to={link}
       >
         {name}
