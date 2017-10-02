@@ -24,6 +24,6 @@ export const ContactHero = ({pathname}) => (
   <Hero 
     wrapped={HeroContent}
     pathname={pathname}
-    cssClassAddon="light"
+    cssAddon="light"
   /> 
 );

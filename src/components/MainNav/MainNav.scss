@@ -95,14 +95,14 @@
     }
 
 
-    &--active {
+    &--is-active {
       &::after {
         background-color: $white;
       }
     }
 
 
-    &:hover:not(&--active) {
+    &:hover:not(&--is-active-route) {
       &::after {
         background-color: rgba($white, 0.25);
       }
@@ -116,14 +116,14 @@
 
 
     &--light {
-      &.main-nav__item-link--active {
+      &.main-nav__item-link--is-active {
         &::after {
           background-color: $black;
         }
       }
 
 
-      &:hover:not(.main-nav__item-link--active) {
+      &:hover:not(.main-nav__item-link--is-active) {
         &::after {
           background-color: rgba($black, 0.25);
         }

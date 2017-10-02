@@ -9,7 +9,7 @@ import "./Contact.css";
 
 export const Content = () => {
   return (
-    <div class="contact">
+    <div className="contact">
       <div className="l-container l-container--no-gutter">
         <div className="contact__img-box">
           <Picture
