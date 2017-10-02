@@ -53,11 +53,9 @@ class HeroContentHome extends Component {
               We are Ideas engineering
             </h1>
             <p className="hero-intro">
-              We are a studio of developers, designers and product people. 
-              We focus to build software for the Axel Springer family. 
-              We are a lab and a platform. 
-              We combine technology and agile thinking to create great products. 
-              And we love to start with a prototype.
+              We are a studio of developers, designers, and product people.
+              We focus on building software for the Axel Springer family.
+              We combine technology and agile thinking to create great products.
             </p>
           </div>
         </div>

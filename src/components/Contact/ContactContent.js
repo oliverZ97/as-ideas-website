@@ -26,19 +26,20 @@ export const Content = () => {
         <div className="grid-noGutter-spaceAround">
           <div className="col-10_sm-12">
             <p className="contact__txt-intro">
-              Axel Springer Ideas was founded in 2013 as an in-house incubator. 
-              Our early years were characterized by agile development, rapid growth, and a constantly changing company structure. 
-              One part of the team was focused on founding startups, whereas the other part developed software services for various Axel Springer companies. 
-              After two years, more than 10 of these ideas grew out of Axel Springer Ideas into individual products or companies such as Celepedia, The Iconist, and Upday. 
-              This success led to a realignment, and we decided to focus on our fundamental DNA elements: Ideas and Engineering. 
-              That allowed us to do what we do best: develop software and products.
+              Axel Springer Ideas Engineering was founded in 2013 as an in-house Incubator for the Axel Springer Group.
+              Our early years were characterized by rapid growth and a continually evolving organizational structure.
+              While one part of the team focused on founding Start-ups, the other part focused on developing software services for various Axel Springer companies.
+              After only two years more than 10 of our original ideas grew into individual products or companies such as Celepedia, The Iconist, and Upday.
+              Such success led to a realignment of our vision, and we decided to focus on our core DNA: Ideas and Engineering. 
+              Doing so allowed us to do what we do best: develop software and products.
             </p>
             <p className="contact__txt-intro">
-              We have developed a digital payment platform that enabled BILD.de and WELT.de to step into the world of paid content. 
-              Since 19x we've facilitated millions of payments for digital content. 
-              In parallel, we develop software solutions and services around digital content. 
-              We are specialized on automated metadata enrichment for videos and pictures. 
-              That allows us to offer products like Newsfinder, a personalized real-time news overview, for our journalist colleagues within Axel Springer.
+                Since then the organization has matured rapidly.
+                We’ve gone on to develop a digital payment platform that enabled BILD.de and WELT.de to step into the world of paid content.
+                Millions of payments transactions for digital content have been handled by our platform ever since.
+                In parallel, we’ve developed numerous software solutions and services for digital content. 
+                We have gone on to master the art of automated metadata enrichment for videos and pictures. 
+                Such specialized skills have allowed us to offer products like Newsfinder; a personalized real-time news overview catered specifically for our journalist colleagues within the Axel Springer group.
             </p>
             <p className="contact__txt-intro">
               We turn your ideas into great products.

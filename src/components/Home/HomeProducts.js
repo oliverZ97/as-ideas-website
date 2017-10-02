@@ -23,10 +23,12 @@ const ProductNewsfinder = () => (
             Newsfinder
           </h2>
           <p className="hx-intro">
-            Personalised real-time overview of your topics
+            A personalized and real-time news overview
           </p>
           <p className="product-intro">
-            The Newsfinder allows Axel Springer employees to create dashboards with real-time overviews for hand-picked topics using keywords or hashtags. Among the wide range of sources are third-party publications, social media channels, and news by press agencies. Automated translations make it even possible to easily review foreign publications.
+            The Newsfinder app allows Axel Springer employees to create real-time overviews for hand-picked topics using keywords or hashtags.
+            Among the wide range of sources are third-party publications, social media channels, and news from press agencies.
+            Automated translations make it possible to review foreign publications easily.
           </p>
           <p className="fav-element__icon-row">
             <span>News sources&nbsp;&nbsp;</span>
@@ -78,10 +80,11 @@ const ProductCEP = () => (
           Content Exchange Platform 
         </h2>
         <p className="hx-intro">
-          Get in contact with your colleagues worldwide and exchange content using our platform.
+          A worldwide platform to exchange content
         </p>
         <p className="product-intro">
-          Axel Springer has more than 15.000 editors across the globe. We have an enormous content stream varying from classic newspapers and advertorials till blogs and digital video platforms. The Content Exchange Plattform enables sharing content within the Axel Springer family.
+          Axel Springer has more than 15.000 editors across the globe producing an enormous stream of content ranging from traditional newspapers and advertorials to blogs and digital video platforms.
+          The Content Exchange Platform enables the sharing of content within the Axel Springer group.
         </p>
       </div>
     </div>
@@ -97,12 +100,11 @@ const ProductSSO = () => (
           Single Sign-on
         </h2>
         <p className="hx-intro">
-          We offer all services around registration and login for all customers in the Axel Springer Family.
+          All services for user account management
         </p>
         <p className="product-intro">
-          We are the full-service operator for Axel Springer's Single Sign-On service. 
-          We successfully manage approximately half a million active users, of which approximately 100,000 are active on a daily basis. 
-          Our service securely facilitates account and profile management as well as newsletter subscriptions.
+         We are the full-service operator for Axel Springer's Single Sign-On service. We successfully manage half a million active users, of which 100,000 are active on a daily basis.
+         Our service securely facilitates the complete account and profile management as well as newsletter subscriptions.
         </p>
       </div>
     </div>
@@ -121,7 +123,8 @@ const ProductPayment = () => (
           Payment &amp; billing as a service
         </p>
         <p className="product-intro">
-          Over the past years, Axel Springer Ideas has operated a payment platform that is fully integrated with the financial infrastructure at Axel Springer. Our Premium Content Platform covers the entire process of digital payment from offering till billing and credit management.
+          For seven years Axel Springer Ideas is operating and developing Axel Springer's payment platform that is fully integrated with the corporate financial infrastructure.
+          Our Premium Content Platform covers the entire process of digital payment from offering till billing and credit management.
         </p>
       </div>
     </div>
