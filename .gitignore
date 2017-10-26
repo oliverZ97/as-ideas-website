@@ -1,23 +1,16 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
+node_modules/
+coverage/
+build/
 
-# dependencies
-/node_modules
+# IntelliJ
+.idea/
+.iml
 
-# testing
-/coverage
-
-# production
-/build
-
-# misc
+# MAC
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
+# debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-src/**/*.css
