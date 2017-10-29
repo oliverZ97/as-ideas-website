@@ -4,8 +4,6 @@
   "private": true,
   "dependencies": {
     "glamor": "^2.20.40",
-    "gridlex": "^2.4.1",
-    "include-media": "^1.4.9",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.1.1",
     "react": "^16.0.0",

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'BPdots-Light';
+    src: url('BPdots-Light.ttf.woff') format('woff'),
+    url('BPdots-Light.ttf.svg#BPdots-Light') format('svg'),
+    url('BPdots-Light.ttf.eot'),
+    url('BPdots-Light.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: black;
+}
+
+.app-wrapper {
+    padding: 0 12px;
+
+    max-width: 1000px;
+    margin: auto;
+}
+
+.only-big-screen {
+
+}

@@ -1,0 +1,68 @@
+@import "../settings.scss";
+
+.l-home {
+    background: white;
+
+    .slide {
+        min-height: 100vh;
+    }
+
+    .slide__oneliner {
+        background: black;
+        color: white;
+
+        .oneliner-text {
+            font-family: 'BPdots-Light';
+            font-size: 14.2vw;
+            line-height: 95%;
+            padding: 36px 1vw 0 8.5vw;
+            text-transform: uppercase;
+
+            @media screen and (min-width: $breakPointBig) {
+                font-size: 160px;
+                padding: 36px 0 0 0;
+                line-height: 20vh;
+            }
+        }
+    }
+
+    .slide__slogan {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        .slogan-text {
+            max-width: 60vw;
+            font-size: 22px;
+        }
+    }
+
+    .slide__products {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+
+        .product-box {
+            margin: 22px 6px;
+            flex: 1 1 400px;
+            display: flex;
+            flex-direction: column;
+
+            .product-title {
+                font-size: 12px;
+                text-transform: uppercase;
+                padding-bottom: 14px;
+            }
+
+            .product-image img {
+                max-width: 100%;
+            }
+
+            .product-text {
+                position: relative;
+                padding: 10px;
+            }
+        }
+    }
+}
