@@ -11,6 +11,7 @@
     "react-responsive-picture": "^2.0.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14",
+    "react-scroll": "^1.6.4",
     "react-tooltip": "^3.3.0",
     "sanitize.css": "^5.0.0",
     "typed.js": "^2.0.5"
