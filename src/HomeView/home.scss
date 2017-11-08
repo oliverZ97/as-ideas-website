@@ -12,7 +12,7 @@
         color: white;
 
         .oneliner-text {
-            font-family: 'BPdots-Light';
+            font-family: 'FoundryPlek-Light';
             font-size: 14.2vw;
             line-height: 95%;
             padding: 36px 1vw 0 8.5vw;
@@ -55,14 +55,46 @@
                 padding-bottom: 14px;
             }
 
-            .product-image img {
-                max-width: 100%;
+            .product-image-wrapper {
+
+                // to overlay both, the wrapper is 'relative', the childs are 'absolute'
+                position: relative;
+                .product-text {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: #403cd9;
+                    opacity: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: auto;
+                    @include transition(opacity .8s ease-in-out);
+
+                    &:hover {
+                        opacity: 0.9;
+                        transition: none;
+
+                        // TODO try this out: filter: alpha(opacity=50);
+                    }
+
+                    .product-text__inner {
+                        color: white;
+                        font-size: 18px;
+                        //position: relative;
+                        //top: 25%;
+                        //bottom: 25%;
+
+                        margin: auto;
+                        max-width: 60%;
+                    }
+                }
+
+                .product-image {
+                    max-width: 100%;
+                }
             }
 
-            .product-text {
-                position: relative;
-                padding: 10px;
-            }
         }
     }
 }

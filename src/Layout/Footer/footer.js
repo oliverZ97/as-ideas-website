@@ -7,35 +7,40 @@ import "./footer.css"
 class Footer extends React.Component {
     render() {
         return (
-            <div id="footer" className="footer wide content-container">
-                <div className="footer__row">
+            <footer className="footer">
+                <div className="footer__first-row">
                     <div className="footer__column col1">
-                        {/*<img src={require('./images/mobility-hacks-ci-logo.svg')}/>*/}
+                        <div className="footer-logo">
+                            x
+                        </div>
                     </div>
                     <div className="footer__column col2 col-with-text not-xs">
-                        <h1>sitemap</h1>
+                        <h2>sitemap</h2>
                         <div className="footer__list">
-                            <NavLink spy={true} smooth={true} to="home">Home</NavLink>
-                            <NavLink spy={true} smooth={true} to="get-your-ticket">Service</NavLink>
-                            <NavLink spy={true} smooth={true} to="why-mobility">Portfolio</NavLink>
-                            <NavLink spy={true} smooth={true} to="sponsors">Culture</NavLink>
-                            <NavLink spy={true} smooth={true} to="prizes">Work with us</NavLink>
+                            <NavLink to="home">Home</NavLink>
+                            <NavLink to="get-your-ticket">Service</NavLink>
+                            <NavLink to="why-mobility">Portfolio</NavLink>
+                            <NavLink to="sponsors">Culture</NavLink>
+                            <NavLink to="prizes">Work with us</NavLink>
                             <a href="http://www.hackerstolz.de/impressum/">Impressum</a>
                         </div>
                     </div>
                     <div className="footer__column col3 col-with-text not-xs">
-                        <h1>partners</h1>
+                        <h2>partners</h2>
                         <div className="footer__list">
                             <a href="http://www.bvg.de" rel="noopener noreferrer" target="_blank">Github</a>
-                            <a href="https://www.ergo.de" rel="noopener noreferrer" target="_blank">medium</a>
+                            <a href="https://www.ergo.de" rel="noopener noreferrer" target="_blank">Twitter</a>
+                            <a href="https://www.linkedin.com/company/axel-springer-ideas-engineering" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+                            <a href="https://www.ergo.de" rel="noopener noreferrer" target="_blank">Facebook</a>
+                            <a href="https://www.ergo.de" rel="noopener noreferrer" target="_blank">Medium</a>
                         </div>
                     </div>
                     <div className="footer__column col4 col-with-text not-xs">
-                        <h1>contact</h1>
+                        <h2>contact</h2>
                         <div className="footer__list">
-                            <div>Axel Springer Ideas Engineering GmbH</div>
-                            <div>Axel-Springer-Str. 65, 10969 Berlin</div>
-                            <div>+49-30-259178100</div>
+                            <p>Axel Springer Ideas Engineering GmbH</p>
+                            <p>Axel-Springer-Str. 65, 10969 Berlin</p>
+                            <p>+49-30-259178100</p>
                             <a href="mailto:hello@asideas.de">hello@asideas.de</a>
                         </div>
                     </div>
@@ -45,7 +50,7 @@ class Footer extends React.Component {
                         <h1>We are hiring! If you're interested, drop us a line or two.</h1>
                     </div>
                 </div>
-            </div>
+            </footer>
         );
     }
 }

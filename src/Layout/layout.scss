@@ -1,11 +1,38 @@
+// HINT: https://css-tricks.com/snippets/css/using-font-face/#article-header-id-2
+// ttf+woff1/2 supports Chrome 3.5, Safari 3, FF3.5, IE9, Android 2.2, iOS 4.3
 @font-face {
-    font-family: 'BPdots-Light';
-    src: url('BPdots-Light.ttf.woff') format('woff'),
-    url('BPdots-Light.ttf.svg#BPdots-Light') format('svg'),
-    url('BPdots-Light.ttf.eot'),
-    url('BPdots-Light.ttf.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'FoundryPlek-Light';
+    src: url('./fonts/FoundryPlek-Light.ttf') format('truetype'),
+    url('./fonts/FoundryPlek-Light.woff') format('woff'),
+    url('./fonts/FoundryPlek-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SimplonNorm';
+    src: url('./fonts/SimplonNorm.ttf') format('truetype'),
+    url('./fonts/SimplonNorm.woff') format('woff'),
+    url('./fonts/SimplonNorm.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SimplonNorm-Light';
+    src: url('./fonts/SimplonNorm-Light.ttf') format('truetype'),
+    url('./fonts/SimplonNorm-Light.woff') format('woff'),
+    url('./fonts/SimplonNorm-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SimplonNorm-Medium';
+    src: url('./fonts/SimplonNorm-Medium.ttf') format('truetype'),
+    url('./fonts/SimplonNorm-Medium.woff') format('woff'),
+    url('./fonts/SimplonNorm-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SimplonNorm-Bold';
+    src: url('./fonts/SimplonNorm-Bold.ttf') format('truetype'),
+    url('./fonts/SimplonNorm-Bold.woff') format('woff'),
+    url('./fonts/SimplonNorm-Bold.woff2') format('woff2');
 }
 
 body {

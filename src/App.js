@@ -1,7 +1,8 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Layout from "./Layout";
-import Home from "./Home";
+import Home from "./HomeView";
+import Culture from "./CultureView";
 
 import "sanitize.css";
 
@@ -10,6 +11,7 @@ const App = () => (
         <Layout>
             <Switch>
                 <Route exact path="/" component={Home}/>
+                <Route path="/culture" component={Culture}/>
                 <Route component={Home}/>
             </Switch>
         </Layout>

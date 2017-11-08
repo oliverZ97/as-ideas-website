@@ -1,40 +1,59 @@
-@import "../settings.scss";
+@import "./../../settings.scss";
 
 .footer {
-    padding: 10px;
-    @media screen and (min-width: $breakPointMedium) {
-        padding: 80px 35px;
-    }
+    color: white;
+    padding: 20px 12px 0 12px;
+
+    //@media screen and (min-width: $breakPointMedium) {
+    //    padding: 80px 35px;
+    //}
     &.wide {
         margin-bottom: 0;
         padding-bottom: 0;
     }
-    .footer__row {
+
+    .footer__first-row {
         display: flex;
         flex-wrap: wrap;
+
+        h2 {
+            font-weight: 600;
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        a, p {
+            color: white;
+            text-decoration: none;
+            text-transform: none;
+            display: block;
+            margin: auto;
+            padding: 4px 0;
+            font-size: 10px;
+            opacity: 0.4;
+        }
+
+        a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
         .footer__column {
             text-align: left;
+
             .footer__list {
-                a {
-                    display: block;
-                    padding-left: 0;
-                    text-transform: none;
-                    padding: 3px 0;
-                    font-size: 13px;
-                    opacity: 0.6;
-                }
+
             }
+
             &.col1 {
-                flex: 0 0 auto;
-                width: 450px;
-                padding-left: 20px;
-                @media screen and (max-width: $breakPointMedium) {
-                    flex: 2 0 auto;
-                    width: 100%;
-                    text-align: center;
-                    padding-left: 0;
-                    padding-top: 20px;
-                }
+                flex: 2 0 auto;
+                //@media screen and (max-width: $breakPointMedium) {
+                //    flex: 2 0 auto;
+                //    width: 100%;
+                //    text-align: center;
+                //    padding-left: 0;
+                //    padding-top: 20px;
+                //}
             }
             &.col2 {
                 flex: 1 0 auto;
@@ -59,15 +78,15 @@
     }
     .footer__second-row {
         text-align: left;
-        margin-top: 60px;
+        margin-top: 20px;
         margin-left: 470px;
         padding-right: 40px;
+
         @media screen and (max-width: $breakPointBig) {
             margin-left: 120px;
         }
         @media screen and (max-width: $breakPointSmall) {
-            margin: 0;
-            margin-top: 24px;
+            margin: 24px 0 0 0;
             padding: 0 24px;
         }
     }
@@ -76,19 +95,6 @@
         @media screen and (max-width: $breakPointSmall) {
             font-size: 18px;
             margin-bottom: 0;
-        }
-    }
-    .footer__third-row {
-        a.left, a.right {
-            font-size: 12px;
-            text-transform: none;
-            padding: 30px 30px;
-        }
-        .left {
-            float: left;
-        }
-        .right {
-            float: right;
         }
     }
 }

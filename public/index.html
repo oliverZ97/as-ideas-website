@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
@@ -20,11 +20,26 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Ideas Engineering</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-  </body>
+
+    <!-- TEALIUM -->
+    <script type="text/javascript">
+        (function (a, b, c, d) {
+            a = '//tags.tiqcdn.com/utag/axelspringer/asideas-asideas.de/prod/utag.js';
+            b = document;
+            c = 'script';
+            d = b.createElement(c);
+            d.src = a;
+            d.type = 'text/java' + c;
+            d.async = true;
+            a = b.getElementsByTagName(c)[0];
+            a.parentNode.insertBefore(d, a);
+        })();
+    </script>
+</head>
+<body>
+<noscript>
+    You need to enable JavaScript to run this app.
+</noscript>
+<div id="root"></div>
+</body>
 </html>
