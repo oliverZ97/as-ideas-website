@@ -1,4 +1,5 @@
 import React from "react";
+import HowCanWeHelp from "./HowCanWeHelp";
 
 import "./home.css"
 
@@ -18,23 +19,7 @@ const Home = () => {
 
             </div>
 
-            <div id="how-can-we-help-you" className="slide slide__how-can-we-help-you">
-                <div className="slide-content">
-
-                    <h1>How can we help you?</h1>
-SOFTWARE AS A SERVICE
-                    You need a big software solution? We are willing to be your partner in development and operating your customised software solution.
-
-                    WORKSHOPS
-                    Just wanna test the waters with a prototype before making the investment?  We offer the perfect toolset for creating prototypes that fary your ideas.
-
-                    PILOT PROJECTS
-                    Do you have tons of questions, but not sure where to turn? We offer technology consultations for companies in need of advice.
-
-                    TECHNOLOGY ADVISORS
-                    You need a big software solution? We are willing to be your partner in development and operating your customised software solution.
-                </div>
-            </div>
+            <HowCanWeHelp />
 
             <div id="portfolio" className="slide slide__portfolio">
                 <div className="slide-content">

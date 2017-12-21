@@ -10,6 +10,7 @@
         .slide-content {
             margin: auto;
             max-width: 1000px;
+            width: 100%;
             padding: 12px;
         }
     }
@@ -50,12 +51,12 @@
     }
 
     .slide__how-can-we-help-you {
-        background-color: $background-color-black;
-        color: $text-color-white;
-
         display: flex;
         align-content: center;
         justify-content: center;
+        padding: 80px 20px;
+        background-color: $background-color-black;
+        color: $text-color-white;
 
         h1 {
 
@@ -133,4 +134,31 @@
 
         }
     }
+}
+
+.slide__heading {
+    margin: 0 0 60px 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.slide__section-heading {
+    opacity: 0.8;
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.slide__text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.slide__item {
+    padding: 20px 0;
 }
