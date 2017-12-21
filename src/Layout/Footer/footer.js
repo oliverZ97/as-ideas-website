@@ -8,10 +8,10 @@ class Footer extends React.Component {
     render() {
         return (
             <footer className="footer">
-                <div className="footer__first-row">
+                <div className="footer-container">
                     <div className="footer__column col1">
-                        <div className="footer-logo">
-                            x
+                        <div className="">
+                            <span className="col1-text">We are hiring!<br/> If you're interested,<br/> drop us a line or two.</span>
                         </div>
                     </div>
                     <div className="footer__column col2 col-with-text not-xs">
@@ -43,11 +43,6 @@ class Footer extends React.Component {
                             <p>+49-30-259178100</p>
                             <a href="mailto:hello@asideas.de">hello@asideas.de</a>
                         </div>
-                    </div>
-                </div>
-                <div className="">
-                    <div className="footer__second-row">
-                        <h1>We are hiring! If you're interested, drop us a line or two.</h1>
                     </div>
                 </div>
             </footer>
