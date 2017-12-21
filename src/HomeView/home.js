@@ -150,7 +150,6 @@ const Home = () => {
                     group.
 
 
-
                     Get in touch with us.
                     We turn your ideas into great products.
                 </div>

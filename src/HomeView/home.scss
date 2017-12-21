@@ -58,20 +58,40 @@
         background-color: $background-color-black;
         color: $text-color-white;
 
-        h1 {
+        .slide-content {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: wrap;
 
-        }
+            .service-header {
+                text-align: center;
+                flex: 1 0 100%;
+                margin-bottom: 50px;
 
-        .service-box {
-            h2 {
-
+                h1 {
+                    font-family: "SimplonNorm-Bold";
+                    font-size: 17px;
+                }
             }
 
-            p {
+            .service-box {
+                flex: 0 0 400px;
 
+                h2 {
+                    font-family: "SimplonNorm-Bold";
+                    font-size: 12px;
+                }
+
+                p {
+                    font-family: "SimplonNorm";
+                    font-size: 21px;
+                    padding-right: 36px;
+                    padding-bottom: 36px;
+                }
             }
         }
-
     }
 
     .slide__portfolio {
