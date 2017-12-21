@@ -42,10 +42,9 @@ body {
 }
 
 .app-wrapper {
-    padding: 0 12px;
-
-    max-width: 1000px;
-    margin: auto;
+    .content {
+        margin: auto;
+    }
 }
 
 .only-big-screen {
