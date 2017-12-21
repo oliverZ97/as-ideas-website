@@ -21,18 +21,28 @@ const Home = () => {
             <div id="how-can-we-help-you" className="slide slide__how-can-we-help-you">
                 <div className="slide-content">
 
+                    <div className="service-header">
                     <h1>How can we help you?</h1>
-SOFTWARE AS A SERVICE
-                    You need a big software solution? We are willing to be your partner in development and operating your customised software solution.
+                    </div>
+                        <div className="service-box">
+                        <h2>SOFTWARE AS A SERVICE</h2>
+                        <p>You need a big software solution? We are willing to be your partner in development and operating your customised software solution.</p>
+                    </div>
 
-                    WORKSHOPS
-                    Just wanna test the waters with a prototype before making the investment?  We offer the perfect toolset for creating prototypes that fary your ideas.
+                    <div className="service-box">
+                        <h2>WORKSHOPS</h2>
+                        <p>Just wanna test the waters with a prototype before making the investment? We offer the perfect toolset for creating prototypes that fary your ideas.</p>
+                    </div>
 
-                    PILOT PROJECTS
-                    Do you have tons of questions, but not sure where to turn? We offer technology consultations for companies in need of advice.
+                    <div className="service-box">
+                        <h2>PILOT PROJECTS</h2>
+                        <p>Do you have tons of questions, but not sure where to turn? We offer technology consultations for companies in need of advice.</p>
+                    </div>
 
-                    TECHNOLOGY ADVISORS
-                    You need a big software solution? We are willing to be your partner in development and operating your customised software solution.
+                    <div className="service-box">
+                        <h2>TECHNOLOGY ADVISORS</h2>
+                        <p>You need a big software solution? We are willing to be your partner in development and operating your customised software solution.</p>
+                    </div>
                 </div>
             </div>
 
@@ -163,7 +173,6 @@ SOFTWARE AS A SERVICE
                     news overview catered specifically for our
                     journalist colleagues within the Axel Springer
                     group.
-
 
 
                     Get in touch with us.
