@@ -2,16 +2,17 @@ import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./HomeView";
-import Culture from "./CultureView";
+import Impressum from "./ImpressumView";
 
 import "sanitize.css";
+
 
 const App = () => (
     <Router>
         <Layout>
             <Switch>
                 <Route exact path="/" component={Home}/>
-                <Route path="/culture" component={Culture}/>
+                <Route path="/culture" component={Impressum}/>
                 <Route component={Home}/>
             </Switch>
         </Layout>

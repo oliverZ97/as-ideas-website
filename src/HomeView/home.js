@@ -5,10 +5,6 @@ import "./home.css"
 const Home = () => {
     return (
         <div className="l-home">
-            <div className="slide slide__oneliner">
-                <div className="oneliner-text">We are coding<br/>the future of media</div>
-            </div>
-
             <div id="services" className="slide slide__slogan">
                 <div className="slogan-text">
                     We are a studio of developers, designers and product
@@ -93,6 +89,10 @@ const Home = () => {
                     </div>
 
                 </div>
+            </div>
+
+            <div className="slide slide__oneliner">
+                <div className="oneliner-text">We are coding<br/>the future of media</div>
             </div>
         </div>
     )

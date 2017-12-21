@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./culture.css"
+import "./impressum.scss"
 
-const Home = () => {
+const Impressum = () => {
     return (
         <div className="l-culture">
             <div className="slide slide__oneliner">
@@ -18,4 +18,4 @@ const Home = () => {
 };
 
 
-export default Home;
+export default Impressum;
