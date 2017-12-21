@@ -1,3 +1,5 @@
+@import "../settings.scss";
+
 // HINT: https://css-tricks.com/snippets/css/using-font-face/#article-header-id-2
 // ttf+woff1/2 supports Chrome 3.5, Safari 3, FF3.5, IE9, Android 2.2, iOS 4.3
 @font-face {
@@ -36,7 +38,7 @@
 }
 
 body {
-    background: black;
+    background: $background-color-black;
 }
 
 .app-wrapper {

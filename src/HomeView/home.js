@@ -15,6 +15,10 @@ const Home = () => {
                 </div>
             </div>
 
+            <div id="how-can-we-help-you" className="slide slide__how-can-we-help-you">
+                <h1>How can we help you?</h1>
+            </div>
+
             <div id="portfolio" className="slide slide__products">
                 <div className="product-box">
                     <div className="product-title">Newsfinder</div>

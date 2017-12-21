@@ -8,7 +8,7 @@
     }
 
     .slide__oneliner {
-        background: black;
+        background: $background-color-black;
         color: white;
 
         .oneliner-text {
@@ -27,15 +27,24 @@
     }
 
     .slide__slogan {
+        font-family: 'SimplonNorm-Light';
+        color: $text-color-black;
+        font-size: 36px;
+
         display: flex;
         align-items: center;
         justify-content: center;
         margin: auto;
         text-align: center;
+
         .slogan-text {
             max-width: 60vw;
-            font-size: 22px;
         }
+    }
+
+    .slide__how-can-we-help-you {
+        background-color: $background-color-black;
+        color: $text-color-white;
     }
 
     .slide__products {
