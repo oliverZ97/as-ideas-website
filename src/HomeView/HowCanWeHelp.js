@@ -19,7 +19,7 @@ const data = [
     },
     {
         heading: "Workshops",
-        text: "You want to test something? We offer the skills and resources to build a prototype that faries your idea. Blabla"
+        text: "You want challenge your ideas? We offer the skills and resources to bring bring your problem to the next level."
     }
 ];
 

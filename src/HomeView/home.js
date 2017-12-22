@@ -12,11 +12,7 @@ const Home = () => {
             <div id="services" className="slide slide__slogan">
                 <div className="slide-content">
                     <div className="slogan-text">
-                        We are Ideas, a studio of developers, designers and
-                        product owners. We focus on building software for media.
-                        We create tons of code, prototype in fast iterations, and
-                        design outstanding products people can’t help but love.
-                        Trust us, we are engineers.
+                        We are a studio of developers, designers and product people. We focus on building software for the media industry. We combine technology and agile thinking to create great products people can’t help but love.
                     </div>
                 </div>
 
