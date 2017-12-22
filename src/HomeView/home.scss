@@ -16,37 +16,58 @@
     }
 
     .slide__oneliner {
+        position: relative;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 80px 20px;
         background: $background-color-black;
         color: white;
 
-        .oneliner-text {
+        .oneliner-quote {
+            padding: 20px;
             font-family: 'FoundryPlek-Light';
-            font-size: 14.2vw;
-            line-height: 95%;
-            padding: 36px 1vw 0 8.5vw;
+            font-size: 64px;
+            line-height: 1.3333;
             text-transform: uppercase;
+            text-align: center;
+            quotes: "“" "”" "‘" "’";
+
+            &:before {
+                content: open-quote;
+            }
+
+            &:after {
+                content: close-quote;
+            }
 
             @media screen and (min-width: $breakPointBig) {
-                font-size: 160px;
-                padding: 36px 0 0 0;
-                line-height: 20vh;
+                font-size: 64px;
+                line-height: 1.3333;
             }
+        }
+
+        .oneliner-quoted-by {
+            margin: 80px 0;
+            font-size: 16px;
+            line-height: 1.3333;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
         }
     }
 
     .slide__slogan {
-        font-family: 'SimplonNorm-Light';
-        color: $text-color-black;
-        font-size: 36px;
-
         display: flex;
         align-items: center;
         justify-content: center;
         margin: auto;
-        text-align: center;
 
         .slogan-text {
-            max-width: 60vw;
+            font-family: 'SimplonNorm-Light';
+            color: $text-color-black;
+            font-size: 36px;
+            text-align: center;
         }
     }
 
@@ -101,15 +122,16 @@
         padding: 10px;
 
         .product-box {
-            margin: 22px 6px;
-            flex: 1 1 400px;
             display: flex;
             flex-direction: column;
+            margin: 20px 0;
+            cursor: pointer;
 
             .product-title {
-                font-size: 12px;
-                text-transform: uppercase;
                 padding-bottom: 14px;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
             }
 
             .product-image-wrapper {
@@ -126,24 +148,20 @@
                     align-items: center;
                     justify-content: center;
                     margin: auto;
-                    @include transition(opacity .8s ease-in-out);
+                    @include transition(opacity 600ms ease-in-out);
 
                     &:hover {
                         opacity: 0.9;
-                        transition: none;
-
-                        // TODO try this out: filter: alpha(opacity=50);
+                        @include transition(opacity 100ms ease-in-out);
+                        
+                        // transition: none;
                     }
 
                     .product-text__inner {
-                        color: white;
+                        padding: 40px;
                         font-size: 18px;
-                        //position: relative;
-                        //top: 25%;
-                        //bottom: 25%;
-
-                        margin: auto;
-                        max-width: 60%;
+                        line-height: 1.5;
+                        color: white;
                     }
                 }
 
