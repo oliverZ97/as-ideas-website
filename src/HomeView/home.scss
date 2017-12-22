@@ -4,7 +4,7 @@
     background: white;
 
     .slide {
-        min-height: 100vh;
+        min-height: 75vh;
         width: 100%;
 
         .slide-content {
@@ -119,7 +119,7 @@
         background: white;
         display: flex;
         flex-wrap: wrap;
-        padding: 10px;
+        padding: 80px 20px;
 
         .product-box {
             display: flex;
@@ -191,6 +191,19 @@
     letter-spacing: 1.5px;
 }
 
+.slide__section-intro {
+    opacity: 0.5;
+    margin: 0 0 10px 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.slide__section-hero {
+    font-family: "SimplonNorm-Bold";
+    font-size: 42px;
+}
+
 .slide__text {
     margin: 0;
     font-size: 18px;
@@ -199,4 +212,37 @@
 
 .slide__item {
     padding: 20px 0;
+}
+
+.image-foo {
+
+}
+
+.slide--culture {
+    padding: 80px 20px;
+}
+
+.culture-image {
+    @media screen and (max-width: $breakMd) {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.shift-up-100 {
+    position: relative;
+    top: -100px;
+
+    @media screen and (max-width: $breakMd) {
+        top: 0;
+    }
+}
+
+.shift-up-200 {
+    position: relative;
+    top: -200px;
+
+    @media screen and (max-width: $breakMd) {
+        top: 0;
+    }
 }

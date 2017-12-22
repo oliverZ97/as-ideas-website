@@ -55,7 +55,7 @@ const ProductItem = ({type, data}) => {
 const Portfolio = () => {
     return (
         <div id="portfolio" className="slide slide__portfolio">
-            <div className="slide-content grid-spaceAround">
+            <div className="slide-content grid-spaceAround-noGutter">
                 <div className="col-5_sm-12">
                     <ProductItem type="i" data={data[0]} />
                 </div>
