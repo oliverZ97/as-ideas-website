@@ -16,9 +16,23 @@
     background: white;
     color: $text-color-black;
 
+    @media screen and (max-width: $breakMd) {
+        position: relative;
+        height: auto;
+    }
+
     .header-container {
-        // height = 70px -36xp Logo
-        margin: 17px auto auto auto;
+        margin: 20px auto auto auto;
+
+        @media screen and (max-width: $breakMd) {
+            margin: 0;
+        }
+
+        @media screen and (max-width: $breakMd) {
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid;
+        }
 
         .nav-link {
             display: inline-block;
@@ -27,6 +41,11 @@
             text-decoration: none;
             text-transform: uppercase;
 
+            @media screen and (max-width: $breakMd) {
+                display: block;
+                margin: 20px auto;
+            }
+
             &.active {
                 text-decoration: underline;
             }
@@ -34,6 +53,11 @@
 
         .logo-container {
             display: inline-block;
+
+            @media screen and (max-width: $breakMd) {
+                order: -1;
+                margin: 20px 0;
+            }
 
             .logo-link {
                 margin: 0 10px;
