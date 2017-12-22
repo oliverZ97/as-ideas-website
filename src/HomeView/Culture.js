@@ -68,7 +68,7 @@ const Culture = () => {
                         </p>
                     </div>
 
-                    <div className="col-10_sm-12" data-push-left="off-2_sm-0">
+                    <div id="work-with-us" className="col-10_sm-12" data-push-left="off-2_sm-0">
                         <p className="slide__section-hero">
                             Get in touch with us.<br />
                             We turn your ideas into great products.
