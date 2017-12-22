@@ -23,13 +23,15 @@ const data = [
     }
 ];
 
-const Items = ({items}) => {
-    return items.map((item, index) => {
-        return (
-            <Item key={index} item={item} index={index} />
-        )
-    });
-}
+const HowCanWeHelpItems = ({items}) => {
+    const ItemList = items.map((item, index) => <Item key={index} item={item} index={index} />);
+        
+    return (
+        <div className="grid-spaceBetween">
+            {ItemList}
+        </div>
+    );
+};
 
 const Item = ({item, index}) => {
     const Spacer = () => {
@@ -37,7 +39,7 @@ const Item = ({item, index}) => {
             return <div className="col-1_sm-hidden" />
         }
         return null
-    }
+    };
     
     return (
         <Fragment>
@@ -61,12 +63,10 @@ const HowCanWeHelp = () => {
                 <h1 className="slide__heading">
                     How can we help you?
                 </h1>
-                <div className="grid-spaceBetween">
-                    <Items items={data} />
-                </div>
+                <HowCanWeHelpItems items={data} />
             </div>
         </div>
-    )
+    );
 };
 
 
