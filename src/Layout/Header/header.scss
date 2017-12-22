@@ -40,6 +40,7 @@
             width: 100px;
             text-decoration: none;
             text-transform: uppercase;
+            cursor: pointer;
 
             @media screen and (max-width: $breakMd) {
                 display: block;
