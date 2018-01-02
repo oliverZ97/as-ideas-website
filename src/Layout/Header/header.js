@@ -1,5 +1,4 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
 import {Link} from "react-scroll";
 
 import "./header.css"
@@ -19,7 +18,7 @@ const Header = () => {
                 <div className="logo-container">
                     <Link spy={true} smooth={true} hashSpy={true}
                           to="home" className="logo-link" activeClass="active">
-                        <img src={require('./ideas_logo.svg')}/>
+                        <img src={require('./ideas_logo.svg')} alt="" />
                     </Link>
                 </div>
                 <Link spy={true} smooth={true} hashSpy={true}

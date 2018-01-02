@@ -1,6 +1,4 @@
 import React from "react";
-import {Link} from "react-router-dom";
-
 import "./footer.css";
 import "./../../../node_modules/gridlex/dist/gridlex.min.css";
 
@@ -12,7 +10,7 @@ class Footer extends React.Component {
                 <div className="footer-container grid-spaceBetween">
                     <div className="col-4_xs-12">
                         <h2>We are hiring</h2>
-                        <a href='https://career.axelspringer.com/jobangebote/#"ideas engineering"' target="_blank">Jobportal</a>
+                        <a href='https://career.axelspringer.com/jobangebote/#"ideas engineering"' target="_blank" rel="noopener noreferrer">Jobportal</a>
                     </div>
                     <div className="col-4_xs-12">
                         <h2>Contact / Imprint</h2>
