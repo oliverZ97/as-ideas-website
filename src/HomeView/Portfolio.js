@@ -17,7 +17,7 @@ const data = [
     },
     {
         title: "Premium Content Platform",
-        text: "For seven years Axel Springer Ideas is operating and developing Axel Springer's payment platform that is fully integrated with the corporate financial infrastructure. Our Premium Content Platform covers the entire process of digital payment from offering till billing and credit management."
+        text: "For four years Axel Springer Ideas is operating and developing Axel Springer's payment platform that is fully integrated with the corporate financial infrastructure. Our Premium Content Platform covers the entire process of digital payment from offering till billing and credit management."
     },
 ];
 
