@@ -78,12 +78,24 @@ $breakMd: 768px;
     transition-delay: $delay;
 }
 
+// USAGE: @extend %clearfix; from http://nicolasgallagher.com/micro-clearfix-hack/
+%clearfix {
+    *zoom: 1;
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
 @mixin remove-horizontal-margins {
     &:first-of-type {
         margin-top: 0;
     }
 
     &:last-of-type {
-        margin-bottom: 0;    
+        margin-bottom: 0;
     }
 }
