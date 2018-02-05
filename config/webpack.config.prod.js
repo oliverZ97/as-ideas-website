@@ -254,7 +254,7 @@ module.exports = {
                         // https://github.com/facebookincubator/create-react-app/issues/2677
                         ident: 'postcss',
                         plugins: () => [
-                          require('tailwindcss')('./src/config/tailwind-config.js'),
+                          require('tailwindcss')('./src/tailwind-config.js'),
                           require('postcss-flexbugs-fixes'),
                           // Removes CSS classes duplicates
                           // Needs OptimizeCssAssetsPlugin in plugins section

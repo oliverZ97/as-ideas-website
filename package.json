@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "history": "^4.7.2",
+    "marked": "^0.3.12",
+    "md5": "^2.2.1",
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
@@ -39,6 +42,7 @@
     "react": "^16.2.0",
     "react-dev-utils": "^5.0.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
     "react-easy-swipe": "^0.0.13",
     "react-google-maps": "^9.4.5",
     "react-lazyload": "^2.3.0",
