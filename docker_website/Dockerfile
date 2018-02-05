@@ -8,7 +8,6 @@ EXPOSE 80
 
 # Update
 RUN apt-get update
-RUN apt-get -yqq install curl
 
 # Stupid cache... NO CACHE FROM HERE ON
 ARG CACHE_DATE=not_a_date
