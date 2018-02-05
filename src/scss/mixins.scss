@@ -1,0 +1,32 @@
+/*
+|-----------------------------------------------------------------------------
+| Mixins                                  
+|-----------------------------------------------------------------------------
+|
+| Contains my SASS mixins ...
+|
+*/
+
+
+/*
+|-----------------------------------------------------------------------------
+| Font Smoothing Mixin                                  
+|-----------------------------------------------------------------------------
+|
+| Better font rendering in browsers, sometimes...
+| htt ps://gist.github.com/hsleonis/55712b0eafc9b25f1944
+|
+*/
+
+@mixin font-smoothing($value: "on") {
+  @if ($value == "on") {
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+  } @else {
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+  }
+}

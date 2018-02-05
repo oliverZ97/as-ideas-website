@@ -1,0 +1,7 @@
+/**
+ * Purgecss CSS Whitelist
+ *
+ * Add CSS classes below to ensure these styles won't be purged from your final CSS bundle
+ * Configure PurgeCSS in Webpack's prod config, see scripts in ./config/ folder,
+ * webpack.config.prod.js > PurgecssPlugin > whitelister
+ */
