@@ -34,11 +34,7 @@ Nach der Rundführung wurden wir in mehrere Gruppen aufgeteilt – einige wurden
 
 In der prallen Sonne haben wir nicht nur den kompletten Speisesaal neu gestrichen, sondern auch einen der Kinderbereiche und den kompletten Außensockel. Unterstützt wurden wir dabei von einer Malerfirma, die gezeigt hat, wie es richtig funktioniert und worauf man achten muss.
 
-[![V9Vw3_F2yXuqz5](V9Vw3_F2yXuqz5.jpg)](http://www.axelspringerideas.de/blog/index.php/2016/08/14/social-day-2016-die-arche-hellersdorf/v9vw3_f2yxuqz5/)
-
-[![OLYMPUS DIGITAL CAMERA](20160722-115425-20160722-115425-P7220155.jpg)](http://www.axelspringerideas.de/blog/index.php/2016/08/14/social-day-2016-die-arche-hellersdorf/olympus-digital-camera-4/)
-
-[![nE7cKonBj9QWHe](nE7cKonBj9QWHe.jpg)](http://www.axelspringerideas.de/blog/index.php/2016/08/14/social-day-2016-die-arche-hellersdorf/ne7ckonbj9qwhe/)
+### ![V9Vw3_F2yXuqz5](V9Vw3_F2yXuqz5.jpg) ![OLYMPUS DIGITAL CAMERA](20160722-115425-20160722-115425-P7220155.jpg) ![nE7cKonBj9QWHe](nE7cKonBj9QWHe.jpg)
 
 Das Sommerfest
 ==============
@@ -63,25 +59,13 @@ Dafür wurde eine große Hüpfburg aufgebaut, wir haben gegrillt, Waffeln geback
 
 Da die Spielstationen für vier Stunden betrieben wurden, gab es bei der Menge an Kindern auch keine Pausen für uns, sodass ich persönlich am Ende ordentlich geschafft war. Aber es hat sich gelohnt, auch dank dem direkten Kontakt zu so vielen tollen Kindern.
 
-## [![8PvjIx7ck3cYhI](8PvjIx7ck3cYhI-300x225.jpg)](http://www.axelspringerideas.de/blog/index.php/2016/08/14/social-day-2016-die-arche-hellersdorf/8pvjix7ck3cyhi/)
+### ![](8PvjIx7ck3cYhI.jpg) ![](335RbBE3Qit2Jz.jpg) ![](13709858_10206964347009626_179425492231055806_n.jpg)
 
-[![335RbBE3Qit2Jz](335RbBE3Qit2Jz-300x225.jpg)](http://www.axelspringerideas.de/blog/index.php/2016/08/14/social-day-2016-die-arche-hellersdorf/335rbbe3qit2jz/)
+### ![](sSxrPZmaN3_l2I.jpg) ![](lqGY03sbQeuJHU.jpg) ![](LriDyhFpNqMKFg.jpg)
 
-[![13709858_10206964347009626_179425492231055806_n](13709858_10206964347009626_179425492231055806_n-300x225.jpg)](http://www.axelspringerideas.de/blog/index.php/2016/08/14/social-day-2016-die-arche-hellersdorf/13709858_10206964347009626_179425492231055806_n/)
+### ![](IG_EBjK6AE1hTW.jpg) ![](IMG_4997.jpg) ![](hDlwinJdIWuyeH.jpg)
 
-## [![sSxrPZmaN3_l2I](sSxrPZmaN3_l2I-300x225.jpg)](http://www.axelspringerideas.de/blog/index.php/2016/08/14/social-day-2016-die-arche-hellersdorf/ssxrpzman3_l2i/)
-
-[![lqGY03sbQeuJHU](lqGY03sbQeuJHU-300x225.jpg)](http://www.axelspringerideas.de/blog/index.php/2016/08/14/social-day-2016-die-arche-hellersdorf/lqgy03sbqeujhu/)
-
-[![LriDyhFpNqMKFg](LriDyhFpNqMKFg-300x225.jpg)](http://www.axelspringerideas.de/blog/index.php/2016/08/14/social-day-2016-die-arche-hellersdorf/lridyhfpnqmkfg/)
-
-## [![IG_EBjK6AE1hTW](IG_EBjK6AE1hTW-225x300.jpg)](http://www.axelspringerideas.de/blog/index.php/2016/08/14/social-day-2016-die-arche-hellersdorf/ig_ebjk6ae1htw/)
-
-[![IMG_4997](IMG_4997-300x225.jpg)](http://www.axelspringerideas.de/blog/index.php/2016/08/14/social-day-2016-die-arche-hellersdorf/img_4997/)
-
-[![hDlwinJdIWuyeH](hDlwinJdIWuyeH-225x300.jpg)](http://www.axelspringerideas.de/blog/index.php/2016/08/14/social-day-2016-die-arche-hellersdorf/hdlwinjdiwuyeh/)
-
-## [![h8_m7YL8D2vQqj](h8_m7YL8D2vQqj-300x225.jpg)](http://www.axelspringerideas.de/blog/index.php/2016/08/14/social-day-2016-die-arche-hellersdorf/h8_m7yl8d2vqqj/)
+### ![](h8_m7YL8D2vQqj.jpg)
 
 Die Hauptpreise fand ich etwas überdimensioniert für junge Kinder, aber es hat für eine hohe Teilnahme gesorgt. Ich hoffe ich kann mich jetzt korrekt an die Preise erinnern:
 
