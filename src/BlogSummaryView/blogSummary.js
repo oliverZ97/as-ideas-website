@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 import "./blogSummary.css";
 import posts from "./blog-posts.js";
 
@@ -16,9 +17,9 @@ class BlogSummary extends React.Component {
                                             <img src={post.url + '/' + post.titlePicture} alt={post.title}/>
                                         </div>
                                         <div className="articel-summary-right">
-                                            <a className="article-title" href={post.url}>
+                                            <NavLink className="article-title" to={post.url}>
                                                 {post.title}
-                                            </a>
+                                            </NavLink>
                                             <div className="article-meta">
                                                 {post.month}.{post.year} | von {post.author}
                                             </div>

@@ -56,7 +56,7 @@ class BlogPost extends React.Component {
             <div className="blog-post">
                 <div id="preview" className="markdown-body"/>
 
-                <div id="disqus_thread"></div>
+                <div id="disqus_thread"/>
             </div>
         )
     }
