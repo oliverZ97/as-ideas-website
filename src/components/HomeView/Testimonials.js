@@ -1,6 +1,6 @@
 import React from "react";
 import Swipe from 'react-easy-swipe';
-import { CSSTransition } from 'react-transition-group';
+import {CSSTransition} from 'react-transition-group';
 import "./Testimonials.scss";
 
 
@@ -46,9 +46,9 @@ const testimonialQuotations = [
 /**
  * Fade HOC for wrapping CSS Transitions, see:
  * https://reactcommunity.org/react-transition-group/
- * @param {*} param0 
+ * @param {*} param0
  */
-const Fade = ({ children, ...props }) => (
+const Fade = ({children, ...props}) => (
     <CSSTransition
         {...props}
         timeout={500}
@@ -96,9 +96,9 @@ class Testimonials extends React.Component {
                                 testimonialQuotations.map((item, index) => {
                                     let className = "testimonial-dot mx-1 cursor-pointer bg-grey-2 w-12 h-2";
                                     return (
-                                        <div 
-                                            onClick={this.goTo.bind(this, index)} 
-                                            key={index} 
+                                        <div
+                                            onClick={this.goTo.bind(this, index)}
+                                            key={index}
                                             className={this.state.activeItem === index ? `active ${className}` : `${className}`}
                                         />
                                     );
@@ -130,10 +130,10 @@ class Testimonials extends React.Component {
             activeItem: activeItem
         });
     }
-    
+
     /**
      * Go to a slide
-     * @param {number} index 
+     * @param {number} index
      */
     goTo(index) {
         let activeItem = (index > testimonialQuotations.length - 1) ? 0 : index;
@@ -144,7 +144,7 @@ class Testimonials extends React.Component {
     }
 
     /**
-     * Start looping through slides 
+     * Start looping through slides
      */
     startLoop() {
         this.endLoop();
@@ -181,7 +181,7 @@ class Testimonials extends React.Component {
     }
 
     /**
-     * React lifecycle methods 
+     * React lifecycle methods
      */
     componentDidMount() {
         this.startLoop();

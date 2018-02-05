@@ -14,58 +14,56 @@
 
 @tailwind preflight;
 
- /**
-  * Here you would add any of your custom component classes; stuff that you'd
-  * want loaded *before* the utilities so that the utilities could still
-  * override them.
-  *
-  * Example:
-  *
-  * .btn { ... }
-  * .form-input { ... }
-  *
-  * Or if using a preprocessor or `postcss-import`:
-  *
-  * @import "components/buttons";
-  * @import "components/forms";
-  */
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
 
- /**
-  * This injects all of Tailwind's utility classes, generated based on your
-  * config file.
-  *
-  * If using `postcss-import`, you should import this line from it's own file:
-  *
-  * @import "./tailwind-utilities.css";
-  *
-  * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
-  */
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, you should import this line from it's own file:
+ *
+ * @import "./tailwind-utilities.css";
+ *
+ * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
+ */
 @tailwind utilities;
 
- /**
-  * Here you would add any custom utilities you need that don't come out of the
-  * box with Tailwind.
-  *
-  * Example :
-  *
-  * .bg-pattern-graph-paper { ... }
-  * .skew-45 { ... }
-  *
-  * Or if using a preprocessor or `postcss-import`:
-  *
-  * @import "utilities/background-patterns";
-  * @import "utilities/skew-transforms";
-  */
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
 
 @import "./assets/mixins";
 @import "./assets/settings";
 
-
 html {
-  @include font-smoothing;
-  @apply font-sans;
+    @include font-smoothing;
+    @apply font-sans;
 }
-
 
 /**
  * Scale images in responsive context, see:
@@ -73,17 +71,16 @@ html {
  * https://teamtreehouse.com/community/maxwidth-instead-of-width-css-property-using-images
  */
 img {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
-
 
 /**
  * Set CSS filter for images, 
  * 
  */
 .filter-contrast-8\/10 {
-  filter: contrast(80%);
+    filter: contrast(80%);
 }
 

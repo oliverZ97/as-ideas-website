@@ -114,9 +114,9 @@ const posts = [
 ];
 
 posts.forEach((post) => {
-    post.url = `/blog/${post.year}/${post.month}/${post.name}`;
+    post.url = `/blog/${post.year}/${post.month}/${post.name}/`;
     post.authorPictureUrl = `//www.gravatar.com/avatar/${md5(post.authorEmail.toLowerCase())}`;
-    post.permalink = "http://axelspringerideas.de" +  post.url;
+    post.permalink = "http://axelspringerideas.de" + post.url;
     post.id = md5(post.name);
 });
 

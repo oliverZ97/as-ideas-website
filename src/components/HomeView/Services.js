@@ -21,28 +21,28 @@ const servicesText = {
 };
 
 
-const ServiceHeading = ({ children }) => (
+const ServiceHeading = ({children}) => (
     <h2 className="mb-4 text-12 font-bold text-white uppercase leading-normal tracking-wide opacity-75">
         {children}
     </h2>
 );
 
 
-const ServiceText = ({ children }) => (
+const ServiceText = ({children}) => (
     <p className="text-20 text-white leading-normal">
         {children}
     </p>
 )
 
 
-const ServiceItemGrid = ({ children }) => (
+const ServiceItemGrid = ({children}) => (
     <div className="max-w-2xl flex flex-wrap lg:-mx-16 xl:-mx-16">
         {children}
     </div>
 )
 
 
-const ServiceItem = ({ children }) => (
+const ServiceItem = ({children}) => (
     <div className="w-1/2 my-4 px-16 sm:w-full sm:mb-8 sm:px-0 md:px-6">
         {children}
     </div>
@@ -50,7 +50,7 @@ const ServiceItem = ({ children }) => (
 
 
 const Services = () => (
-    <div 
+    <div
         id="services"
         className="flex justify-center items-center min-h-screen-90 px-24 py-16 bg-grey-10 sm:min-h-0 sm:px-6 md:px-6"
     >
@@ -64,7 +64,7 @@ const Services = () => (
                     <ServiceText>{servicesText.saas.text}</ServiceText>
                 </ServiceItem>
                 <ServiceItem>
-                     <ServiceHeading>{servicesText.technologyAdvisors.title}</ServiceHeading>
+                    <ServiceHeading>{servicesText.technologyAdvisors.title}</ServiceHeading>
                     <ServiceText>{servicesText.technologyAdvisors.text}</ServiceText>
                 </ServiceItem>
                 <ServiceItem>

@@ -1,5 +1,5 @@
 import React from "react";
-import { IdeasLogoPartI as IdeasLogoImgI, IdeasLogoPartO as IdeasLogoImgO } from './../../assets/svg';
+import {IdeasLogoPartI as IdeasLogoImgI, IdeasLogoPartO as IdeasLogoImgO} from './../../assets/svg';
 import "./Portfolio.scss";
 
 
@@ -23,18 +23,18 @@ const PortfolioText = {
 };
 
 
-const IdeasLogoPartI = <IdeasLogoImgI className="portfolio-item__bg w-full h-full" />
-const IdeasLogoPartO = <IdeasLogoImgO className="portfolio-item__bg w-full h-full" />
+const IdeasLogoPartI = <IdeasLogoImgI className="portfolio-item__bg w-full h-full"/>
+const IdeasLogoPartO = <IdeasLogoImgO className="portfolio-item__bg w-full h-full"/>
 
 
-const PortfolioItemRow = ({ children }) => (
+const PortfolioItemRow = ({children}) => (
     <div className="max-w-2xl flex justify-center w-full -mx-8 my-8 md:flex-wrap md:mx-4 md:my-0 sm:flex-wrap sm:mx-4 sm:my-0">
         {children}
     </div>
 );
 
 
-const PortfolioItem = ({ data, bg, bgColor }) => (
+const PortfolioItem = ({data, bg, bgColor}) => (
     <div className="portfolio-item overflow-hidden flex flex-col w-1/2 max-w-sm px-8 md:w-full md:max-w-sm md:px-12 md:py-4 sm:w-full sm:max-w-xs sm:px-0 sm:py-4">
         <h1 className="mb-4 font-normal text-20">
             {data.title}
@@ -53,21 +53,21 @@ const PortfolioItem = ({ data, bg, bgColor }) => (
 
 const Portfolio = () => (
     <div
-        id="portfolio"  
+        id="portfolio"
         className="flex flex-col justify-center items-center min-h-screen-90 px-4 py-16 sm:min-h-0 sm:px-4 md:px-6"
     >
         <h1 className="mx-auto mb-24 text-24 font-normal text-center uppercase tracking-wide sm:mb-10 sm:text-20 md:text-20">
             A Selection of our Projects
         </h1>
         <PortfolioItemRow>
-            <PortfolioItem data={PortfolioText.newsfinder} bg={IdeasLogoPartI} bgColor="bg-darkblue" />
-            <PortfolioItem data={PortfolioText.contentExchange} bg={IdeasLogoPartO} bgColor="bg-grey-10" />
+            <PortfolioItem data={PortfolioText.newsfinder} bg={IdeasLogoPartI} bgColor="bg-darkblue"/>
+            <PortfolioItem data={PortfolioText.contentExchange} bg={IdeasLogoPartO} bgColor="bg-grey-10"/>
         </PortfolioItemRow>
         <PortfolioItemRow>
-            <PortfolioItem data={PortfolioText.singleSignOn} bg={IdeasLogoPartO} bgColor="bg-grey-10" />
-            <PortfolioItem data={PortfolioText.premiumContentPlatform} bg={IdeasLogoPartI} bgColor="bg-darkblue" />
+            <PortfolioItem data={PortfolioText.singleSignOn} bg={IdeasLogoPartO} bgColor="bg-grey-10"/>
+            <PortfolioItem data={PortfolioText.premiumContentPlatform} bg={IdeasLogoPartI} bgColor="bg-darkblue"/>
         </PortfolioItemRow>
-  </div>
+    </div>
 );
 
 

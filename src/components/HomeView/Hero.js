@@ -5,7 +5,7 @@ const heroText = "We are a studio of developers, designers and product people. W
 
 
 const Hero = () => (
-    <div 
+    <div
         id="hero"
         className="flex items-center justify-center min-h-screen-90 p-24 sm:min-h-0 sm:p-12 sm:pt-24"
     >

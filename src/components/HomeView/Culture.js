@@ -3,11 +3,10 @@ import Testimonials from "./Testimonials";
 import OurStory from "./OurStory";
 
 
-
 const Culture = () => (
     <div id="culture">
-        <Testimonials />
-        <OurStory />
+        <Testimonials/>
+        <OurStory/>
     </div>
 );
 

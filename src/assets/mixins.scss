@@ -7,7 +7,6 @@
 |
 */
 
-
 /*
 |-----------------------------------------------------------------------------
 | Font Smoothing Mixin                                  
@@ -19,14 +18,14 @@
 */
 
 @mixin font-smoothing($value: "on") {
-  @if ($value == "on") {
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
-  } @else {
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: auto;
-    -webkit-font-smoothing: auto;
-  }
+    @if ($value == "on") {
+        text-rendering: optimizeLegibility;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    } @else {
+        text-rendering: optimizeLegibility;
+        -moz-osx-font-smoothing: auto;
+        -webkit-font-smoothing: auto;
+    }
 }
