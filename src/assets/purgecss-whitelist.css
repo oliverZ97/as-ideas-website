@@ -5,3 +5,6 @@
  * Configure PurgeCSS in Webpack's prod config, see scripts in ./config/ folder,
  * webpack.config.prod.js > PurgecssPlugin > whitelister
  */
+.markdown-body {
+
+}
