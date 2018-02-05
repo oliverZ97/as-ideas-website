@@ -36,7 +36,7 @@ class BlogPost extends React.Component {
             this.page.identifier = post.id;
         };
 
-        let url = `${post.url}.md`;
+        let url = `${post.markdownUrl}`;
         fetch(url)
             .then((response) => {
                 return response.text();
