@@ -1,0 +1,29 @@
+.blog-summary {
+  background: white;
+  min-height: 100vw;
+  margin: auto;
+  padding: 90px 50px; }
+  .blog-summary .article-index {
+    max-width: 1000px;
+    margin: auto; }
+  .blog-summary .article-item {
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #A2A0A2; }
+    .blog-summary .article-item .articel-summary-left {
+      flex: 0 0 380px; }
+      .blog-summary .article-item .articel-summary-left img {
+        max-width: 380px;
+        max-height: 320px;
+        min-width: 100%; }
+    .blog-summary .article-item .articel-summary-right {
+      flex: 1 1 auto;
+      padding: 12px; }
+      .blog-summary .article-item .articel-summary-right .article-title {
+        text-decoration: none;
+        color: #2B2B2B;
+        font-size: 2rem;
+        font-weight: bold; }
+      .blog-summary .article-item .articel-summary-right .article-meta {
+        font-size: .8rem; }
