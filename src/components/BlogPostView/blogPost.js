@@ -1,6 +1,6 @@
 import React from "react";
-import "./blogPost.css";
-import "./marked.css";
+import "./blogPost.scss";
+import "./marked.scss";
 import marked from "marked";
 import posts from "./../BlogSummaryView/blog-posts.js";
 

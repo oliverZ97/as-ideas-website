@@ -1,12 +1,14 @@
 import React from 'react';
-import {Link} from 'react-scroll';
+import {Link, scroller, animateScroll} from "react-scroll";
+import {NavLink} from "react-router-dom";
+import history from "./history";
 
 import {IdeasLogo, IconBurger} from './../../assets/svg';
 import './MainNav.scss';
 
 
 const MainNav = ({children}) => (
-    <nav className="fixed z-20 flex items-stretch justify-between w-full h-16 bg-white-transparent-9/10 sm:block sm:h-auto">
+    <nav id="main-nav" className="fixed z-20 flex items-stretch justify-between w-full h-16 bg-white-transparent-9/10 sm:block sm:h-auto">
         {children}
     </nav>
 );
@@ -19,7 +21,7 @@ const MainNavCenter = ({children}) => (
 );
 
 
-const MainNavItemLink = ({children, target, className, activeClass}) => (
+const MainNavItemLink = ({children, target, className, activeClass, onClick}) => (
     <Link
         to={target}
         offset={-64} // See browser dev tool and check value of padding/margin for target container, in this case 4rem (64px)   
@@ -28,14 +30,16 @@ const MainNavItemLink = ({children, target, className, activeClass}) => (
         smooth={true}
         duration={350}
         spy={true}
+        onClick={onClick}
     >
         {children}
     </Link>
 );
 
 
-const MainNavItem = ({children, className}) => (
-    <div className={`flex justify-between items-center px-4 text-14 font-bold text-black no-underline sm:p-3 ${className}`}>
+const MainNavItem = ({children, className, onClick}) => (
+    <div className={`flex justify-between items-center px-4 text-14 font-bold text-black no-underline sm:p-3 ${className}`} onClick={onClick}
+    >
         {children}
     </div>
 );
@@ -59,6 +63,35 @@ class MainNavComponent extends React.Component {
         this.setState({
             offCanvasHidden: true
         })
+    }
+
+    onClickNavLink() {
+        // this is a small hack because NavLink and Link do not really work good together
+        // and we need to disable the last 'active' Link
+        let activeElements = document.querySelectorAll('.mainNavItemHasBorder');
+        for (let i = 0; i < activeElements.length; i++) {
+            activeElements[i].classList.remove('mainNavItemHasBorder');
+        }
+
+        window.setTimeout(() => {
+            animateScroll.scrollToTop();
+        }, 250);
+    }
+
+    onClickScrollLink(to) {
+        if (history.location.pathname !== '/') {
+            history.push('/#' + to);
+            window.setTimeout(() => {
+                scroller.scrollTo(to, {
+                    spy: true,
+                    smooth: true,
+                    hashSpy: true,
+                    isDynamic: true,
+                    offset: -64
+                });
+
+            }, 250);
+        }
     }
 
     render() {
@@ -85,28 +118,37 @@ class MainNavComponent extends React.Component {
                 <MainNavCenter>
                     <MainNavItemLink
                         target="services"
+                        onClick={(e) => this.onClickScrollLink('portfolio', e)}
                         activeClass="mainNavItemHasBorder"
                     >
                         Services
                     </MainNavItemLink>
-                    <MainNavItemLink
-                        target="portfolio"
-                        activeClass="mainNavItemHasBorder"
+                    <NavLink
+                        to='/blog'
+                        offset={-64} // See browser dev tool and check value of padding/margin for target container, in this case 4rem (64px)
+                        className={`mainNavItem mainNavItemHasBorderOnHover flex justify-center items-center px-4 text-12 font-bold text-black uppercase tracking-wide no-underline cursor-pointer sm:justify-start sm:p-3 lg:min-w-24 xl:min-w-24`}
+                        activeClassName='mainNavItemHasBorder'
+                        onClick={this.onClickNavLink.bind(this)}
                     >
-                        Portfolio
-                    </MainNavItemLink>
-                    <MainNavItem className="sm:hidden md:hidden">
+                        Blog
+                    </NavLink>
+
+                    <MainNavItem
+                        onClick={(e) => this.onClickScrollLink('home', e)}
+                        className="sm:hidden md:hidden">
                         <IdeasLogo/>
                     </MainNavItem>
                     <MainNavItemLink
                         target="culture"
                         activeClass="mainNavItemHasBorder"
+                        onClick={(e) => this.onClickScrollLink('culture', e)}
                     >
                         Culture
                     </MainNavItemLink>
                     <MainNavItemLink
                         target="contact"
                         activeClass="mainNavItemHasBorder"
+                        onClick={(e) => this.onClickScrollLink('contact', e)}
                     >
                         Contact
                     </MainNavItemLink>
