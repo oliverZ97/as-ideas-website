@@ -1,5 +1,5 @@
 import React from "react";
-import { IdeasLogoPartI as IdeasLogoImgI, IdeasLogoPartO as IdeasLogoImgO } from './../Shared/Svg/Svg';
+import { IdeasLogoPartI as IdeasLogoImgI, IdeasLogoPartO as IdeasLogoImgO } from './../../assets/svg';
 import "./Portfolio.scss";
 
 

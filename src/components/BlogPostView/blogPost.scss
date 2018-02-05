@@ -1,0 +1,32 @@
+@import "../settings.scss";
+
+.blog-post {
+
+    background: white;
+    min-height: 100vw;
+    margin: auto;
+    padding: 90px 50px;
+    max-width: 1000px;
+
+    .markdown-body {
+        h2, h3, h4, h5, h6 {
+            img {
+                max-width: 32%;
+                padding: 2px;
+            }
+        }
+
+        img {
+            max-height: 500px;
+        }
+
+        p {
+            img {
+                display: block;
+                margin: auto;
+            }
+        }
+
+    }
+
+}

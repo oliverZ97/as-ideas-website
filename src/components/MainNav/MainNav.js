@@ -1,29 +1,29 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+import {Link} from 'react-scroll';
 
-import { IdeasLogo, IconBurger } from './../Svg/Svg';
+import {IdeasLogo, IconBurger} from './../../assets/svg';
 import './MainNav.scss';
 
 
-const MainNav = ({ children }) => (
+const MainNav = ({children}) => (
     <nav className="fixed z-20 flex items-stretch justify-between w-full h-16 bg-white-transparent-9/10 sm:block sm:h-auto">
         {children}
     </nav>
 );
 
 
-const MainNavCenter = ({ children }) => (
+const MainNavCenter = ({children}) => (
     <div className="flex items-stretch justify-center sm:hidden">
         {children}
     </div>
 );
 
 
-const MainNavItemLink = ({ children, target, className, activeClass }) => (
-    <Link 
+const MainNavItemLink = ({children, target, className, activeClass}) => (
+    <Link
         to={target}
         offset={-64} // See browser dev tool and check value of padding/margin for target container, in this case 4rem (64px)   
-        className={`mainNavItem mainNavItemHasBorderOnHover flex justify-center items-center px-4 text-12 font-bold text-black uppercase tracking-wide no-underline cursor-pointer sm:justify-start sm:p-3 lg:min-w-24 xl:min-w-24 ${className}`} 
+        className={`mainNavItem mainNavItemHasBorderOnHover flex justify-center items-center px-4 text-12 font-bold text-black uppercase tracking-wide no-underline cursor-pointer sm:justify-start sm:p-3 lg:min-w-24 xl:min-w-24 ${className}`}
         activeClass={activeClass}
         smooth={true}
         duration={350}
@@ -34,7 +34,7 @@ const MainNavItemLink = ({ children, target, className, activeClass }) => (
 );
 
 
-const MainNavItem = ({ children, className }) => (
+const MainNavItem = ({children, className}) => (
     <div className={`flex justify-between items-center px-4 text-14 font-bold text-black no-underline sm:p-3 ${className}`}>
         {children}
     </div>
@@ -60,12 +60,12 @@ class MainNavComponent extends React.Component {
             offCanvasHidden: true
         })
     }
-    
+
     render() {
         return (
             <MainNav>
-                <OffCanvas 
-                    hidden={this.state.offCanvasHidden} 
+                <OffCanvas
+                    hidden={this.state.offCanvasHidden}
                     hideOffCanvas={() => this.hideOffCanvas()}
                 />
                 <MainNavItem className="mainNavItemAside">
@@ -73,9 +73,9 @@ class MainNavComponent extends React.Component {
                         <IdeasLogo className="hidden sm:flex md:flex md:mr-2 sm:mr-2"/>
                         ideas engineering
                     </span>
-                    
+
                     {/* This is our burger icon to toggle the offcanvas */}
-                    <div 
+                    <div
                         onClick={() => this.toggleOffCanvas()}
                         className="hidden sm:flex sm:items-center p-2 cursor-pointer"
                     >
@@ -83,29 +83,29 @@ class MainNavComponent extends React.Component {
                     </div>
                 </MainNavItem>
                 <MainNavCenter>
-                    <MainNavItemLink 
-                        target="services" 
+                    <MainNavItemLink
+                        target="services"
                         activeClass="mainNavItemHasBorder"
                     >
                         Services
                     </MainNavItemLink>
-                    <MainNavItemLink 
-                        target="portfolio" 
+                    <MainNavItemLink
+                        target="portfolio"
                         activeClass="mainNavItemHasBorder"
                     >
                         Portfolio
                     </MainNavItemLink>
                     <MainNavItem className="sm:hidden md:hidden">
-                        <IdeasLogo />
+                        <IdeasLogo/>
                     </MainNavItem>
-                    <MainNavItemLink 
-                        target="culture" 
+                    <MainNavItemLink
+                        target="culture"
                         activeClass="mainNavItemHasBorder"
                     >
                         Culture
                     </MainNavItemLink>
-                    <MainNavItemLink 
-                        target="contact" 
+                    <MainNavItemLink
+                        target="contact"
                         activeClass="mainNavItemHasBorder"
                     >
                         Contact
@@ -118,7 +118,7 @@ class MainNavComponent extends React.Component {
 };
 
 
-const OffCanvas = ({ hidden, hideOffCanvas }) => {
+const OffCanvas = ({hidden, hideOffCanvas}) => {
     const navItemProps = {
         smooth: true,
         duration: 350,

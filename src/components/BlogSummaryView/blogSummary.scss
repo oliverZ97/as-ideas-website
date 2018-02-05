@@ -1,0 +1,56 @@
+@import "../settings.scss";
+
+.blog-summary {
+
+    background: white;
+    min-height: 100vw;
+    margin: auto;
+    padding: 90px 50px;
+
+    .article-index {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .article-item {
+        display: flex;
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid $text-color-grey;
+
+        .articel-summary-left {
+            flex: 0 0 380px;
+
+            img {
+                max-width: 380px;
+                max-height: 320px;
+                min-width: 100%;
+            }
+        }
+
+        .articel-summary-right {
+            flex: 1 1 auto;
+            padding: 12px;
+
+            .article-title {
+                text-decoration: none;
+                color: $text-color-black;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            .article-meta {
+                font-size: .8rem;
+
+            }
+
+            .article-summary {
+
+            }
+
+            .article-call-to-action {
+
+            }
+        }
+    }
+}

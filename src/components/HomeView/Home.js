@@ -1,5 +1,5 @@
 import React from 'react';
-import MainNavComponent from './../Shared/MainNav/MainNav';
+import MainNavComponent from './../MainNav/MainNav';
 import Hero from "./Hero";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
@@ -10,13 +10,13 @@ import Contact from "./Contact";
 const Home = () => {
     return (
         <div>
-            <MainNavComponent />
-            <Hero />
-            <Services />
-            <Portfolio />
-            <Culture />
-            <Contact />
-        </div>          
+            <MainNavComponent/>
+            <Hero/>
+            <Services/>
+            <Portfolio/>
+            <Culture/>
+            <Contact/>
+        </div>
     );
 };
 

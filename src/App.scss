@@ -29,7 +29,7 @@
   * @import "components/buttons";
   * @import "components/forms";
   */
- 
+
  /**
   * This injects all of Tailwind's utility classes, generated based on your
   * config file.
@@ -41,7 +41,7 @@
   * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
   */
 @tailwind utilities;
- 
+
  /**
   * Here you would add any custom utilities you need that don't come out of the
   * box with Tailwind.
@@ -57,8 +57,8 @@
   * @import "utilities/skew-transforms";
   */
 
-@import "./scss/mixins";
-@import "./scss/settings";
+@import "./assets/mixins";
+@import "./assets/settings";
 
 
 html {

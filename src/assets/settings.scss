@@ -1,0 +1,56 @@
+/*
+|-----------------------------------------------------------------------------
+| Project Settings                                  
+|-----------------------------------------------------------------------------
+|
+| We use tailwindcss to define lot's of css utility classes and settings,
+| see tailwind-config.js for a lot more customizing options. The following
+| settings contain things not defined by tailwinds default settings, 
+| eg. webfonts.
+|
+*/
+
+/*
+|-----------------------------------------------------------------------------
+| Include Custom Webfonts                                  
+|-----------------------------------------------------------------------------
+*/
+
+@font-face {
+    font-family: 'FoundryPlek';
+    src: url('./assets/fonts/plek/FoundryPlek-Light.ttf') format('truetype'),
+    url('./assets/fonts/plek/FoundryPlek-Light.woff') format('woff'),
+    url('./assets/fonts/plek/FoundryPlek-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SimplonNorm';
+    src: url('./assets/fonts/simplon/SimplonNorm-Light.ttf') format('truetype'),
+    url('./assets/fonts/simplon/SimplonNorm-Light.woff') format('woff'),
+    url('./assets/fonts/simplon/SimplonNorm-Light.woff2') format('woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'SimplonNorm';
+    src: url('./assets/fonts/simplon/SimplonNorm.ttf') format('truetype'),
+    url('./assets/fonts/simplon/SimplonNorm.woff') format('woff'),
+    url('./assets/fonts/simplon/SimplonNorm.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'SimplonNorm';
+    src: url('./assets/fonts/simplon/SimplonNorm-Medium.ttf') format('truetype'),
+    url('./assets/fonts/simplon/SimplonNorm-Medium.woff') format('woff'),
+    url('./assets/fonts/simplon/SimplonNorm-Medium.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'SimplonNorm';
+    src: url('./assets/fonts/simplon/SimplonNorm-Bold.ttf') format('truetype'),
+    url('./assets/fonts/simplon/SimplonNorm-Bold.woff') format('woff'),
+    url('./assets/fonts/simplon/SimplonNorm-Bold.woff2') format('woff2');
+    font-weight: 600;
+}
