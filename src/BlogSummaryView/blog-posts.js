@@ -104,7 +104,7 @@ const posts = [
     {
         year: "2017",
         month: "01",
-        name: "aurelia–or-how-i-stopped-worrying-and-learned-to-love-spa-development",
+        name: "aurelia-or-how-i-stopped-worrying-and-learned-to-love-spa-development",
         title: "Aurelia – or how I stopped worrying and learned to love spa development",
         titlePicture: "good-news-everyone-there-is-another-javascript-mv-framework-to-learn.jpg",
         summary: "Um einen aktuellen Einblick in die Frontend-Entwicklung zu erhalten, verweise ich auf die großartige Zusammenfassung “how it feels to learn JS in 2016“. Jede Woche ein neues Framework, hunderttausende von Paketen auf npmjs.org… Und jetzt noch ein neues Framework?",
