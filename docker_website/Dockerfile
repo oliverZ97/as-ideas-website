@@ -15,7 +15,7 @@ RUN mkdir -p /var/www
 RUN touch /var/www/version.json
 RUN echo { \"date\": \"$(date +%Y-%m-%d:%H:%M:%S)\", \"version\": \"$GO_PIPELINE_COUNTER\" } >> /var/www/version.json
 
-COPY ./default.conf /etc/nginx/sites-enabled/
+COPY ./default /etc/nginx/sites-enabled/
 COPY ./build /var/www
 
 # Start up nginx server
