@@ -100,6 +100,8 @@ class MainNavComponent extends React.Component {
                 <OffCanvas
                     hidden={this.state.offCanvasHidden}
                     hideOffCanvas={() => this.hideOffCanvas()}
+                    onClickScrollLink={() => this.onClickScrollLink()}
+                    onClickNavLink={() => this.onClickNavLink()}
                 />
                 <MainNavItem className="mainNavItemAside">
                     <span className="flex items-center">
@@ -125,7 +127,6 @@ class MainNavComponent extends React.Component {
                     </MainNavItemLink>
                     <NavLink
                         to='/blog'
-                        offset={-64} // See browser dev tool and check value of padding/margin for target container, in this case 4rem (64px)
                         className={`mainNavItem mainNavItemHasBorderOnHover flex justify-center items-center px-4 text-12 font-bold text-black uppercase tracking-wide no-underline cursor-pointer sm:justify-start sm:p-3 lg:min-w-24 xl:min-w-24`}
                         activeClassName='mainNavItemHasBorder'
                         onClick={this.onClickNavLink.bind(this)}
@@ -160,11 +161,10 @@ class MainNavComponent extends React.Component {
 };
 
 
-const OffCanvas = ({hidden, hideOffCanvas}) => {
+const OffCanvas = ({hidden, hideOffCanvas, onClickNavLink, onClickScrollLink}) => {
     const navItemProps = {
         smooth: true,
-        duration: 350,
-        onClick: hideOffCanvas
+        duration: 350
     };
 
     const itemClassName = "py-4 text-20 text-white text-center tracking-wide leading-none cursor-pointer";
@@ -174,22 +174,33 @@ const OffCanvas = ({hidden, hideOffCanvas}) => {
             <ul className="list-reset">
                 <Link
                     to="services"
+                    onClick={() => {
+                        onClickScrollLink('services');
+                        hideOffCanvas()
+                    }}
                     {...navItemProps}
                 >
                     <li className={itemClassName}>
                         Services
                     </li>
                 </Link>
-                <Link
-                    to="portfolio"
-                    {...navItemProps}
+                <NavLink
+                    to='/blog'
+                    onClick={() => {
+                        onClickNavLink();
+                        hideOffCanvas()
+                    }}
                 >
                     <li className={itemClassName}>
-                        Portfolio
+                        Blog
                     </li>
-                </Link>
+                </NavLink>
                 <Link
                     to="culture"
+                    onClick={() => {
+                        onClickScrollLink('culture');
+                        hideOffCanvas()
+                    }}
                     {...navItemProps}
                 >
                     <li className={itemClassName}>
@@ -198,6 +209,10 @@ const OffCanvas = ({hidden, hideOffCanvas}) => {
                 </Link>
                 <Link
                     to="contact"
+                    onClick={() => {
+                        onClickScrollLink('contact');
+                        hideOffCanvas()
+                    }}
                     {...navItemProps}
                 >
                     <li className={itemClassName}>

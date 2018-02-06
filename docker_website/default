@@ -1,0 +1,29 @@
+server {
+    root /var/www;
+    index index.html index.htm;
+
+    # Make site accessible from http://localhost/
+    server_name localhost;
+
+    # Add 1 day expires header for static assets
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico)$ {
+        expires 1d;
+    }
+
+    # Any route containing a file extension (e.g. /devicesfile.js)
+    location ~ ^.+\..+$ {
+      try_files $uri =404;
+    }
+
+    # All deeplinks without fileextension for the blog will return the index.html
+    location /blog {
+	    try_files $uri/index.html /index.html;
+    }
+
+    # Any route that doesn't have a file extension (e.g. /devices)
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    include /etc/nginx/basic.conf;
+}

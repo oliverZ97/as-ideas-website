@@ -6,6 +6,15 @@
     padding: 90px 50px;
     max-width: 1000px;
 
+    @screen sm {
+        flex: 1 1 auto;
+        padding: 70px 16px;
+
+        .markdown-body {
+            padding: 0;
+        }
+    }
+
     .markdown-body {
         h2, h3, h4, h5, h6 {
             img {

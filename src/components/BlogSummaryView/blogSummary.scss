@@ -6,9 +6,18 @@
     margin: auto;
     padding: 90px 50px;
 
+    @screen sm {
+        padding: 60px 10px;
+        max-width: 100vw;
+    }
+
     .article-index {
         max-width: 1000px;
         margin: auto;
+
+        @screen sm {
+            padding: 0;
+        }
     }
 
     .article-item {
@@ -17,14 +26,30 @@
         padding: 10px;
         border: 1px solid #8a8a8a;
 
+        @screen sm {
+            flex-direction: column;
+        }
+
         .articel-summary-left {
             flex: 0 0 380px;
 
+            @screen sm {
+                flex: 1 1 auto;
+
+                img {
+                    max-height: auto;
+                    max-width: auto;
+                    min-width: auto;
+                    padding: 16px
+                }
+
+            }
             img {
                 max-width: 380px;
                 max-height: 320px;
                 min-width: 100%;
             }
+
         }
 
         .articel-summary-right {
