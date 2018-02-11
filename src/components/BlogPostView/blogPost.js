@@ -3,21 +3,21 @@ import "./blogPost.scss";
 import "./marked.scss";
 import marked from "marked";
 import posts from "./../BlogSummaryView/blog-posts.js";
+import highlightJs from "./highlight";
+import disqus from "./disqus";
 
 class BlogPost extends React.Component {
-    // constructor(props) {
-    //     super(props);
-    // }
+    constructor(props) {
+        super(props);
+        this.state = {
+            isLightboxVisible: false
+        }
+    }
 
     componentDidMount() {
         this.loadCurrentBlogPost(this.props.match.params);
-
-        (function () { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = '//axelspringerideas-de.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
+        highlightJs.loadHighlightJs();
+        disqus.loadDisqus();
     }
 
     componentWillUnmount() {
@@ -31,32 +31,61 @@ class BlogPost extends React.Component {
     loadCurrentBlogPost(params) {
         let post = posts.getPost(params);
 
-        window.disqus_config = function () {
-            this.page.url = post.permalink;
-            this.page.identifier = post.id;
-        };
-
+        disqus.showComment(post);
         let url = `${post.markdownUrl}`;
         fetch(url)
             .then((response) => {
                 return response.text();
             })
             .then((text) => {
-                // console.info("Loaded Markdown-File.", myBlob);
-                var preview = document.getElementById("preview");
+                let preview = document.getElementById("preview");
                 preview.innerHTML = marked(text);
-                // $('pre code').each(function (i, block) {
-                //     hljs.highlightBlock(block);
-                // });
+            })
+            .then(() => {
+                highlightJs.doHighlight();
+                let elements = document.querySelectorAll(".markdown-body img");
+                for (let i = 1; i < elements.length; i++) {
+                    elements[i].addEventListener("click", (event) => {
+                        this.showLightbox(event)
+                    });
+                }
             });
+    }
+
+    hideLightbox() {
+        console.info("HIDE");
+        this.setState({
+            isLightboxVisible: false
+        });
+    }
+
+    showLightbox(event) {
+        console.info("showLightbox", event.srcElement.src);
+        this.setState({
+            isLightboxVisible: true,
+            lightboxUrl: event.srcElement.src
+        });
+
     }
 
     render() {
         return (
-            <div className="blog-post">
-                <div id="preview" className="markdown-body"/>
+            <div className="blog-post-wrapper">
+                {this.state.isLightboxVisible ?
+                    <div className="lightbox" onClick={this.hideLightbox.bind(this)}>
+                        <div className="lightbox-image-container">
+                            <img id="lightbox-image" alt="Bild aus der Gallerie" src={this.state.lightboxUrl}/>
+                        </div>
+                    </div>
+                    : ''}
 
-                <div id="disqus_thread"/>
+                <div className="blog-post">
+
+
+                    <div id="preview" className="markdown-body"/>
+
+                    <div id="disqus_thread"/>
+                </div>
             </div>
         )
     }
