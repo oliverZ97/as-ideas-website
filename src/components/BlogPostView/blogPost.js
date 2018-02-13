@@ -20,10 +20,6 @@ class BlogPost extends React.Component {
         disqus.loadDisqus();
     }
 
-    componentWillUnmount() {
-        // TODO remove script tag von DISQUS
-    }
-
     componentWillReceiveProps(nextProps) {
         this.loadCurrentBlogPost(nextProps.match.params.name);
     }
@@ -53,14 +49,12 @@ class BlogPost extends React.Component {
     }
 
     hideLightbox() {
-        console.info("HIDE");
         this.setState({
             isLightboxVisible: false
         });
     }
 
     showLightbox(event) {
-        console.info("showLightbox", event.srcElement.src);
         this.setState({
             isLightboxVisible: true,
             lightboxUrl: event.srcElement.src
@@ -72,9 +66,9 @@ class BlogPost extends React.Component {
         return (
             <div className="blog-post-wrapper">
                 {this.state.isLightboxVisible ?
-                    <div className="lightbox" onClick={this.hideLightbox.bind(this)}>
-                        <div className="lightbox-image-container">
-                            <img id="lightbox-image" alt="Bild aus der Gallerie" src={this.state.lightboxUrl}/>
+                    <div className="blog-lightbox" onClick={this.hideLightbox.bind(this)}>
+                        <div className="blog-lightbox-image-container">
+                            <img id="blog-lightbox-image" alt="Bild aus der Gallerie" src={this.state.lightboxUrl}/>
                         </div>
                     </div>
                     : ''}
@@ -82,7 +76,7 @@ class BlogPost extends React.Component {
                 <div className="blog-post">
 
 
-                    <div id="preview" className="markdown-body"/>
+                    <div id="preview" className="markdown-body blog-markdown-body"/>
 
                     <div id="disqus_thread"/>
                 </div>

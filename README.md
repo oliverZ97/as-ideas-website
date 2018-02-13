@@ -45,8 +45,12 @@ To build and minify all assets run:
 yarn build (or npm run build)
 ```
 
-## Direct deployment to stage
+## Direct deployment to stage (https://asideas-4ddb5.firebaseapp.com/)
 
-```bash
-scp -r build/* root@ideas-ws:/usr/share/nginx/html/website/
+Install firebase cli, login and deploy
+
+```
+npm install -g firebase-tools
+firebase login
+firebase deploy
 ```

@@ -1,27 +1,30 @@
 .blog-post-wrapper {
 
-    .lightbox {
+    .blog-lightbox {
         position: fixed;
         z-index: 999;
         background: rgba(0, 0, 0, 0.7);
         width: 100vw;
         height: 100vh;
-
         display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;
 
-        .lightbox-image-container {
+        .blog-lightbox-image-container {
             height: 100vh;
             width: 100vw;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
 
             img {
                 display: block;
                 margin: auto;
                 width: auto;
-                height: 100%;
+                max-height: 100%;
             }
         }
     }
@@ -38,12 +41,12 @@
             flex: 1 1 auto;
             padding: 70px 16px;
 
-            .markdown-body {
+            .blog-markdown-body {
                 padding: 0;
             }
         }
 
-        .markdown-body {
+        .blog-markdown-body {
             h2, h3, h4, h5, h6 {
                 img {
                     max-width: 32%;

@@ -261,6 +261,10 @@ module.exports = {
                           require('cssnano')({
                             preset: 'default',
                             discardDuplicates: true,
+                            autoprefixer: false,
+                            zindex: false,
+                            mergeRules: false,
+                            minifySelectors: false
                           }),
                           autoprefixer({
                             browsers: [
