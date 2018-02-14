@@ -110,6 +110,16 @@ const posts = [
         summary: "Um einen aktuellen Einblick in die Frontend-Entwicklung zu erhalten, verweise ich auf die großartige Zusammenfassung “how it feels to learn JS in 2016“. Jede Woche ein neues Framework, hunderttausende von Paketen auf npmjs.org… Und jetzt noch ein neues Framework?",
         author: "Julian Godesa",
         authorEmail: "julian.godesa@asideas.de"
+    },
+    {
+        year: "2017",
+        month: "06",
+        name: "axel-springer-tech-journey-takhles-balagan-and-chutzpah",
+        title: "Axel Springer Tech Journey: Takhles, Balagan & Chutzpah",
+        titlePicture: "06-SATURDAY/20.jpg",
+        summary: "For one week I had the honor and privilege to travel together with 22 other members of the Axel Springer Family to Israel. Together with me was one direct colleague, some people from the ASIT and people from all over Axel Springer: BILD, WELT, Axel Springer Spain, Media Impact, Aufeminin, immonet, immowelt, Axel Springer Ringe and Onet. It was awesome.",
+        author: "Sebastian Waschnick",
+        authorEmail: "sebastian.waschnick@asideas.de"
     }
 ];
 
