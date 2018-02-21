@@ -40,7 +40,7 @@ class BlogPost extends React.Component {
             .then(() => {
                 highlightJs.doHighlight();
                 let elements = document.querySelectorAll(".markdown-body img");
-                for (let i = 1; i < elements.length; i++) {
+                for (let i = 0; i < elements.length; i++) {
                     elements[i].addEventListener("click", (event) => {
                         this.showLightbox(event)
                     });
@@ -55,6 +55,7 @@ class BlogPost extends React.Component {
     }
 
     showLightbox(event) {
+        console.log("event.srcElement.src", event.srcElement.src);
         this.setState({
             isLightboxVisible: true,
             lightboxUrl: event.srcElement.src
