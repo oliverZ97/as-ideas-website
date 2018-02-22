@@ -6,10 +6,11 @@ import Portfolio from "./Portfolio";
 import Culture from "./Culture";
 import Contact from "./Contact";
 
+import "./Home.scss"
 
 const Home = () => {
     return (
-        <div>
+        <div className="home">
             <MainNavComponent/>
             <Hero/>
             <Services/>

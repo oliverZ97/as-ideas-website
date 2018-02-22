@@ -1,1 +1,0 @@
-export const googleMapsURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIj-7gYxgI8DvK9LsoH5rzFCwok8nOZ2U&v=3.exp&libraries=geometry,drawing,places";

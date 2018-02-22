@@ -1,0 +1,91 @@
+.footer {
+    background: config("colors.ci-black");
+    color: white;
+    padding: 20px 12px 0 12px;
+
+    .footer-container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 22px 0 42px 0;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 10px;
+            opacity: 0.8;
+            margin-bottom: 12px;
+        }
+
+        a, p {
+            color: white;
+            text-decoration: none;
+            text-transform: none;
+            display: block;
+            margin: auto;
+            padding: 4px 0;
+            font-size: 10px;
+            font-weight: 200;
+            opacity: 0.5;
+        }
+
+        a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        .footer__column {
+            text-align: left;
+
+            .footer__list {
+
+            }
+
+            &.col1 {
+                flex: 2 0 auto;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+
+                .col1-text {
+                    line-height: 1.6rem;
+
+                    a {
+                        color: white;
+                        opacity: 1.0;
+                        display: inline-block;
+                        font-size: 1rem;
+                        margin: 0;
+                        padding: 0;
+                        text-transform: none;
+                        font-weight: 400;
+                    }
+                }
+            }
+            &.col2 {
+                flex: 1 0 auto;
+            }
+            &.col3 {
+                flex: 1 0 auto;
+            }
+            &.col4 {
+                flex: 2 0 auto;
+            }
+
+            &.col-with-text {
+                @screen sm {
+                    padding-left: 20px;
+                }
+            }
+            h1 {
+                @screen sm {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
