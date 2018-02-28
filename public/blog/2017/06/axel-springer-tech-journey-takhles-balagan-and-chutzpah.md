@@ -33,55 +33,69 @@ First: If you talk about Israel you have no fucking clue.
 Second: if we don't join forces between the IT departments we are screwed. 
 Third: Europe and especially Germany could learn everything needed about Refugees and Immigration from Israel, the mistakes and the successes.
 
+### ![](01-MONDAY/10.jpg) ![](01-MONDAY/30.jpg)
+### ![](01-MONDAY/40.jpg) ![](01-MONDAY/50.jpg) ![](01-MONDAY/60.jpg)
+### ![](01-MONDAY/70.jpg) ![](01-MONDAY/80.jpg)
+### ![](01-MONDAY/90.mp4)
+
 # Day 1: Startup Nation Israel
 Traveling to Israel can be quite an adventure. They normally have their own checkin-in area on the airport with special standing desk for questioning. I was asked a lot of question, quite some private ones and needed to show emails. The israeli security officer left me two times. For my colleague it was even more intense - they searched his whole cabin bag. It took me around 20 minutes to clear the first security, for him it took 40 minutes. And that's not the end: Flights to Israel have their own gates with additional and more rigorous security. So we meet the security offices again before we are able to enter the gate. Fun fact: Israel has two airports, but only one is a international one. It is called Ben Gurion, after the founder of the state.
 
 After landing I learned my first lesson in Israel: Never stand in line on the immigration counter behind arabic people. You will wait ages.
 
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:51.620370370370374% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BVPvE3JHpiw/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Hallo! Ich bin Karl, eigentlich Referent des CIOs und übernehme ab heute die Reiseleitung für die erste Israel Tech Journey bei Axel Springer. ;) Unser Ziel sind Start-ups und Tech-Unternehmen in Israel - unser Programm ist straff und wir sind voller Wissensdurst und Neugier. #israel #axelspringer #takeover #crazycabdriver #instagramtakeover #justarrived #letshavedinner #welcometoisrael #digitization #itexperts #goldstar #techjourney #sun #summer</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Axel Springer SE (@axel_springer_karriere) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-06-12T16:15:29+00:00">Jun 12, 2017 at 9:15am PDT</time></p></div></blockquote>
+
 Getting to our hostel proved also quite interesting - the was a strike from the taxi drivers. But only at the airport, and I couldn't understand any explanation offered to me. Only a company name "get" (think mytaxi or ueber) offered their service. For quite a premium price. So we finally arrived on time in the [Abraham Hostel Tel Aviv](https://abrahamhostels.com/tel-aviv/gallery/) and our roommates are chosen randomly. I end up with Lars, a guy from Plug'n Play, the startup accelerator from Axel Springer. We get along quite well. I think we'll even have lunch at sometime in Berlin. 
 
 The evening starts with a short trip with some people who also arrived a little early to get some ice cream. And the ice we find is awesome.
 
+# ![](01-MONDAY/20.jpg)
+<br />
+
 At 7pm everyone meets in the lobby
 Restaurant am Strand mit dem Bus
 
-### ![](01-MONDAY/10.jpg)
-![](01-MONDAY/20.jpg)
-![](01-MONDAY/30.jpg)
-![](01-MONDAY/40.jpg)
-![](01-MONDAY/50.jpg)
-![](01-MONDAY/60.jpg)
-![](01-MONDAY/70.jpg)
-![](01-MONDAY/80.jpg)
-![](01-MONDAY/90.mp4" alt="PEA"></a>
 
 # Day 2: Startups in Tel Aviv
 We started the day at 8am in the huge common room of our hostel and took the bus at 9am to the old harbor of Tel Aviv - named Yafo or Jaffa. The harbor is over 4000 years old and is known to be the gate to the holy land. We walked in the very hot sun and through the hummid air towards the newer part of Tel Aviv. We stopped at quite some sites and Samson explained the history of the city. The tour also included the founding house of Israel, where we watched a short movie about the founding of the state. At the end we ate awesome icecreame, which in my opinion was way better than 90% of the icecream elsewhere in the world.
 
 At 12.30 we arrived the second stop of the day - RosenXXX. We ate some sandwiches on the ground level and at 13.00 our meeting with Shahar Tzafrir, one of the six partners from [Magma Ventures](http://www.magmavc.com/), started. The meeting was on the 25th floor and the view was awesome! If you ever visited some countries beyond Europe you may know [Waze](https://www.waze.com/) - the biggest exist of Magma. He told us a lot about the reasons why there are so many startups in Israel and how the operate. Only downside: The room was like 
 
+### ![](02-TUESDAY/10.jpg)  ![](02-TUESDAY/20.jpg)  ![](02-TUESDAY/30.jpg)
+### ![](02-TUESDAY/40.jpg)  ![](02-TUESDAY/50.jpg)  ![](02-TUESDAY/60.jpg)
+### ![](02-TUESDAY/70.jpg)  ![](02-TUESDAY/80.jpg)  ![](02-TUESDAY/90.jpg)
+### ![](02-TUESDAY/91.jpg)  ![](02-TUESDAY/92.jpg)
+
+
 # Day 3: Google, Microsoft and Cybersecurity
-!instagram-link!
+
 Our first host [team8](http://team8.vc) cancelled the appointment in the last second. So the morning started more relaxed than the first one. We meet at 10am and take our bus and visited Google. They occupy 13 floors in a skyscrapper. Our meeting room is on the 34th floor at the [Google Campus Tel Aviv](https://www.campus.co/tel-aviv/en).
 
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BVUeciCHy1T/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Nachdem wir gestern #magmaventures #minutemedia &amp; weitere Startups besucht haben, durften wir heute Vormittag Gast bei #Google (Talks von dem GM Israel, einem Senior Engineer &amp; Mitarbeiter von #waze ) &amp; #Microsoft sein. Jetzt im Bus nach Be&#39;er Sheva in den #cyberspark security park. #campustelevision #googlecampus #newtechnologies #israel #techjourney #axelspringer #ilovemyjob #techiesontour #techies #shapethefuture #itsecurity #cybersecurity #innovation #sosa #mindspace</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Axel Springer SE (@axel_springer_karriere) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-06-14T12:26:22+00:00">Jun 14, 2017 at 5:26am PDT</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BVUeciCHy1T/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Nachdem wir gestern #magmaventures #minutemedia &amp; weitere Startups besucht haben, durften wir heute Vormittag Gast bei #Google (Talks von dem GM Israel, einem Senior Engineer &amp; Mitarbeiter von #waze ) &amp; #Microsoft sein. Jetzt im Bus nach Be&#39;er Sheva in den #cyberspark security park. #campustelevision #googlecampus #newtechnologies #israel #techjourney #axelspringer #ilovemyjob #techiesontour #techies #shapethefuture #itsecurity #cybersecurity #innovation #sosa #mindspace</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Axel Springer SE (@axel_springer_karriere) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-06-14T12:26:22+00:00">Jun 14, 2017 at 5:26am PDT</time></p></div></blockquote>
+
+<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 
 > The cloud is more secure than dedicated data centers
 
 This is evening is our only free time for the whole journey. And it really is the evening as we arrive back at the hostel at 7pm.
 
-<div class="lightgallery 03-wednesay">
-![](03-WEDNESAY/10.jpg)
-![](03-WEDNESAY/20.jpg)
-![](03-WEDNESAY/30.jpg)
-![](03-WEDNESAY/40.jpg)
-![](03-WEDNESAY/50.jpg)
-</div>
+### ![](03-WEDNESDAY/10.jpg)  ![](03-WEDNESDAY/20.jpg)  ![](03-WEDNESDAY/30.jpg)
+### ![](03-WEDNESDAY/40.jpg)  ![](03-WEDNESDAY/50.jpg)
+
 
 # Day 4: Between Yad2 and Palestine
 
 <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BVWz8WPH3q4/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Nachdem wir gestern noch im #cyberspark Security Park waren &amp; mit #Cybersecurity Professoren der #bengurionuniversity gesprochen haben sind wir heute bei #yad2. Yad2 ist DAS Classifieds Portal für Cars, Jobs &amp; Real Estate in Israel &amp; gehört seit 2011 zur #axelspringer Familie. #onefamily #awesome #israel #techjourney #technology #cars #realestate #jobs #startupculture #family #innovation #ilovemyjob #itexperts #it #discussion #ceo #cto #vr #vrexperience #sun #goodweather #deliciousfood #yummyinmytummy</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Axel Springer SE (@axel_springer_karriere) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-06-15T10:12:42+00:00">Jun 15, 2017 at 3:12am PDT</time></p></div></blockquote>
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+
+# ![](04-THURSDAY/10.jpg)
+
+### ![](04-THURSDAY/10.jpg) ![](04-THURSDAY/20.jpg) ![](04-THURSDAY/30.jpg)
+### ![](04-THURSDAY/40.jpg) ![](04-THURSDAY/50.jpg) ![](04-THURSDAY/60.jpg)
+### ![](04-THURSDAY/70.jpg) ![](04-THURSDAY/80.jpg) ![](04-THURSDAY/90.jpg)
+### ![](04-THURSDAY/92.jpg) ![](04-THURSDAY/94.jpg) ![](04-THURSDAY/96.jpg)
+### ![](04-THURSDAY/97.jpg) ![](04-THURSDAY/98.jpg) ![](04-THURSDAY/99.jpg)
+
 
 # Day 5: Sushi in the Tower of David
 The day starts with a trip to [Yad Vashem](http://www.yadvashem.org/), the The World Holocaust Remembrance Center.   We walk through the old city to the newer parts and take the tram. The tour to the museum is like a sightseeing tour on its own.
@@ -108,6 +122,10 @@ As we later learned the fireworks were actually shots. [One police woman was kil
 
 Rachel, Eating, Wine, Lachaim
 
+### ![](05-FRIDAY/10.jpg) ![](05-FRIDAY/20.jpg) ![](05-FRIDAY/30.jpg)
+### ![](05-FRIDAY/40.jpg) ![](05-FRIDAY/50.jpg) ![](05-FRIDAY/60.jpg)
+### ![](05-FRIDAY/70.jpg)
+
 # Day 6: Leaving the Holy Land
 The last day. I finally memorised all the names from everybody! And now we need to part. But the journey starts with another extraordinary trip. Together with [Wolfgang Schmidt](http://www.evangelisch-in-jerusalem.org/Gemeinde/gemeinde.php?num=30&kat=30) we take a tour over the rooftops of the houses in the old town. You can see trough some openings and windows to the small walking ways below us. They are full of merchants. Having walked them the past two days and now seeing them from above and how the connect is so cool.
 
@@ -115,10 +133,11 @@ We arrive at the
 
 I arrive at 9pm in my apartment and I just need sleep. This week was something else.
 
+### ![](06-SATURDAY/10.jpg) ![](06-SATURDAY/20.jpg) ![](06-SATURDAY/30.jpg)
+
 # The End?
 Special thanks to Samson Altman-Schevitz and Karl-Christian Lauk. They both organised this trip and did an awesome job. Samson told us so much about Israel, Jews, the country, the people, the politics. And everything in a very personal manner. Thank you both so much for your hard work to make this journey so special for everyone.
 
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:51.620370370370374% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BVPvE3JHpiw/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Hallo! Ich bin Karl, eigentlich Referent des CIOs und übernehme ab heute die Reiseleitung für die erste Israel Tech Journey bei Axel Springer. ;) Unser Ziel sind Start-ups und Tech-Unternehmen in Israel - unser Programm ist straff und wir sind voller Wissensdurst und Neugier. #israel #axelspringer #takeover #crazycabdriver #instagramtakeover #justarrived #letshavedinner #welcometoisrael #digitization #itexperts #goldstar #techjourney #sun #summer</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Axel Springer SE (@axel_springer_karriere) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-06-12T16:15:29+00:00">Jun 12, 2017 at 9:15am PDT</time></p></div></blockquote>
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 
 I also want to thank our two security guards which were quite impressive, professional and at the same time integrated seamlessly into out group. Even if they couldn't visit Palestine with us. You guys were awesome!
@@ -128,5 +147,3 @@ Here are some tips to learn more about Israel and why they rule:  The book [Star
 This is also this [documentation](http://www.wired.co.uk/video/holy-land-startup-nations-full-documentary) from Wired about it.
 
 Want to see the political conflict from two different views? Try this two videos about the [Israeli side](https://youtu.be/XGYxLWUKwWo) and this one for the [Palestine side](https://youtu.be/QAuBc_cbXo0).
-
-### ![](06-SATURDAY/10.jpg) ![](06-SATURDAY/20.jpg) ![](06-SATURDAY/30.jpg)
