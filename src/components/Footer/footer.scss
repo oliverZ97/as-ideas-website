@@ -39,8 +39,9 @@
         .footer__column {
             text-align: left;
 
-            .footer__list {
-
+            @screen sm {
+                flex: 1 1 90% !important;
+                margin-bottom: 12px;
             }
 
             &.col1 {
@@ -63,6 +64,17 @@
                         padding: 0;
                         text-transform: none;
                         font-weight: 400;
+                    }
+                }
+
+                @screen sm {
+                    margin-bottom: 24px;
+                    .col1-text {
+                        font-size: 2rem;
+                        line-height: 2rem;
+                        a {
+                            font-size: 2rem;
+                        }
                     }
                 }
             }
