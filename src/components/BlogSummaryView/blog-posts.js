@@ -110,6 +110,16 @@ const posts = [
         summary: "Um einen aktuellen Einblick in die Frontend-Entwicklung zu erhalten, verweise ich auf die großartige Zusammenfassung “how it feels to learn JS in 2016“. Jede Woche ein neues Framework, hunderttausende von Paketen auf npmjs.org… Und jetzt noch ein neues Framework?",
         author: "Julian Godesa",
         authorEmail: "julian.godesa@asideas.de"
+    },
+    {
+        year: "2018",
+        month: "03",
+        name: "ideas-engineering-praesentiert-die-ipa",
+        title: "Ideas Engineering präsentiert die IPA",
+        titlePicture: "ipa3.jpg",
+        summary: "Alle zwei bis vier Wochen finden wir uns gemeinsam ein um uns die Geschichte darüber zu erzählen was wir in den vergangenen zwei Wochen gemacht haben. So steht es in der Scrum Bibel. Jedes Team bereitet sich auf diese Zeremonie ausführlich vor, unsere Zuhörer sind aber zumeist aus den eigenen Kreisen.",
+        author: "Alexandra Nicolae",
+        authorEmail: "alexandra.nicolae@asideas.de"
     }
 ];
 
