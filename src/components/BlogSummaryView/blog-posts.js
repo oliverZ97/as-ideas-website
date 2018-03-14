@@ -123,11 +123,21 @@ const posts = [
     },
     {
         year: "2018",
-        month: "04",
+        month: "03",
         name: "immovation-days-bei-immowelt-in-hamburg",
         title: "Immovation Days bei Immowelt in Hamburg",
         titlePicture: "immo1.png",
         summary: "Immowelt veranstaltet in regelmäßigen Abständen den 'Immovation Day', einen Tag an dem die Entwickler die Freiheit bekommen, an Projekten zu arbeiten, die sie sich selbst überlegen und ohne Vorgaben umsetzen. Dieses mal mischten wir von AS Ideas mit und bauten Blockchains für Immobilien.",
+        author: "Tarek Madany Mamlouk",
+        authorEmail: "tarek.madanymamlouk@asideas.de"
+    },
+    {
+        year: "2018",
+        month: "03",
+        name: "knowledge-transfer-offsite-im-motionlab",
+        title: "Knowledge-Transfer-Offsite im MotionLab Berlin",
+        titlePicture: "kto00.png",
+        summary: "dsfsfsdfsdf",
         author: "Tarek Madany Mamlouk",
         authorEmail: "tarek.madanymamlouk@asideas.de"
     }
