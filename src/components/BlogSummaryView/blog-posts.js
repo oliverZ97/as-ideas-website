@@ -120,6 +120,16 @@ const posts = [
         summary: "Alle zwei bis vier Wochen finden wir uns gemeinsam ein um uns die Geschichte darüber zu erzählen was wir in den vergangenen zwei Wochen gemacht haben. So steht es in der Scrum Bibel. Jedes Team bereitet sich auf diese Zeremonie ausführlich vor, unsere Zuhörer sind aber zumeist aus den eigenen Kreisen.",
         author: "Alexandra Nicolae",
         authorEmail: "alexandra.nicolae@asideas.de"
+    },
+    {
+        year: "2018",
+        month: "04",
+        name: "immovation-days-bei-immowelt-in-hamburg",
+        title: "Immovation Days bei Immowelt in Hamburg",
+        titlePicture: "immo1.png",
+        summary: "Immowelt veranstaltet in regelmäßigen Abständen den 'Immovation Day', einen Tag an dem die Entwickler die Freiheit bekommen, an Projekten zu arbeiten, die sie sich selbst überlegen und ohne Vorgaben umsetzen. Dieses mal mischten wir von AS Ideas mit und bauten Blockchains für Immobilien.",
+        author: "Tarek Madany Mamlouk",
+        authorEmail: "tarek.madanymamlouk@asideas.de"
     }
 ];
 
