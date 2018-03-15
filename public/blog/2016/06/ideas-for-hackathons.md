@@ -13,19 +13,19 @@ Wir haben natürlich geschlafen – ich sogar 8h – nur Thomas hat beim Mediaha
 
 **food{hacks}**
 
-[![04](04.png)
+![04](04.png)
 
-[![03](03.png)
+![03](03.png)
 
-[![01](01-1.png)
+![01](01.png)
 
-[![05](05.png)
+![05](05.png)
 
-[![08](08.png)
+![08](08.png)
 
-[![07](07.png)
+![07](07.png)
 
-[![06](06.png)
+![06](06.png)
 
 Und wer sind die richtigen Hacker um sie im T3N Artikel als Titelbild zu haben? Korrekt: **Wir.** [http://t3n.de/news/food-hacks-vier-smarte-ideen-693850](http://t3n.de/news/food-hacks-vier-smarte-ideen-693850)/
 
@@ -42,18 +42,6 @@ Try it out: [https://food-hacks-ideas.herokuapp.com/](https://which-ad-are-you.
 Beschreibung: [http://devpost.com/software/which-add-are-you](http://devpost.com/software/which-add-are-you)
 
 **Mediahackday**
-
-[![15](15-150x150.png)](http://www.axelspringerideas.de/blog/index.php/2016/06/15/ideas-fur-hackathons/attachment/15/)
-
-[![14](14-150x150.png)](http://www.axelspringerideas.de/blog/index.php/2016/06/15/ideas-fur-hackathons/attachment/14/)
-
-[![13](13-150x150.png)](http://www.axelspringerideas.de/blog/index.php/2016/06/15/ideas-fur-hackathons/attachment/13/)
-
-[![12](12-150x150.png)](http://www.axelspringerideas.de/blog/index.php/2016/06/15/ideas-fur-hackathons/attachment/12/)
-
-[![11](11-150x150.png)](http://www.axelspringerideas.de/blog/index.php/2016/06/15/ideas-fur-hackathons/attachment/11/)
-
-[![09](09-150x150.png)](http://www.axelspringerideas.de/blog/index.php/2016/06/15/ideas-fur-hackathons/attachment/09/)
 
 Der von Axel Springer organisierte Mediahackday findet immer zwischen den einzelnen Startup-Batches im Plug & Play Accelerator statt. Im Gegensatz zum food{hacks} gab es nur 11 Teams, viele Firmen, nur drei Frauen und der Altersdurchschnitt war deutlich höher. Hier haben viele Teilnehmer den Hackathon zu ernst genommen. Ein leichter Beigeschmack bleibt auch, da man den Source Code nicht offen legen musste und das Gewinner Team (dir direkt hinter uns saßen) den Eindruck erweckte, dass sie mit einer fertigen Lösung gekommen sind und bereits vorher viel daran gearbeitet hatten. Spaß hat es dank unserem tollen Team trotzdem gemacht – und das nicht zu wenig. Es gab tonnenweise Red Bull, Club Mate und Cola.
 
