@@ -24,7 +24,7 @@ Der größte unserer Themenkomplexe war Blockchain. Wir hatten den Januar zum "B
 
 Die Blockchain-Advanced-Session drang tiefer in die Welt von Solidity ein und wir klärten Details über primitive und komplexe Datentypen, Arrays und Mappings, Addressen und Kontrollflüsse. Die Ethereum Virtual Machine arbeitet etwas anders als klassische Ausführungsumgebungen, da Ausführung von Programmcode sehr teuer ist und daher jede Zeile Code mit großer Sorgfalt gestaltet werden muss. Für die Ausführung eines Smart Contracts müssen konkrete Kosten definiert werden, was für viele Fragezeichen sorgt. Eine wichtige Erkenntnis aus der fortgeschrittenen Entwicklung in Solidity ist, dass die Auswahl dieser Technologie mit großer Vorsicht geschehen muss, da abhängig vom Use-Case, der Entwickler sich das Leben eventuell mit Ethereum unnötig schwer macht.
 
-## ![](kto03_klein.png) ![](kto12_klein.png) ![](kto06_klein.png)
+## ![](kto03.jpg) ![](kto10.jpg) ![](kto06.jpg)
 
 ### Chatbots
 
@@ -42,7 +42,7 @@ Ein weiteres spannendes Thema ist die Sprachsynthese. Alexa, Siri und Google Hom
 
 Das Jahr 2018 steht ganz im Namen von Artificial Intelligence (AI) und so haben wir uns auch an diese Materie gewagt. Wir bauten jüngst einen Prototypen für ein System, das für einen Nachrichtenartikel eine Liste der "ähnlichsten" bekannten Artikel zusammenstellt. Hierfür setzten wir den K-Nearest-Neighbor Algorithmus ein, der zur Kategorie des Lazy Learnings gehört. Lazy Learning bedeutet in diesem Fall, dass das System mit dem Hinzufügen eines neuen Artikels "lernt" und eine angepasste Ergebnisliste zurückliefert. Die Berechnung geschieht erst zur Anfragezeit (daher 'lazy'), und verwendet die Trainingsdaten als Modell ohne ein separates Modell vorzuberechnen. Diese Session war die mathematischste unserer Sessions, da die zentrale Herausforderung von KNN die Auswahl des Entfernungsmaßes ist über das die relative Nähe von Elementen zueinander berechnet wird. Wir diskutierten die Euklidische Distanz, die Manhattan Distanz, die Kosinus Distanz und den Pearson Korrelationskoeffizienten. Zum besseren Verständnis spielten wir die Berechnung der Distanzen anhand von Beispielen durch und implementierten dann eine Ähnlichkeitsanalyse von Nachrichtenartikeln in Python. Die Session wurde ein wenig ausgebremst nachdem der wunderbar vorbereitete Docker Container mit unseren Tools sich nicht aus dem Repo runterladen lies weil die Internetleitung zu dünn war. Nachdem wir die Werkzeuge von Hand auf den Rechnern nachgerüstet hatten, ging es weiter.
 
-![](kto00.png)
+![](kto00.jpg)
 
 ### Innovation Management
 
