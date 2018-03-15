@@ -12,7 +12,7 @@ Waschi und ich nahmen die Herausforderung gerne an und repräsentierten die AS I
 
 Nach unserer Ankunft wurden wir sehr herzlich empfangen und bekamen eine Führung durch die Räumlichkeiten und ganz wichtig: heißen Kaffee. Gleich zu Beginn des Events wurde klar, dass es riesig werden würde, denn alleine die zügige Vorstellung aller Projektideen in dem gut gefüllten Großraumbüro dauerte schon deutlich länger als gedacht. Eine größere Gruppe von uns war heiß auf Blockchains und erklärten Konferenzraum “Elphi” zu unserem Blockchain Hauptquartier. Hier gingen wir die Basics von Blockchain und Smart Contracts durch und Waschi und ich gaben einen kurzen Einblick in die Blockchain Prototypen, die wir in Berlin bereits gebaut hatten. 
 
-![](immo3.png)
+![](immo3.jpg)
 
 Damit wir uns nicht gegenseitig auf die Füße treten, teilten wir uns in 2 Gruppen auf und überlegten uns 2 epische Blockchain Produkte für die Welt der Immobilien. Wir implementierten Smart Contracts in Solidity und deployten sie in einer privaten Ethereum Chain. Waschi und ich brachten zwar ein wenig Vorwissen zu Blockchains mit aber mit einem so großen Projektteam in zwei Tagen zwei Blockchain Projekte an den Start zu bringen war auch für uns eine Premiere. 
 
@@ -20,11 +20,11 @@ Debugging in Solidity kann schnell recht umständlich werden, weshalb sich anbot
 
 Am Abend des ersten Tages gab es eine von Immowelt gesponsorte Pizza Party und ein gemeinsames Ausklingen des Tages bis die Reinigungskräfte verzweifelt versuchten, um uns herumzuputzen und wir entschieden, das Büro zu verlassen und im Hotel weiterzuhacken. 
 
-![](immo5.png)
+![](immo5.jpg)
 
 Der zweite Tag verging wie im Fluge und das Abschlussevent um 16:00 kam viel schneller als gewünscht. Es gab noch so viele Features die wir unbedingt in unsere Projekte einbauen wollten aber auch dieses Event musste irgendwann zu Ende gehen. Wir präsentierten gemeinsam unsere Ergebnisse und es waren echt spannende Themen dabei. Unangefochtene Sieger des Events waren natürlich die fantastischen Blockchain Projekte, die Immowelt ein vielversprechendes neues Geschäftsfeld eröffneten. Das ist natürlich nur meine persönliche Meinung und als Blockchain Entwickler bin ich eventuell ein wenig voreingenommen. Aber es gab auch viele Blockchain-freie Projekte, die beeindruckten. Eine Augmented-Reality-App für das Smartphone nimmt das Foto eines Grundriss' und transformiert es in ein 3 dimensionales Modell, das auf dem Screen in den Raum projiziert wird und aus allen Blickwinkeln betrachtet und sogar mit Möbeln bestückt werden kann. Ein Team baute eine automatische Fraud-Detection, basierend auf dem AWS Machine Learning Framework. Für einen Überblick über die Verteilung von Immobilienpreisen wurde über die Google Maps API eine Karte mit aktuellen Preisen farblich codiert und als Layer angezeigt. Und natürlich durfte das wertvollste Werkzeug nicht fehlen: Ein Bewegungssensor am Kicker signaisiert einem Webserver, ob der Kicker belegt ist oder nicht. Kudos!
 
 Vielen Dank nochmal an Immowelt Hamburg für die Einladung und den tollen Immovation Day!
 
-![](immo4.png)
+![](immo4.jpg)
 
