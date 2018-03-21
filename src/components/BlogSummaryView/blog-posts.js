@@ -140,6 +140,16 @@ const posts = [
         summary: "Bei AS Ideas generieren wir kontinuierlich Ideen, Prototypen und Wissen. Erfolgskritisch ist dabei, dass wir unsere Initiativen reflektieren und das gewonnene Wissen untereinander teilen. Für einen freien Kopf und frische kreative Energie zogen wir uns diesen März ins Offsite zurück...",
         author: "Tarek Madany Mamlouk",
         authorEmail: "tarek.madanymamlouk@asideas.de"
+    },
+    {
+        year: "2018",
+        month: "03",
+        name: "lazy-learning-per-knn",
+        title: "Lazy Learning per KNN",
+        titlePicture: "knn00.jpg",
+        summary: "Künstliche Intelligenz gilt nach und nach immer weniger als Innovation und immer mehr als alltägliches Werkzeug. Um unsere Kunden optimal zu maschinellem Lernen beraten zu können, stellten wir uns die Frage, wie effizient es funktionieren würde, ein Empfehlungssystem für Nachrichtenartikel basierend auf trägem Lernen (\"lazy learning\") zu schreiben.",
+        author: "Tarek Madany Mamlouk",
+        authorEmail: "tarek.madanymamlouk@asideas.de"
     }
 ];
 
