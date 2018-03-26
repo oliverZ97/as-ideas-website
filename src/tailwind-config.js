@@ -49,6 +49,7 @@ let colors = {
     'black': '#000000',
     'white': '#ffffff',
     'ci-black': '#1e1d1e',
+    'ci-gray': '#2B2B2B',
 
     'white-transparent-9/10': 'rgba(255,255,255,0.9)',
 

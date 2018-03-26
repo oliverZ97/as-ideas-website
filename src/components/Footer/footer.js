@@ -10,14 +10,16 @@ class Footer extends React.Component {
       <footer id="contact" className="footer">
         <div className="footer-container">
           <div className="footer__column col1">
-            <span className="col1-text">
+            <span >
               <a href='https://career.axelspringer.com/job/backend-artist-mit-frontend-foo-some-ops-skills-baffos-berlin-2/' target="_blank" rel="noopener noreferrer">We are hiring!</a>
-              <br/>If you're interested,
-              <br/>drop us a line or two.
+              <br/>
+              <span className="col1-text">If you're interested,</span>
+              <br/>
+              <span className="col1-text">drop us a line or two.</span>
             </span>
           </div>
-          <div className="footer__column col2 col-with-text not-xs">
-            <h2>sitemap</h2>
+          <div className="footer__column col2 not-xs">
+            <h2 className="col-header">sitemap</h2>
             <div className="footer__list">
               <Link to="home">Home</Link>
               <Link to="services">Services</Link>
@@ -29,8 +31,8 @@ class Footer extends React.Component {
               </a>
             </div>
           </div>
-          <div className="footer__column col3 col-with-text not-xs">
-            <h2>SOCIAL MEDIA</h2>
+          <div className="footer__column col3 not-xs">
+            <h2 className="col-header">SOCIAL MEDIA</h2>
             <div className="footer__list">
               <a href="https://github.com/as-ideas" rel="noopener noreferrer" target="_blank">Github</a>
               <a href="https://twitter.com/as_ideas" rel="noopener noreferrer" target="_blank">Twitter</a>
@@ -39,8 +41,8 @@ class Footer extends React.Component {
               <a href="https://www.instagram.com/ideas_engineering/" rel="noopener noreferrer" target="_blank">Instagram</a>
             </div>
           </div>
-          <div className="footer__column col4 col-with-text not-xs">
-            <h2>contact</h2>
+          <div className="footer__column col4">
+            <h2 className="col-header not-xs">contact</h2>
             <div className="footer__list">
               <p>Axel Springer Ideas Engineering GmbH</p>
               <p>Axel-Springer-Str. 65, 10969 Berlin</p>
