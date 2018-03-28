@@ -63,11 +63,9 @@ function createRssFeed(allBlogPosts) {
                     'media:content': {
                         _attr: {
                             "xmlns:media": 'http://search.yahoo.com/mrss/',
-                            "url": 'http://www.widget.com/images/thumb.gif',
+                            "url": `${post.permalink}${post.titlePicture}`,
                             "medium": 'image',
-                            "type": 'image/jpeg',
-                            "width": '150',
-                            "height": '150',
+                            "type": 'image/jpeg'
                         }
                     }
                 }
