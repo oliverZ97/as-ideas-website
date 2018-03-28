@@ -58,6 +58,20 @@ function createRssFeed(allBlogPosts) {
             // categories: ['Category 1', 'Category 2', 'Category 3', 'Category 4'], // optional - array of item categories
             author: post.author, // optional - defaults to feed author property
             date: post.date, // any format that js Date can parse.
+            custom_elements: [
+                {
+                    'media:content': {
+                        _attr: {
+                            "xmlns:media": 'http://search.yahoo.com/mrss/',
+                            "url": 'http://www.widget.com/images/thumb.gif',
+                            "medium": 'image',
+                            "type": 'image/jpeg',
+                            "width": '150',
+                            "height": '150',
+                        }
+                    }
+                }
+            ]
         });
     });
 
