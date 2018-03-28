@@ -67,6 +67,12 @@ function createRssFeed(allBlogPosts) {
                             "medium": 'image',
                             "type": 'image/jpeg'
                         }
+                    },
+                    'enclosure': {
+                        _attr: {
+                            "url": `${post.permalink}${post.titlePicture}`,
+                            "type": 'image/jpeg'
+                        }
                     }
                 }
             ]
