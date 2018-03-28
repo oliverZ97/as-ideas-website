@@ -1,7 +1,7 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import "./blogSummary.scss";
-import posts from "./blog-posts.js";
+import posts from "./../../blog-posts.js";
 
 class BlogSummary extends React.Component {
     render() {

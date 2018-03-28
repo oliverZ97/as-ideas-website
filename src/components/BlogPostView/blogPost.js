@@ -2,7 +2,7 @@ import React from "react";
 import "./blogPost.scss";
 import "./marked.scss";
 import marked from "marked";
-import posts from "./../BlogSummaryView/blog-posts.js";
+import posts from "./../../blog-posts.js";
 import highlightJs from "./highlight";
 import disqus from "./disqus";
 import {animateScroll} from "react-scroll/modules/index";
