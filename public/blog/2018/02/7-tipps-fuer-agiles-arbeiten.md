@@ -1,4 +1,6 @@
-Ursprünglich erschienen am 27.09.2016 auf https://www.tbd.community/de/a/7-tipps-fuer-agiles-arbeiten
+# Ein kleiner Einstieg in Agilität: 7 Tipps für effizienteres Arbeiten
+
+![](01.jpg)
 
 Unsere Welt verändert sich. Laufend passieren neue Sachen, neue Events, neue Momente, die uns dazu zwingen, unsere Arbeits- und Vorgehensweise anzupassen. Deshalb wird auch der Begriff des agilen Arbeitens immer wichtiger. Aber was ist agiles Arbeiten überhaupt?
 
@@ -8,7 +10,7 @@ Agil heißt nicht schneller zu arbeiten, sondern mit besserer Qualität. Es geht
 
 Agil ist ein alternativer Ansatz, Aufgaben zu planen und abzuarbeiten und macht aus Betroffenen Beteiligte. Agilität erfordert aber auch eine aktive und lösungsorientierte Haltung aller Beteiligten.
 
-Hier sind die 7 besten Ratschläge, damit du in Zukunft agiler arbeiten kannst.
+Hier sind meine sieben Ratschläge, damit du in Zukunft agiler arbeiten kannst:
 1. Akzeptiere, dass du die Zukunft nicht vorhersehen kannst. Akzeptiere, dass kompliziert und komplex nicht das Gleiche ist. Während man komplizierte Probleme nicht mit Agilität, sondern mit besserer Planung angehen sollte, kann Agiles Arbeiten bei komplexen Problemstellungen sehr hilfreich sein. Aber auch wenn Standardisierung und klar definierte Tools und Prozesse verlockend klingen, skalieren diese nicht, ohne Komplexität zu verursachen.
 2. Arbeite im Team, nicht alleine. Es ist einiges schwieriger, sich alleine gegen schlechte Entscheidungen zu wehren, als wenn man sich mit seinem Superteam zusammensetzen kann. Es ist wichtig, zusammen zu kommunizieren und sich gegenseitig an wichtige Elemente zu erinnern, sich moralisch zu unterstützen und vor allem gemeinsam die Verantwortung zu tragen. Ein Team hat natürlich auch den immensen Vorteil, dass man seine Aufgaben gemeinsam organisiert und sich gegenseitig immer wieder heraufordert.
 3. Brich die Arbeit in kleinere Teile herunter. Wer agil arbeitet, unterteilt große Aufgaben in überschaubare Schritte („Iterationen“). Damit werden Erfolge schneller sichtbarer, was mehr Überblick über die Situation schafft. Dafür solltest du immer mit dem geringstmöglichen strukturellen Aufwand anfangen und nur Dinge hinzufügen, die einen spezifischen Mehrwert haben. So vermeidest du, dass du dich in kleinen unwichtigen Details verhedderst und dein Ziel aus den Augen verlierst.
@@ -16,3 +18,5 @@ Hier sind die 7 besten Ratschläge, damit du in Zukunft agiler arbeiten kannst.
 5. Organisiere die Arbeit so, dass sie gezogen wird, nicht zugewiesen. Agil kollidiert mit klassischen Organisationsformen und Hierarchien, denn die Unsicherheit wird im agilen Arbeiten akzeptiert. Zusätzlich erfordert Wissensarbeit autonomes Handeln, denn die Entscheidungen trifft das Team, kein Vorgesetzter. Deswegen sollte agiles Arbeiten immer durch Selbstbestimmung erfolgen und Selbstverwaltung fördern: Das Ziel wird vorgegeben, aber den Weg bestimmt jeder selbst.
 6. Mach Fehler und lerne daraus. Fehler passieren. Lerne, deine Rückfälle und Fehler zu akzeptieren, egal ob diese im Projekt oder bei der Umsetzung von Zielen passieren. Versuche nicht nach „ganz oder gar nicht“ zu arbeiten, sondern aus anderen Erfahrungen zu lernen und Dich selbst konstant zu verbessern. Ein/e agile/r Mitarbeiter/in passt das Vorgehen je nach den gemachten Erfahrungen kontinuierlich an die Anforderungen an.
 7. Messen, messen, messen. Validiere deine Annahmen. Spekulation funktioniert vielleicht an der Börse, aber nicht im regulären Arbeitsleben. Erprobe deine Hypothesen im kleinen Maßstab, bevor du ein riesiges Projekt umsetzt. Es ist besser, klein anzufangen, Daten zu sammeln und dann aufgrund von deinen Messungen anhand der Daten zu handeln.
+
+_Ursprünglich erschienen am 27.09.2016 auf [The Changer](https://www.tbd.community/de/a/7-tipps-fuer-agiles-arbeiten)_
