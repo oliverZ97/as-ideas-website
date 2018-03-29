@@ -84,3 +84,8 @@ img {
     filter: contrast(80%);
 }
 
+.not-xs {
+    @screen sm {
+        display: none;
+    }
+}

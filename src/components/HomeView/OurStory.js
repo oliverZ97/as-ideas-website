@@ -64,8 +64,8 @@ const ParallaxImageFrame = () => {
 
     return (
         <Parallax
-            offsetXMax={12}
-            offsetXMin={-12}
+            offsetXMax={6}
+            offsetXMin={-6}
             offsetYMax={18}
             offsetYMin={-18}
             styleOuter={outerStyle}

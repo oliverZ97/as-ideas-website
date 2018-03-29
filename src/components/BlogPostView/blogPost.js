@@ -2,9 +2,10 @@ import React from "react";
 import "./blogPost.scss";
 import "./marked.scss";
 import marked from "marked";
-import posts from "./../BlogSummaryView/blog-posts.js";
+import posts from "./../../blog-posts.js";
 import highlightJs from "./highlight";
 import disqus from "./disqus";
+import {animateScroll} from "react-scroll/modules/index";
 
 class BlogPost extends React.Component {
     constructor(props) {
@@ -18,6 +19,10 @@ class BlogPost extends React.Component {
         this.loadCurrentBlogPost(this.props.match.params);
         highlightJs.loadHighlightJs();
         disqus.loadDisqus();
+    }
+
+    componentWillUnmount() {
+        document.title = "ideas engineering ⚡";
     }
 
     componentWillReceiveProps(nextProps) {
@@ -36,16 +41,23 @@ class BlogPost extends React.Component {
             .then((text) => {
                 let preview = document.getElementById("preview");
                 preview.innerHTML = marked(text);
+                this.scrollToTop();
             })
             .then(() => {
                 highlightJs.doHighlight();
                 let elements = document.querySelectorAll(".markdown-body img");
-                for (let i = 1; i < elements.length; i++) {
+                for (let i = 0; i < elements.length; i++) {
                     elements[i].addEventListener("click", (event) => {
                         this.showLightbox(event)
                     });
                 }
             });
+    }
+
+    scrollToTop() {
+        window.setTimeout(() => {
+            animateScroll.scrollToTop();
+        }, 250);
     }
 
     hideLightbox() {

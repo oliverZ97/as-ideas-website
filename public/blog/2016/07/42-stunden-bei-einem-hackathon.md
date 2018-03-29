@@ -80,7 +80,7 @@ Ein paar CxOs vom benachbarten Summit schauen vorbei und fragen, was wir machen 
 Dienstag **19:01 Uhr**  
 Und wieder auf die Dachterrase, es gibt BBQ. Dazu auf zwei Screens Fußball, es ist EM und es spielen Polen und Deutschland zeitgleich. Für eine gute Stimmung sollten beide Mannschaften gewinnen 😀 Unser Kollege von Transfermarkt lässt sowieso alles stehen und liegen, damit er sich ja auf das Spiel konzentrieren kann. Ich programmiere einfach weiter.
 
-![13432330_10153888552968702_9078159960158675031_n](13432330_10153888552968702_9078159960158675031_n-300x225.jpg) ![13502057_10153888552913702_4622802808098168082_n](http://www.axelspringerideas.de/blog/wp-content/uploads/2016/06/13502057_10153888552913702_4622802808098168082_n-300x225.jpg)
+![13432330_10153888552968702_9078159960158675031_n](13432330_10153888552968702_9078159960158675031_n.jpg) ![13502057_10153888552913702_4622802808098168082_n](13502057_10153888552913702_4622802808098168082_n.jpg)
 
 ![IMG_3235](IMG_3235.jpg)
 

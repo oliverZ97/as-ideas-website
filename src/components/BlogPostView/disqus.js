@@ -14,6 +14,7 @@ const disqus = {
         if (post && window.DISQUS) {
             window.disqus_config = function () {
                 this.page.url = post.permalink;
+                this.page.title = post.title;
                 this.page.identifier = post.id;
             };
 
@@ -21,6 +22,8 @@ const disqus = {
                 reload: true,
                 config: window.disqus_config
             });
+
+            document.title = "ideas engineering ⚡ " + post.title;
         } else {
             console.warn("Disqus not loaded, retry...");
             window.setTimeout(() => {
