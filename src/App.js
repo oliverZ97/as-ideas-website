@@ -1,5 +1,5 @@
 import React from "react";
-import {Router, Route, Switch} from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
 import Home from "./components/HomeView/Home";
 import BlogPost from "./components/BlogPostView";
 import BlogSummary from "./components/BlogSummaryView";
@@ -10,20 +10,20 @@ import './App.scss';
 
 const App = () => (
   <Router history={history}>
-    <div>
-      <MainNavComponent/>
+    <article className='app'>
+      <MainNavComponent history={history} />
 
 
       <Switch>
-        <Route exact path="/" component={Home}/>
+        <Route exact path="/" component={Home} />
         {/*<Route path="/imprint" component={Impressum}/>*/}
-        <Route path="/blog/:year/:month/:name" component={BlogPost}/>
-        <Route path="/blog" component={BlogSummary}/>
-        <Route component={Home}/>
+        <Route path="/blog/:year/:month/:name" component={BlogPost} />
+        <Route path="/blog" component={BlogSummary} />
+        <Route component={Home} />
       </Switch>
 
-      <Footer/>
-    </div>
+      <Footer />
+    </article>
   </Router>
 );
 export default App;

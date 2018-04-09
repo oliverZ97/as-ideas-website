@@ -59,6 +59,7 @@
 
 @import "./assets/mixins";
 @import "./assets/settings";
+@import "./styles/base";
 
 html {
     @include font-smoothing;
@@ -88,4 +89,8 @@ img {
     @screen sm {
         display: none;
     }
+}
+
+.app {
+
 }

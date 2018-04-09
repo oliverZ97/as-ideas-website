@@ -1,0 +1,48 @@
+@mixin mainNavItemBorder($color: transparent) {
+    position: relative;
+    &::after {
+        content: "";
+        transition: all 300ms ease;
+        position: absolute;
+        left: 10px;
+        bottom: calc(50% - 10px);
+        width: calc(100% - 20px);
+        height: 1px;
+        background-color: $color;
+    }
+}
+
+.mainNavItem {
+    @include mainNavItemBorder;
+}
+
+.mainNavItemAside {
+    flex-basis: 200px;
+}
+
+.mainNavItemHasBorder {
+    @include mainNavItemBorder(config("colors.black"));
+}
+
+.mainNavItemHasBorderOnHover {
+    &:hover {
+        @include mainNavItemBorder(config("colors.black"));
+    }
+}
+
+$transition: all 350ms cubic-bezier(0.445, 0.05, 0.55, 1) 100ms;
+
+.OffCanvas {
+    opacity: 1;
+    /* Width of OffCanvas is a magic number, depends on burger icon width,
+    eg. see devtools, or calculate like this: 36px icon width + 2 * 12px icon padding */
+    min-width: calc(100% - 60px);
+    transform: translateX(0);
+    transition: $transition;
+}
+
+.OffCanvas--hidden {
+    opacity: 0.5;
+    transform: translateX(-100%);
+}  
+  
