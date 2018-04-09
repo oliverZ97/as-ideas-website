@@ -1,31 +1,9 @@
 import React from "react";
-import ScrollingLink from '../ScrollingLink/ScrollingLink';
-import { NavLink } from "react-router-dom";
 
 import { IdeasLogo } from './../../assets/svg';
+import Link from './../Link/Link';
 
 import './MainNav.scss';
-
-function Link({ to, children, history }) {
-    let onHome = window.location.pathname === '/';
-    let external = to.includes('/')
-
-    if (external) {
-        return <a className={'mainNav__link'} href={to}>{children}</a>
-    } else {
-        if (!onHome) {
-            return <a href={'/#' + to} className={'mainNav__link'}>{children}</a>
-        } else {
-            return <ScrollingLink
-                to={to}
-                className={'mainNav__link'}
-                history={history}
-            >
-                {children}
-            </ScrollingLink>
-        }
-    }
-}
 
 export default class MainNav extends React.Component {
     constructor(props) {
@@ -58,14 +36,14 @@ export default class MainNav extends React.Component {
                     </Link>
                     </li>
                     <li className='mainNav__item'>
-                        <Link className='mainNav__link' to='/blog' history={history}>
+                        <Link className='mainNav__link' to='/blog'>
                             Blog
-                    </Link>
+                        </Link>
                     </li>
                     <li className='mainNav__item mainNav__item--right'>
-                        <Link className='mainNav__link' to='' history={history}>
+                        <Link className='mainNav__link' to='https://career.axelspringer.com/jobangebote/'>
                             Work with us
-                    </Link>
+                        </Link>
                     </li>
                 </ul>
             </nav>
