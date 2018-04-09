@@ -59,11 +59,11 @@ export default class Footer extends React.Component {
                         <Column>
                             <h3>Social Media</h3>
                             <ul>
-                                <li>GitHub</li>
-                                <li>Twitter</li>
-                                <li>LinkedIn</li>
-                                <li>Facebook</li>
-                                <li>Instagram</li>
+                                <li><Link to='https://github.com/as-ideas'>GitHub</Link></li>
+                                <li><Link to='https://twitter.com/as_ideas'>Twitter</Link></li>
+                                <li><Link to='https://www.linkedin.com/company/axel-springer-ideas-engineering'>LinkedIn</Link></li>
+                                <li><Link to='https://www.facebook.com/AxelSpringerIdeas/'>Facebook</Link></li>
+                                <li><Link to='https://www.instagram.com/ideas_engineering/'>Instagram</Link></li>
                             </ul>
                         </Column>
                         <Column>
