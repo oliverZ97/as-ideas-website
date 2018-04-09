@@ -48,7 +48,7 @@ export default class Portfolio extends React.Component {
 
     render() {
         return (
-            <section className='portfolio centered'>
+            <section id='portfolio' className='portfolio centered'>
                 <div className='portfolio__container'>
                     <h1 className='portfolio__heading sectionHeading'>
                         A Selection of our Work

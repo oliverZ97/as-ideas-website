@@ -6,6 +6,27 @@ import { IdeasLogo } from './../../assets/svg';
 
 import './MainNav.scss';
 
+function Link({ to, children, history }) {
+    let onHome = window.location.pathname === '/';
+    let external = to.includes('/')
+
+    if (external) {
+        return <a className={'mainNav__link'} href={to}>{children}</a>
+    } else {
+        if (!onHome) {
+            return <a href={'/#' + to} className={'mainNav__link'}>{children}</a>
+        } else {
+            return <ScrollingLink
+                to={to}
+                className={'mainNav__link'}
+                history={history}
+            >
+                {children}
+            </ScrollingLink>
+        }
+    }
+}
+
 export default class MainNav extends React.Component {
     constructor(props) {
         super(props);
@@ -17,34 +38,34 @@ export default class MainNav extends React.Component {
             <nav className='mainNav'>
                 <ul className='mainNav__list'>
                     <li className='mainNav__item'>
-                        <ScrollingLink className='mainNav__link' to='services' history={history}>
+                        <Link className='mainNav__link' to='services' history={history}>
                             Services
-                        </ScrollingLink>
+                        </Link>
                     </li>
                     <li className='mainNav__item'>
-                        <ScrollingLink className='mainNav__link' to='portfolio' history={history}>
+                        <Link className='mainNav__link' to='portfolio' history={history}>
                             Portfolio
-                    </ScrollingLink>
+                    </Link>
                     </li>
                     <li className='mainNav__item mainNav__item--logo'>
-                        <ScrollingLink className='mainNav__link' to='home' history={history}>
+                        <Link className='mainNav__link' to='home' history={history}>
                             <IdeasLogo />
-                        </ScrollingLink>
+                        </Link>
                     </li>
                     <li className='mainNav__item'>
-                        <ScrollingLink className='mainNav__link' to='culture' history={history}>
+                        <Link className='mainNav__link' to='culture' history={history}>
                             Culture
-                    </ScrollingLink>
+                    </Link>
                     </li>
                     <li className='mainNav__item'>
-                        <NavLink className='mainNav__link' to='/blog' history={history}>
+                        <Link className='mainNav__link' to='/blog' history={history}>
                             Blog
-                    </NavLink>
+                    </Link>
                     </li>
                     <li className='mainNav__item mainNav__item--right'>
-                        <ScrollingLink className='mainNav__link' to='' history={history}>
+                        <Link className='mainNav__link' to='' history={history}>
                             Work with us
-                    </ScrollingLink>
+                    </Link>
                     </li>
                 </ul>
             </nav>

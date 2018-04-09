@@ -5,7 +5,7 @@ import BlogPost from "./components/BlogPostView";
 import BlogSummary from "./components/BlogSummaryView";
 import history from "./components/MainNav/history";
 import MainNavComponent from "./components/MainNav/MainNav";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import './App.scss';
 
 const App = () => (

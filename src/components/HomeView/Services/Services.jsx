@@ -37,7 +37,7 @@ export default class Services extends React.Component {
 
     render() {
         return (
-            <section className='services centered'>
+            <section id='services' className='services centered'>
                 <div className='services__container'>
                     <h1 className='services__heading sectionHeading'>
                         How can we help you?

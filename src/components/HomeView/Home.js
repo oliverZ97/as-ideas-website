@@ -1,19 +1,17 @@
 import React from 'react';
 import MainNavComponent from './../MainNav/MainNav';
-import Hero from "./Hero/Hero";
-import Services from "./Services/Services";
-import Portfolio from "./Portfolio/Portfolio";
-import Culture from "./Culture/Culture";
-import Contact from "./Contact";
-import Testimonials from "./Testimonials/Testimonials";
+import Hero from './Hero/Hero';
+import Services from './Services/Services';
+import Portfolio from './Portfolio/Portfolio';
+import Culture from './Culture/Culture';
+import Contact from './Contact/Contact';
+import Testimonials from './Testimonials/Testimonials';
 
-
-
-import "./Home.scss"
+import './Home.scss'
 
 const Home = () => {
     return (
-        <div className="home">
+        <div className='home'>
             {/* <MainNavComponent/> */}
             <Hero />
             <Services />
@@ -24,6 +22,5 @@ const Home = () => {
         </div>
     );
 };
-
 
 export default Home;

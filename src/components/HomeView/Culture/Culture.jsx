@@ -41,7 +41,7 @@ export default class Culture extends React.Component {
 
     render() {
         return (
-            <section className='culture centered'>
+            <section id='culture' className='culture centered'>
                 <div className='culture__container'>
                     <h1 className='culture__heading sectionHeading'>
                         Our Company Culture

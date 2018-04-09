@@ -8,7 +8,6 @@ export default class ScrollingLink extends React.Component {
 
     handleClick() {
         if (this.props.history.location.pathname !== '/') {
-            console.log('x');
             this.props.history.push('/#' + this.props.to);
         }
     }
