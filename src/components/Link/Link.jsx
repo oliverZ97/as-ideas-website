@@ -3,7 +3,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 export default function Link({ to, children, className }) {
     let onHome = window.location.pathname === '/';
-    let external = to.match('\/|@')
+    let external = to.match('/|@')
 
     if (external) {
         return <a className={className} href={to}>{children}</a>

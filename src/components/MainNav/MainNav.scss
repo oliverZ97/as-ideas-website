@@ -59,8 +59,8 @@
 
         transition: color .2s;
 
-        &--active {
-            color: $font-col-active;
+        &.active {
+            color: $font-col-interaction;
         }
         
         &:hover {

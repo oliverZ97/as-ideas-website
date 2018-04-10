@@ -22,10 +22,6 @@ const servicesText = {
 };
 
 export default class Services extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     renderServiceItem(service) {
         return (
             <li className='services__item'>

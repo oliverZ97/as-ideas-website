@@ -6,10 +6,6 @@ import Link from './../Link/Link';
 import './MainNav.scss';
 
 export default class MainNav extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         let history = this.props.history;
         return (

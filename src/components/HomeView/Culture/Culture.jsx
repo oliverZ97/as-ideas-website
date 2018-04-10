@@ -21,15 +21,11 @@ const ourStory = {
 };
 
 export default class Culture extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     renderCultureItem(dataItem, floatingClass, height) {
         return (
             <div className={'culture__section culture__section--' + floatingClass}>
                 <LazyLoad height={height}>
-                    <img className='culture__image' src={dataItem.imageUrl} />
+                    <img className='culture__image' src={dataItem.imageUrl} alt={dataItem.title} />
                 </LazyLoad>
                 <div className='culture__text'>
                     <h3>{dataItem.title}</h3>

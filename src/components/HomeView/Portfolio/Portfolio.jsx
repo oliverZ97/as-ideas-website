@@ -25,14 +25,10 @@ const PortfolioText = {
 };
 
 export default class Portfolio extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     renderItem(dataItem) {
         return (
             <li className='portfolio__item'>
-                <img className='portfolio__image' src={dataItem.imageUrl} />
+                <img className='portfolio__image' src={dataItem.imageUrl} alt={dataItem.title} />
                 <h3 className='portfolio__subtitle'>
                     {dataItem.title}
                 </h3>
