@@ -99,12 +99,6 @@ module.exports = {
     ],
   },
   module: {
-    loaders: [
-      {
-        test: /\.svg$/,
-        loader: 'svg-inline-loader'
-      }
-    ],
     strictExportPresence: true,
     rules: [
       // TODO: Disable require.ensure as it's not a standard language feature.
@@ -156,11 +150,6 @@ module.exports = {
               // directory for faster rebuilds.
               cacheDirectory: true,
             },
-          },
-          // Load SVG inline.
-          {
-            test: /\.svg$/,
-            loader: 'svg-inline-loader'
           },
           // "postcss" loader applies autoprefixer to our CSS.
           // "css" loader resolves paths in CSS and adds assets as dependencies.
