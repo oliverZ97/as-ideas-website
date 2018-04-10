@@ -1,5 +1,4 @@
 import React from "react";
-import { CSSTransition } from 'react-transition-group';
 import "./Testimonials.scss";
 
 import { ArrowRight } from '../../../assets/svg';
