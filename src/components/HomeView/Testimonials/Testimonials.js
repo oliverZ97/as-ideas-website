@@ -74,27 +74,38 @@ class Testimonials extends React.Component {
         }
     }
 
+    animationIsActive() {
+        let animationEl = document.querySelector('.testimonials__text');
+        return animationEl.className.includes('active');
+    }
+
     next() {
-        let activeItem = (this.state.activeItem + 1 > testimonialQuotations.length - 1) ? 0 : this.state.activeItem + 1;
-        this.setState({
-            activeItem: activeItem,
-            animation: "left"
-        });
+        if (!this.animationIsActive()) {
+            let activeItem = (this.state.activeItem + 1 > testimonialQuotations.length - 1) ? 0 : this.state.activeItem + 1;
+            this.setState({
+                activeItem: activeItem,
+                animation: "left"
+            });
+        }
     }
 
     prev() {
-        let activeItem = (this.state.activeItem - 1 < 0) ? testimonialQuotations.length - 1 : this.state.activeItem - 1;
-        this.setState({
-            activeItem: activeItem,
-            animation: "right"
-        });
+        if (!this.animationIsActive()) {
+            let activeItem = (this.state.activeItem - 1 < 0) ? testimonialQuotations.length - 1 : this.state.activeItem - 1;
+            this.setState({
+                activeItem: activeItem,
+                animation: "right"
+            });
+        }
     }
 
     goTo(index) {
-        this.setState({
-            activeItem: index,
-            animation: index < this.state.activeItem ? 'right' : 'left'
-        });
+        if (!this.animationIsActive()) {
+            this.setState({
+                activeItem: index,
+                animation: index < this.state.activeItem ? 'right' : 'left'
+            });
+        }
     }
 
     shuffleArray(array) {
@@ -144,7 +155,7 @@ class Testimonials extends React.Component {
                         }}
                         transitionEnterTimeout={500}
                         transitionLeaveTimeout={500}>
-                        <p key={this.state.activeItem} className='testimonials__text'>
+                        <p key={this.state.activeItem} className='testimonials__text' ref={el => this.animationEl = el}>
                             {'„' + quote.quotation + '“'}
                         </p>
                     </ReactCSSTransitionGroup>
