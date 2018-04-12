@@ -70,6 +70,14 @@
         }
         margin-left: 10%;
         width: 90%;
+
+        @include device(tablet) {
+            font-size: 48px;
+        }
+
+        @include device(phone) {
+            font-size: 28px;
+        }
     }
 
     &__author {

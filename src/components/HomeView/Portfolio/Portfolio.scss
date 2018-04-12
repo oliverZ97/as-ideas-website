@@ -16,6 +16,10 @@
 
         justify-content: space-between;
         width: 80%;
+
+        @include device(tablet) {
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -26,6 +30,10 @@
         margin-bottom: 80px;
 
         border-bottom: 2px solid $grey;
+
+        @include device(tablet) {
+            width: 100%;
+        }
     }
 
     &__image {
