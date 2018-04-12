@@ -6,7 +6,7 @@
     height: 100vh;
     
     @include device(small-desktop) {
-        padding: 40px 0;
+        padding: 80px 0 40px;
     }
 
     &__container {
@@ -28,7 +28,7 @@
         align-items: center;        
         justify-content: center;
 
-        margin-bottom: 20px;
+        margin-bottom: 10px;
 
         position: relative;
     }

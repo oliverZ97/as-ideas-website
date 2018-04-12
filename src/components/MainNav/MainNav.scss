@@ -19,6 +19,10 @@
         background-color: transparentize($background-col-primary,.1);
     }
 
+    @include device(tablet) {
+        background-color: transparentize($background-col-primary,.1);
+    }
+
     &__list {
         width: 100%;
         max-width: 1300px;
