@@ -1,3 +1,5 @@
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
 import React from "react";
 import "./Testimonials.scss";
 
@@ -48,6 +50,7 @@ class Testimonials extends React.Component {
         super(props);
         this.state = {
             activeItem: 0,
+            animation: null
         }
     }
 
@@ -74,20 +77,23 @@ class Testimonials extends React.Component {
     next() {
         let activeItem = (this.state.activeItem + 1 > testimonialQuotations.length - 1) ? 0 : this.state.activeItem + 1;
         this.setState({
-            activeItem: activeItem
+            activeItem: activeItem,
+            animation: "left"
         });
     }
 
     prev() {
         let activeItem = (this.state.activeItem - 1 < 0) ? testimonialQuotations.length - 1 : this.state.activeItem - 1;
         this.setState({
-            activeItem: activeItem
+            activeItem: activeItem,
+            animation: "right"
         });
     }
 
     goTo(index) {
         this.setState({
-            activeItem: index
+            activeItem: index,
+            animation: index < this.state.activeItem ? 'right' : 'left'
         });
     }
 
@@ -131,9 +137,17 @@ class Testimonials extends React.Component {
                         </h3>
                         {this.renderIndicator(testimonialQuotations.length, this.state.activeItem)}
                     </div>
-                    <p className='testimonials__text'>
-                        {'„' + quote.quotation + '“'}
-                    </p>
+                    <ReactCSSTransitionGroup
+                        transitionName={{
+                            enter: 'testimonials__text--enter-' + this.state.animation,
+                            leave: 'testimonials__text--leave-' + this.state.animation
+                        }}
+                        transitionEnterTimeout={500}
+                        transitionLeaveTimeout={500}>
+                        <p key={this.state.activeItem} className='testimonials__text'>
+                            {'„' + quote.quotation + '“'}
+                        </p>
+                    </ReactCSSTransitionGroup>
                     <div className='testimonials__overlay testimonials__overlay--left' onClick={this.prev.bind(this)}>
                         <ArrowLeft className='testimonials__arrow testimonials__arrow--left' />
                     </div>
