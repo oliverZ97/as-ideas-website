@@ -125,12 +125,14 @@ class Testimonials extends React.Component {
         return (
             <section className='testimonials centered'>
                 <figure className='testimonials__container'>
-                    {this.renderIndicator(testimonialQuotations.length, this.state.activeItem)}
-                    <h3 className='testimonials__author'>
-                        {quote.quotedBy}
-                    </h3>
+                    <div className='testimonials__head'>
+                        <h3 className='testimonials__author'>
+                            {quote.quotedBy}
+                        </h3>
+                        {this.renderIndicator(testimonialQuotations.length, this.state.activeItem)}
+                    </div>
                     <p className='testimonials__text'>
-                        {quote.quotation}
+                        {'„' + quote.quotation + '“'}
                     </p>
                     <div className='testimonials__overlay testimonials__overlay--left' onClick={this.prev.bind(this)}>
                         <ArrowLeft className='testimonials__arrow testimonials__arrow--left' />

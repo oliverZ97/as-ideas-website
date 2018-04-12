@@ -12,13 +12,17 @@
     position: relative;
 
     &__text {
-        width: 900px;
+        width: 90%;
+        max-width: 900px;
         text-align: center;
         
         font-size: 36px;
 
         line-height: 45px;
         font-weight: 300;
+
+        @include device(tablet) {
+        }
     }
 
     &__arrow {

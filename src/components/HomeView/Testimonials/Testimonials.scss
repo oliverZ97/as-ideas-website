@@ -2,24 +2,53 @@
 
 .testimonials {
     background: $background-col-secondary;
-    padding: 100px 80px;
+    padding: 100px 0;
     height: 100vh;
 
     &__container {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
         position: relative;
         
         height: 100%;
-        padding: 50px 0;
+        padding: 0px 0;
     }
 
-    &__indicator {
+    &__head {
+        flex: none;
+        align-self: stretch;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+        justify-content: center;
+
+        margin-bottom: 20px;
+
+        position: relative;
+    }
+
+
+    &__author {
+        margin: 0;
+        
         position: absolute;
-        top: 0px;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        
+        @include device(small-desktop) {
+            margin: inherit;
+            position: static;
+            transform: none;
+            
+            align-self: flex-start;
+        }
+    }
+
+
+    &__indicator {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -56,34 +85,33 @@
     }
 
     &__text {
+        flex: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         font-size: 64px;
         font-weight: 700;
         letter-spacing: -1.5px;
         color: $font-col-interaction;
 
-        &:before {
-            content: '„';
-        }
-
-        &:after {
-            content: '“';
-        }
         margin-left: 10%;
         width: 90%;
 
+        @include device(small-desktop) {
+            font-size: 54px;
+        }
+
         @include device(tablet) {
-            font-size: 48px;
+            font-size: 42px;
+            width: 95%;
+            margin: 0;
         }
 
         @include device(phone) {
-            font-size: 28px;
+            font-size: 34px;
         }
-    }
-
-    &__author {
-        position: absolute;
-        top: 0px;
-        left: 0px;
     }
 
     &__overlay {
