@@ -15,7 +15,7 @@ const Footer = () => (
                     If you're interested,<br />
                     drop us a line or two.
                         </Column>
-                <Column>
+                <Column className={'footer__column--sitemap'}>
                     <h3>Sitemap</h3>
                     <ul>
                         <li><Link className='footer__link' to='hero'>Home</Link></li>

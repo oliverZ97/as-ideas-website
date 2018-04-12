@@ -1,3 +1,5 @@
+@import "../../../styles/variables";
+
 .contact {
     padding-top: 0;
 
@@ -6,7 +8,9 @@
     &__text {
         font-weight: 700;
         line-height: 45px;
+    }
 
-        margin: 0 80px;
+    @include device(phone) {
+        display: none !important;
     }
 }

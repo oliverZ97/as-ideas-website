@@ -4,6 +4,10 @@
     background: $background-col-secondary;
     padding: 100px 0;
     height: 100vh;
+    
+    @include device(small-desktop) {
+        padding: 40px 0;
+    }
 
     &__container {
         display: flex;
@@ -45,6 +49,11 @@
             
             align-self: flex-start;
         }
+
+        @include device(phone) {
+            font-size: 18px;
+            line-height: 32px;
+        }
     }
 
 
@@ -53,6 +62,7 @@
         flex-direction: row;
         align-items: center;
 
+        position: relative;
         z-index: 2;        
     }
     
@@ -82,6 +92,11 @@
             height: 7px;
             width: 7px;            
         }
+
+        @include device(phone) {
+            height: 8px;
+            width: 8px;
+        }
     }
 
     &__text {
@@ -108,9 +123,10 @@
             width: 95%;
             margin: 0;
         }
-
+        
         @include device(phone) {
-            font-size: 34px;
+            font-size: 36px;
+            line-height: 48px;
         }
     }
 
@@ -129,6 +145,10 @@
             &:hover > svg{
                 left: 0px;
             }
+
+            @include device(tablet) {
+                width: 30%;
+            }
         }
 
         &--right {
@@ -137,6 +157,10 @@
 
             &:hover > svg{
                 right: 0px;
+            }
+
+            @include device(phtabletone) {
+                width: 70%;
             }
         }
     }
