@@ -56,6 +56,12 @@
             position: absolute;
             right: 0;
         }
+
+        &--toggle {
+            display: none;
+            position: relative;
+            z-index: 3;
+        }
     }
 
     &__link {
@@ -69,6 +75,30 @@
         
         &:hover {
             color: $font-col-interaction;
+        }
+    }
+
+    // mobile 
+    @include device(tablet) {
+        padding: 15px;
+
+        &--open {
+            background-color: $background-col-primary;
+            &:hover {
+                background-color: $background-col-primary;
+            }
+        }
+
+        &__list {
+            justify-content: space-between;
+        }
+        &__item {
+            margin: 0;
+            display: none;
+
+            &--logo, &--toggle {
+                display: initial;
+            }
         }
     }
 }
