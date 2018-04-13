@@ -2,6 +2,10 @@
 
 This is our long running homepage project. Although we have some repos with different version of our homepage, this should be the most actual one.
 
+* CI: http://ideas-ci/go/tab/pipeline/history/as-ideas-engineering-website-3
+* PROD: http://axelspringerideas.de/ _*MASTER branch is directly deployt to production*_
+* STAGE: https://asideas-4ddb5.firebaseapp.com/
+
 * Created with "Create React App" --> read about it to understand the structure and build tools
 * We use React and SASS
 
@@ -47,7 +51,7 @@ yarn build (or npm run build)
 
 ## Direct deployment to stage (https://asideas-4ddb5.firebaseapp.com/)
 
-Install firebase cli, login and deploy
+Install firebase cli, login and deploy. If you don't have access, let somebody add you to our organisation at G-Suite.
 
 ```
 npm install -g firebase-tools
