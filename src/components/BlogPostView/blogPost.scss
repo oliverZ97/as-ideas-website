@@ -65,8 +65,35 @@
                     margin: auto;
                 }
             }
+        }
+    }
 
+    .blog-social-share {
+        padding: 0 50px;
+        display: flex;
+        align-items: center;
+
+        .blog-social-share__header {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-right: 50px;
         }
 
+        .blog-social-share__icon {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            width: 140px;
+            text-decoration: none;
+
+            img {
+                width: 24px;
+                margin-right: 12px;
+            }
+        }
+    }
+
+    #disqus_thread {
+        padding: 10px 50px 0 50px;
     }
 }

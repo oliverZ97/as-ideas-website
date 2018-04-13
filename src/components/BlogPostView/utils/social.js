@@ -1,15 +1,25 @@
-const disqus = {
-    loadDisqus: () => {
+const social = {
+    init: () => {
         if (!document.getElementById('disqus-js')) {
             (function () { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
+                let d = document, s = d.createElement('script');
                 s.id = 'disqus-js';
                 s.src = '//axelspringerideas-de.disqus.com/embed.js';
                 s.setAttribute('data-timestamp', +new Date());
                 (d.head || d.body).appendChild(s);
             })();
         }
+        if (!document.getElementById('twitter-js')) {
+            (function () { // DON'T EDIT BELOW THIS LINE
+                let d = document, s = d.createElement('script');
+                s.id = 'twitter-js';
+                s.src = '//platform.twitter.com/widgets.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        }
     },
+
     showComment: (post) => {
         if (post && window.DISQUS) {
             window.disqus_config = function () {
@@ -27,10 +37,20 @@ const disqus = {
         } else {
             console.warn("Disqus not loaded, retry...");
             window.setTimeout(() => {
-                disqus.showComment(post)
+                social.showComment(post)
             }, 500);
         }
+    },
+
+    // SOCIAL SHARE: https://blog.hubspot.com/blog/tabid/6307/bid/29544/the-ultimate-cheat-sheet-for-creating-social-media-buttons.aspx
+    // cf. https://developer.linkedin.com/docs/share-on-linkedin
+    linkedInUrl: (post) => {
+        return `${post.permalink}`;
+    },
+
+    encodedPermalink: (post) => {
+        return encodeURI(post.permalink);
     }
 };
 
-export default disqus;
+export default social;
