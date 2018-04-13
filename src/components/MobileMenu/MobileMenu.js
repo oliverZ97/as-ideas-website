@@ -5,10 +5,6 @@ import Link from './../Link/Link';
 import './MobileMenu.scss';
 
 export default class MobileMenu extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     componentWillMount() {
         document.body.style.overflow = 'hidden';
     }

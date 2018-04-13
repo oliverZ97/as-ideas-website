@@ -1,5 +1,4 @@
 import React from "react";
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import { IdeasLogo, IconBurger } from './../../assets/svg';
 import Link from './../Link/Link';
@@ -42,7 +41,7 @@ export default class MainNav extends React.Component {
                         </Link>
                     </li>
                     <li className='mainNav__item mainNav__item--logo'>
-                        <Link className='mainNav__link' to='home' history={history}>
+                        <Link className='mainNav__link' to='home' history={history} onClick={this.state.showMobileMenu ? this.toggleMenu.bind(this) : null}>
                             <IdeasLogo />
                         </Link>
                     </li>
