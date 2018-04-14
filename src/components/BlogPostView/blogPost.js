@@ -3,22 +3,23 @@ import "./blogPost.scss";
 import "./marked.scss";
 import marked from "marked";
 import posts from "./../../blog-posts.js";
-import highlightJs from "./highlight";
-import disqus from "./disqus";
+import highlightJs from "./utils/highlight";
+import social from "./utils/social";
 import {animateScroll} from "react-scroll/modules/index";
 
 class BlogPost extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isLightboxVisible: false
+            isLightboxVisible: false,
+            post: {}
         }
     }
 
     componentDidMount() {
         this.loadCurrentBlogPost(this.props.match.params);
         highlightJs.loadHighlightJs();
-        disqus.loadDisqus();
+        social.init();
     }
 
     componentWillUnmount() {
@@ -31,8 +32,11 @@ class BlogPost extends React.Component {
 
     loadCurrentBlogPost(params) {
         let post = posts.getPost(params);
+        let state = this.state;
+        state.post = post;
+        this.setState(state);
 
-        disqus.showComment(post);
+        social.showComment(post);
         let url = `${post.markdownUrl}`;
         fetch(url)
             .then((response) => {
@@ -84,12 +88,36 @@ class BlogPost extends React.Component {
                         </div>
                     </div>
                     : ''}
-
                 <div className="blog-post">
-
-
                     <div id="preview" className="markdown-body blog-markdown-body"/>
-
+                    <div className="blog-social-share">
+                        <span className="blog-social-share__header">Teilen den Beitrag auf</span>
+                        <a className="blog-social-share__icon"
+                           href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                           data-show-count="false"
+                           data-text={this.state.post.title}
+                           data-via="asideas"
+                           data-hashtags="ideasengineering"
+                           target="_blank" rel="noopener noreferrer"
+                        >
+                            <img src={require('./images/002-twitter-sign.svg')} alt="twitter"/>
+                            Twitter
+                        </a>
+                        <a className="blog-social-share__icon"
+                           href="http://www.facebook.com/share.php?u="
+                           target="_blank" rel="noopener noreferrer"
+                        >
+                            <img src={require('./images/003-facebook-logo.svg')} alt="facebook"/>
+                            Facebook
+                        </a>
+                        <a className="blog-social-share__icon"
+                           href="https://www.linkedin.com/shareArticle?url="
+                           target="_blank" rel="noopener noreferrer"
+                        >
+                            <img src={require('./images/001-linkedin-sign.svg')} alt="linkedin"/>
+                            LinkedIn
+                        </a>
+                    </div>
                     <div id="disqus_thread"/>
                 </div>
             </div>

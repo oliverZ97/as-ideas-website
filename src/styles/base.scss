@@ -1,0 +1,47 @@
+@import './variables';
+@import './mixins';
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > * {
+        width: 90%;
+        max-width: 1200px;
+    }
+}
+
+h1.sectionHeading {
+    margin: 0 0px 65px;
+
+    font-size: 40px;
+    font-weight: 700;      
+    
+    align-self: stretch;
+}
+
+
+h3 {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+* {
+    color: $font-col-primary;
+}
+
+section {
+    padding: 100px 0;
+}

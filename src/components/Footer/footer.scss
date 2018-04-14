@@ -1,98 +1,81 @@
+@import '../../styles/variables';
+
 .footer {
-    background: config("colors.ci-gray");
-    color: white;
-    padding: 20px 12px 0 12px;
-    font-size: 18px;
+    background-color: $darkest-grey;
+    padding: 70px 0;
 
-    .footer-container {
-        max-width: 1000px;
-        margin: auto;
-        padding: 32px 0 56px 0;
+    @include device(tablet) {
+        padding: 30px 0;
+    }
 
+    &__columns {
+        width: 100%;
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         flex-wrap: wrap;
 
-        .col-header {
-            font-size: 0.7em;
-            font-weight: 800;
-            text-transform: uppercase;
-            opacity: 0.8;
-            margin-bottom: 12px;
+        width: 100%;
+    }
+    
+    &__column {
+        color: $font-col-secondary;
+        
+        h3 {
+            color: $font-col-secondary;
+
+            margin-bottom: 20px;            
         }
 
-        a, p {
-            font-size: 0.65em;
-            font-weight: 400;
+        li {
+            font-size: 12px;
+            color: $font-col-secondary;      
+            letter-spacing: .5px;
+            line-height: 20px;
 
-            color: white;
-            text-decoration: none;
-            text-transform: none;
-            display: block;
-            margin: auto;
-            padding: 6px 0;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin: 0;
+            }
         }
 
-        a:hover {
-            opacity: 0.6;
-            text-decoration: underline;
+        @include device(tablet) {
+            margin-top: 35px;
         }
 
-        .footer__column {
-            text-align: left;
-
-            @screen sm {
-                flex: 1 1 90% !important;
-                margin-bottom: 12px;
-                text-align: center;
-            }
-
-            &.col1 {
-                flex: 2 0 auto;
-
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                align-items: center;
-
-                line-height: 2.0rem;
-
-                a, .col1-text {
-                    font-size: 1.1em;
-                    font-weight: 400;
-                    opacity: 0.9;
-                    color: white;
-                    display: inline-block;
-                    margin: 0;
-                    padding: 0;
-                    text-transform: none;
-
-                    @screen sm {
-                        font-size: 1.0em;
-                        line-height: 1.0rem;
-                    }
-                }
-
-                @screen sm {
-                    margin-bottom: 24px;
-                    font-size: 2em;
-                    line-height: 2em;
-                }
-            }
-            &.col2 {
-                flex: 1 0 auto;
-            }
-            &.col3 {
-                flex: 1 0 auto;
-            }
-            &.col4 {
-                flex: 2 0 auto;
-            }
-
-            &.col2, &.col3, &.col4 {
-                @screen sm {
-                    padding-left: 20px;
-                }
+        @include device(phone) {
+            &--sitemap {
+                display: none !important;
             }
         }
     }
+
+    &__link {
+        cursor: pointer;
+        color: $font-col-secondary;                  
+        transition: color .2s;
+
+        text-decoration: none;
+
+        &:hover {
+            color: $font-col-interaction;
+        }
+    }
+
+    &__hire {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: 24px;
+        letter-spacing: 1px;
+        line-height: 34px;
+
+        color: #d4d4d4;
+
+        @include device(tablet) {
+            width: 100%;
+        }
+    }
 }
+

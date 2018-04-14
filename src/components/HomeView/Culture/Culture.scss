@@ -1,0 +1,107 @@
+@import "../../../styles/variables";
+
+.culture {
+    &__container {
+        width: 70%;
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: row;
+
+        margin-bottom: 150px;
+        
+        @include device(phone) {
+            margin-bottom: 60px;
+        }
+
+        &--background {
+            flex-direction: row-reverse;            
+            justify-content: flex-start;
+
+            .culture__image {
+                padding-left: 50px;
+                align-self: flex-end;
+                width: 45%;
+            }
+
+            .culture__text {
+                align-self: flex-start;            
+                margin-bottom: 100px;    
+            }
+
+            @include device(tablet) {
+                flex-direction: column-reverse;
+                .culture__text {
+                    margin-bottom: 40px;    
+                }
+            }
+        }
+
+        &--today {
+            justify-content: flex-start;
+            .culture__image {
+                padding-right: 50px;
+                align-self: flex-start;
+                width: 30%;
+            }
+
+            .culture__text {
+                align-self: flex-end;            
+                margin-top: 100px;    
+            }
+
+            @include device(tablet) {
+                flex-direction: column;
+                .culture__text {
+                    margin-top: 40px;    
+                }
+            }
+        }
+
+        &--tomorrow {
+            justify-content: flex-start;
+            .culture__image {
+                padding-right: 50px;
+                align-self: flex-start;
+                width: 55%;
+            }
+
+            .culture__text {
+                align-self: flex-end;            
+                margin-top: 100px;    
+            }
+            
+            @include device(tablet) {
+                flex-direction: column;
+                .culture__text {
+                    margin-top: 40px;    
+                }
+            }
+        }
+
+    }
+
+    &__image {
+        @include device(tablet) {
+            width: 90% !important;
+            padding: 0 !important;
+        }
+
+        @include device(phone) {
+            width: 100% !important;
+        }
+    }
+
+    &__text {
+        font-size: 21px;
+        line-height: 32px;
+        letter-spacing: .5px;
+
+        max-width: 440px;
+
+        @include device(phone) {
+            min-width: auto;
+        }
+    }
+}

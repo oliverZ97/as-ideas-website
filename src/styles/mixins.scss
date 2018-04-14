@@ -1,0 +1,16 @@
+// Breakpoints
+$breakpoint-phone: 450px;
+$breakpoint-tablet: 800px;
+$breakpoint-small-desktop: 1024px;
+
+@mixin device($deviceType) {
+    @if $deviceType == phone {
+        @media only screen and (max-width: $breakpoint-phone) { @content; }
+    }
+    @else if $deviceType == tablet {
+        @media only screen and (max-width: $breakpoint-tablet) { @content; }
+    }
+    @else if $deviceType == small-desktop {
+        @media only screen and (max-width: $breakpoint-small-desktop) { @content; }
+    }
+}

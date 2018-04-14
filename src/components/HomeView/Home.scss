@@ -1,24 +1,2 @@
 .home {
-    .min-h-screen-90 {
-        @screen max-xl {
-            min-height: 100vh;
-        }
-    }
-
-    .section__get-in-touch {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-
-        .text-container {
-            margin: auto;
-            width: 80vw;
-
-            .get-in-touch__text {
-                font-size: 2.5rem;
-                font-weight: 600;
-
-            }
-        }
-    }
 }

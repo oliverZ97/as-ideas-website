@@ -1,0 +1,16 @@
+@import "../../../styles/variables";
+
+.contact {
+    padding-top: 0;
+
+    padding: 50px 0 300px;
+    
+    &__text {
+        font-weight: 700;
+        line-height: 45px;
+    }
+
+    @include device(phone) {
+        display: none !important;
+    }
+}
