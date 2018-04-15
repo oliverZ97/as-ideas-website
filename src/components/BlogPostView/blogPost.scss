@@ -54,18 +54,14 @@
 
                 img {
                     // max-height: 300px;
+                    margin: auto;
                     padding: 2px;
                 }
             }
 
-            h1 {
-                img {
-                    width: 100vw;
-                    max-width: 100vw;
-                    left: 0;
-                    position: absolute;
-                    padding: 12px 0;
-                }
+            li {
+                padding-left: 12px;
+                list-style: disc;
             }
 
             h2 {
