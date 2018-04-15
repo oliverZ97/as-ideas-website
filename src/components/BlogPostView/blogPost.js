@@ -118,7 +118,7 @@ class BlogPost extends React.Component {
                             LinkedIn
                         </a>
                     </div>
-                    <div id="disqus_thread"/>
+                    <div id="disqus_thread" className=".disqus-thread"/>
                 </div>
             </div>
         )

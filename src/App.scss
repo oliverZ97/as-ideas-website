@@ -57,12 +57,15 @@
  * @import "utilities/skew-transforms";
  */
 
-@import "./assets/mixins";
 @import "./assets/settings";
-@import "./styles/base";
+@import "./styles/_variables";
 
 html {
-    @include font-smoothing;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+
     @apply font-sans;
 }
 
@@ -93,4 +96,50 @@ img {
 
 .app {
 
+}
+
+// BASE
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > * {
+        width: 90%;
+        max-width: 1200px;
+    }
+}
+
+h1.sectionHeading {
+    margin: 0 0 65px;
+
+    font-size: 40px;
+    font-weight: 700;
+
+    align-self: stretch;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+* {
+    color: $font-col-primary;
+}
+
+section {
+    padding: 100px 0;
 }

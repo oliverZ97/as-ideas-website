@@ -86,41 +86,45 @@ You don't like JavaScript? Well, try to get used to it. The web runs on JavaScri
 # #9 The Phoenix Project
 ### ![phoenix-project](phoenix-project.jpg)
 
-Langform: Hier ein kleiner Buchtipp von mir und aus meiner Sicht eines der drei am meisten genannten Bücher des letzten Jahres (zusammen mit Release It! und Mikroservices von Sam Newman) - The Phoenix Project <http://www.amazon.de/The-Phoenix-Project-Helping-Business/dp/0988262592>  . Ich hatte viel Spaß beim Lesen, das Buch hat an vielen Stellen sehr viele verschiedene Emotionen bei mir hervor gerufen. Es ist recht kurz und sehr unterhaltsam. Und das ganze erinnert mich daran, wie ich mir den Start von OCB so vorgestellt habe. Für einige kann dieses Buch sogar die Sicht auf viele Dinge ändern und die Art wie man arbeitet.
+Another book about DevOps: The Phoenix Project. But totally different than any other book on this list. This is a novel! This book made so much fun and I had a rollercoaster of emotions while reading it. It's quite short and an easy read. For some people this book may change their view on a lot of things. And how to work.
 
-Das ganze ist ein Roman, also ziemlich anders als andere IT Bücher.  Es geht um einen Ops-Team-Leiter, der am Anfang zum VP of Operations gemacht wird und sic
+It's about an ops team lead, who becomes VP of Operations in the beginnging and how he and his organisation are struggeling. An awesome novel for the holidays!
 
 # #10 The Art of Readable Code
 ### ![the_art_of_readable_code](the_art_of_readable_code.jpg)
 
+There are only two hard things in Computer Science: cache invalidation and naming things. (Phil Karlton)
+
+And this book is, as the title tells you, mostly about naming things and how to structure your code to make it readable. The topic is touched in Clean Code and The Pragmatic Programmer, but here is another whole book about it.
+
 # #11 The Mythical Man-Month (1975)
 ### ![the_mystical_man_month](the_mystical_man_month.jpeg)
 
-> “The Bible of Software Engineering”
+> "The Bible of Software Engineering"
+
+To make it short: This book is older than most of the people reading this sentence. And everthing in this book is still true today. This book is like a treasure of advice. Every person how is kind of a manager or who is involved in IT projects must read this book.
 
 ![the_mystical_man_month_2](the_mystical_man_month_2.gif)
 
-> “everybody quotes it, some people read it, and a few people go by it”  
+> "everybody quotes it, some people read it, and a few people go by it"
 
-&nbsp;
+There is a tendency in the field of IT to just repeat the managment errors of the past. This book is the cure.
+
 > “He also made the mistake of asserting that one project — writing an ALGOL compiler — would require six months, regardless of the number of workers involved (it required longer).”
 
-
-* No silver bullet  
-* The second-system effect  
-* Project estimation  
-* Communication  
-* Lowering software development costs
+There is a huge list of topics or ideas in this book, just look at the table of contents. Here are some of the chapters: No silver bullet, The second-system effect, Project estimation, Communication, Lowering software development costs
 
 # #12 Drive: The Surprising Truth About What Motivates Us
 ### ![book1](book1.jpg)
 
-* autonomy
-* mastery and 
-* purpose
+The first book in this list, which is not directly about software development. It still helped me in huge ways in understanding why people act how the act and what we can do about it. It was my first step in the direction of not only trying to be better at the building the solution, but understanding problems.
+
+The three central pieces for intrinsical motivation are: Autonomy, Mastery and Purpose.
 
 # #13: Building Microservices
 ### ![building_microservices](building_microservices.jpg)
+
+All people talk about microservices, few people understand it, less people get it right. I could write a whole article only about this topic. But maybe you need to read this book first, before we can talk.
 
 # #14 Release It!
 ### ![release_it](release_it.jpg)
@@ -130,14 +134,16 @@ This book is from 2007, but it got new hype with the DevOps movement. When you r
 # #15 The Five Dysfunctions of a team  
 ### ![book2](book2.jpg)
 
-The second book more about psychology.
+The second book more about psychology. It's quite a ride and also more of a novel. You can read it quite easily, it is short and well written.
 
 # ![book2_1](book2_1.gif)
 
-# #13 Extraleben Trilogie
+# Bonus: Extraleben Trilogie (only in german)
 ### ![extraleben](extraleben.jpg)
 
-I count this one as one book, even if it is a trilogy.
+A bonus included to give you some slack after that many (more or less) intense books. And I count this one as one book, even if it is a trilogy. It's a pity that it was only published in german. A novel about two guys working in IT who love old videogames and find a conspiracy hidden in a retro game.
+
+You won't become a better developer by reading it, but if you love IT and old videogames, there books are brilliant.
 
 ## Last but not least
 

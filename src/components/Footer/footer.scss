@@ -14,22 +14,20 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-
-        width: 100%;
     }
-    
+
     &__column {
         color: $font-col-secondary;
-        
+
         h3 {
             color: $font-col-secondary;
 
-            margin-bottom: 20px;            
+            margin-bottom: 20px;
         }
 
         li {
             font-size: 12px;
-            color: $font-col-secondary;      
+            color: $font-col-secondary;
             letter-spacing: .5px;
             line-height: 20px;
 
@@ -53,7 +51,7 @@
 
     &__link {
         cursor: pointer;
-        color: $font-col-secondary;                  
+        color: $font-col-secondary;
         transition: color .2s;
 
         text-decoration: none;
