@@ -3,7 +3,7 @@ import md5 from "md5";
 let posts = require('./blog-posts.json');
 
 posts = posts.filter((post) => {
-    return post.authorEmail
+    return post.authorEmail && !post.draft;
 });
 
 posts.forEach((post) => {
@@ -21,5 +21,9 @@ posts.getPost = (params) => {
 posts.sort((a, b) => {
     return b.url.localeCompare(a.url);
 });
+
+posts.getEncodedPermalink = (post) => {
+  return encodeURI(post.permalink);
+};
 
 export default posts;
