@@ -15,7 +15,7 @@ class BlogSummary extends React.Component {
                                     <li className="article-item" key={post.url}>
                                         <div className="articel-summary-left">
                                             <NavLink to={post.url}>
-                                                <img src={post.url + '/' + post.titlePicture} alt={post.title}/>
+                                                <img src={post.url + post.titlePicture} alt={post.title}/>
                                             </NavLink>
                                         </div>
                                         <div className="articel-summary-right">
