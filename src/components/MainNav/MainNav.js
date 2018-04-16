@@ -56,7 +56,7 @@ export default class MainNav extends React.Component {
                         </Link>
                     </li>
                     <li className='mainNav__item mainNav__item--right'>
-                        <Link className='mainNav__link' to='https://career.axelspringer.com/jobangebote/'>
+                        <Link className='mainNav__link' to='mailto:hello@asideas.de'>
                             Work with us
                         </Link>
                     </li>

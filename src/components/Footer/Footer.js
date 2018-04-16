@@ -23,7 +23,6 @@ const Footer = () => (
                         <li><Link className='footer__link' to='portfolio'>Portfolio</Link></li>
                         <li><Link className='footer__link' to='/blog'>Blog</Link></li>
                         <li><Link className='footer__link' to='culture'>Culture</Link></li>
-                        <li><Link className='footer__link' to='https://career.axelspringer.com/jobangebote/'>Work with us</Link></li>
                     </ul>
                 </Column>
                 <Column>

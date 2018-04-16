@@ -8,6 +8,10 @@
     &__text {
         font-weight: 700;
         line-height: 45px;
+
+        a:hover {
+            color: inherit;
+        }
     }
 
     @include device(phone) {
