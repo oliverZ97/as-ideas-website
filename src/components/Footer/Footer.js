@@ -23,6 +23,7 @@ const Footer = () => (
                         <li><Link className='footer__link' to='portfolio'>Portfolio</Link></li>
                         <li><Link className='footer__link' to='/blog'>Blog</Link></li>
                         <li><Link className='footer__link' to='culture'>Culture</Link></li>
+                        <li><Link className='footer__link' to='/imprint'>Impressum</Link></li>
                     </ul>
                 </Column>
                 <Column>

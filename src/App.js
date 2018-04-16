@@ -1,6 +1,7 @@
 import React from "react";
 import { Router, Route, Switch } from "react-router-dom";
 import Home from "./components/HomeView/Home";
+import Imprint from "./components/Imprint/Imprint";
 import BlogPost from "./components/BlogPostView";
 import BlogSummary from "./components/BlogSummaryView";
 import MainNavComponent from "./components/MainNav/MainNav";
@@ -20,6 +21,7 @@ const App = () => (
         {/*<Route path="/imprint" component={Impressum}/>*/}
         <Route path="/blog/:year/:month/:name" component={BlogPost} />
         <Route path="/blog" component={BlogSummary} />
+        <Route path="/imprint" component={Imprint} />
         <Route component={Home} />
       </Switch>
 
