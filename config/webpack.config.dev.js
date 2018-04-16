@@ -209,7 +209,6 @@ module.exports = {
                   ident: 'postcss',
                   plugins: () => [
                     require('postcss-flexbugs-fixes'),
-                    require('tailwindcss')('./src/tailwind-config.js'),
                     autoprefixer({
                       browsers: [
                         '>1%',

@@ -14,6 +14,12 @@ $font-col-active: salmon;
 $background-col-primary: #fff;
 $background-col-secondary: $light-grey;
 
+$font-fam-sans: 'SimplonNorm', 'Roboto', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+$font-fam-dot: 'FoundryPlek', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+
+$font-fam-primary: $font-fam-sans;
+$font-fam-secondary: $font-fam-dot;
+
 // Breakpoints
 $breakpoint-phone: 450px;
 $breakpoint-tablet: 800px;

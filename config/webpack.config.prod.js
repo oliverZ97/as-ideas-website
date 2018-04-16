@@ -6,8 +6,6 @@ const glob = require('glob');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const PurgecssPlugin = require('purgecss-webpack-plugin');
-const whitelister = require('purgecss-whitelister');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
@@ -47,16 +45,8 @@ const cssFilename = 'static/css/[name].[contenthash:8].css';
 // To have this structure working with relative paths, we have to use custom options.
 const extractTextPluginOptions = shouldUseRelativeAssetPaths
   ? // Making sure that the publicPath goes back to to build folder.
-    { publicPath: Array(cssFilename.split('/').length).join('../') }
+  { publicPath: Array(cssFilename.split('/').length).join('../') }
   : {};
-
-// Custom PurgeCSS extractor for Tailwindcss that allows special characters in class names.
-// https://github.com/FullHuman/purgecss#extractor
-class TailwindExtractor {
-  static extract(content) {
-    return content.match(/[A-z0-9-:\/]+/g);
-  }
-}
 
 // This is the production configuration.
 // It compiles slowly and is focused on producing a fast and minimal bundle.
@@ -102,7 +92,7 @@ module.exports = {
     // for React Native Web.
     extensions: ['.web.js', '.mjs', '.js', '.json', '.web.jsx', '.jsx'],
     alias: {
-      
+
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
@@ -133,7 +123,7 @@ module.exports = {
             options: {
               formatter: eslintFormatter,
               eslintPath: require.resolve('eslint'),
-              
+
             },
             loader: require.resolve('eslint-loader'),
           },
@@ -161,7 +151,7 @@ module.exports = {
             include: paths.appSrc,
             loader: require.resolve('babel-loader'),
             options: {
-              
+
               compact: true,
             },
           },
@@ -254,7 +244,6 @@ module.exports = {
                         // https://github.com/facebookincubator/create-react-app/issues/2677
                         ident: 'postcss',
                         plugins: () => [
-                          require('tailwindcss')('./src/tailwind-config.js'),
                           require('postcss-flexbugs-fixes'),
                           // Removes CSS classes duplicates
                           // Needs OptimizeCssAssetsPlugin in plugins section
@@ -365,25 +354,6 @@ module.exports = {
     // https://gist.github.com/phun-ky/766e5ec9f75eac61c945273a951f0c0b
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g
-    }),
-    // Add Purgecss (https://www.purgecss.com/with-webpack.html)
-    new PurgecssPlugin({
-      // Specify the locations of any files you want to scan for class names
-      paths: glob.sync(`${paths.appSrc}/**/*.js`),
-      // Ensure these styles stay in the bundle, see:
-      // https://www.npmjs.com/package/purgecss-whitelister
-      whitelist: whitelister([
-        'node_modules/tailwindcss/css/preflight.css',
-        'src/scss/purgecss-whitelist.css'
-      ]),
-      extractors: [
-        {
-          extractor: TailwindExtractor,
-          // Specify the file extensions to include when scanning for
-          // class names.
-          extensions: ["js", "jsx"],
-        }
-      ]
     }),
     // Generate a manifest file which contains a mapping of all asset filenames
     // to their corresponding output file so that tools can pick it up without

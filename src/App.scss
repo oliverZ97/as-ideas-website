@@ -1,72 +1,30 @@
-/**
- * This injects Tailwind's base styles, which is a combination of
- * Normalize.css and some additional base styles.
- *
- * You can see the styles here:
- * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
- *
- * If using `postcss-import`, you should import this line from it's own file:
- *
- * @import "./tailwind-preflight.css";
- *
- * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
- */
-
-@tailwind preflight;
-
-/**
- * Here you would add any of your custom component classes; stuff that you'd
- * want loaded *before* the utilities so that the utilities could still
- * override them.
- *
- * Example:
- *
- * .btn { ... }
- * .form-input { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "components/buttons";
- * @import "components/forms";
- */
-
-/**
- * This injects all of Tailwind's utility classes, generated based on your
- * config file.
- *
- * If using `postcss-import`, you should import this line from it's own file:
- *
- * @import "./tailwind-utilities.css";
- *
- * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
- */
-@tailwind utilities;
-
-/**
- * Here you would add any custom utilities you need that don't come out of the
- * box with Tailwind.
- *
- * Example :
- *
- * .bg-pattern-graph-paper { ... }
- * .skew-45 { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "utilities/background-patterns";
- * @import "utilities/skew-transforms";
- */
-
 @import "./assets/settings";
 @import "./styles/_variables";
 
+.app {
+
+}
+    
+// BASE
 html {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 
-    @apply font-sans;
+    font-family: $font-fam-primary;    
+}
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+}
+
+/**
+ * Set CSS filter for images, 
+ * 
+ */
+ .filter-contrast-8\/10 {
+    filter: contrast(80%);
 }
 
 /**
@@ -74,31 +32,12 @@ html {
  * https://davidwalsh.name/image-max-width or 
  * https://teamtreehouse.com/community/maxwidth-instead-of-width-css-property-using-images
  */
-img {
+ img {
     max-width: 100%;
     width: 100%;
     height: auto;
 }
 
-/**
- * Set CSS filter for images, 
- * 
- */
-.filter-contrast-8\/10 {
-    filter: contrast(80%);
-}
-
-.not-xs {
-    @screen sm {
-        display: none;
-    }
-}
-
-.app {
-
-}
-
-// BASE
 
 .centered {
     display: flex;
@@ -127,7 +66,7 @@ h3 {
     letter-spacing: 1px;
 
     text-transform: uppercase;
-
+    
     margin-bottom: 10px;
 }
 
@@ -138,6 +77,7 @@ ul {
 
 * {
     color: $font-col-primary;
+    box-sizing: border-box;
 }
 
 section {
