@@ -51,7 +51,7 @@ export default class MainNav extends React.Component {
                         </Link>
                     </li>
                     <li className='mainNav__item'>
-                        <Link className='mainNav__link' to='/blog'>
+                        <Link className={'mainNav__link' + (window.location.pathname.startsWith('/blog') ? ' active' : '')} to='/blog'>
                             Blog
                         </Link>
                     </li>

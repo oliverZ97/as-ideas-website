@@ -1,81 +1,92 @@
+@import '../../styles/variables';
 
-.blog-summary {
-
-    background: white;
+.blogSummary {
+    padding: 65px 0; /* safe area for nav */
     min-height: 100vw;
-    margin: auto;
-    padding: 90px 50px;
-
-    @screen sm {
-        padding: 60px 10px;
-        max-width: 100vw;
-    }
-
-    .article-index {
-        max-width: 1000px;
-        margin: auto;
-
-        @screen sm {
-            padding: 0;
-        }
-    }
-
-    .article-item {
+    
+    &__container {
         display: flex;
-        margin: 20px auto;
-        padding: 10px;
-        border: 1px solid #8a8a8a;
+        flex-direction: column;
+        align-items: center;
+    }
 
-        @screen sm {
+    &__heading {
+        margin: 100px 0 70px;
+        font-family: $font-fam-secondary;
+        font-size: 64px;
+        font-weight: 300;
+        align-self: flex-start;
+
+        @include device(tablet) {
+            font-size: 54px;
+            margin: 40px 0 70px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+        width: 80%;
+
+        @include device(tablet) {
             flex-direction: column;
+            width: 90%;
+        }
+    }
+
+    &__item {
+        > a {
+            text-decoration: none;
         }
 
-        .articel-summary-left {
-            flex: 0 0 380px;
+        align-self: stretch;
+        width: 45%;
 
-            @screen sm {
-                flex: 1 1 auto;
+        padding-bottom: 80px;
+        margin-bottom: 80px;
 
-                img {
-                    max-height: auto;
-                    max-width: auto;
-                    min-width: auto;
-                    padding: 16px
-                }
+        border-bottom: 2px solid $grey;
 
+        transition: border-color .4s;
+        &:hover {
+            border-color: $font-col-interaction;
+        }
+        
+        @include device(tablet) {
+            width: 100%;
+
+            &:last-child {
+                padding-bottom: 0;
+                margin-bottom: 0;
+                border-bottom: 0;
             }
-            img {
-                max-width: 380px;
-                max-height: 320px;
-                min-width: 100%;
-            }
-
         }
 
-        .articel-summary-right {
-            flex: 1 1 auto;
-            padding: 12px;
-
-            .article-title {
-                text-decoration: none;
-                color: black;
-                font-size: 2rem;
-                font-weight: bold;
-            }
-
-            .article-meta {
-                font-size: .8rem;
-                margin-bottom: 12px;
-
-            }
-
-            .article-summary {
-                margin-bottom: 12px;
-            }
-
-            .article-call-to-action {
-
-            }
+        @include device(phone) {
+            padding-bottom: 40px;
+            margin-bottom: 40px;
         }
+    }
+
+    &__image.croppedImage {
+        width: 100%;
+        height: 0;
+        margin-bottom: 25px;
+
+        padding-top: percentage(2/3); 
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__summary {
+        font-size: 18px;
+        line-height: 30px;
     }
 }
