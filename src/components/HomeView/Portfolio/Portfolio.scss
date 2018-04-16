@@ -32,6 +32,11 @@
 
         border-bottom: 2px solid $grey;
 
+        transition: border-color .4s;
+        &:hover {
+            border-color: $font-col-interaction;
+        }
+        
         @include device(tablet) {
             width: 100%;
 
