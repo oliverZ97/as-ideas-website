@@ -253,7 +253,8 @@ module.exports = {
                             autoprefixer: false,
                             zindex: false,
                             mergeRules: false,
-                            minifySelectors: false
+                            minifySelectors: false,
+                            reduceIdents: false
                           }),
                           autoprefixer({
                             browsers: [

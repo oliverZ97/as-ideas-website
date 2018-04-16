@@ -202,12 +202,10 @@
 @keyframes slideInRight {
     from {
         left: 150%;
-        right: auto;
         opacity: 0;
     }
     to {
         left: 50%;
-        right: auto;
         opacity: 1;
     }
 }
@@ -215,12 +213,10 @@
 @keyframes slideOutLeft {
     from {
         left: 50%;
-        right: auto;
         opacity: 1;
     }
     to {
         left: -50%;
-        right: auto;
         opacity: 0;
     }
 }
@@ -228,12 +224,10 @@
 @keyframes slideInLeft {
     from {
         left: -50%;
-        right: auto;
         opacity: 0;
     }
     to {
         left: 50%;
-        right: auto;
         opacity: 1;
     }
 }
@@ -241,12 +235,10 @@
 @keyframes slideOutRight {
     from {
         left: 50%;
-        right: auto;
         opacity: 1;
     }
     to {
         left: 150%;
-        right: auto;
         opacity: 0;
     }
 }
