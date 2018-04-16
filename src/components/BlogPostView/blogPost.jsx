@@ -89,22 +89,22 @@ class BlogPost extends React.Component {
                         target="_blank" rel="noopener noreferrer"
                     >
                         <Twitter />
-                        Twitter
-                </a>
+                        <span>Twitter</span>
+                    </a>
                     <a className="blog-social-share__icon"
                         href={social.facebookUrl(this.state.post)}
                         target="_blank" rel="noopener noreferrer"
                     >
                         <Facebook />
-                        Facebook
-                </a>
+                        <span>Facebook</span>
+                    </a>
                     <a className="blog-social-share__icon"
                         href={social.linkedInUrl(this.state.post)}
                         target="_blank" rel="noopener noreferrer"
                     >
                         <LinkedIn />
-                        LinkedIn
-                </a>
+                        <span>LinkedIn</span>
+                    </a>
                 </div>
             </div>
         );

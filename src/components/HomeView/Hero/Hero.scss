@@ -20,6 +20,11 @@
 
         line-height: 45px;
         font-weight: 300;
+
+        @include device(phone) {
+            font-size: 28px;
+            line-height: 40px;
+        }
     }
 
     &__arrow {
@@ -42,21 +47,21 @@
 
 @keyframes jump {
     0% {
-        transform: translateY(0)
+        transform: translate(-50%,0)
     }
     5% {
-        transform: translateY(10px)
+        transform: translate(-50%,10px)
     }
     10% {
-        transform: translateY(0)
+        transform: translate(-50%,0)
     }
     15% {
-        transform: translateY(10px)
+        transform: translate(-50%,10px)
     }
     20% {
-        transform: translateY(0)
+        transform: translate(-50%,0)
     }
     100% {
-        transform: translateY(0)
+        transform: translate(-50%,0)
     }
 }

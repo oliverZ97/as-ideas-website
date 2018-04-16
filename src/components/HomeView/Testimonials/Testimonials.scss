@@ -125,8 +125,13 @@
         }
 
         @include device(phone) {
-            font-size: 36px;
-            line-height: 48px;
+            font-size: 34px;
+            line-height: 42px;
+        }
+
+        @include device(small-phone) {
+            font-size: 28px;
+            line-height: 32px;
         }
 
         &--enter {

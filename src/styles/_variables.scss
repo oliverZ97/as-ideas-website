@@ -24,6 +24,7 @@ $font-fam-secondary: $font-fam-dot;
 $breakpoint-phone: 450px;
 $breakpoint-tablet: 800px;
 $breakpoint-small-desktop: 1024px;
+$breakpoint-small-phone: 400px;
 
 @mixin device($deviceType) {
     @if $deviceType == phone {
@@ -36,6 +37,10 @@ $breakpoint-small-desktop: 1024px;
         }
     } @else if $deviceType == small-desktop {
         @media only screen and (max-width: $breakpoint-small-desktop) {
+            @content;
+        }
+    } @else if $deviceType == small-phone {
+        @media only screen and (max-width: $breakpoint-small-phone) {
             @content;
         }
     } @else {
