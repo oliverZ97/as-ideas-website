@@ -44,7 +44,5 @@ class BlogSummary extends React.Component {
         )
     }
 }
-;
-
 
 export default BlogSummary;
