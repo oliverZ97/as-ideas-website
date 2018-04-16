@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -19,16 +20,17 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <meta property="og:url" content="http://axelspringerideas.de/"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="ideas engineering ⚡"/>
-    <meta property="og:description" content="We are a studio of developers, designers and product people. We focus on building software for the media industry. We combine technology and agile thinking to create great products people can’t help but love."/>
-    <meta property="og:image" content="http://axelspringerideas.de/cover.png"/>
+  <meta property="og:url" content="http://axelspringerideas.de/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ideas engineering ⚡" />
+  <meta property="og:description" content="We are a studio of developers, designers and product people. We focus on building software for the media industry. We combine technology and agile thinking to create great products people can’t help but love."
+  />
+  <meta property="og:image" content="http://axelspringerideas.de/cover.png" />
 
-    <title>ideas engineering ⚡️</title>
+  <title>ideas engineering ⚡️</title>
 
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
+  <!-- Google Tag Manager -->
+  <!-- <script>(function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
         'gtm.start':
@@ -40,21 +42,44 @@
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PWKP554');</script>
-    <!-- End Google Tag Manager -->
+    })(window, document, 'script', 'dataLayer', 'GTM-PWKP554');</script> -->
+  <!-- End Google Tag Manager -->
+
+  <!-- Piwik -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(["setDomains", ["*.axelspringerideas.de", "*.asideas.de", "*.www.asideas.de", "*.www.axelspringerideas.de", "*.asideas-4ddb5.firebaseapp.com"]]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "//ideas.piwikpro.com/";
+      _paq.push(['setTrackerUrl', u + 'piwik.php']);
+      _paq.push(['setSiteId', 39]);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+  <noscript>
+    <p>
+      <img src="//ideas.piwikpro.com/piwik.php?idsite=39" style="border:0;" alt="" />
+    </p>
+  </noscript>
+  <!-- End Piwik Code -->
+
 </head>
+
 <body>
-<noscript>
+  <noscript>
     You need to enable JavaScript to run this app.
-</noscript>
-<!-- Google Tag Manager (noscript) -->
-<noscript>
+  </noscript>
+  <!-- Google Tag Manager (noscript) -->
+  <!-- <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWKP554"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
-<div id="root"></div>
-<!--
+</noscript> -->
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="root"></div>
+  <!--
   This HTML file is a template.
   If you open it directly in the browser, you will see an empty page.
 
@@ -65,4 +90,5 @@
   To create a production bundle, use `npm run build` or `yarn build`.
 -->
 </body>
+
 </html>

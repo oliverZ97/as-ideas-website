@@ -18,7 +18,6 @@ const App = () => (
       <MainNavComponent history={history} />
       <Switch>
         <Route exact path="/" component={Home} />
-        {/*<Route path="/imprint" component={Impressum}/>*/}
         <Route path="/blog/:year/:month/:name" component={BlogPost} />
         <Route path="/blog" component={BlogSummary} />
         <Route path="/imprint" component={Imprint} />
