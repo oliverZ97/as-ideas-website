@@ -1,0 +1,46 @@
+@import '../../../styles/variables';
+
+.blogSummary {
+    &__item {
+        > a {
+            text-decoration: none;
+        }
+
+        align-self: stretch;
+        width: 45%;
+
+        padding-bottom: 80px;
+        margin-bottom: 80px;
+
+        border-bottom: 2px solid $grey;
+
+        transition: border-color .4s;
+        &:hover {
+            border-color: $font-col-interaction;
+        }
+
+        @include device(tablet) {
+            width: 100%;
+
+            &:last-child {
+                padding-bottom: 0;
+                margin-bottom: 0;
+                border-bottom: 0;
+            }
+        }
+
+        @include device(phone) {
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__summary {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
