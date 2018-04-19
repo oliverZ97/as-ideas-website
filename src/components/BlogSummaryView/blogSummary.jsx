@@ -9,7 +9,7 @@ class BlogSummary extends React.Component {
         return (
             <section className="blogSummary centered">
                 <div className="blogSummary__container">
-                    <h1 className="blogSummary__heading">Inside Ideas Engieering</h1>
+                    <h1 className="blogSummary__heading">Inside Ideas Engineering</h1>
                     <ul id="posts" className="blogSummary__list">
                         {
                             posts.map((post) => {
