@@ -11,10 +11,12 @@ const Footer = () => (
         <div className='footer__container'>
             <ul className='footer__columns'>
                 <Column className='footer__hire'>
-                    We are hiring!<br />
-                    If you're interested,<br />
-                    drop us a line or two.
-                        </Column>
+                    <Link className='footer__link' to='https://career.axelspringer.com/jobangebote/#axel%20springer%20ideas%20engineering'>
+                        We are hiring!<br />
+                        If you're interested,<br />
+                        drop us a line or two.
+                    </Link>
+                </Column>
                 <Column className={'footer__column--sitemap'}>
                     <h3>Sitemap</h3>
                     <ul>
@@ -23,7 +25,6 @@ const Footer = () => (
                         <li><Link className='footer__link' to='portfolio'>Portfolio</Link></li>
                         <li><Link className='footer__link' to='/blog'>Blog</Link></li>
                         <li><Link className='footer__link' to='culture'>Culture</Link></li>
-                        <li><Link className='footer__link' to='/imprint'>Impressum</Link></li>
                     </ul>
                 </Column>
                 <Column>
@@ -43,6 +44,7 @@ const Footer = () => (
                         <li>Axel-Springer-Str. 65, 10888 Berlin</li>
                         <li>+49-30-259178100</li>
                         <li><Link className='footer__link' to='mailto:hello@asideas.de'>hello@asideas.de</Link></li>
+                        <li><Link className='footer__link' to='/imprint'>Impressum</Link></li>
                     </ul>
                 </Column>
             </ul>
