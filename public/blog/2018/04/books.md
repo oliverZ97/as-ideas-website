@@ -70,6 +70,8 @@ Here is the list of the interviews:
 # #7 Seven Languages in Seven Weeks
 # ![seven_languages_in_seven_weeks](seven_languages_in_seven_weeks.jpg)
 
+OK, you will need to do some coding for this book. At some point to become better you will need to widen your horizon as a developer. Up until this book I had only written code in C/C++, Assembler, Matlab, C# and Java. But this book opened my eyes. I learned a lot from knowing more concepts from other languages. I even got a kind of feeling when something feels strange or odd. Oh boy, what a ride it was with these 7 languages.
+
 * Ruby
 * Io
 * Prolog
@@ -81,7 +83,7 @@ Here is the list of the interviews:
 # #8 Effective JavaScript</h2>
 # ![effective_javascript](effective_javascript.jpg)
 
-You don't like JavaScript? Well, try to get used to it. The web runs on JavaScript.
+You don't like JavaScript? Well, try to get used to it. The web runs on JavaScript. This book is a nice example of a good book about JS. There are a lot of other books to recommend, like "JavaScript: The Good Parts".
 
 # #9 The Phoenix Project
 # ![phoenix-project](phoenix-project.jpg)
