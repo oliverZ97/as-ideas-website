@@ -25,6 +25,8 @@ const App = () => (
             <meta property="og:description" content="We are a studio of developers, designers and product people. We focus on building software for the media industry. We combine technology and agile thinking to create great products people can’t help but love."
             />
             <meta property="og:image" content="http://axelspringerideas.de/cover.png" />
+            <meta name="keywords" content="Axel Springer,Ideas Engineering,Axel Springer Ideas Engineering,Innovation,Software,Development,Product"/>
+            <meta name="author" content="Axel Springer Ideas Engineering"/>
         </Helmet>
 
       <Switch>
