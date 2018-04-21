@@ -29,6 +29,14 @@
             width: 100%;
         }
 
+        .blog-loading-spinner {
+            margin: auto;
+            padding-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .blog-markdown-body {
             h1 {
                 font-size: 40px;

@@ -3,10 +3,11 @@ import "./blogPost.scss";
 import marked from "marked";
 import posts from "./../../blog-posts.js";
 import highlightJs from "./utils/highlight";
-import social from "./utils/social";
+import social, {trimTo256} from "./utils/social";
 import {animateScroll} from "react-scroll/modules/index";
 import {Twitter, Facebook, LinkedIn} from '../../assets/svg';
 import OneBlogPostContainer from "../BlogSummaryView/OneBlogPostContainer/oneBlogPostContainer";
+import {Helmet} from 'react-helmet';
 
 class BlogPost extends React.Component {
     constructor(props) {
@@ -25,7 +26,7 @@ class BlogPost extends React.Component {
     }
 
     componentWillUnmount() {
-        document.title = "ideas engineering ⚡";
+        // document.title = "ideas engineering ⚡";
     }
 
     componentWillReceiveProps(nextProps) {
@@ -35,7 +36,6 @@ class BlogPost extends React.Component {
     loadCurrentBlogPost(params) {
         let post = posts.getPost(params);
         this.setLoadedPost(post);
-        social.addMetaToHead(post);
         social.showComment(post);
 
         let url = `${post.markdownUrl}`;
@@ -126,6 +126,15 @@ class BlogPost extends React.Component {
     render() {
         return (
             <div className="blog-post-wrapper">
+                <Helmet>
+                    <title>ideas engineering ⚡ {`${this.state.post.title}`}</title>
+                    <meta property="og:url" content={this.state.post.permalink}/>
+                    <meta property="og:type" content="website"/>
+                    <meta property="og:title" content={this.state.post.title}/>
+                    <meta property="og:description" content={trimTo256(this.state.post.summary)}/>
+                    <meta property="og:image" content={this.state.post.url + this.state.post.titlePicture}/>
+                </Helmet>
+
                 {this.state.isLightboxVisible ?
                     <div className="blog-lightbox" onClick={this.hideLightbox.bind(this)}>
                         <div className="blog-lightbox-image-container">
@@ -139,7 +148,13 @@ class BlogPost extends React.Component {
                             <h3 className="blog-post-meta">{this.getMonth(this.state.post.month)} {this.state.post.year} | {this.state.post.author}</h3>
                         ) : null
                     }
-                    <div id="preview" className="markdown-body blog-markdown-body"/>
+
+                    <div id="preview" className="markdown-body blog-markdown-body">
+                        <div className="blog-loading-spinner">
+                            <img src={require('./images/ideas.gif')} alt="Loading spinner"/>
+                            Loading...
+                        </div>
+                    </div>
 
                     {this.renderSocials()}
 

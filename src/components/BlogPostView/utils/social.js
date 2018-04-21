@@ -11,28 +11,6 @@ const social = {
     }
   },
 
-  addMetaToHead: (post) => {
-    // getElementByXpath('//meta[property="og:url"]').remove();
-    //getElementByXpath('//meta[name=og:title]').remove();
-    //getElementByXpath('//meta[name=og:description]').remove();
-    //getElementByXpath('//meta[name=og:image]').remove();
-
-    // $('head').append('<meta name="description" content="this is new">');
-
-    // let metaTags = document.getElementsByTagName('meta');
-    // if (metaTags) {
-    //   metaTags.forEach((tag) => {
-    //
-    //   })
-    // }
-//    <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
-//    <meta property="og:type"          content="website" />
-//      <meta property="og:title"         content="Your Website Title" />
-//      <meta property="og:description"   content="Your description" />
-//      <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
-
-  },
-
   showComment: (post) => {
     if (post && window.DISQUS) {
       window.disqus_config = function () {
@@ -45,8 +23,6 @@ const social = {
         reload: true,
         config: window.disqus_config
       });
-
-      document.title = "ideas engineering ⚡ " + post.title;
     } else {
       console.warn("Disqus not loaded, retry...");
       window.setTimeout(() => {
@@ -70,10 +46,6 @@ const social = {
   },
 };
 
-function getElementByXpath(path) {
-  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-}
-
 function getEncodedSummaryMax256Chars(post) {
   if (post) {
     return encodeURI(trimTo256(post.summary));
@@ -81,7 +53,7 @@ function getEncodedSummaryMax256Chars(post) {
   return '';
 }
 
-function trimTo256(s) {
+export function trimTo256(s) {
   return (s && s.length > 256) ?
     s.substring(0, 256 - 3) + '...' :
     s;
