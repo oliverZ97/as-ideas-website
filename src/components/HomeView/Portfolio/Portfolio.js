@@ -32,7 +32,7 @@ export default class Portfolio extends React.Component {
     renderItem(dataItem) {
         return (
             <li className='portfolio__item'>
-                <img className='portfolio__image' src={dataItem.imageUrl} alt={dataItem.title} />
+                <img className='portfolio__image' src={dataItem.imageUrl} alt={dataItem.title}/>
                 <h3 className='portfolio__subtitle'>
                     {dataItem.category}
                 </h3>

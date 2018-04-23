@@ -1,6 +1,6 @@
 import React from "react";
 
-import { IdeasLogo, IconBurger } from './../../assets/svg';
+import {IdeasLogo, IconBurger} from './../../assets/svg';
 import Link from './../Link/Link';
 import MobileMenu from '../MobileMenu/MobileMenu';
 
@@ -25,7 +25,7 @@ export default class MainNav extends React.Component {
         let history = this.props.history;
 
         let mobileMenu;
-        if (this.state.showMobileMenu) mobileMenu = <MobileMenu history={this.props.history} close={this.toggleMenu.bind(this)} />;
+        if (this.state.showMobileMenu) mobileMenu = <MobileMenu history={this.props.history} close={this.toggleMenu.bind(this)}/>;
 
         return (
             <nav className={'mainNav' + (this.state.showMobileMenu ? ' mainNav--open' : '')}>
@@ -42,7 +42,7 @@ export default class MainNav extends React.Component {
                     </li>
                     <li className='mainNav__item mainNav__item--logo'>
                         <Link className='mainNav__link' to='home' history={history} onClick={this.state.showMobileMenu ? this.toggleMenu.bind(this) : null}>
-                            <IdeasLogo />
+                            <IdeasLogo/>
                         </Link>
                     </li>
                     <li className='mainNav__item'>
@@ -61,7 +61,7 @@ export default class MainNav extends React.Component {
                         </Link>
                     </li>
                     <li className='mainNav__item mainNav__item--toggle' onClick={this.toggleMenu.bind(this)}>
-                        <IconBurger />
+                        <IconBurger/>
                     </li>
                 </ul>
                 {mobileMenu}

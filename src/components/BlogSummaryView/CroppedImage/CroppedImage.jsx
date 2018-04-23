@@ -6,7 +6,7 @@ class CroppedImage extends React.Component {
         return (
             <figure
                 className={'croppedImage ' + (this.props.className ? this.props.className : '')}
-                style={{ backgroundImage: 'url(' + this.props.src + ')' }}
+                style={{backgroundImage: 'url(' + this.props.src + ')'}}
             />
         )
     }

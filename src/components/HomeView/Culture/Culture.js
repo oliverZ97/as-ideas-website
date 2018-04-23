@@ -25,7 +25,7 @@ export default class Culture extends React.Component {
         return (
             <div className={'culture__section culture__section--' + floatingClass}>
                 <LazyLoad height={height}>
-                    <img className='culture__image' src={dataItem.imageUrl} alt={dataItem.title} />
+                    <img className='culture__image' src={dataItem.imageUrl} alt={dataItem.title}/>
                 </LazyLoad>
                 <div className='culture__text'>
                     <h3>{dataItem.title}</h3>

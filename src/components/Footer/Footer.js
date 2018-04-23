@@ -2,7 +2,7 @@ import React from 'react';
 import './footer.scss'
 import Link from './../Link/Link';
 
-const Column = ({ children, className }) => (
+const Column = ({children, className}) => (
     <ul className={'footer__column ' + (className ? className : '')}>{children}</ul>
 )
 
@@ -12,8 +12,8 @@ const Footer = () => (
             <ul className='footer__columns'>
                 <Column className='footer__hire'>
                     <Link className='footer__link' to='https://career.axelspringer.com/jobangebote/#axel%20springer%20ideas%20engineering'>
-                        We are hiring!<br />
-                        If you're interested,<br />
+                        We are hiring!<br/>
+                        If you're interested,<br/>
                         drop us a line or two.
                     </Link>
                 </Column>

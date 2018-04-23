@@ -3,8 +3,8 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import React from "react";
 import "./Testimonials.scss";
 
-import { ArrowRight } from '../../../assets/svg';
-import { ArrowLeft } from '../../../assets/svg';
+import {ArrowRight} from '../../../assets/svg';
+import {ArrowLeft} from '../../../assets/svg';
 
 let testimonialQuotations = [
     {
@@ -160,10 +160,10 @@ class Testimonials extends React.Component {
                         </p>
                     </ReactCSSTransitionGroup>
                     <div className='testimonials__overlay testimonials__overlay--left' onClick={this.prev.bind(this)}>
-                        <ArrowLeft className='testimonials__arrow testimonials__arrow--left' />
+                        <ArrowLeft className='testimonials__arrow testimonials__arrow--left'/>
                     </div>
                     <div className='testimonials__overlay testimonials__overlay--right' onClick={this.next.bind(this)}>
-                        <ArrowRight className='testimonials__arrow testimonials__arrow--right' />
+                        <ArrowRight className='testimonials__arrow testimonials__arrow--right'/>
                     </div>
                 </figure>
             </section>

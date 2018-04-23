@@ -23,7 +23,7 @@ export default class MobileMenu extends React.Component {
         return (
             <section className='mobileMenu'>
                 <ul className='mobileMenu__list'>
-                    <li className='mobileMenu__item' >
+                    <li className='mobileMenu__item'>
                         <Link className='mobileMenu__link' to='services' history={history} onClick={this.close.bind(this)}>
                             Services
                         </Link>

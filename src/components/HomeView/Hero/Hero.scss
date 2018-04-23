@@ -15,7 +15,7 @@
         width: 90%;
         max-width: 900px;
         text-align: center;
-        
+
         font-size: 36px;
 
         line-height: 45px;
@@ -47,21 +47,21 @@
 
 @keyframes jump {
     0% {
-        transform: translate(-50%,0)
+        transform: translate(-50%, 0)
     }
     5% {
-        transform: translate(-50%,10px)
+        transform: translate(-50%, 10px)
     }
     10% {
-        transform: translate(-50%,0)
+        transform: translate(-50%, 0)
     }
     15% {
-        transform: translate(-50%,10px)
+        transform: translate(-50%, 10px)
     }
     20% {
-        transform: translate(-50%,0)
+        transform: translate(-50%, 0)
     }
     100% {
-        transform: translate(-50%,0)
+        transform: translate(-50%, 0)
     }
 }

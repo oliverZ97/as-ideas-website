@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, scroller, animateScroll } from "react-scroll";
+import {Link, scroller, animateScroll} from "react-scroll";
 
 export default class ScrollingLink extends React.Component {
     constructor(props) {

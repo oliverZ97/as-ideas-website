@@ -14,7 +14,7 @@ class BlogSummary extends React.Component {
                         {
                             posts.map((post) => {
                                 return (
-                                    <OneBlogPostContainer post={post} />
+                                    <OneBlogPostContainer post={post}/>
                                 )
                             })
                         }

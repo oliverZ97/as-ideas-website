@@ -1,7 +1,7 @@
 import React from "react";
-import { Link as ScrollLink } from "react-scroll";
+import {Link as ScrollLink} from "react-scroll";
 
-export default function Link({ to, children, className, onClick }) {
+export default function Link({to, children, className, onClick}) {
     let onHome = window.location.pathname === '/';
     let external = to.match('/|@')
 

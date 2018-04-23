@@ -3,7 +3,7 @@
 .blogSummary {
     padding: 65px 0; /* safe area for nav */
     min-height: 100vw;
-    
+
     &__container {
         display: flex;
         flex-direction: column;
@@ -44,6 +44,6 @@
         height: 0;
         margin-bottom: 25px;
 
-        padding-top: percentage(2/3); 
+        padding-top: percentage(2/3);
     }
 }
