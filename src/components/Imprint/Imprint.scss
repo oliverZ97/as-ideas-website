@@ -1,11 +1,16 @@
 .imprint {
-    div {
-        height: 100vh;
+    min-height: 100vh;
+
+    .imprint-content {
         align-items: flex-start;
     }
 
     p {
         font-size: 18px;
         line-height: 24px;
+    }
+
+    .list-unstyled {
+        list-style: none;
     }
 }
