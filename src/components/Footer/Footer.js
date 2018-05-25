@@ -44,7 +44,7 @@ const Footer = () => (
                         <li>Axel-Springer-Str. 65, 10888 Berlin</li>
                         <li>+49-30-259178100</li>
                         <li><Link className='footer__link' to='mailto:hello@asideas.de'>hello@asideas.de</Link></li>
-                        <li><Link className='footer__link' to='/imprint'>Impressum</Link></li>
+                        <li><Link className='footer__link' to='/imprint'>Impressum & Privacy Policy</Link></li>
                     </ul>
                 </Column>
             </ul>
