@@ -20,10 +20,10 @@ const PortfolioText = {
         description: 'We are the full-service operator for Axel Springer\'s Single Sign-On service.We successfully manage half a million active users, of which 100, 000 are active on a daily basis.Our service securely facilitates the complete account and profile management as well as newsletter subscriptions.',
         imageUrl: '/portfolio/ideas_identity_website_grafik_sso.png'
     },
-    premiumContentPlatform: {
-        category: 'PCP',
-        title: 'Premium Content Platform',
-        description: 'For seven years Axel Springer Ideas is operating and developing Axel Springer\'s payment platform that is fully integrated with the corporate financial infrastructure.Our Premium Content Platform covers the entire process of digital payment from offering till billing and credit management.',
+    optInLayer: {
+        category: 'OIL.js',
+        title: 'Opt-In Layer',
+        description: 'Facing the effects of the new general data protection regulation (GDPR) concerning tracking, advertising and cookies we built an open source, easy to integrate, customizable, good-looking, responsive, lightweight JavaScript Library. While working on this solution we also helped shaping the IAB specification and integrated this new standard to forward the user\'s consent to different vendors.',
         imageUrl: '/portfolio/ideas_identity_website_grafik_pcp.png'
     }
 };
@@ -57,7 +57,7 @@ export default class Portfolio extends React.Component {
                         {this.renderItem(PortfolioText.newsfinder)}
                         {this.renderItem(PortfolioText.contentExchange)}
                         {this.renderItem(PortfolioText.singleSignOn)}
-                        {this.renderItem(PortfolioText.premiumContentPlatform)}
+                        {this.renderItem(PortfolioText.optInLayer)}
                     </ul>
                 </div>
             </section>
