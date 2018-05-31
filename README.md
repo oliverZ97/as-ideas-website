@@ -17,7 +17,24 @@ This is our long running homepage project. Although we have some repos with diff
 
 ## Setup
 
-This project uses NPM, Yarn, Webpack, React and we assume you are at least a bit familiar with these technologies. This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and modified (ejected) to include additional benefits not present in Create React App. We added [SASS](https://medium.com/front-end-hacking/how-to-add-sass-or-scss-to-create-react-app-c303dae4b5bc), [CSSNano](http://cssnano.co/) to webpack's build and/or dev scripts.
+Make sure you have XCode installed. If not do so.
+```bash
+xcode-select --install
+```
+This project uses NPM, Yarn, Webpack, React and we assume you are at least a bit familiar with these technologies.
+
+If you need to install those technologies get a packaging tool like Homebrew to install them.
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+then install the missing technologies.
+```bash
+brew install npm
+brew install Yarn
+brew install React
+```
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and modified (ejected) to include additional benefits not present in Create React App. We added [SASS](https://medium.com/front-end-hacking/how-to-add-sass-or-scss-to-create-react-app-c303dae4b5bc), [CSSNano](http://cssnano.co/) to webpack's build and/or dev scripts.
 
 If you want to update or edit our webpack config, [check out](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md) the readme of create-react-app. Also if you want to understand how CSS styling. images, fonts, test or other things works, see the readme.
 
