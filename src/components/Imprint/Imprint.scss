@@ -1,11 +1,43 @@
 .imprint {
-    div {
-        height: 100vh;
+    min-height: 100vh;
+
+    .imprint-content {
         align-items: flex-start;
     }
 
     p {
         font-size: 18px;
         line-height: 24px;
+    }
+
+    .list-unstyled {
+        list-style: none;
+    }
+
+    .tableStyle {
+        font-size: 11pt;
+        td {
+            vertical-align: center;
+            text-align: justify;
+        }
+    }
+
+    .imprint-content {
+        h1 {
+
+            padding-top: 16px;
+            margin: 12px 0;
+        }
+
+        h2 {
+            padding-top: 16px;
+            margin: 12px 0;
+        }
+
+        b {
+            display: inline-block;
+            padding-top: 6px;
+            margin: 3px 0;
+        }
     }
 }
