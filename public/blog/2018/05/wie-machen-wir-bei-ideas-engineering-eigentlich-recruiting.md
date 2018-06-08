@@ -2,18 +2,18 @@
 
 Wir haben keine Team Leads, Abteilungsleiter und nur einen Manager: Unseren angesagten und hippen [Michael Alber](https://www.linkedin.com/in/mialber/), den legendären Geschäftsführer. In so einem Unternehmen, das flache Hierarchie und den Geist des Lean Management lebt, kommt dem Recruiting, also der Einstellung von neuen Mitarbeitern, besondere Bedeutung zu. Nur wie macht man das jetzt konkret?
 
-Nicht nur, weil jedes neue Mitglied die Kultur nachhaltig verändern kann, sondern auch, weil wenig Management auch neue Fragen aufwirft. Wer entscheidet über die Einstellung? Wer macht Stellenausschreibungen? Wer redet mit Head Huntern? Was ist mit der Probezeit? Haben wir eine Personalabteilung oder wer kann uns hier helfen?
-
 # ![2](2.jpg)
+
+Nicht nur, weil jedes neue Mitglied die Kultur nachhaltig verändern kann, sondern auch, weil wenig Management auch neue Fragen aufwirft. Wer entscheidet über die Einstellung? Wer macht Stellenausschreibungen? Wer redet mit Head Huntern? Was ist mit der Probezeit? Haben wir eine Personalabteilung oder wer kann uns hier helfen?
 
 Weil das wahnsinnig viele Fragen und noch mehr Antworten sind, besteht dieser Blog-Post auch aus drei Teilen:
 * Wie wir bei Ideas Engineering rekrutieren (dieser Post)
 * Talk is cheap, show me your code
-* 5 Fehler, die jeder beim Recruiting  macht
+* 5 Fehler, die jeder beim Recruiting macht
 
-## Wer macht Recruiting bei Ideas?
+## Wer macht Recruiting bei Ideas Engineering?
 
-Bei uns ist das Recruiting Team-Sache. Jeder Mitarbeiter bei uns hat als Aufgabe in seinem Job-Profil „Recruiting“ stehen. Dabei ist das wie mit dem Wählen gehen: Das ist ein Recht, kein Zwang. Es ist bei uns durch die Geschäftsführung vorgegeben, wie viele offene Stellen wir haben. Wie die zu besetzen sind und was genau die Person können soll, ist dann Sache des Teams, das die offene Stelle hat bzw. das Bedürfnis nach Verstärkung. Die Frage nach der Rolle? Definiert das Team. Wir suchen auch selten "Java Entwickler mit Erfahrung mit Spring", sondern wir leben und arbeiten agil. Agil heißt hier, dass wir z.B. Entwickler suchen. Diese sollten flexbil sein und sich als Problemlöser verstehen. Ein agiles Team muss halt manchmal für zwei Wochen fast nur am Frontend arbeiten.
+Bei uns ist das Recruiting Team-Sache. Jeder Mitarbeiter bei uns hat als Aufgabe in seinem Job-Profil „Recruiting“ stehen. Und viele andere Dinge, bei uns gibt es 'Das ist nicht meine Aufgabe' nicht. Dabei ist das wie mit dem Wählen gehen: Das ist ein Recht, kein Zwang. Es ist bei uns durch die Geschäftsführung vorgegeben, wie viele offene Stellen wir haben. Wie die zu besetzen sind und was genau die Person können soll, ist dann Sache des Teams, das die offene Stelle hat bzw. das Bedürfnis nach Verstärkung. Die Frage nach der Rolle? Definiert das Team. Wir suchen auch selten "Java Entwickler mit Erfahrung mit Spring", sondern wir leben und arbeiten agil. Agil heißt hier, dass wir z.B. Entwickler suchen. Diese sollten flexbil sein und sich als Problemlöser verstehen. Agile Entwicklung heißt, dass man nicht dafür bezahlt wird Code zu schreiben, sondern Problemlöser zu sein. Ein Spezialist ist vielleicht effektiver, aber bei ständig wechselnden Anforderungen kann (und oft will) er nur Aufgaben aus seinem Gebiet übernehmen. Agiles Arbeiten heißt also mehr in die Breite zu gehen. Ein reiner Java-Entwickler ist bei uns eher schlecht aufgehoben. Jemand, der nur in Ruhe an seinem Rechner arbeiten will, wird bei uns nicht glücklich. Schließlich ist bei uns alles Aufgabe vom Team.
 
 ## Der Ablauf
 
@@ -21,14 +21,14 @@ Bewerbungen erfolgen bei uns bidirektional und immer auf Augenhöhe. Es geht nic
 
 # ![cover](cover.jpg)
 
-Jeder Kandidat durchläuft bei uns den folgenden Prozess. Dabei sei gesagt: Wir sind pragmatisch, nicht dogmatisch. In besonderen Fällen kürzen wir den Prozess auch einfach ab, wenn wir uns ganz sicher sind.
+Jeder Kandidat durchläuft bei uns den folgenden Prozess. Dabei sei gesagt: Wir sind pragmatisch, nicht dogmatisch. In besonderen Fällen kürzen wir den Prozess auch einfach ab, wenn wir uns ganz sicher sind. Auch hängt die genaue Ausgestaltung auch von der gesuchten Rolle ab: Agile Coach, Product Owner oder Business Developer?
 
-Die gesamte Kommunikation und Planung erfolgt über den Microsoft Office Planer. Dort werden die Profile eingestellt und wir sorgen damit dafür, dass nichts herunter fällt.
+Die gesamte Kommunikation und Planung erfolgt über den Microsoft Office Planer und Teams als Chat Tool. Dort werden die Profile eingestellt und wir sorgen damit dafür, dass nichts herunter fällt. Alles bekommt einen Zeitstempel und wir wissen genau, warum wir wen eingeladen haben und was jeder denkt.
 
 ![3](3.png)
 
 * In einigen Fällen (z.B. bei Empfehlungen) gibt es ein **inoffizielles Kennenlernen** und Vorstellung der Firma, bevor sich der Kandidat entscheidet sich offiziell bei uns zu bewerben
-* Eingang der Bewerbung, der Kandidat wird auf unserem Kanban-Board erfasst 
+* **Eingang der Bewerbung**, der Kandidat wird auf unserem Kanban-Board erfasst 
     * Beurteilung der offiziellen Bewerbung (durch alle Interessierten) und Diskussion des Profiles
     * Wenn der Bewerber aus formalen Kriterien rausfällt (z.B. wenn er Ruby-Programmierer ist oder kein Deutsch spricht) wird ihm abgesagt. Gibt es generell Zweifel an dem Bewerber kommt es ggf. zu einem 30min Telefoninterview
 * **Kennenlerngespräch** (1h, Mit 2 bis maximal 3 Kollegen)
@@ -51,15 +51,15 @@ Unsere Ausschreibungen machen wir selbst: Die meisten Personaler haben davon sow
 
 ## Das Kennenlerngespräch
 
-Das Gespräch dauert eine Stunde. Im Normalfall holen wir den Bewerber immer am Hauptempfang (dem Haupteingang vom Hochhaus) ab, führen ihn kurz durch die Passage und erzählen ihm von Axel Springer als Konzern, dass wir eine digitale Firma sind, die 70% von Umsatz und Gewinn mit reinem Digitalgeschäft macht. Wir stellen AS Ideas als eine von 180 Töchtern (Business Units) von AS vor.
+Das Gespräch dauert eine Stunde und wird von zwei komplementären Persönlichkeiten von uns durchgeführt. Im Normalfall holen wir den Bewerber immer am Hauptempfang (dem Haupteingang vom Hochhaus) ab, führen ihn kurz durch die Passage und erzählen ihm von Axel Springer als Konzern, dass wir eine digitale Firma sind, die 70% von Umsatz und Gewinn mit reinem Digitalgeschäft macht. Wir stellen Ideas Engineering als eine von 180 Töchtern (Business Units) von AS vor.
 
- Eine Führung für den Bewerber durch die Räumlichkeiten gibt es vor oder nach dem Gespräch, dabei erklären wir dem Bewerber viel, wie und woran wir arbeiten.
+ Eine Führung für den Bewerber durch die Räumlichkeiten gibt es vor oder nach dem Gespräch, dabei erklären wir dem Bewerber extrem viel. Wie und woran wir arbeiten. Wie es bei uns abläuft. Wer wir sind.
 
 ## Be the judge!
-Die Beurteilung eines Bewerbers erfolgt grob nach vier Kriterien
+Die Beurteilung eines Bewerbers erfolgt grob nach vier Kriterien.
 
-* Kulturfit
 * Qualifikation
+* Kulturfit
 * Analytische Fähigkeiten
 * Denken in Innovationen
 
