@@ -1,15 +1,15 @@
 # Recruiting 2.0: Wie wir bei Ideas Engineering rekrutieren
 
-Wir haben keine Team Leads, Abteilungsleiter und nur einen Manager: Unseren angesagten und hippen [Michael Alber](https://www.linkedin.com/in/mialber/), den legendären Geschäftsführer. In so einem Unternehmen, das flache Hierarchie und den Geist des Lean Management lebt, kommt dem Recruiting, also der Einstellung von neuen Mitarbeitern, besondere Bedeutung zu. Nur wie macht man das jetzt konkret?
+Wir haben keine Team Leads, Abteilungsleiter und nur einen Manager: Unseren [Geschäftsführer](https://www.linkedin.com/in/mialber/). In so einem Unternehmen, das flache Hierarchie und den Geist des Lean Management lebt, kommt dem Recruiting, also der Einstellung von neuen Mitarbeitern, besondere Bedeutung zu. Nur wie macht man das jetzt konkret?
 
 # ![2](2.jpg)
 
-Nicht nur, weil jedes neue Mitglied die Kultur nachhaltig verändern kann, sondern auch, weil wenig Management auch neue Fragen aufwirft. Wer entscheidet über die Einstellung? Wer macht Stellenausschreibungen? Wer redet mit Head Huntern? Was ist mit der Probezeit? Haben wir eine Personalabteilung oder wer kann uns hier helfen?
+Nicht nur, weil jedes neue Mitglied die Kultur nachhaltig verändern kann, sondern auch, weil wenig Management auch neue Fragen aufwirft. Wer entscheidet über die Einstellung? Wer macht Stellenausschreibungen? Wer redet mit Head Huntern? Was ist mit der Probezeit? Haben wir eine Personalabteilung oder wer kann uns hier helfen? Was ist mit dem Gehalt und wie machen wir das?
 
 Weil das wahnsinnig viele Fragen und noch mehr Antworten sind, besteht dieser Blog-Post auch aus drei Teilen:
 * Wie wir bei Ideas Engineering rekrutieren (dieser Post)
-* Talk is cheap, show me your code
-* 5 Fehler, die jeder beim Recruiting macht
+* Talk is cheap, show me your code (coming soon, wird dann verlinkt)
+* 5 Fehler, die jeder beim Recruiting macht (coming soon, wirdf dann verlinkt)
 
 ## Wer macht Recruiting bei Ideas Engineering?
 
@@ -30,7 +30,8 @@ Die gesamte Kommunikation und Planung erfolgt über den Microsoft Office Planer 
 * In einigen Fällen (z.B. bei Empfehlungen) gibt es ein **inoffizielles Kennenlernen** und Vorstellung der Firma, bevor sich der Kandidat entscheidet sich offiziell bei uns zu bewerben
 * **Eingang der Bewerbung**, der Kandidat wird auf unserem Kanban-Board erfasst 
     * Beurteilung der offiziellen Bewerbung (durch alle Interessierten) und Diskussion des Profiles
-    * Wenn der Bewerber aus formalen Kriterien rausfällt (z.B. wenn er Ruby-Programmierer ist oder kein Deutsch spricht) wird ihm abgesagt. Gibt es generell Zweifel an dem Bewerber kommt es ggf. zu einem 30min Telefoninterview
+    * Wenn der Bewerber aus formalen Kriterien rausfällt (z.B. wenn er Ruby-Programmierer ist oder kein Deutsch spricht) wird ihm abgesagt. Gibt es generell Zweifel an dem Bewerber kommt es ggf. zu einem 30min 
+    * Bewerbungen/Profile enthalten bei uns keine Gehaltswünsche, - diese werden vorher geschwärzt und sind nur dem Management bekannt
 * **Kennenlerngespräch** (1h, Mit 2 bis maximal 3 Kollegen)
      * Das Gespräch hat als Ziel, dass der Bewerber uns als Firma kennenlernt, unsere Arbeit und versteht, wie und woran wir arbeiten
 * **Fachlicher Test** mit anschließendem Teamfit
@@ -40,6 +41,7 @@ Die gesamte Kommunikation und Planung erfolgt über den Microsoft Office Planer 
 * **Formelles Gespräch** mit einer Führungskraft und einem Kollegen aus der HR-Abteilung
     * Hier geht es vor allem um Vertragskonditionen
     * Natürlich hat die Geschäftsführung immer ein Veto-Recht
+    * Erst hier, wenn beide Seite sich einig sind, dass man zusammenarbeiten will, wird über das Gehalt gesprochen. Dazu aber mehr im dritten Teil dieser Serie.
 
 ## Wo kommen die Bewerber her?
 
@@ -88,5 +90,5 @@ Nochmal kurz und knapp: Bei uns braucht man viel eigenen Antrieb und muss kreati
 Weiter im zweiten Teil über die fachliche Eignung.
 
 ##### P.S.:
- Es gibt sicherlich offene Fragen und einige Dinge sind kontrovers, zum Beispiel: Wieso keine Ruby-Entwickler? Das ist wie mit Franzosen, [es ist falsch Franzose zu sein](https://youtu.be/algLNxPF5xM?t=10). Aber ich entschuldige mich nicht für meinen Humor ;)
+ Es gibt sicherlich offene Fragen und einige Dinge sind kontrovers, zum Beispiel: Wieso keine Ruby-Entwickler? Dafür muss man meinen Humor kennen. Warum braucht man bei uns Deutschkenntnisse? Dafür muss man unsere Aufgaben und Projekte kennen.
 
