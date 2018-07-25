@@ -1,6 +1,13 @@
 # Disaster Recovery Day
 
-Angenommen dein Operations-Engineer ist krank und nix geht mehr... 
+Wir Entwickler bei Ideas glauben fest an das Mantra ["You build it, you run it"](https://queue.acm.org/detail.cfm?id=1142065). Auch wenn der 
+von Amazons Chief Technology Officer Werner Vogel Spruch mitlerweile mehr als 12 Jahre als ist, beschreibt es immer noch genau die DevOps Kultur 
+die wir hier leben. Neben DevOps gehört der "agile" Gedanke von kontinuierlicher Verbesserung und schnellem Feedback zu unser täglichen Arbeit.
+
+Beim Entwickeln von Software geben uns Test schnelles Feedback. Unser Continious-Intergrations-System sendet bei der fehlgeschlagenen 
+Integration Chat- und Email-Nachrichten. Doch was ist mit dem Testen der Build-Infrastruktur, die für moderne Software-Entwicklung nötig ist?   
+
+Um diese Frage klar beantworten zu können, hat sich das Team Enterprise entschieden einen "Disaster-Recovery" Tag durchzuführen. 
 
 - DevOps Kultur 
 - Theoretisches Wissen erproben
@@ -11,9 +18,23 @@ Angenommen dein Operations-Engineer ist krank und nix geht mehr...
 
 # ContentPool CI/CD Setup
 
-- wir sind immer live. Continous delivery. Ohne Jenkins, kein deploy, keine Software
---> Schaubild GIT<-JENKINS->BUILD->TEST->STAGING->PRODUCTION
-- Damit das funktioniert: möglichst hoher Automatisierungsanteil bei CI-SETUP
+Das Team Enterprise betreut eine größere Software-Platform namens "ContentPool", die aus einem Dutzend Services besteht. Jeder Service hat sein
+eigenes Repository. Unser CI/CD System [Jenkins](https://jenkins.io/) lauscht auf Änderungen in den Repositories und startet die Pipeline. Die
+hohe Testabdeckung gibt uns das Vertrauen jede noch so kleine Änderung automatisch von Jenkins auf Produktion ausgerollen zu lassen. 
+
+![alt text](./disaster-recovery-day/2.png "Logo Title Text 1")
+
+Die Pipeline für jeden Service besteht aus folgenden Schritten:
+ * __Test & Build__: Jenkins führt die Tests der Anwendung aus und veröffentlicht ein neues Artefakt bei Artifactory.
+ * __Deploy & run end2end:__ Das neue Artefakt wird bei Heroku auf der End2End Stage deployed und danach die End2end Test ausgeführt. 
+ * __Deploy integration__: Wenn die End2End Test erfolgreich passiert wurden, wird die Anwendung in den Integrationsumgebung deployed.
+ * __Deploy production__: Nach dem deployment auf der Integrations-Stage wird die Anwendung in die Produktionsumgebung deployed. 
+
+Jenkins selbst wird von uns als Team betreut und ist unser wichtigetes Werkzeug da jede automatisierbare Aktion durch einen Jenkins-Job abgebildet wird. 
+Jenkins selbst wird bei Amazon WebServices als EC2 Instanz ausgeführt. Für die Ausführung der einzelnen Jobs werden bei Bedarf automatisch 
+Jenkins-Slaves hochgefahren, die als Docker-Container bei AWS Fargate ausgeführt werden. Das Erstellen und Pflegen des Jenkins-AMIs und der 
+Docker-Container übernimmt das Team selbst. 
+
 - Tools: JenkinsFiles, Docker, AWS ECS/Fargate, Packer, Terraform, Heroku-CLI
 
 # D(isaster)-Day
