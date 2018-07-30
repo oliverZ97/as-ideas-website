@@ -16,7 +16,7 @@ Um diese Frage klar beantworten zu können, hat sich das Team Enterprise entschi
 - Kontinuierlich besser werden
 - Sicheres Gefühl im Umgang mit unserem BUILD Setup
 
-# ContentPool CI/CD Setup
+## CI/CD Done by team Enterprise
 
 Das Team Enterprise betreut eine größere Software-Platform namens "ContentPool", die aus einem Dutzend Services besteht. Jeder Service hat sein
 eigenes Repository. Unser CI/CD System [Jenkins](https://jenkins.io/) lauscht auf Änderungen in den Repositories und startet die Pipeline. Die
@@ -30,6 +30,14 @@ Die Pipeline für jeden Service besteht aus folgenden Schritten:
  * __Deploy integration__: Wenn die End2End Test erfolgreich passiert wurden, wird die Anwendung in den Integrationsumgebung deployed.
  * __Deploy production__: Nach dem deployment auf der Integrations-Stage wird die Anwendung in die Produktionsumgebung deployed. 
 
+Wie in jeder anderen Firma auch, kommen und gehen Kollegen. Auch hat sich unsere Firmenstruktur von dedizierten Silo-Teams hin zu cross-funktionalen Teams verändert. Der vom Enterprise betreute Jenkins existierte schon vor dem Team und wurde von mehreren Jahren von einem dedizierten Operations-Team betreut. Innerhalb der letzten Monate haben wir schrittweise das Wissen über Jenkins, dem Slave-Setup, die Provisionierung und die wie Ausführung auf AWS als EC2 Instanzen genau funktioniert in das Team getragen. In Form von ["technischen User Stories"](http://rgalen.com/agile-training-news/2013/11/10/technical-user-stories-what-when-and-how) ist so unser aktuelle Jenkins-Setup entstanden. 
+
+Wir waren uns alle sicher, dass trotz des Wissenstransfers das CI System unsere größte Schwachstelle ist. Ohne CI System können wir keine Änderungen in Produktion nehmen und wären damit handlungsunfähig. Was passiert also, wenn eines Morgen Jenkins nicht mehr funktioniert, die EC2 Maschine nicht mehr läuft?
+
+## Jenkins Setup in great Detail
+
+TODO
+
 Jenkins selbst wird von uns als Team betreut und ist unser wichtigetes Werkzeug da jede automatisierbare Aktion durch einen Jenkins-Job abgebildet wird. 
 Jenkins selbst wird bei Amazon WebServices als EC2 Instanz ausgeführt. Für die Ausführung der einzelnen Jobs werden bei Bedarf automatisch 
 Jenkins-Slaves hochgefahren, die als Docker-Container bei AWS Fargate ausgeführt werden. Das Erstellen und Pflegen des Jenkins-AMIs und der 
@@ -37,7 +45,7 @@ Docker-Container übernimmt das Team selbst.
 
 - Tools: JenkinsFiles, Docker, AWS ECS/Fargate, Packer, Terraform, Heroku-CLI
 
-# D(isaster)-Day
+# D(isaster)-Day - Jenkins ist kaputt
 
 - Preparation: Chaos monkey macht alles kaputt (unbeteiligt, nicht Ansprechbar im HO verschwunden)
 - 9.30 Jenkins ist aus
@@ -74,7 +82,11 @@ jenkins pid results in "already instance running" -> manual restart
 
 10:00 DONE
 
-# What we've learned 
+## What we've learned 
+
+Erleben zu können, wie ein Team gemeinsam ohne viel Aufregung ein Problem professionell löst ist unbezahlbar. Die Wiederherstellung vom Jenkins war ein solches Erlebnis. Auch wenn wir das angepeilte Ziel von 3 Stunden mehr als nur verfehlt haben, lief der Jenkins am nächsten Tag verlässlich!
+
+Trotz der ausführlichen Dokumentation währen der letzten Monate hatten sich immer noch einige Lücken aufgetan. Diese wurden während der Übung ergänzt. Wichtige Todos, die im Laufe des Tages uns eingefallen sind, wurden sofort aufgeschrieben und als technische Story in unser Backlog aufgenommen.
 
 - document your steps and create action items on the fly
 - untar takes longer than tar
@@ -84,10 +96,8 @@ jenkins pid results in "already instance running" -> manual restart
 - do it again (and again)
 - plan your disaster day and inform management
 
-# And now?
+## And now?
 - Wir haben vertrauen in unsere Lösung gewonnen
 - Wir haben Wissenslücken identifiziert und geschlossen
 - Disaster? No disaster!
 - Mehr automation? Or less? 
-
-# ![1](1.jpg)
