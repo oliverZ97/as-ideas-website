@@ -1,6 +1,6 @@
 # Disaster Recovery Day
 
-Wir Entwickler bei Ideas glauben fest an das Mantra [You build it, you run it](https://queue.acm.org/detail.cfm?id=1142065) **TODO: Link DEAD!**. Auch wenn der Spruch von Amazons Chief Technology Officer Werner Vogel mitlerweile mehr als 12 Jahre als ist, beschreibt er immer noch genau die DevOps-Kultur, die wir bei der Ideas Engineering leben. Neben DevOps gehört der "agile" Gedanke von kontinuierlicher Verbesserung und schnellem Feedback zu unser täglichen Arbeit.
+Wir Entwickler bei Ideas glauben fest an das Mantra [You build it, you run it](https://www.safaribooksonline.com/library/view/programming-amazon-ec2/9781449303617/ch01s03.html). Auch wenn der Spruch von Amazons Chief Technology Officer Werner Vogel mitlerweile mehr als 12 Jahre als ist, beschreibt er immer noch genau die DevOps-Kultur, die wir bei der Ideas Engineering leben. Neben DevOps gehört der "agile" Gedanke von kontinuierlicher Verbesserung und schnellem Feedback zu unser täglichen Arbeit.
 
 Beim Entwickeln von Software geben uns Tests schnelles Feedback. Unser Continious-Intergration-System sendet bei einer fehlgeschlagenen Integration/Deployment Chat- und Email-Nachrichten. Doch was ist mit dem Testen der Build-Infrastruktur, die für moderne Software-Entwicklung nötig ist? 
 
