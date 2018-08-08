@@ -84,7 +84,7 @@ Aus einem nicht sofort ersichtlichem Grund wurde die Wiederherstellung nach mehr
 
 Das nächtliche Entpacken wurde zum Glück erfolgreich abgeschlossen. Anstelle des Jenkins-Setup Guides wurde nun auf der Web-Oberfläche die Fehlermeldung "already instance running" ausgegeben. Scheinbar wurde beim Backup eine Art PID Datei mitkopiert, die ein normales Starten des Jenkins-Prozess verhinderte. Nach einem manuellen Neustart des Docker-Containers wurden wir von unser gewohnten Liste an Build-Jobs begrüßt.  
 
-*__ProTip:__ Anstelle einer All-is-better-than-nothing Strategie sollte genau überlegt werden, welche Daten wirklich relevant für ein Wiederherstellen sind, um die größe des einzuspielenden Backups und damit die Wiederherstellungszeit möglichst klein zu halten.*
+*__ProTip:__ Anstelle einer All-is-better-than-nothing Strategie sollte genau überlegt werden, welche Daten wirklich relevant für ein Wiederherstellen sind, um die Größe des einzuspielenden Backups und damit die Wiederherstellungszeit möglichst klein zu halten.*
 
 ### Zweiter Tag: 10:00 Uhr: Disaster Recovery DONE!
 
