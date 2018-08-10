@@ -10,7 +10,7 @@ Um diese Frage klar beantworten zu können, hat sich das Team Enterprise entschi
 
 Das Team Enterprise betreut eine größere Software-Platform namens "ContentPool", die aus einem Dutzend Services besteht. Jeder Service hat sein eigenes Repository. Unser CI/CD System [Jenkins](https://jenkins.io/) lauscht auf Änderungen in den Repositories und startet die jeweilige Deployment-Pipeline. Die hohe Testabdeckung gibt uns das Vertrauen jede noch so kleine Änderung automatisch von Jenkins auf Produktion ausrollen zu lassen. Die Integration des Jenkins in unsere Team-Kommunikation durch Mail, HipChat, Slack und Jira gibt uns die nötige Sichtbarkeit. 
 
-![alt text](./disaster-recovery-day/2.png "Logo Title Text 1")
+![alt text](2.png "Logo Title Text 1")
 
 Die [Build-Pipeline](https://jenkins.io/doc/book/pipeline/#pipeline-concepts) ist für jeden Service in einem Jenkinsfile definiert und besteht grob aus folgenden Schritten:
  * __Test & Build__: Jenkins führt die Unit- und Integrationstests der Anwendung aus und veröffentlicht bei Erfolg ein neues Artefakt bei Artifactory.
@@ -30,7 +30,7 @@ Unser Jenkins-Setup besteht aus einem Master-Node und mehreren Slaves, die je na
 
 Analog zu dem Deployment von einzelnen Services hat auch der Master sowie jeder Slave ein eigenes Repository. Für das Bauen des Master-Nodes verwenden wir Hashicorps [Packer](https://www.packer.io/). Die Provisionierung von der EC2 Instanz übernimmt [Terraform](https://www.terraform.io/) (ebenfalls von Hashicorp). Für das Bauen und Veröffentlichen von den Slave-Docker-Containern existieren Jenkins-Jobs, die vom Master ausgeführt werden. Die neu gebauten Slave-Images werden in Amazons eigener Container-Registry veröffentlicht. Fargate zieht sich die aktuellsten Images, wodurch die Slaves immer auf dem aktuellsten Stand sind.  Wir haben uns entschieden für jeden Deployment-Usecase einen dedizierten Slave zu bauen. So existiert ein Maven-Slave für das Bauen von Java (JDK) Applikationen oder ein Heroku-Slave, welcher für das Deployment des Artefakts auf Heroku vorgesehen ist. 
 
-![alt text](./disaster-recovery-day/3.png "Jenkins in greater detail")
+![alt text](3.png "Jenkins in greater detail")
 
 Ohne spezielle Konfiguration, sowie einer Unmenge an Plugins könnten wir Jenkins nicht verwenden. Diese fragile Konfiguration wird bei jeder Änderung (hint: über ein weiteres Jenkins-Plugin) in ein Backup-Repository von Jenkins selbst geschrieben. Damit wir die Historie über schon gelaufene Jobs nicht verlieren, wird die eingehangene HDD des Jenkins-Master nächtlich in einem S3 Bucket gesichert. 
 
