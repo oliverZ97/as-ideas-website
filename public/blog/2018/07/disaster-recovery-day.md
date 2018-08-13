@@ -1,12 +1,12 @@
 # Disaster Recovery Day
 
-Wir Entwickler bei Ideas glauben fest an das Mantra [You build it, you run it](https://www.safaribooksonline.com/library/view/programming-amazon-ec2/9781449303617/ch01s03.html). Auch wenn der Spruch von Amazons Chief Technology Officer Werner Vogel mitlerweile mehr als 12 Jahre als ist, beschreibt er immer noch genau die DevOps-Kultur, die wir bei der Ideas Engineering leben. Neben DevOps gehört der "agile" Gedanke von kontinuierlicher Verbesserung und schnellem Feedback zu unser täglichen Arbeit.
+Wir Entwickler bei Ideas glauben fest an das Mantra [You build it, you run it](https://www.safaribooksonline.com/library/view/programming-amazon-ec2/9781449303617/ch01s03.html). Auch wenn der Spruch von Amazons Chief Technology Officer Werner Vogel mittlerweile mehr als 12 Jahre als ist, beschreibt er immer noch genau die DevOps-Kultur, die wir bei der Ideas Engineering leben. Neben DevOps gehört der "agile" Gedanke von kontinuierlicher Verbesserung und schnellem Feedback zu unserer täglichen Arbeit.
 
 Beim Entwickeln von Software geben uns Tests schnelles Feedback. Unser Continious-Intergration-System sendet bei einer fehlgeschlagenen Integration/Deployment Chat- und Email-Nachrichten. Doch was ist mit dem Testen der Build-Infrastruktur, die für moderne Software-Entwicklung nötig ist? 
 
 Um diese Frage klar beantworten zu können, hat sich das Team Enterprise entschieden einen "Disaster-Recovery" Tag durchzuführen. 
 
-## CI/CD Done by team Enterprise
+## CI/CD done by team Enterprise
 
 Das Team Enterprise betreut eine größere Software-Platform namens "ContentPool", die aus einem Dutzend Services besteht. Jeder Service hat sein eigenes Repository. Unser CI/CD System [Jenkins](https://jenkins.io/) lauscht auf Änderungen in den Repositories und startet die jeweilige Deployment-Pipeline. Die hohe Testabdeckung gibt uns das Vertrauen jede noch so kleine Änderung automatisch von Jenkins auf Produktion ausrollen zu lassen. Die Integration des Jenkins in unsere Team-Kommunikation durch Mail, HipChat, Slack und Jira gibt uns die nötige Sichtbarkeit. 
 
@@ -20,7 +20,7 @@ Die [Build-Pipeline](https://jenkins.io/doc/book/pipeline/#pipeline-concepts) is
 
 Wie in jedem anderen Unternehmen kommen und gehen Kollegen. Auch hat sich unsere Firmenstruktur von dedizierten Silo-Teams hin zu cross-funktionalen Teams verändert. Der vom Team Enterprise betreute Jenkins existierte zum Beispiel schon vor der Gründung des Teams. Damals wurde der Jenkins von einem dedizierten Operations-Team betreut. 
 
-Während der letzten Monate haben wir schrittweise unser Wissen über Jenkins, dem Slave-Setup, die Provisionierung und der Ausführung auf AWS als EC2 Instanzen aufgefrischt. In Form von [technischen User Stories](http://rgalen.com/agile-training-news/2013/11/10/technical-user-stories-what-when-and-how) haben wir in jedem Sprint technische Schuld abgebaut und im Gegenzug fehlendens Wissen aufgebaut.  
+Während der letzten Monate haben wir schrittweise unser Wissen über Jenkins, dem Slave-Setup, die Provisionierung und der Ausführung auf AWS als EC2 Instanzen aufgefrischt. In Form von [technischen User Stories](http://rgalen.com/agile-training-news/2013/11/10/technical-user-stories-what-when-and-how) haben wir in jedem Sprint technische Schuld abgebaut und im Gegenzug fehlendes Wissen aufgebaut.  
 
 ## Jenkins Setup in great Detail
 
@@ -39,7 +39,7 @@ Ohne spezielle Konfiguration, sowie einer Unmenge an Plugins könnten wir Jenkin
 
 Wir waren uns alle sicher, dass trotz des Wissenstransfers, das CI System unsere größte Schwachstelle ist. Ohne CI System können wir keine Änderungen in Produktion nehmen und wären damit handlungsunfähig. __Was passiert also, wenn eines Morgens Jenkins nicht mehr funktioniert?__
 
-In Absprache mit Kollegen und unserer Product-Ownerin, war es dann soweit. Ein Kollege, der praktischerweise an dem Tag nicht mehr erreichbar war, hat [Chaos-Monkey](https://medium.com/netflix-techblog/the-netflix-simian-army-16e57fbab116) gespielt und unseren Jenkins unbrauchtbar gemacht.
+In Absprache mit Kollegen und unserer Product-Ownerin, war es dann soweit. Ein Kollege, der praktischerweise an dem Tag nicht mehr erreichbar war, hat [Chaos-Monkey](https://medium.com/netflix-techblog/the-netflix-simian-army-16e57fbab116) gespielt und unseren Jenkins unbrauchbar gemacht.
 
 ### 9.30 Uhr: Jenkins ist nicht mehr erreichbar
 
