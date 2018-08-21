@@ -18,8 +18,11 @@ docker login -u ${DOCKER_USER} -p ${DOCKER_PWD}
 
 docker build --build-arg CACHE_DATE=$(date +%Y-%m-%d:%H:%M:%S) -t "asideas/ideas-website-2:${GO_PIPELINE_COUNTER}" -f Dockerfile .
 
+echo "Do Login to AWS ECR"
+$(aws ecr get-login --no-include-email --region eu-central-1)
+
 echo "Push docker containers."
-docker push asideas/ideas-website-2:$GO_PIPELINE_COUNTER
+docker push 340121395086.dkr.ecr.eu-central-1.amazonaws.com/ideas-website:$GO_PIPELINE_COUNTER
 
 RES=$?
 
