@@ -1,7 +1,6 @@
 #!/bin/sh
 
-DOCKER_USER=$1
-DOCKER_PWD=$2
+IMAGE_ID="340121395086.dkr.ecr.eu-central-1.amazonaws.com/ideas-website"
 
 echo "Copy resources..."
 cp -r ../build .
@@ -13,13 +12,13 @@ CURRENT_DATE=$(date +%Y-%m-%d:%H:%M:%S)
 rm -f ./build/version.json
 echo "{ \"version\": \"$GO_PIPELINE_COUNTER\", \"date\": \"$CURRENT_DATE\" }" >> ./build/version.json
 
-echo "Build docker-containers"
-docker login -u ${DOCKER_USER} -p ${DOCKER_PWD}
+docker build --build-arg CACHE_DATE=$(date +%Y-%m-%d:%H:%M:%S) -t ${IMAGE_ID}:${GO_PIPELINE_COUNTER} -f Dockerfile .
 
-docker build --build-arg CACHE_DATE=$(date +%Y-%m-%d:%H:%M:%S) -t "asideas/ideas-website-2:${GO_PIPELINE_COUNTER}" -f Dockerfile .
+echo "Do Login to AWS ECR"
+$(aws ecr get-login --no-include-email --profile ideas-go-cd --region eu-central-1)
 
 echo "Push docker containers."
-docker push asideas/ideas-website-2:$GO_PIPELINE_COUNTER
+docker push ${IMAGE_ID}:${GO_PIPELINE_COUNTER}
 
 RES=$?
 
