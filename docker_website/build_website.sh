@@ -19,7 +19,6 @@ $(aws ecr get-login --no-include-email --profile ideas-go-cd --region eu-central
 
 echo "Push docker containers."
 docker push ${IMAGE_ID}:${GO_PIPELINE_COUNTER}
-docker push ${IMAGE_ID}:latest
 
 RES=$?
 
