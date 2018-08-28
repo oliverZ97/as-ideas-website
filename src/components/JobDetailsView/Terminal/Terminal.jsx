@@ -20,10 +20,6 @@ class Terminal extends React.Component {
         this.handleKeyPress = this.handleKeyPress.bind(this);
     }
 
-    componentDidMount() {
-        this.focus();
-    }
-
     handleInputChange(e) {
         let text = e.target.value;
         this.setState({

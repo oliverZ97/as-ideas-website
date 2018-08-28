@@ -8,16 +8,17 @@
     width: 100%;
     padding: 15px 0;
 
-    background: transparent;
+    background: #fff;
     transition: background-color .2s;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
-
+/*
     &:hover {
         background-color: transparentize($background-col-primary, .1);
     }
+    */
 
     @include device(tablet) {
         background-color: transparentize($background-col-primary, .1);
