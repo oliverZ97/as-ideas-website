@@ -1,0 +1,63 @@
+@import "../../../../styles/variables";
+
+.jobsTile {
+    height: 0;
+    padding-bottom: 22%;
+    border-radius: 10px;
+    
+    margin-top: 20px;
+    width: 22%;
+    
+    position: relative;
+    background-color: $background-col-secondary;
+    
+    cursor: pointer;
+    overflow: hidden;
+
+    transition: .2s;
+
+    &:hover {
+        transition: .6s;
+
+        margin: 0 0 20px 0;
+        .jobsTile__overlay {
+            opacity: 1;
+        }
+    }
+
+    &__jobContent {
+        position: absolute;
+
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+    }
+    
+    &__jobTitle {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    &__overlay {
+        position: absolute;
+
+        left: 0px;
+        bottom: 0px;
+        height: 100%;
+        width: 100%;
+
+        padding: 20px;
+        border-radius: 10px;
+        background: $font-col-active;
+        
+        opacity: 0;
+        
+        transition: .2s;
+
+        > p {
+            color: #fff;
+        }
+    }
+}
+    

@@ -1,0 +1,122 @@
+@import "../../styles/variables";
+
+.jobDetailsView {
+
+    background: $background-col-secondary;
+    padding: 100px 0;
+
+    .terminal {
+        margin: 100px 0 0 20px;
+    }
+
+    h1.jobDetailsView__heading {
+        margin-bottom: 30px;
+    }
+
+    &__content {
+        font-size: 18px;
+        padding: 19px 15px 15px;
+        margin: -15px 0 0 20px;
+        background: #fff;
+
+        ul {
+            list-style: disc;
+            padding-left: 18px;
+            
+            li {
+                padding: 10px 0 0px;
+            }
+        }
+
+        > p {
+            padding: 10px 0 0px;
+        }
+
+        &--heading {
+            font-size: 26px;
+            margin: 30px 0 0px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: $font-col-active;
+            display: inline-block;
+            padding: 8px 15px 5px;
+            // transform: rotate(-1deg);
+            color: #fff;
+        }
+
+        &--no-heading {
+            margin-top: 15px;
+            
+            :first-child {
+                padding-top: 0;
+            }
+        }
+        
+    }
+
+
+    &__hero {
+        margin: 50px 0;
+        position: static;
+
+        height: 350px;
+
+        > .image {
+            height: inherit;
+            position: absolute;
+            width: 100vw;
+            left: 0;
+            right: 0;
+
+            background-size: cover;
+            background-position: 50%;
+    
+            &:after {
+                position: absolute;
+                content:"";
+                height:100%;
+                width:100%;
+                top:0;
+                left:0;
+                background: linear-gradient(-190deg, rgba(255, 0, 0, 0) 0%, rgba(250, 128, 114, 0.8) 100%);
+
+                mix-blend-mode: color;
+            }
+        }
+    }
+    &__section {
+        display: block;
+
+        color: $font-col-primary;
+
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: lowercase;
+        letter-spacing: 1px;
+        margin: 0 0 30px;
+
+        text-decoration: none;
+
+        transition: color .2s;
+
+        &:before {
+            content: '> ';
+        }
+        
+        &:after {
+            content: '_';
+        }
+        
+        &:after, &:before {
+            font-weight: 500;
+            color: $font-col-active;    
+
+            transition: color .2s;
+        }
+
+        &:hover {
+            color: $font-col-active;    
+        }
+
+    }
+}

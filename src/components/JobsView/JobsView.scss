@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.jobsView {
+    h1.sectionHeading {
+        align-self: auto;
+    }
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 100px 0;
+
+    &__jobList {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+      
+    }
+}
