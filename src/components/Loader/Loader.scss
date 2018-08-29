@@ -1,0 +1,11 @@
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 500px;
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
