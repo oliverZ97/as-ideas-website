@@ -16,6 +16,10 @@
 
     h1.jobDetailsView__heading {
         margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
     &__content {
@@ -87,6 +91,15 @@
             }
         }
     }
+
+    &__subnav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        align-items: flex-start;
+    }
+
     &__section {
         display: block;
 
@@ -121,5 +134,30 @@
             color: $font-col-active;    
         }
 
+    }
+
+    &__applyButton {
+        text-decoration: none;
+        background: salmon;
+        padding: 10px 15px 8px;
+        font-size: 23px;
+        color: #fff;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        box-shadow: 5px 5px #fa80726b;
+        margin-left: 10px;
+        font-weight: 500;
+
+        margin-right: 5px;
+        margin-top: 0px;
+
+        &:hover {
+            margin-top: 3px;
+            margin-right: 2px;
+
+            box-shadow: 2px 2px #fa80726b;
+        }
+
+        transition: .1s;
     }
 }

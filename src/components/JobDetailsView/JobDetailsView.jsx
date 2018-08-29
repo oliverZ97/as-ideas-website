@@ -39,9 +39,12 @@ class JobDetailsView extends React.Component {
             <section className='jobDetailsView centered'>
                 {this.state.jobData ? (
                     <div className='jobDetailsView__container'>
-                        <h1 className='jobDetailsView__heading sectionHeading'>
+                        <div className='jobDetailsView__subnav'>
                             <a className='jobDetailsView__section' href='/jobs'>Career</a>
+                        </div>
+                        <h1 className='jobDetailsView__heading sectionHeading'>
                             {job.title._cdata}
+                            <a className='jobDetailsView__applyButton' href={job.urlApplicationUrl._cdata} target="_blank" >bewerben!</a>
                         </h1>
                         <div>
                             <div className='jobDetailsView__hero'>
@@ -56,7 +59,6 @@ class JobDetailsView extends React.Component {
                             <p className='jobDetailsView__content--heading'>{job.titleContact._cdata}</p>
                             <p className='jobDetailsView__content' dangerouslySetInnerHTML={{ __html: job.htmlContact._cdata }} />
                             <p className='jobDetailsView__content jobDetailsView__content--no-heading' dangerouslySetInnerHTML={{ __html: job.htmlInfoEqualRights._cdata }} />
-                            {/* <a className='jobDetailsView__applyButton' href={job.urlApplicationUrl._cdata} target="_blank" >Jetzt hier bewerben</a> */}
                             <Terminal url={job.urlApplicationUrl._cdata} />
                         </div>
                     </div>
