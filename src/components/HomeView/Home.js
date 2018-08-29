@@ -6,6 +6,7 @@ import Culture from './Culture/Culture';
 import Contact from './Contact/Contact';
 import Testimonials from './Testimonials/Testimonials';
 import Jobs from './Jobs/Jobs';
+import Newsletter from './Newsletter/Newsletter';
 
 import './Home.scss'
 
@@ -17,8 +18,9 @@ const Home = () => {
             <Portfolio />
             <Testimonials />
             <Culture />
-            <Contact />
+            <Newsletter />
             <Jobs />
+            <Contact />
         </div>
     );
 };
