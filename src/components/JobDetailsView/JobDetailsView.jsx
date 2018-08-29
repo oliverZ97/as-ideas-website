@@ -27,7 +27,7 @@ class JobDetailsView extends React.Component {
     render() {
         let job = this.state.jobData;
 
-        let randomImage = '/recruiting/' + (Math.floor(Math.random() * 5) + 1) + '.jpg'
+        let randomImage = '/recruiting/' + (Math.floor(Math.random() * 6) + 1) + '.jpg'
 
         return (
             <section className='jobDetailsView centered'>
