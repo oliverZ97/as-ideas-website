@@ -101,6 +101,7 @@ class Terminal extends React.Component {
     render() {
         return (
             <div className='terminal' onClick={this.focus}>
+                <div className='terminal__nav'><span /><span /><span /></div>
                 <div className='terminal__history'>
                     {
                         this.state.history.map(msg => <p key={msg.replace(' ', '')}>{'bewerber@ideas:~$: ' + msg}</p>)
