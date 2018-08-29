@@ -1,11 +1,41 @@
+@import "../../../styles/variables";
 
 .jobs {
+
+    h1.jobs__heading {
+        margin: 0 0 55px;
+    }
+
     &__jobList {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-    }
 
+
+        
+        .jobsTile {
+            @include device(small-desktop) {
+                font-size: 20px;
+
+            }
     
+            @include device(tablet) {
+                width: 48%;
+                padding-bottom: 48%;
+                font-size: 26px;
+            }     
+            
+            @include device(phone) {
+                font-size: 20px;
+            }
+            
+            @include device(small-phone) {
+                font-size: 24px;
+                width: 100%;
+                padding-bottom: 100%;
+            }
+            
+        }
+    }
 }

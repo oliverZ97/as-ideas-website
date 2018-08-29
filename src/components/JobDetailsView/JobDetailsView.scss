@@ -7,6 +7,11 @@
 
     .terminal {
         margin: 100px 0 0 20px;
+
+        @include device(tablet) {
+            margin-left: 0;
+        }     
+        
     }
 
     h1.jobDetailsView__heading {

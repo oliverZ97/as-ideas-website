@@ -26,7 +26,7 @@ class Jobs extends React.Component {
         return (
             <section id='job' className='jobs centered'>
                 <div className='jobs__container'>
-                    <h1 className='jobs__heading sectionHeading'>
+                    <h1 className='sectionHeading jobs__heading'>
                         We are hiring
                     </h1>
                     {this.state.jobData ? (
