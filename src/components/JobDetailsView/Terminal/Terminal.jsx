@@ -56,10 +56,39 @@ class Terminal extends React.Component {
     }
 
     handleCommand(command) {
-        switch (command) {
-            case 'bewerbung abschicken':
-                this.openAppyPage();
-                break;
+        if (command.includes('bewerbung abschicken')) {
+            this.openAppyPage();
+        } else if (command.includes('rm')) {
+            this.setState({ inputText: '' })
+
+            let history = this.state.history;
+            history.push('Drop everything from harddrive in 3...');
+            this.setState({ history })
+
+
+            setTimeout(() => {
+
+                history = this.state.history;
+                history.push('2...');
+                this.setState({ history })
+            }, 1000)
+
+            setTimeout(() => {
+
+                history = this.state.history;
+                history.push('1...');
+                this.setState({ history })
+            }, 2000)
+
+            setTimeout(() => {
+
+                history = this.state.history;
+                history.push("´'`\\_(ಠ_ಠ)_/´'`");
+
+                this.setState({ history })
+            }, 3000)
+
+
         }
     }
 
