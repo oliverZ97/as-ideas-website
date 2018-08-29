@@ -18,6 +18,12 @@ class JobDetailsView extends React.Component {
         let jobId = this.props.match.params.jobId;
         JobService.getJobById(jobId)
             .then((jobData) => {
+                let randomImage = '/recruiting/' + (Math.floor(Math.random() * 6) + 1) + '.jpg'
+
+                document.querySelector('meta[property=og\\:title]').setAttribute('content', jobData.title._cdata);
+                document.querySelector('meta[property=og\\:image]').setAttribute('content', randomImage);
+                document.querySelector('meta[property=og\\:description]').setAttribute('content', "Axel Springer Ideas ist eine 100 prozentige Tochter der Axel Springer SE. Wir arbeiten als Startup im Konzern und finden Lösungen rund um das Thema Digitaler Content. Wir agieren als Innovationstreiber und setzen je nach Aufgabenstellung von Prototypen bis Plattformen das beste Ergebnis um.");
+
                 this.setState({ jobData });
             })
     }
