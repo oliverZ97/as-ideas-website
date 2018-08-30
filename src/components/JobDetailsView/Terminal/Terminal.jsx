@@ -19,20 +19,30 @@ class Terminal extends React.Component {
 
     componentDidMount() {
         let history = this.state.history;
-        let lastLogin = parseInt(localStorage.getItem('terminalLastLogin'));
-        let dateString = new Date(lastLogin).toISOString();
-        fetch('https://api.ipify.org/?format=json')
-            .then(response => {
-                return response.json()
-            }).then(json => {
-                history.push("Last login: " + dateString + ' on ' + json.ip);
-                history.push("Welcome to ideas-cli, the friendly interactive shell")
-                history.push("Type 'help' for instructions on how to use your ideas")
+        let lastLogin = localStorage.getItem('terminalLastLogin');
+        if (lastLogin) {
+            fetch('https://api.ipify.org/?format=json')
+                .then(response => {
+                    return response.json()
+                }).then(json => {
+                    let dateString = new Date(parseInt(lastLogin)).toISOString();
+                    history.push("Last login: " + dateString + ' on ' + json.ip);
 
-                this.setState({
-                    history
+                    history.push("Welcome to ideas-cli, the friendly interactive shell")
+                    history.push("Type 'help' for instructions on how to use your ideas")
+
+                    this.setState({
+                        history
+                    })
                 })
+        } else {
+            history.push("Welcome to ideas-cli, the friendly interactive shell")
+            history.push("Type 'help' for instructions on how to use your ideas")
+
+            this.setState({
+                history
             })
+        }
         localStorage.setItem('terminalLastLogin', + new Date());
     }
 
