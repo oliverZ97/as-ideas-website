@@ -5,19 +5,54 @@
         align-self: auto;
     }
 
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    padding: 100px 0;
+    
+    padding:  100 0 100px;
 
     &__jobList {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
 
-      
+    &__intro {
+        font-weight: 300;
+        padding: 40px 0;
+        letter-spacing: 1px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    &__outro {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    &__container {
+        &--intro {
+            margin: 0 0 80px;
+            background: $background-col-secondary;
+        }
+
+        &--initiativ {
+            margin: 105px 0 50px;
+            background: $font-col-active;
+        }   
+
+        &--tiles {
+        }
+
+        &--heading {
+            
+        }
+    }
+
+    &__initiativ {
+        color: #fff;
+        font-weight: 300;
+        padding: 40px 0;
+        letter-spacing: 1px;
+        font-size: 28px;
+        text-align: center;
     }
 }
