@@ -7,6 +7,8 @@ import './SocialBar.scss'
 class SocialBar extends React.Component {
     constructor(props) {
         super(props);
+
+        this.openFBDialogue = this.openFBDialogue.bind(this)
     }
 
 
@@ -23,6 +25,25 @@ class SocialBar extends React.Component {
     }
 
 
+
+    openFBDialogue() {
+        let randomImage = '/recruiting/' + (Math.floor(Math.random() * 6) + 1) + '.jpg'
+
+
+        window.FB.ui({
+            method: 'share_open_graph',
+            action_type: 'og.likes',
+            action_properties: JSON.stringify({
+                object: {
+                    'og:url': this.props.object.url,
+                    'og:title': this.props.object.title,
+                    'og:description': this.props.object.summary,
+                    'og:image': randomImage
+                }
+            })
+        }, (response) => { });
+    }
+
     render() {
         let socialUrls = this.getSocialUrls(this.props.object.title, this.props.object.summary, this.props.object.url);
         console.log(socialUrls)
@@ -34,9 +55,7 @@ class SocialBar extends React.Component {
                 >
                     <Twitter />
                 </a>
-                <a className="socialBar__icon"
-                    href={socialUrls.facebook}
-                    target="_blank" rel="noopener noreferrer"
+                <a className="socialBar__icon" onClick={this.openFBDialogue}
                 >
                     <Facebook />
                 </a>
