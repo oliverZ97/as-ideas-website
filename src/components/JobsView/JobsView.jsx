@@ -37,7 +37,7 @@ class JobsView extends React.Component {
                     </p>
                 </div>
                 <div className='jobsView__container--video centered'>
-                    <iframe width="700" height="250" src="https://www.youtube-nocookie.com/embed/btQwUY6qzQw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe width="700" height="250" src="https://www.youtube-nocookie.com/embed/btQwUY6qzQw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
                 </div>
 
                 <div className='jobsView__container--tiles centered'>
