@@ -23,15 +23,10 @@
     }
 
     &__outro {
-        font-size: 22px;
         text-align: center;
-
-        > span {
-            display: block;
-            font-size: 14px;
-            width: 80%;
-            margin: 150px auto 0;
-        }
+        font-size: 14px;
+        width: 80%;
+        margin: 0 auto 20px;
     }
     
     &__container {
@@ -41,7 +36,7 @@
         }
 
         &--initiativ {
-            margin: 105px 0 50px;
+            margin: 105px 0 120px;
             background: $font-col-active;
         }   
 
