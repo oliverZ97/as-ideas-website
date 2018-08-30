@@ -74,6 +74,12 @@ class JobDetailsView extends React.Component {
                             <p className='jobDetailsView__content--heading'>{job.titleContact._cdata}</p>
                             <p className='jobDetailsView__content' dangerouslySetInnerHTML={{ __html: job.htmlContact._cdata }} />
                             <p className='jobDetailsView__content jobDetailsView__content--no-heading' dangerouslySetInnerHTML={{ __html: job.htmlInfoEqualRights._cdata }} />
+
+                            <div className='jobDetailsView__shareApply'>
+                                <SocialBar object={socialBarData} />
+                                <a className='jobDetailsView__applyButton' href={job.urlApplicationUrl._cdata} target="_blank" >bewerben!</a>
+                            </div>
+
                             <Terminal url={job.urlApplicationUrl._cdata} />
                         </div>
                     </div>

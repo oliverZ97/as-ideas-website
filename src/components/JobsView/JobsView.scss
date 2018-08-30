@@ -4,7 +4,6 @@
     h1.sectionHeading {
         align-self: auto;
     }
-
     
     padding:  100 0 100px;
 
@@ -30,7 +29,7 @@
     
     &__container {
         &--intro {
-            margin: 0 0 80px;
+            margin: 0 0 0px;
             background: $background-col-secondary;
         }
 
@@ -40,10 +39,21 @@
         }   
 
         &--tiles {
+            margin-top: 80px;
+
+            > h1 {
+                margin-bottom: 20px;
+            }
         }
 
         &--heading {
             
+        }
+
+        &--video {
+            padding: 10px 0 50px;
+            background: #f7f8f9;
+            font-size: 0;
         }
     }
 
@@ -54,5 +64,30 @@
         letter-spacing: 1px;
         font-size: 28px;
         text-align: center;
+    }
+
+
+    .jobsTile {
+        @include device(small-desktop) {
+            font-size: 20px;
+
+        }
+
+        @include device(tablet) {
+            width: 48%;
+            padding-bottom: 48%;
+            font-size: 26px;
+        }     
+        
+        @include device(phone) {
+            font-size: 20px;
+        }
+        
+        @include device(small-phone) {
+            font-size: 24px;
+            width: 100%;
+            padding-bottom: 100%;
+        }
+        
     }
 }

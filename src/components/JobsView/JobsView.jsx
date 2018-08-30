@@ -34,10 +34,16 @@ class JobsView extends React.Component {
                 <div className='jobsView__container--intro centered'>
                     <p className='jobsView__intro'>
                         A lot of cool technology is hidden in our products. Become part of our unique team and burn with us during the development, because we want to shape the media use of tomorrow.
-                </p>
+                    </p>
+                </div>
+                <div className='jobsView__container--video centered'>
+                    <iframe width="700" height="250" src="https://www.youtube-nocookie.com/embed/btQwUY6qzQw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
 
                 <div className='jobsView__container--tiles centered'>
+                    <h1 className='jobsView__heading sectionHeading'>
+                        {'We are hiring'}
+                    </h1>
                     {this.state.jobData ? (
                         <ul className='jobsView__jobList'>
                             {
@@ -58,7 +64,7 @@ class JobsView extends React.Component {
 
                 <div className='jobsView__container centered'>
                     <p className='jobsView__outro'>
-                        Drop us your complete application documents (cover letter, CV, references / certificates) stating your earliest possible starting date and your salary expectations to hello@asideas.de<br />
+                        Drop us your complete application documents (cover letter, CV, references / certificates) stating your earliest possible starting date and your salary expectations to <a href="mailto:hello@asideas.de">hello@asideas.de</a>.<br />
                         We can´t wait for your application!!
                     </p>
                 </div>

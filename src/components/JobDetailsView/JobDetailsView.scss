@@ -13,6 +13,11 @@
         }     
         
     }
+    .socialBar {
+        svg {
+            fill: $font-col-active;
+        }
+    }
 
     h1.jobDetailsView__heading {
         margin-bottom: 30px;
@@ -159,5 +164,15 @@
         }
 
         transition: .1s;
+    }
+
+    &__shareApply {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        height: 50px;
+        margin: 50px 0 0px 20px;
     }
 }
