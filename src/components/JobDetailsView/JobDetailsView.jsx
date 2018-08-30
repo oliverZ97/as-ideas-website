@@ -49,7 +49,9 @@ class JobDetailsView extends React.Component {
 
         return (
             <section className='jobDetailsView centered'>
-                {this.state.jobData ? (
+                {this.state.showLoader ? (
+                    <Loader />
+                ) : this.state.jobData ? (
                     <div className='jobDetailsView__container'>
                         <div className='jobDetailsView__subnav'>
                             <a className='jobDetailsView__section' href='/jobs'>Career</a>
@@ -75,8 +77,6 @@ class JobDetailsView extends React.Component {
                             <Terminal url={job.urlApplicationUrl._cdata} />
                         </div>
                     </div>
-                ) : this.state.showLoader ? (
-                    <Loader />
                 ) : (
                             <NotFound />
                         )

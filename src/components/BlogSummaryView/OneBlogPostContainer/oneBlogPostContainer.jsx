@@ -1,5 +1,5 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./oneBlogPostContainer.scss";
 import posts from "./../../../blog-posts.js";
 
@@ -13,12 +13,11 @@ class OneBlogPostContainer extends React.Component {
 
     render() {
         let post = this.props.post;
-        console.info('OneBlogPostContainer', post);
         if (post) {
             return (
                 <li className="blogSummary__item" key={post.url}>
                     <NavLink to={post.url}>
-                        <CroppedImage className="blogSummary__image" src={post.url + post.titlePicture} alt={post.title}/>
+                        <CroppedImage className="blogSummary__image" src={post.url + post.titlePicture} alt={post.title} />
                         <h3 className="blogSummary__meta">{this.getMonth(post.month)} {post.year} | {post.author}</h3>
                         <h2 className="blogSummary__title">{post.title}</h2>
                         <p className="blogSummary__summary">{post.summary}</p>
