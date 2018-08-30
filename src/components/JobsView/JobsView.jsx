@@ -66,8 +66,6 @@ class JobsView extends React.Component {
                     <p className='jobsView__outro'>
                         Drop us your complete application documents (cover letter, CV, references / certificates) stating your earliest possible starting date to <a href="mailto:hello@asideas.de">hello@asideas.de</a>.<br />
                         We can´t wait for your application!!
-
-
                         <span>By the way: Your data will only be saved until the end of the application process and then deleted. However, with your consent, your application can be maintained for 6 more months so that we can contact you if we find a suitable vacancy for you meanwhile.</span>
                     </p>
                 </div>

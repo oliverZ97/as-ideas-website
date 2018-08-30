@@ -31,6 +31,26 @@ class JobService {
                 return jobById;
             });
     }
+
+    getAllPositions() {
+        return fetch('https://career.axelspringer.com/export/14/feed.xml')
+            .then(response => {
+                return response.text();
+            })
+            .then(xml => {
+                let data = JSON.parse(xmlParser.xml2json(xml, { compact: true, spaces: 4 }));
+
+                let jobList = data.jobs.job;
+
+                let positions = jobList.map(job => {
+                    return job.title._cdata;
+                }).join(', ');
+
+
+
+                return positions;
+            });
+    }
 }
 
 export default new JobService();
