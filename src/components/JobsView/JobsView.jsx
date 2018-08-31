@@ -4,6 +4,8 @@ import JobService from '../../services/JobService';
 import JobsTile from '../HomeView/Jobs/JobsTile/JobsTile';
 import Loader from '../Loader/Loader';
 
+import VideoPlayer from '../VideoPlayer/VideoPlayer'
+
 import './JobsView.scss'
 
 class JobsView extends React.Component {
@@ -25,8 +27,6 @@ class JobsView extends React.Component {
                 this.setState({ showLoader: false })
             })
     }
-
-
 
     render() {
         let hiringHeading;
@@ -50,7 +50,7 @@ class JobsView extends React.Component {
                     </p>
                 </div>
                 <div className='jobsView__container--video centered'>
-                    <iframe title="yt" width="700" height="250" src="https://www.youtube-nocookie.com/embed/btQwUY6qzQw?rel=0&amp;showinfo=0" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+                    <VideoPlayer src='https://s3-eu-west-1.amazonaws.com/ideas-engineering-io/kennst-du-schon-tom-hd.mp4' thumbnail='/tom.png' playingHeight={'600px'} />
                 </div>
 
                 <div className='jobsView__container--tiles centered'>
