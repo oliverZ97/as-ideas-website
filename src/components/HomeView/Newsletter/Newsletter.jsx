@@ -23,7 +23,6 @@ class Newsletter extends React.Component {
 
 
     render() {
-        let L;
         return (
             <section className='newsletter centered'>
                 <h1 className='culture__heading sectionHeading'>

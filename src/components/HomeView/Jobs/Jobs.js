@@ -10,7 +10,8 @@ class Jobs extends React.Component {
         super(props);
 
         this.state = {
-            jobData: null
+            jobData: null,
+            showLoader: true
         };
     }
 
@@ -18,7 +19,11 @@ class Jobs extends React.Component {
     componentDidMount() {
         JobService.getJobs()
             .then((jobData) => {
-                this.setState({ jobData: jobData.slice(0, 3) });
+                this.setState({ jobData: jobData.slice(0, 3), showLoader: false });
+            })
+            .catch(e => {
+                console.log(e);
+                this.setState({ showLoader: false })
             })
     }
 
@@ -31,7 +36,9 @@ class Jobs extends React.Component {
                     <h1 className='sectionHeading jobs__heading'>
                         We are hiring
                     </h1>
-                    {this.state.jobData ? (
+                    {this.state.showLoader ? (
+                        <Loader />
+                    ) : this.state.jobData ? (
                         <ul className='jobs__jobList'>
                             {
                                 this.state.jobData.map(job => {
@@ -42,9 +49,7 @@ class Jobs extends React.Component {
                                 <JobsTile job={{ _attributes: { jobId: 'x' }, title: { _cdata: 'more ...' } }} url={'/jobs'} />
                             }
                         </ul>
-                    ) :
-                        <Loader />
-                    }
+                    ) : null}
                 </div>
             </section>
         );

@@ -2,6 +2,7 @@ import React from 'react';
 
 import JobService from '../../services/JobService';
 import JobsTile from '../HomeView/Jobs/JobsTile/JobsTile';
+import Loader from '../Loader/Loader';
 
 import './JobsView.scss'
 
@@ -9,21 +10,32 @@ class JobsView extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            jobData: null
+            jobData: null,
+            showLoader: true
         };
     }
-
 
     componentDidMount() {
         JobService.getJobs()
             .then((jobData) => {
-                this.setState({ jobData });
+                this.setState({ jobData, showLoader: false });
+            })
+            .catch(e => {
+                console.log(e);
+                this.setState({ showLoader: false })
             })
     }
 
 
 
     render() {
+        let hiringHeading;
+        if (!this.state.showLoader && !this.state.jobData) {
+            hiringHeading = <h1 className='jobsView__heading sectionHeading'>We are full staffed at the moment.<br />But speculative applications are always welcome!</h1>;
+        } else {
+            hiringHeading = <h1 className='jobsView__heading sectionHeading'>We are hiring</h1>;
+        }
+
         return (
             <section className='jobsView'>
                 <div className='jobsView__container--heading centered'>
@@ -37,14 +49,14 @@ class JobsView extends React.Component {
                     </p>
                 </div>
                 <div className='jobsView__container--video centered'>
-                    <iframe width="700" height="250" src="https://www.youtube-nocookie.com/embed/btQwUY6qzQw?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+                    <iframe title="yt" width="700" height="250" src="https://www.youtube-nocookie.com/embed/btQwUY6qzQw?rel=0&amp;showinfo=0" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
                 </div>
 
                 <div className='jobsView__container--tiles centered'>
-                    <h1 className='jobsView__heading sectionHeading'>
-                        {'We are hiring'}
-                    </h1>
-                    {this.state.jobData ? (
+                    {hiringHeading}
+                    {this.state.showLoader ? (
+                        <Loader />
+                    ) : this.state.jobData && this.state.jobData.length > 0 ? (
                         <ul className='jobsView__jobList'>
                             {
                                 this.state.jobData.map(job => {
@@ -71,7 +83,7 @@ class JobsView extends React.Component {
                     </p>
                 </div>
 
-            </section>
+            </section >
         );
     };
 }

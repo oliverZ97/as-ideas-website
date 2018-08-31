@@ -25,7 +25,7 @@ class Terminal extends React.Component {
                 .then(response => {
                     return response.json()
                 }).then(json => {
-                    let dateString = new Date(parseInt(lastLogin)).toISOString();
+                    let dateString = new Date(parseInt(lastLogin, 10)).toISOString();
                     history.push("Last login: " + dateString + ' on ' + json.ip);
 
                     history.push("Welcome to ideas-cli, the friendly interactive shell")
@@ -57,9 +57,9 @@ class Terminal extends React.Component {
         let el = this.terminal;
         this.terminal.focus();
 
-        if (typeof el.selectionStart == "number") {
+        if (typeof el.selectionStart === "number") {
             el.selectionStart = el.selectionEnd = el.value.length;
-        } else if (typeof el.createTextRange != "undefined") {
+        } else if (typeof el.createTextRange !== "undefined") {
             el.focus();
             var range = el.createTextRange();
             range.collapse(false);

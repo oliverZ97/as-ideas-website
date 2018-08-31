@@ -3,10 +3,6 @@ import React from 'react';
 import './NotFound.scss'
 
 class NotFound extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <section className='notFound'>

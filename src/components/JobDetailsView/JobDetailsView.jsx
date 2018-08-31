@@ -23,6 +23,10 @@ class JobDetailsView extends React.Component {
             .then((jobData) => {
                 this.setState({ jobData, showLoader: false });
             })
+            .catch(e => {
+                console.log(e);
+                this.setState({ showLoader: false })
+            })
     }
 
     render() {
