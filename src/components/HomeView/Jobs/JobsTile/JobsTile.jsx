@@ -11,7 +11,6 @@ class JobsTile extends React.Component {
 
     handleClick() {
         if (this.props.url) {
-            console.log('click')
             window.location.href = this.props.url;
         } else {
             window.location.href = '/jobs/' + this.props.job._attributes.jobId;
