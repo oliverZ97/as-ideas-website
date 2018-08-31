@@ -10,10 +10,14 @@ class JobService {
                 let data = JSON.parse(xmlParser.xml2json(xml, { compact: true, spaces: 4 }));
 
                 let jobList = data.jobs.job;
+
+                jobList = jobList.filter(job => {
+                    return job.brand._attributes.uid === '14';
+                })
                 return jobList;
             });
-
     }
+
     getJobById(jobId) {
         return fetch('https://career.axelspringer.com/export/14/feed.xml')
             .then(response => {
