@@ -53,10 +53,10 @@ class JobDetailsView extends React.Component {
                             <a className='jobDetailsView__section' href='/jobs'>Career</a>
                             <SocialBar object={socialBarData} />
                         </div>
-                        <h1 className='jobDetailsView__heading sectionHeading'>
-                            {job.title._cdata}
+                        <div className='jobDetailsView__heading sectionHeading'>
+                            <h1>{job.title._cdata}</h1>
                             <a className='jobDetailsView__applyButton' href={job.urlApplicationUrl._cdata} target="_blank" >bewerben!</a>
-                        </h1>
+                        </div>
                         <div>
                             <div className='jobDetailsView__hero'>
                                 <div className='image' style={{ backgroundImage: `url(${randomImage})` }}></div>

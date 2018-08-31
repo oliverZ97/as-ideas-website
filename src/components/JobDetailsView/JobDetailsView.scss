@@ -19,12 +19,33 @@
         }
     }
 
-    h1.jobDetailsView__heading {
+    div.jobDetailsView__heading {
         margin-bottom: 30px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+
+        @include device(tablet) {
+            flex-direction: column;
+            
+            > h1 {
+                font-size: 38px;
+            }
+
+            > a {
+                align-self: flex-end;
+
+                margin-bottom: 5px;
+                margin-top: 20px;
+
+                &:hover {
+                    margin-top: 23px;                    
+                    margin-bottom: 2px;
+                }
+            }
+            
+        }     
     }
 
     &__content {
