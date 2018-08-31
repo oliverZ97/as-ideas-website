@@ -2,8 +2,14 @@
 
 .jobs {
 
+    padding-bottom: 35px;
+    
     h1.jobs__heading {
         margin: 0 0 55px;
+    }
+
+    .loader {
+        min-height: 280px;
     }
 
     &__jobList {
@@ -11,7 +17,6 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-
 
         
         .jobsTile {

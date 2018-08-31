@@ -27,7 +27,7 @@ class SocialBar extends React.Component {
 
 
     openFBDialogue() {
-        let randomImage = '/recruiting/' + (Math.floor(Math.random() * 6) + 1) + '.jpg'
+        let randomImage = window.location.protocol + '//' + window.location.host + '/recruiting/' + (Math.floor(Math.random() * 6) + 1) + '.jpg'
 
 
         window.FB.ui({

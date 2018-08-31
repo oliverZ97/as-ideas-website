@@ -3,6 +3,7 @@ import React from 'react';
 import './Jobs.scss';
 import JobService from '../../../services/JobService';
 import JobsTile from './JobsTile/JobsTile';
+import Loader from '../../Loader/Loader';
 
 class Jobs extends React.Component {
     constructor(props) {
@@ -23,6 +24,7 @@ class Jobs extends React.Component {
 
 
     render() {
+        if (this.state.jobData && this.state.jobData.length === 0) return null;
         return (
             <section id='job' className='jobs centered'>
                 <div className='jobs__container'>
@@ -40,7 +42,9 @@ class Jobs extends React.Component {
                                 <JobsTile job={{ _attributes: { jobId: 'x' }, title: { _cdata: 'more ...' } }} url={'/jobs'} />
                             }
                         </ul>
-                    ) : null}
+                    ) :
+                        <Loader />
+                    }
                 </div>
             </section>
         );
