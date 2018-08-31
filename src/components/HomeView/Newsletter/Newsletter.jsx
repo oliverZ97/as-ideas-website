@@ -28,9 +28,8 @@ class Newsletter extends React.Component {
                 <h1 className='culture__heading sectionHeading'>
                     Join our Newsletter
                 </h1>
-
                 <p className='newsletter__intro'>{intro}</p>
-                <a href="http://eepurl.com/dFth9j" target="_blank" rel="noopener noreferrer" className='newsletter__signUpButton'>Sign up for newsletter!</a>
+                <a href="http://eepurl.com/dFth9j" target="_blank" rel="noopener noreferrer" className='newsletter__signUpButton'>sign up now!</a>
             </section>
         );
     }

@@ -99,7 +99,8 @@
         letter-spacing: .5px;
 
         max-width: 440px;
-
+        text-align: justify;
+        
         @include device(phone) {
             min-width: auto;
         }

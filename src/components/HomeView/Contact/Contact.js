@@ -7,8 +7,8 @@ const Contact = () => (
     <section className='contact centered'>
         <div className='contact__container'>
             <h1 className='contact__text sectionHeading'>
-                <Link className='mainNav__link' to='mailto:hello@asideas.de'>
-                    Get in touch with us<br/>
+                <Link className='contact__link' to='mailto:hello@asideas.de'>
+                    Get in touch with us<br />
                     We turn your ideas into great products.
                 </Link>
             </h1>

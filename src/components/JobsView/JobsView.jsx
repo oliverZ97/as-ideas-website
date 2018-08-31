@@ -45,7 +45,8 @@ class JobsView extends React.Component {
                 </div>
                 <div className='jobsView__container--intro centered'>
                     <p className='jobsView__intro'>
-                        A lot of cool technology is hidden in our products. Become part of our unique team and burn with us during the development, because we want to shape the media use of tomorrow.
+                        You love to develop cool technology? We do aswell.<br />
+                        Become part of our unique team now! Let´s shape together tomorrow´s media usage.
                     </p>
                 </div>
                 <div className='jobsView__container--video centered'>

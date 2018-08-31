@@ -10,8 +10,13 @@
         font-weight: 700;
         line-height: 45px;
 
-        a:hover {
-            color: inherit;
+        a {
+            &:hover {
+                color: $font-col-interaction;
+            }
+
+            text-decoration: none;
+            transition: color .1s;
         }
     }
 
