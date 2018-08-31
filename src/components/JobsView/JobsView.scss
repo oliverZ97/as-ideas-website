@@ -12,6 +12,10 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+              
+        @include device(small-phone) {
+            justify-content: center;
+        }
     }
 
     &__intro {
@@ -91,9 +95,9 @@
         }
         
         @include device(small-phone) {
-            font-size: 24px;
-            width: 100%;
-            padding-bottom: 100%;
+            font-size: 34px;
+            width: 90%;
+            padding-bottom: 90%;
         }
         
     }
