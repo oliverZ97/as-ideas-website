@@ -6,7 +6,7 @@ import NotFound from '../NotFound/NotFound';
 import Loader from '../Loader/Loader';
 import SocialBar from './SocialBar/SocialBar';
 import { Helmet } from 'react-helmet';
-import { trimTo256 } from "./utils/social";
+import { trimTo256 } from '../BlogPostView/utils/social';
 
 import './JobDetailsView.scss'
 
@@ -35,7 +35,8 @@ class JobDetailsView extends React.Component {
         let job = this.state.jobData;
 
         let randomImage = '/recruiting/' + (Math.floor(Math.random() * 6) + 1) + '.jpg'
-        let summary = "Axel Springer Ideas ist eine 100 prozentige Tochter der Axel Springer SE. Wir arbeiten als Startup im Konzern und finden Lösungen rund um das Thema Digitaler Content. Wir agieren als Innovationstreiber und setzen je nach Aufgabenstellung von Prototypen bis Plattformen das beste Ergebnis um.";
+        let summary = "You love to develop cool technology? We do aswell. Become part of our unique team now! Let´s shape together tomorrow´s media usage.";
+
 
         let socialBarData;
         if (this.state.jobData) {
@@ -48,18 +49,18 @@ class JobDetailsView extends React.Component {
 
         return (
             <section className='jobDetailsView centered'>
-                <Helmet>
-                    <title>ideas engineering ⚡ {`${job.title._cdata}`}</title>
-                    <meta property="og:url" content={window.location.href} />
-                    <meta property="og:type" content="website" />
-                    <meta property="og:title" content={job.title._cdata} />
-                    <meta property="og:description" content={trimTo256(summary)} />
-                    <meta property="og:image" content={window.location.protocol + '//' + window.location.host + randomImage} />
-                </Helmet>
                 {this.state.showLoader ? (
                     <Loader />
                 ) : this.state.jobData ? (
                     <div className='jobDetailsView__container'>
+                        <Helmet>
+                            <title>ideas engineering ⚡ {`${job.title._cdata}`}</title>
+                            <meta property="og:url" content={window.location.href} />
+                            <meta property="og:type" content="website" />
+                            <meta property="og:title" content={job.title._cdata} />
+                            <meta property="og:description" content={trimTo256(summary)} />
+                            <meta property="og:image" content={window.location.protocol + '//' + window.location.host + randomImage} />
+                        </Helmet>
                         <div className='jobDetailsView__subnav'>
                             <a className='jobDetailsView__section' href='/jobs'>Career</a>
                             <SocialBar object={socialBarData} />
