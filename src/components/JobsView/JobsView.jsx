@@ -3,6 +3,7 @@ import React from 'react';
 import JobService from '../../services/JobService';
 import JobsTile from '../HomeView/Jobs/JobsTile/JobsTile';
 import Loader from '../Loader/Loader';
+import { Helmet } from 'react-helmet';
 
 import VideoPlayer from '../VideoPlayer/VideoPlayer'
 
@@ -35,9 +36,19 @@ class JobsView extends React.Component {
         } else {
             hiringHeading = <h1 className='jobsView__heading sectionHeading'>We are hiring</h1>;
         }
+        let randomImage = window.location.protocol + '//' + window.location.host + '/recruiting/' + (Math.floor(Math.random() * 6) + 1) + '.jpg'
+        let summary = "Axel Springer Ideas ist eine 100 prozentige Tochter der Axel Springer SE. Wir arbeiten als Startup im Konzern und finden Lösungen rund um das Thema Digitaler Content. Wir agieren als Innovationstreiber und setzen je nach Aufgabenstellung von Prototypen bis Plattformen das beste Ergebnis um.";
 
         return (
             <section className='jobsView'>
+                <Helmet>
+                    <title>ideas engineering ⚡ {`Jobs & Career`}</title>
+                    <meta property="og:url" content={window.location.href} />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:title" content={'Jobs & Career'} />
+                    <meta property="og:description" content={trimTo256(summary)} />
+                    <meta property="og:image" content={randomImage} />
+                </Helmet>
                 <div className='jobsView__container--heading centered'>
                     <h1 className='jobsView__heading sectionHeading'>
                         {'Jobs & Career'}

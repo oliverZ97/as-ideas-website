@@ -5,6 +5,7 @@ import Terminal from './Terminal/Terminal';
 import NotFound from '../NotFound/NotFound';
 import Loader from '../Loader/Loader';
 import SocialBar from './SocialBar/SocialBar';
+import { Helmet } from 'react-helmet';
 
 import './JobDetailsView.scss'
 
@@ -33,18 +34,27 @@ class JobDetailsView extends React.Component {
         let job = this.state.jobData;
 
         let randomImage = '/recruiting/' + (Math.floor(Math.random() * 6) + 1) + '.jpg'
+        let summary = "Axel Springer Ideas ist eine 100 prozentige Tochter der Axel Springer SE. Wir arbeiten als Startup im Konzern und finden Lösungen rund um das Thema Digitaler Content. Wir agieren als Innovationstreiber und setzen je nach Aufgabenstellung von Prototypen bis Plattformen das beste Ergebnis um.";
 
         let socialBarData;
         if (this.state.jobData) {
             socialBarData = {
                 title: job.title._cdata,
-                summary: "Axel Springer Ideas ist eine 100 prozentige Tochter der Axel Springer SE. Wir arbeiten als Startup im Konzern und finden Lösungen rund um das Thema Digitaler Content. Wir agieren als Innovationstreiber und setzen je nach Aufgabenstellung von Prototypen bis Plattformen das beste Ergebnis um.",
+                summary,
                 url: window.location.href
             }
         }
 
         return (
             <section className='jobDetailsView centered'>
+                <Helmet>
+                    <title>ideas engineering ⚡ {`${job.title._cdata}`}</title>
+                    <meta property="og:url" content={window.location.href} />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:title" content={job.title._cdata} />
+                    <meta property="og:description" content={trimTo256(summary)} />
+                    <meta property="og:image" content={window.location.protocol + '//' + window.location.host + randomImage} />
+                </Helmet>
                 {this.state.showLoader ? (
                     <Loader />
                 ) : this.state.jobData ? (
