@@ -6,6 +6,7 @@ import NotFound from '../NotFound/NotFound';
 import Loader from '../Loader/Loader';
 import SocialBar from './SocialBar/SocialBar';
 import { Helmet } from 'react-helmet';
+import { trimTo256 } from "./utils/social";
 
 import './JobDetailsView.scss'
 

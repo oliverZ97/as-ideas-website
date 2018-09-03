@@ -4,6 +4,7 @@ import JobService from '../../services/JobService';
 import JobsTile from '../HomeView/Jobs/JobsTile/JobsTile';
 import Loader from '../Loader/Loader';
 import { Helmet } from 'react-helmet';
+import { trimTo256 } from "./utils/social";
 
 import VideoPlayer from '../VideoPlayer/VideoPlayer'
 
