@@ -7,7 +7,7 @@
     "build": "node scripts/build.js && npm run build:blog",
     "build:blog": "node scripts/blog.js",
     "test": "node scripts/test.js --env=jsdom",
-    "deploy": "yarn build && firebase deploy"
+    "deploy": "firebase deploy"
   },
   "dependencies": {
     "autoprefixer": "7.1.6",
