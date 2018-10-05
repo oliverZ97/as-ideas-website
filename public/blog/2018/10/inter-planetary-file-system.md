@@ -51,7 +51,11 @@ Das System funktioniert gut und es lohnt sich das Whitepaper zu lesen! Die Konze
 
 Noch scheint das Netzwerk allerdings wenig genutzt zu werden und es bleibt spannend zu sehen, wer die Early Adopter sein werden. BitTorrent wurde ja bereits zur Verteilung von Linux Distributionen oder von Blizzard zur Verteilung der World of Warcraft, Starcraft 2 und Diablo 3 Clients genutzt! 
 
-Jedenfalls macht es IPFS einfach, auch privaten Nutzern, kleineren Organisationen oder Forschungsgruppen große Datenmengen zuverlässig auszutauschen. Auch die Verbreitung von Videos und Streaming über ein solches P2P System ist naheliegend, nimmt die Performance mit steigendem Interesse an den Inhalten doch zu im Gegensatz zur klassischen HTTP Welt. 
+Jedenfalls macht es IPFS einfach, auch privaten Nutzern, kleineren Organisationen oder Forschungsgruppen große Datenmengen zuverlässig auszutauschen. Auch die Verbreitung von Videos und Streaming über ein solches P2P System ist naheliegend, denn die Performance nimmt mit steigendem Interesse an den Inhalten deutlich zu im Gegensatz zur klassischen HTTP Welt, in der dieser Use Case immer mehr Bandbreite verschlingt.
+
+Eine weitere Eigenschaft des Systems ist, das es weiterhin überwiegend funktioniert, wenn ein Teil vorübergehend oder längerfristig abgeschnitten wird, sei es durch eine Naturkatastrope oder staatlichen Eingriff. Das Katalanische Referendum zur Unabhängigkeit wurde über IPFS verteilt, nachdem die Zentralregierung in Madrid die entsprechenden Domains hatte sperren lassen.
+
+[Katalonien veröffentlicht neuen Internetlink für Referendum 1-0](https://analogo.de/2017/09/23/katalonien-veroeffentlicht-neuen-internetlink-fuer-referendum-1-0/)
 
  
 ## Wer steckt dahinter 
@@ -60,10 +64,27 @@ Hinter dem IPFS Projekt steht die Firma Protocol Labs. Die Projekte sind Open So
 
 ## Offene Fragen 
 
-lorem ipsum
+### Doppelte Hashes
+
+Was passiert eigentlich, wenn zwei Dokumente oder Dateibäume denselben Hash erzeugen? Dies ist mathematisch relativ unwahrscheinlich, aber doch möglich. Und die Datenmengen steigen exponentiell. Derzeit verdoppeln sich die weltweiten Daten alle 1-2 Jahre, und selbst dieser Zeitraum wird immer kürzer. Das wird also irgendwann ein reales Problem!
+
+Auf der anderen Seite steigt die Rechenleistung immer weiter. Quantencomputer stehen vor der Tür. Es ist denkbar, das es mit vertretbarem Aufwand möglich sein wird, Dateien und Datenbäume solange gezielt zu verändern, bis sie einen gewünschten Hash haben, um dann gezielt diese Daten ins System zu schmuggeln.
+
+Diese Frage wird offen diskutiert. IPFS verwendet Multi-Hashes, womit jedem Hash der Algorithmus zugeordnet wird, der ihn generiert hat, und man kann problemlos auf einen anderen, sichereren Algorithmus umsteigen, doch ist ungelöst, wie ein geeigneter Upgrade - Pfad der bestehenden Daten aussehen würde:
+[What to do in case of hash collision?](https://discuss.ipfs.io/t/what-to-do-in-case-of-hash-collision/482/9)
+
+### Rechtsproblematiken
+
+IPFS ist gemacht für den weltweiten Datenaustausch, ja sogar für ein "Permanent Web" das nicht vergisst. Doch was ist, wen genau das gebraucht wird? Wenn Urheberrechte verletzt und Medien veröffentlicht wurden, die andere Menschen ächten. Oder Anleitungen zum Bombenbau oder Kinderpornographie? Diskutiert wird eine Blacklist. Aber welche Authorität entscheidet, was in der Blacklist geführt wird und was nicht. Und was ist mit kriminellen, die veränderte Clients verwenden und die Daten weiterhin teilen? Sicher kann man in Einzelfälllen die IP Adressen auflösen und an die Identitäten dieser Menschen kommen. Doch sie leben vielleicht in Ländern außerhalb der rechtlichen und ethischen Kontrolle. Letztlich ist es auch ein Ziel von IPFS, einer zentralen Zensur zur entgehen. Verhindert die totale Freiheit eine rechtliche und ethische Zensur, oder umgekehrt? 
+
+Ein Einstiegspunkt in diese Diskussion findet sich beispielsweise hier:
+[Can I delete my content from the network?](https://github.com/ipfs/faq/issues/9)
 
 
 ## Quellen 
 - [IPFS Website](https://ipfs.io/) 
 - [IPFS Whitepaper](https://github.com/ipfs/papers/raw/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf) 
-- [Protocol Labs](https://protocol.ai) 
+- [Protocol Labs](https://protocol.ai)
+- [Katalonien veröffentlicht neuen Internetlink für Referendum 1-0](https://analogo.de/2017/09/23/katalonien-veroeffentlicht-neuen-internetlink-fuer-referendum-1-0/)
+- [What to do in case of hash collision?](https://discuss.ipfs.io/t/what-to-do-in-case-of-hash-collision/482/9)
+- [Can I delete my content from the network?](https://github.com/ipfs/faq/issues/9)
