@@ -23,7 +23,7 @@ The second talk was from an Information Systems Architect, also from AWS, named 
  * "We provide more data, just because we have it": All dashboards have to many data on it, it should be nearly empty, with no trash
  * ~“Everything" is over-rated, nobody needs everything 
 
-# ![2](02.jpeg)
+# ![2](02.jpg)
 
 ## Talk 3: Artificial intelligence in broadcast - how to improve content with meta data through image and text recognition
 This was the only talk not from an AWS employee. Yannick Buchwald (from [Logic](http://www.logicmedia.de/)) gave us insights how their video processing pipelines work, what they do with ML/AI and how they integrated everything with various AWS services. Logic is a tech company from a small village next to Darmstadt, they have 22 employees, 5 people are in the cloud team and they focus on cloud based broadcast. And they had many problems in the past, here are three real quotes from customers he gave us:
@@ -38,7 +38,7 @@ This was a substitute talk. Actually our colleagues from ONET planned to give a 
 
 What did we get instead? A sales pitch. Something meant for "managers". About cost optimisation. And about how much enterprise support will help you. The talk was also like super bad.
 
-# ![3](03.jpeg)
+# ![3](03.jpg)
 
 ## Talk 5: Amazon ElasticSearch Service
 This was actually not a bad talk - if you know nothing about Elasticsearch but that is used in the ELK stack. The talk was split into two parts, the first was from Bob Taylor (AWS Business Development Manager) and the secont from Kevin Fallis (AWS Senior Specialist Solutions Architect).
@@ -47,13 +47,13 @@ They first asked who used Elasticsearch (like 90% of the crowd) and who uses it 
 
 The second part was more technically. It is hard to manually manage large Elasticsearch clusters and AWS can help you alot. Elasticsearch on AWS is fully managed and some services like CloudWatch can push logs directly to Elasticsearch.
 
-# ![4](04.jpeg)
+# ![4](04.jpg)
 
 ## Talk 6: Amazon Neptune: Amazon’s new managed GraphDB service – Building Applications on Highly Connected Data
 In my opinion the best talk of the day. It not only explained the difference between graph databases and other databases, but also the use cases. And then he went into full beast mode: We saw code, he explained the two different options to query Neptune. Our freelance expert in graph databases asked some questions and we went into more details. What a great talk!
 
 Here you can see our super excited developers who work with AWS Neptune on their current project:
-# ![5](05.jpeg)
+# ![5](05.jpg)
 
 ## What's next
 
