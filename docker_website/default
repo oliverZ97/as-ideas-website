@@ -10,10 +10,6 @@ server {
         expires 1d;
     }
 
-    location ~* \.(js)$ {
-        add_header Content-Type text/javascript;
-    }
-
     # Any route containing a file extension (e.g. /devicesfile.js)
     location ~ ^.+\..+$ {
       try_files $uri =404;
