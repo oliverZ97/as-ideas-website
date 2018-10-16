@@ -81,6 +81,22 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
+
+  <script>
+    (function () {
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations()
+          .then(function (registrations) {
+            for (let registration of registrations) {
+              registration.unregister()
+            }
+          })
+          .catch(function (error) {
+            console.error(error);
+          })
+      }
+    })();
+  </script>
 </head>
 
 <body>
