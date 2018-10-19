@@ -1,6 +1,6 @@
 import React from 'react';
 import {scroller} from "react-scroll";
-import {ArrowDown} from '../../../assets/svg';
+import {ArrowDown} from './svg';
 
 import './Hero.scss';
 

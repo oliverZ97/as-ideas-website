@@ -75,3 +75,9 @@ npm install -g firebase-tools
 firebase login
 firebase deploy
 ```
+
+
+npm install --save-dev gatsby gatsby-link gatsby-plugin-sass gatsby-source-filesystem gatsby-transformer-remark node-sass
+
+// TODO should maybe be removed
+npm install --save react-infinite-scroller react-addons-css-transition-group react-scroll

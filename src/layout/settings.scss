@@ -1,0 +1,50 @@
+/*
+|-----------------------------------------------------------------------------
+| Project Settings                                  
+|-----------------------------------------------------------------------------
+*/
+
+/*
+|-----------------------------------------------------------------------------
+| Include Custom Webfonts                                  
+|-----------------------------------------------------------------------------
+*/
+
+@font-face {
+  font-family: 'FoundryPlek';
+  src: url('./fonts/plek/FoundryPlek-Light.ttf') format('truetype'),
+  url('./fonts/plek/FoundryPlek-Light.woff') format('woff'),
+  url('./fonts/plek/FoundryPlek-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SimplonNorm';
+  src: url('./fonts/simplon/SimplonNorm-Light.ttf') format('truetype'),
+  url('./fonts/simplon/SimplonNorm-Light.woff') format('woff'),
+  url('./fonts/simplon/SimplonNorm-Light.woff2') format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'SimplonNorm';
+  src: url('./fonts/simplon/SimplonNorm.ttf') format('truetype'),
+  url('./fonts/simplon/SimplonNorm.woff') format('woff'),
+  url('./fonts/simplon/SimplonNorm.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'SimplonNorm';
+  src: url('./fonts/simplon/SimplonNorm-Medium.ttf') format('truetype'),
+  url('./fonts/simplon/SimplonNorm-Medium.woff') format('woff'),
+  url('./fonts/simplon/SimplonNorm-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'SimplonNorm';
+  src: url('./fonts/simplon/SimplonNorm-Bold.ttf') format('truetype'),
+  url('./fonts/simplon/SimplonNorm-Bold.woff') format('woff'),
+  url('./fonts/simplon/SimplonNorm-Bold.woff2') format('woff2');
+  font-weight: 600;
+}

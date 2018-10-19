@@ -3,8 +3,8 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import React from "react";
 import "./Testimonials.scss";
 
-import {ArrowRight} from '../../../assets/svg';
-import {ArrowLeft} from '../../../assets/svg';
+import {ArrowRight} from './svg';
+import {ArrowLeft} from './svg';
 
 let testimonialQuotations = [
     {
