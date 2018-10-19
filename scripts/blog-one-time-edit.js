@@ -25,7 +25,7 @@ process.on('unhandledRejection', err => {
 
   blogPosts.forEach((post) => {
     writePost(post);
-    copyImages(post);
+    // copyImages(post);
   })
 })();
 
@@ -104,7 +104,11 @@ function writePost(post) {
 function jsonToRemark(json) {
   let result = "---\n";
   for (let key in json) {
-    result += `${key}: ${json[key]}\n`;
+    let value = json[key];
+    if (typeof value === 'string') {
+      value = value.replace(/\"/gm, "\\\"");
+    }
+    result += `${key}: "${value}"\n`;
   }
   result += "---\n";
   return result;

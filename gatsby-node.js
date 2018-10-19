@@ -2,14 +2,10 @@ const path = require("path");
 const {createFilePath, createFileNode} = require(`gatsby-source-filesystem`);
 
 // Tell plugins to add pages. This extension point is called only after the initial sourcing and transformation of nodes plus creation of the GraphQL schema are complete so you can query your data in order to create pages.
-exports.createPages = ({actions, graphql}) => {
-  console.info("CreatePages actions=", actions);
+exports.createPages = ({boundActionCreators, graphql}) => {
 
-  if (!actions) {
-    return;
-  }
 
-  const {createPage} = actions;
+  const {createPage} = boundActionCreators;
   const blogPostTemplate = path.resolve("src/templates/BlogPostTemplate/blogPost.jsx");
   return new Promise((resolve, reject) => {
     resolve(graphql(`{
@@ -49,11 +45,11 @@ exports.createPages = ({actions, graphql}) => {
   })
 };
 
-exports.onCreateNode = ({node, getNode, actions}) => {
+exports.onCreateNode = ({node, boundActionCreators, getNode}) => {
   console.info("onCreateNode", node.internal.type);
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({node, getNode, basePath: `pages`});
-    actions.createNodeField({
+    boundActionCreators.createNodeField({
       node,
       name: `slug`,
       value: slug,
