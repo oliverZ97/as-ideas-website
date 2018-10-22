@@ -81,3 +81,18 @@ npm install --save-dev gatsby gatsby-link gatsby-plugin-sass gatsby-source-files
 
 // TODO should maybe be removed
 npm install --save react-infinite-scroller react-addons-css-transition-group react-scroll
+
+## Gatsbyjs
+
+If you run a gatsby develop you will see two urls one is localhost:8000
+and other is localhost:8000/___graphql.
+
+Now open your browser and enter localhost:8000/___graphql.You will see a GraphiQL interface.
+
+```
+node {
+  frontmatter: {name: "ideas-for-hackathons"}
+  html: "<p>undefined</p>"
+  id: "C:/Users/Canar/Projekte/ideas/as-ideas-engineering-website-2/src/data/blog/posts/2016-06-ideas-for-hackathons.md absPath of file >>> MarkdownRemark"
+}
+```

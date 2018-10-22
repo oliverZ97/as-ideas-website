@@ -10,9 +10,17 @@ class BlogSummary extends React.Component {
   constructor(props) {
     super(props);
 
+    let edges = props.posts;
+
+
     this.state = {
-      loadedBlogPosts: []
+      loadedBlogPosts: [],
+      posts: edges.map((edge) => {
+        return edge.node.frontmatter;
+      })
     };
+
+    console.info(this.state.posts);
 
     this.loadNewPosts = this.loadNewPosts.bind(this);
   }
@@ -20,7 +28,7 @@ class BlogSummary extends React.Component {
   loadNewPosts(count) {
     let newCount = count * 4;
     this.setState({
-      loadedBlogPosts: posts.slice(0, newCount)
+      loadedBlogPosts: this.state.posts.slice(0, newCount)
     })
   }
 
@@ -37,9 +45,9 @@ class BlogSummary extends React.Component {
               loader={<Loader/>}
             >
               {
-                this.state.loadedBlogPosts.map((post) => {
+                this.state.loadedBlogPosts.map((post, index) => {
                   return (
-                    <OneBlogPostContainer post={post}/>
+                    <OneBlogPostContainer key={index} post={post}/>
                   )
                 })
               }

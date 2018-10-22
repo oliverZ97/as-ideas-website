@@ -1,5 +1,5 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./oneBlogPostContainer.scss";
 import posts from "./../../../deprecated/blog-posts.js";
 
@@ -7,12 +7,14 @@ import CroppedImage from '../CroppedImage/CroppedImage';
 
 class OneBlogPostContainer extends React.Component {
 
+
   getMonth(month) {
     return posts.getMonth(month);
   }
 
   render() {
     let post = this.props.post;
+    post.url = this.props.post.markdownUrl.slice(0, -3);
     if (post) {
       return (
         <li className="blogSummary__item" key={post.url}>
