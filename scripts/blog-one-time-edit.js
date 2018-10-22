@@ -25,7 +25,7 @@ process.on('unhandledRejection', err => {
 
   blogPosts.forEach((post) => {
     writePost(post);
-    // copyImages(post);
+    copyImages(post);
   })
 })();
 
@@ -53,7 +53,9 @@ function copyImages(post) {
 
         let imageName = getFileNameFromPath(itemPath);
         // copy image
-        let newItemPath = `./src/data/blog/images/${getNewImageName(post, imageName)}`;
+        // let newItemPath = `./src/data/blog/images/imageName`;
+        let newItemPath = `./src/data/blog/posts/${post.year}/${post.month}/${post.name}/${imageName}`;
+
         console.info(itemPath, "to", newItemPath);
         fse.copy(itemPath, newItemPath, err => {
           if (err) {
@@ -75,21 +77,22 @@ function getNewImageName(post, imageName) {
 }
 
 function polishContent(post, content) {
-
+  return content;
 }
 
 function writePost(post) {
   console.info(post.id);
 
   let markdownFilePath = `./src/deprecated/blog/${post.year}/${post.month}/${post.name}.md`;
-  let newMarkdownFilePath = `./src/data/blog/posts/${post.year}-${post.month}-${post.name}.md`;
+  let newMarkdownFilePath = `./src/data/blog/posts/${post.year}/${post.month}/${post.name}/${post.name}.md`;
+  fse.ensureDirSync(`./src/data/blog/posts/${post.year}/${post.month}/${post.name}`);
   fse.readFile(markdownFilePath, 'utf8', (err, contents) => {
     if (err) {
       console.error(err);
     } else {
 
       let remark = jsonToRemark(post);
-      let newContent = remark + "\n" + polishContent(post, contents);
+      let newContent = remark + polishContent(post, contents);
 
       fse.writeFile(newMarkdownFilePath, newContent, (err) => {
         if (err) {
