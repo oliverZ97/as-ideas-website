@@ -96,3 +96,14 @@ node {
   id: "C:/Users/Canar/Projekte/ideas/as-ideas-engineering-website-2/src/data/blog/posts/2016-06-ideas-for-hackathons.md absPath of file >>> MarkdownRemark"
 }
 ```
+npm install --save-dev gatsby-source-filesystem gatsby-transformer-remark node-sass
+
+ "gatsby": "^1.9.274",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-remark-copy-images": "^0.2.1",
+    "gatsby-remark-images": "^2.0.4",
+    "gatsby-remark-relative-images": "^0.2.0",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-remark": "^1.7.44",
+    "node-sass": "^4.9.0"

@@ -3,7 +3,10 @@ import Layout from '../../layout/layout';
 
 function BlogPost({data}) {
   const post = data.markdownRemark;
-  console.info(data);
+  // console.info(post.frontmatter);
+  //  s.src = '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js';
+  //  s.href = '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css';
+
   return (
     <Layout>
       <div>

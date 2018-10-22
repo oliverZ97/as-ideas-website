@@ -9,18 +9,24 @@ import InfiniteScroll from 'react-infinite-scroller';
 class BlogSummary extends React.Component {
   constructor(props) {
     super(props);
+    // FIXME
+    // console.info("BlogSummary", props.posts);
 
-    let edges = props.posts;
-
+    let edges = props.posts.map((edge) => {
+      return edge.node.frontmatter;
+    });
+    edges.forEach(element => {
+      // FIXME
+      // console.info("BlogSummary", element);
+      element.titlePicture = element.titlePicture.childImageSharp ? element.titlePicture.childImageSharp.resize.src : element.titlePicture;
+    });
 
     this.state = {
       loadedBlogPosts: [],
-      posts: edges.map((edge) => {
-        return edge.node.frontmatter;
-      })
+      posts: edges
     };
 
-    console.info(this.state.posts);
+    // console.info(this.state.posts);
 
     this.loadNewPosts = this.loadNewPosts.bind(this);
   }
@@ -42,7 +48,7 @@ class BlogSummary extends React.Component {
               pageStart={0}
               loadMore={this.loadNewPosts}
               hasMore={this.state.loadedBlogPosts.length < posts.length}
-              loader={<Loader/>}
+              loader={<Loader key={0}/>}
             >
               {
                 this.state.loadedBlogPosts.map((post, index) => {

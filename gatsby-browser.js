@@ -7,7 +7,7 @@ import 'normalize.css';
 import './src/layout/App.scss';
 
 
-exports.onRouteUpdate = () => {
+export function onRouteUpdate() {
   // anchorate({
   //   scroller: function (element) {
   //     if (!element) {
@@ -19,8 +19,7 @@ exports.onRouteUpdate = () => {
   // })
 };
 
-exports.onClientEntry = () => {
+export function onClientEntry() {
   // enableSmoothScolling();
   // loadDeferedStyles();
 };
-
