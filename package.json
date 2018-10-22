@@ -5,7 +5,8 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "heroku-postbuild": "gatsby build"
   },
   "dependencies": {
     "anchorate": "1.2.3",
