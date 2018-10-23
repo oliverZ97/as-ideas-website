@@ -1,25 +1,40 @@
 import React from "react";
 
-export default function Link({to, children, className, onClick}) {
-  // let onHome = window.location.pathname === '/';
-  // let external = to.match('/|@');
+export default class Link extends React.Component {
+  // {to, children, className, onClick}
+  constructor(props) {
+    super(props);
+  }
 
-  // if (external) {
-  return <a href={to} className={className} onClick={onClick}>{children}</a>
-  // } else {
-  //     if (!onHome) {
-  //         return <a href={'/#' + to} className={className} onClick={onClick}>{children}</a>
-  //     } else {
-  //         return <ScrollLink
-  //             to={to}
-  //             className={className}
-  //             smooth={true}
-  //             duration={350}
-  //             spy={true}
-  //             onClick={onClick}
-  //         >
-  //             {children}
-  //         </ScrollLink>
-  //     }
-  // }
+  handleClick(e) {
+    if (window) {
+      // e.preventDefault();
+      let to = this.props.to;
+      let onHome = window.location.pathname === '/';
+      let external = to.match('/|@');
+
+      if (external) {
+
+      }
+
+      console.info("to", to);
+      console.info("onHome", onHome);
+      console.info("external", external);
+    }
+  }
+
+  render() {
+    let external = this.props.to.match('/|@');
+    let to = external ? this.props.to : '/' + this.props.to;
+
+    return (
+      <a
+        href={to}
+        className={'scrollingLink__container ' + (this.props.className ? this.props.className : '')}
+        onClick={this.handleClick.bind(this)}
+      >
+        {this.props.children}
+      </a>
+    )
+  }
 }

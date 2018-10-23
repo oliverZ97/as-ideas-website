@@ -1,6 +1,7 @@
 const path = require("path");
 const {createFilePath, createFileNode} = require(`gatsby-source-filesystem`);
 const fse = require('fs-extra');
+const {JobService} = require('./src/services/JobService.js');
 
 // This onCreateNode function will be called by Gatsby whenever a new node is created (or updated).
 exports.onCreateNode = ({node, actions, getNode}) => {
@@ -22,7 +23,22 @@ exports.onCreateNode = ({node, actions, getNode}) => {
 };
 
 exports.onPreBootstrap = (args) => {
-
+  console.info("onPreBootstrap", JobService);
+  const {actions} = args;
+  const jobDetailsTemplate = path.resolve("src/templates/JobDetailsTemplate/JobDetailsView.jsx");
+  return JobService.getJobs()
+    .then(jobs => {
+      jobs.forEach(job => {
+        let path = `/jobs/${job._attributes.jobId}`;
+        actions.createPage({
+          path: path,
+          component: jobDetailsTemplate,
+          context: {
+            job: job
+          },
+        })
+      })
+    });
 };
 
 // Tell plugins to add pages. This extension point is called only after the initial sourcing

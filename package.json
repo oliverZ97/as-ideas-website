@@ -23,7 +23,8 @@
     "react-lazyload": "^2.3.0",
     "react-scroll": "^1.7.10",
     "rss": "^1.2.2",
-    "smooth-scroll": "14.2.1",
+    "smooth-scroll": "^14.2.1",
+    "smoothscroll-polyfill": "^0.4.3",
     "whatwg-fetch": "^2.0.3",
     "xml-js": "^1.6.7"
   },
@@ -35,6 +36,7 @@
     "gatsby-source-filesystem": "^2.0.5",
     "gatsby-transformer-remark": "^2.1.8",
     "gatsby-transformer-sharp": "^2.1.4",
+    "node-fetch": "^2.2.0",
     "node-sass": "^4.9.4"
   },
   "browserslist": [

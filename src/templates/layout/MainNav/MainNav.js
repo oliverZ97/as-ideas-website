@@ -1,7 +1,7 @@
 import React from "react";
 
 import {IdeasLogo, IconBurger} from './svg';
-import Link from './../Link/Link';
+import Link from './../../../components/Link/Link';
 import MobileMenu from '../MobileMenu/MobileMenu';
 
 import './MainNav.scss';
@@ -31,22 +31,22 @@ export default class MainNav extends React.Component {
       <nav className={'mainNav' + (this.state.showMobileMenu ? ' mainNav--open' : '')}>
         <ul className='mainNav__list'>
           <li className='mainNav__item'>
-            <Link className='mainNav__link' to='services' history={history}>
+            <Link className='mainNav__link' to='#services' history={history}>
               Services
             </Link>
           </li>
           <li className='mainNav__item'>
-            <Link className='mainNav__link' to='portfolio' history={history}>
+            <Link className='mainNav__link' to='#portfolio' history={history}>
               Portfolio
             </Link>
           </li>
           <li className='mainNav__item mainNav__item--logo'>
-            <Link className='mainNav__link' to='home' history={history} onClick={this.state.showMobileMenu ? this.toggleMenu.bind(this) : null}>
+            <Link className='mainNav__link' to='#home' history={history} onClick={this.state.showMobileMenu ? this.toggleMenu.bind(this) : null}>
               <IdeasLogo/>
             </Link>
           </li>
           <li className='mainNav__item'>
-            <Link className='mainNav__link' to='culture' history={history}>
+            <Link className='mainNav__link' to='#culture' history={history}>
               Culture
             </Link>
           </li>
