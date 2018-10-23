@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from "../layout/layout";
+import Layout from "../templates/layout/layout";
 
 import Hero from "../components/HomeView/Hero/Hero";
 import Services from "../components/HomeView/Services/Services";

@@ -7,7 +7,6 @@ exports.onCreateNode = ({node, actions, getNode}) => {
   if (node.internal.type === `MarkdownRemark`) {
     // from gatsby-source-filesystem to create the path called 'slug'
     const slug = createFilePath({node, getNode, basePath: `pages`});
-    console.info("onCreateNode MarkdownRemark slug", slug);
     actions.createNodeField({
       node,
       name: `slug`,
@@ -15,13 +14,15 @@ exports.onCreateNode = ({node, actions, getNode}) => {
     });
   } else if (node.internal.type === 'File') {
     if (node.sourceInstanceName === 'pages' && ["jpg", "png", "jpeg", "gif"].includes(node.extension)) {
-      console.info(node);
       let path = `./src/data/blog/posts/${node.relativePath}`;
       let toPath = `./public/blog/${node.relativePath}`;
-      console.info("TO", toPath);
       fse.copySync(path, toPath);
     }
   }
+};
+
+exports.onPreBootstrap = (args) => {
+
 };
 
 // Tell plugins to add pages. This extension point is called only after the initial sourcing
@@ -35,7 +36,6 @@ exports.createPages = (args) => {
 
 function createBlogPosts(boundActionCreators, graphql) {
   const {createPage} = boundActionCreators;
-  const blogPostTemplate = path.resolve("src/templates/BlogPostTemplate/blogPost.jsx");
   let graphqlPromise = graphql(`{
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
@@ -62,6 +62,7 @@ function createBlogPosts(boundActionCreators, graphql) {
       throw new Error("Something went wrong on creating the blog posts!");
     }
 
+    const blogPostTemplate = path.resolve("src/templates/BlogPostTemplate/blogPost.jsx");
     result.data.allMarkdownRemark.edges.forEach(({node}) => {
       createSingleBlogPost(createPage, node, blogPostTemplate);
     });
@@ -69,12 +70,10 @@ function createBlogPosts(boundActionCreators, graphql) {
 
 }
 
+// node.fields.slug
+// node.frontmatter.xyz
 function createSingleBlogPost(createPage, node, blogPostTemplate) {
-  // node.fields.slog
-  // node.frontmatter.xyz
-
   let path = `blog/${node.frontmatter.year}/${node.frontmatter.month}/${node.frontmatter.name}/`;
-  console.info("createSingleBlogPost", path);
 
   // Data passed to context is available
   // in page queries as GraphQL variables.

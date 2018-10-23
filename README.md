@@ -107,3 +107,7 @@ npm install --save-dev gatsby-source-filesystem gatsby-transformer-remark node-s
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
     "node-sass": "^4.9.0"
+
+## Deploying to Heroku
+
+https://www.gatsbyjs.org/docs/deploying-to-heroku/

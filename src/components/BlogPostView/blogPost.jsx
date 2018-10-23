@@ -1,13 +1,7 @@
 import React from "react";
 import "./blogPost.scss";
-import marked from "marked";
-import posts from "./../../blog-posts.js";
-import highlightJs from "./utils/highlight";
-import social, {trimTo256} from "./utils/social";
-import {animateScroll} from "react-scroll/modules/index";
-import {Twitter, Facebook, LinkedIn} from '../../assets/svg';
 import OneBlogPostContainer from "../BlogSummaryView/OneBlogPostContainer/oneBlogPostContainer";
-import {Helmet} from 'react-helmet';
+import SocialShareBar from "./SocialBar/SocialShareBar";
 
 class BlogPost extends React.Component {
     constructor(props) {
@@ -19,59 +13,24 @@ class BlogPost extends React.Component {
         }
     }
 
-    componentDidMount() {
-        this.loadCurrentBlogPost(this.props.match.params);
-        highlightJs.loadHighlightJs();
-        social.init();
-    }
-
-    componentWillUnmount() {
-        // document.title = "ideas engineering ⚡";
-    }
-
-    componentWillReceiveProps(nextProps) {
-        this.loadCurrentBlogPost(nextProps.match.params);
-    }
-
-    loadCurrentBlogPost(params) {
-        let post = posts.getPost(params);
-        this.setLoadedPost(post);
-        social.showComment(post);
-
-        let url = `${post.markdownUrl}`;
-        fetch(url)
-            .then((response) => {
-                return response.text();
-            })
-            .then((text) => {
-                let preview = document.getElementById("preview");
-                preview.innerHTML = marked(text);
-                this.scrollToTop();
-            })
-            .then(() => {
-                highlightJs.doHighlight();
-                let elements = document.querySelectorAll(".markdown-body img");
-                for (let i = 0; i < elements.length; i++) {
-                    elements[i].addEventListener("click", (event) => {
-                        this.showLightbox(event)
-                    });
-                }
-            });
-    }
-
-    setLoadedPost(post) {
-        let state = this.state;
-        state.post = post;
-        state.nextPosts = posts.nextTwoPosts(this.state.post);
-
-        this.setState(state);
-
-    }
+    // componentDidMount() {
+    //     // this.loadCurrentBlogPost(this.props.match.params);
+    //     // highlightJs.loadHighlightJs();
+    //     // social.init();
+    // }
+    //
+    // componentWillUnmount() {
+    //     // document.title = "ideas engineering ⚡";
+    // }
+    //
+    // componentWillReceiveProps(nextProps) {
+    //     // this.loadCurrentBlogPost(nextProps.match.params);
+    // }
 
     scrollToTop() {
-        window.setTimeout(() => {
-            animateScroll.scrollToTop();
-        }, 250);
+        // window.setTimeout(() => {
+        //     animateScroll.scrollToTop();
+        // }, 250);
     }
 
     hideLightbox() {
@@ -81,7 +40,7 @@ class BlogPost extends React.Component {
     }
 
     getMonth(month) {
-        return posts.getMonth(month);
+        return "";// FIXME posts.getMonth(month);
     }
 
     showLightbox(event) {
@@ -92,48 +51,17 @@ class BlogPost extends React.Component {
 
     }
 
-    renderSocials() {
-        return (
-            <div className="blog-social-share">
-                <span className="blog-social-share__header">Teile den Beitrag auf</span>
-                <div className="blog-social-share__iconList">
-                    <a className="blog-social-share__icon"
-                       href={social.twitterUrl(this.state.post)}
-                       target="_blank" rel="noopener noreferrer"
-                    >
-                        <Twitter/>
-                        <span>Twitter</span>
-                    </a>
-                    <a className="blog-social-share__icon"
-                       href={social.facebookUrl(this.state.post)}
-                       target="_blank" rel="noopener noreferrer"
-                    >
-                        <Facebook/>
-                        <span>Facebook</span>
-                    </a>
-                    <a className="blog-social-share__icon"
-                       href={social.linkedInUrl(this.state.post)}
-                       target="_blank" rel="noopener noreferrer"
-                    >
-                        <LinkedIn/>
-                        <span>LinkedIn</span>
-                    </a>
-                </div>
-            </div>
-        );
-    }
-
     render() {
         return (
             <div className="blog-post-wrapper">
-                <Helmet>
-                    <title>ideas engineering ⚡ {`${this.state.post.title}`}</title>
-                    <meta property="og:url" content={this.state.post.permalink}/>
-                    <meta property="og:type" content="website"/>
-                    <meta property="og:title" content={this.state.post.title}/>
-                    <meta property="og:description" content={trimTo256(this.state.post.summary)}/>
-                    <meta property="og:image" content={this.state.post.url + this.state.post.titlePicture}/>
-                </Helmet>
+                {/*<Helmet>*/}
+                    {/*<title>ideas engineering ⚡ {`${this.state.post.title}`}</title>*/}
+                    {/*<meta property="og:url" content={this.state.post.permalink}/>*/}
+                    {/*<meta property="og:type" content="website"/>*/}
+                    {/*<meta property="og:title" content={this.state.post.title}/>*/}
+                    {/*<meta property="og:description" content={trimTo256(this.state.post.summary)}/>*/}
+                    {/*<meta property="og:image" content={this.state.post.url + this.state.post.titlePicture}/>*/}
+                {/*</Helmet>*/}
 
                 {this.state.isLightboxVisible ?
                     <div className="blog-lightbox" onClick={this.hideLightbox.bind(this)}>
@@ -156,7 +84,7 @@ class BlogPost extends React.Component {
                         </div>
                     </div>
 
-                    {this.renderSocials()}
+                    <SocialShareBar post={this.state.post} />
 
                     <hr/>
                     <h1 className="next-posts--header">Die nächsten Beiträge</h1>
@@ -172,7 +100,6 @@ class BlogPost extends React.Component {
 
                     <div id="disqus_thread" className=".disqus-thread"/>
                 </div>
-
             </div>
         )
     }

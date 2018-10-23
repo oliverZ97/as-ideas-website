@@ -13,6 +13,10 @@ module.exports = {
 
     'gatsby-plugin-sass',
 
+    // Manage document head data with react-helmet.
+    // Provides drop-in server rendering support for Gatsby.
+    'gatsby-plugin-react-helmet',
+
     // Gatsby's data processing layer begins with “source”
     // plugins.  You can source data nodes from anywhere but
     // most sites, like Gatsbygram, will include data from

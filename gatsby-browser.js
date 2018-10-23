@@ -4,8 +4,7 @@
 
 
 import 'normalize.css';
-import './src/layout/App.scss';
-
+import './src/templates/layout/App.scss';
 
 export function onRouteUpdate() {
   // anchorate({
