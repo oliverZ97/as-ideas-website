@@ -1,7 +1,7 @@
 const TextService = {};
 
 TextService.getEncodedSummaryMax256Chars = (s) => {
-  TextService.encodeURI(this.trimTo256(s));
+  encodeURI(TextService.trimTo256(s));
   return '';
 };
 

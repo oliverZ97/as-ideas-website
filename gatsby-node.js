@@ -2,11 +2,18 @@ const path = require("path");
 const {createFilePath, createFileNode} = require(`gatsby-source-filesystem`);
 const fse = require('fs-extra');
 const {JobService} = require('./src/services/JobService.js');
+const {BlogService} = require('./src/services/BlogService.js');
 
 // This onCreateNode function will be called by Gatsby whenever a new node is created (or updated).
 exports.onCreateNode = ({node, actions, getNode}) => {
   if (node.internal.type === `MarkdownRemark`) {
-    // from gatsby-source-filesystem to create the path called 'slug'
+
+    console.info("onCreateNode");
+
+    let post = node.frontmatter;
+    BlogService.enrich(post, node);
+
+    // HINT: Example for adding meta-data (extra data) to a node
     const slug = createFilePath({node, getNode, basePath: `pages`});
     actions.createNodeField({
       node,
@@ -23,7 +30,6 @@ exports.onCreateNode = ({node, actions, getNode}) => {
 };
 
 exports.onPreBootstrap = (args) => {
-  console.info("onPreBootstrap", JobService);
   const {actions} = args;
   const jobDetailsTemplate = path.resolve("src/templates/JobDetailsTemplate/JobDetailsView.jsx");
   return JobService.getJobs()
@@ -49,6 +55,30 @@ exports.createPages = (args) => {
   createBlogPosts(boundActionCreators, graphql);
 };
 
+// Extension point to tell plugins to source nodes.
+// -> add fetched data into the existing internal gatsby data store
+// cf. https://blog.hasura.io/building-a-dynamic-listing-web-app-with-pagination-and-dynamic-pages-using-gatsby-2ddee9ec2dc3
+// cf. https://www.gatsbyjs.org/docs/node-apis/#sourceNodes
+exports.sourceNodes = ({actions, createNodeId, createContentDigest}) => {
+  return JobService.getJobs()
+    .then(allJobs => {
+      let jobData = {jobs: allJobs};
+      const nodeMeta = {
+        id: createNodeId(`job-data`),
+        name: 'job-data',
+        parent: null,
+        children: [],
+        internal: {
+          type: `JobsNode`,
+          content: JSON.stringify(jobData),
+          contentDigest: createContentDigest(jobData)
+        }
+      };
+
+      actions.createNode(Object.assign({}, jobData, nodeMeta))
+    });
+
+};
 
 function createBlogPosts(boundActionCreators, graphql) {
   const {createPage} = boundActionCreators;
@@ -63,9 +93,17 @@ function createBlogPosts(boundActionCreators, graphql) {
                 slug
             }
             frontmatter {
+              path
               year
               month
-              name
+              author
+              authorEmail
+              summary
+              title
+              titlePicture {
+                base
+              }
+              
             }
           }
         }
@@ -79,8 +117,9 @@ function createBlogPosts(boundActionCreators, graphql) {
     }
 
     const blogPostTemplate = path.resolve("src/templates/BlogPostTemplate/blogPost.jsx");
+    const allPosts = result.data.allMarkdownRemark.edges.map(edge => edge.node.frontmatter);
     result.data.allMarkdownRemark.edges.forEach(({node}) => {
-      createSingleBlogPost(createPage, node, blogPostTemplate);
+      createSingleBlogPost(createPage, node, blogPostTemplate, allPosts);
     });
   });
 
@@ -88,8 +127,8 @@ function createBlogPosts(boundActionCreators, graphql) {
 
 // node.fields.slug
 // node.frontmatter.xyz
-function createSingleBlogPost(createPage, node, blogPostTemplate) {
-  let path = `blog/${node.frontmatter.year}/${node.frontmatter.month}/${node.frontmatter.name}/`;
+function createSingleBlogPost(createPage, node, blogPostTemplate, allPosts) {
+  let path = node.frontmatter.path;
 
   // Data passed to context is available
   // in page queries as GraphQL variables.
@@ -98,6 +137,7 @@ function createSingleBlogPost(createPage, node, blogPostTemplate) {
     component: blogPostTemplate,
     context: {
       slug: node.fields.slug,
+      nextPosts: BlogService.nextTwoPosts(node.frontmatter, allPosts)
     },
   })
 }

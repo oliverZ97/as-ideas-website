@@ -1,24 +1,8 @@
-import md5 from "md5";
+const md5 = require("md5");
 
 let BlogService = {};
 
-// posts = posts.filter((post) => {
-//   return post.authorEmail && !post.draft;
-// });
-//
-// posts.forEach((post) => {
-//   post.authorPictureUrl = `//www.gravatar.com/avatar/${md5(post.authorEmail.toLowerCase())}`;
-// });
-
-BlogService.setPosts = (posts) => {
-
-};
-
-BlogService.setPostsFromEgdes = (edges) => {
-
-};
-
-BlogService.next = ((post) => {
+BlogService.next = ((post, posts) => {
   let indexOfPost = posts.indexOf(post);
   if (indexOfPost < 0) {
     return undefined;
@@ -31,7 +15,7 @@ BlogService.next = ((post) => {
   return posts[indexOfPost + 1];
 });
 
-BlogService.prev = ((post) => {
+BlogService.prev = ((post, posts) => {
   let indexOfPost = posts.indexOf(post);
   if (indexOfPost < 0) {
     return undefined;
@@ -44,20 +28,26 @@ BlogService.prev = ((post) => {
   return posts[indexOfPost - 1];
 });
 
-BlogService.nextTwoPosts = ((post) => {
-  let next = posts.next(post);
+BlogService.nextTwoPosts = ((post, posts) => {
+
+  let next = BlogService.next(post, posts);
   if (next) {
-    return [next, posts.prev(post)];
+    return [next, BlogService.prev(post, posts)];
   }
   return [];
 });
 
-BlogService.getPost = (year, month, name) => {
-  for (let post of posts) {
-    if (post.year === params.year && post.month === params.month && post.name === params.name) {
-      return post;
-    }
-  }
+BlogService.enrich = (post, node) => {
+  let fileName = node.fileAbsolutePath.replace(/^.*[\\\/]/, '').toLowerCase();
+  let fileNameWithoutExtension = fileName.substring(0, fileName.lastIndexOf('.')) || fileName
+
+  post.year = post.date.substring(0, 4);
+  post.month = post.date.substring(5, 7);
+  post.day = post.date.substring(8, 10);
+  post.name = post.title.toLowerCase().replace(/\W/g, ' ').replace(/\s+/g, '-');
+  post.path = `/blog/${post.year}/${post.month}/${fileNameWithoutExtension}/`;
+  post.permalink = `https://axelspringerideas.de` + post.path;
+  post.authorPictureUrl = "//www.gravatar.com/avatar/" + md5(post.authorEmail.toLowerCase());
 };
 
 BlogService.getMonth = (month) => {
@@ -71,12 +61,12 @@ BlogService.getMonth = (month) => {
   }
 };
 
-BlogService.sort((a, b) => {
-  return b.date.localeCompare(a.date);
-});
+// BlogService.sort((a, b) => {
+//   return b.date.localeCompare(a.date);
+// });
 
 BlogService.getEncodedPermalink = (post) => {
   return encodeURI(post.permalink);
 };
 
-export default BlogService;
+exports.BlogService = BlogService;

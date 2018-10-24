@@ -1,5 +1,6 @@
 import React from "react";
 import {Twitter, Facebook, LinkedIn} from './svg';
+import {TextService} from '../../../services/TextService'
 
 class SocialShareBar extends React.Component {
   constructor(props) {
@@ -9,13 +10,10 @@ class SocialShareBar extends React.Component {
     }
   }
 
-  componentDidMount() {
-  }
-
   // SOCIAL SHARE: https://blog.hubspot.com/blog/tabid/6307/bid/29544/the-ultimate-cheat-sheet-for-creating-social-media-buttons.aspx
   // cf. https://developer.linkedin.com/docs/share-on-linkedin
   linkedInUrl(post) {
-    return `https://www.linkedin.com/shareArticle?url=${encodeURI(post.permalink)}&mini=true&title=${post.title}&source=axelspringerideas.de&summary=${this.getEncodedSummaryMax256Chars(post)}`;
+    return `https://www.linkedin.com/shareArticle?url=${encodeURI(post.permalink)}&mini=true&title=${post.title}&source=axelspringerideas.de&summary=${TextService.getEncodedSummaryMax256Chars(post.summary)}`;
   }
 
   twitterUrl(post) {
@@ -24,21 +22,6 @@ class SocialShareBar extends React.Component {
 
   facebookUrl(post) {
     return `http://www.facebook.com/share.php?u=${encodeURI(post.permalink)}`;
-  }
-
-  // FIXME
-  getEncodedSummaryMax256Chars(post) {
-    if (post) {
-      return encodeURI(this.trimTo256(post.summary));
-    }
-    return '';
-  }
-
-  // FIXME
-  trimTo256(s) {
-    return (s && s.length > 256) ?
-      s.substring(0, 256 - 3) + '...' :
-      s;
   }
 
   render() {

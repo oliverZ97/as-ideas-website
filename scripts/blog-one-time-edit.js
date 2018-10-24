@@ -25,7 +25,7 @@ process.on('unhandledRejection', err => {
 
   blogPosts.forEach((post) => {
     writePost(post);
-    copyImages(post);
+    // copyImages(post);
   })
 })();
 
@@ -104,14 +104,18 @@ function writePost(post) {
 
 }
 
+const ALLOWED_FIELDS = ["title", "titlePicture", "summary", "author", "authorEmail", "date"];
+
 function jsonToRemark(json) {
   let result = "---\n";
   for (let key in json) {
-    let value = json[key];
-    if (typeof value === 'string') {
-      value = value.replace(/\"/gm, "\\\"");
+    if (ALLOWED_FIELDS.includes(key)) {
+      let value = json[key];
+      if (typeof value === 'string') {
+        value = value.replace(/\"/gm, "\\\"");
+      }
+      result += `${key}: "${value}"\n`;
     }
-    result += `${key}: "${value}"\n`;
   }
   result += "---\n";
   return result;

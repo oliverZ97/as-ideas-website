@@ -16,10 +16,6 @@ export default class Link extends React.Component {
       if (external) {
 
       }
-
-      console.info("to", to);
-      console.info("onHome", onHome);
-      console.info("external", external);
     }
   }
 

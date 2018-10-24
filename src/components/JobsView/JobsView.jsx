@@ -1,10 +1,10 @@
 import React from 'react';
 
-import JobService from '../../services/JobService';
+import {JobService} from '../../services/JobService';
+import {TextService} from '../../services/TextService';
 import JobsTile from '../HomeView/Jobs/JobsTile/JobsTile';
 import Loader from '../Loader/Loader';
 import {Helmet} from 'react-helmet';
-import {trimTo256} from '../BlogPostView/utils/social';
 
 import VideoPlayer from '../VideoPlayer/VideoPlayer'
 
@@ -14,31 +14,14 @@ class JobsView extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      jobData: null,
-      showLoader: true
+      jobData: props.jobs.jobs
     };
   }
 
-  componentDidMount() {
-    JobService.getJobs()
-      .then((jobData) => {
-        this.setState({jobData, showLoader: false});
-      })
-      .catch(e => {
-        console.log(e);
-        this.setState({showLoader: false})
-      })
-  }
-
   render() {
-    let hiringHeading;
-    if (!this.state.showLoader && !this.state.jobData) {
-      hiringHeading = <h1 className='jobsView__heading sectionHeading'>We are full staffed at the moment.<br/>But speculative applications are always welcome!</h1>;
-    } else {
-      hiringHeading = <h1 className='jobsView__heading sectionHeading'>We are hiring</h1>;
-    }
     let randomImage = '/recruiting/' + (Math.floor(Math.random() * 6) + 1) + '.jpg';
     let summary = "You love to develop cool technology? We do aswell. Become part of our unique team now! Let´s shape together tomorrow´s media usage.";
+    let hasJobs = this.state.jobData.length > 0;
 
     return (
       <section className='jobsView'>
@@ -47,7 +30,7 @@ class JobsView extends React.Component {
           <meta property="og:url" content="https://axelspringerideas.de/jobs"/>
           <meta property="og:type" content="website"/>
           <meta property="og:title" content={'Jobs & Career'}/>
-          <meta property="og:description" content={trimTo256(summary)}/>
+          <meta property="og:description" content={TextService.trimTo256(summary)}/>
           <meta property="og:image" content={randomImage}/>
         </Helmet>
         <div className='jobsView__container--heading centered'>
@@ -66,18 +49,17 @@ class JobsView extends React.Component {
         </div>
 
         <div className='jobsView__container--tiles centered'>
-          {hiringHeading}
-          {this.state.showLoader ? (
-            <Loader/>
-          ) : this.state.jobData && this.state.jobData.length > 0 ? (
-            <ul className='jobsView__jobList'>
-              {
-                this.state.jobData.map(job => {
-                  return <JobsTile key={'jobsTile' + job._attributes.jobId} job={job}/>
-                })
-              }
-            </ul>
-          ) : null}
+          {
+            hasJobs ? <h1 className='jobsView__heading sectionHeading'>We are hiring</h1>
+              : <h1 className='jobsView__heading sectionHeading'>We are full staffed at the moment.<br/>But speculative applications are always welcome!</h1>
+          }
+          <ul className='jobsView__jobList'>
+            {
+              this.state.jobData.map(job => {
+                return <JobsTile key={'jobsTile' + job._attributes.jobId} job={job}/>
+              })
+            }
+          </ul>
         </div>
 
         <div className='jobsView__container--initiativ centered'>

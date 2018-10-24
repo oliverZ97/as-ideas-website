@@ -45,7 +45,6 @@ class SocialBar extends React.Component {
 
   render() {
     let socialUrls = this.getSocialUrls(this.props.object.title, this.props.object.summary, this.props.object.url);
-    console.log(socialUrls)
     return (
       <div className="socialBar">
         <a className="socialBar__icon"
@@ -54,8 +53,7 @@ class SocialBar extends React.Component {
         >
           <Twitter/>
         </a>
-        <a className="socialBar__icon" onClick={this.openFBDialogue}
-        >
+        <a className="socialBar__icon" onClick={this.openFBDialogue}>
           <Facebook/>
         </a>
         <a className="socialBar__icon"

@@ -8,24 +8,24 @@ const heroText = "We are a studio of developers, designers and product people. W
 
 
 class Hero extends React.Component {
-    scrollDown() {
-        scroller.scrollTo('services', {
-            spy: true,
-            smooth: true,
-            duration: 350
-        });
-    }
+  scrollDown() {
+    scroller.scrollTo('services', {
+      spy: true,
+      smooth: true,
+      duration: 350
+    });
+  }
 
-    render() {
-        return (
-            <section className='hero'>
-                <p className='hero__text'>
-                    {heroText}
-                </p>
-                <ArrowDown className='hero__arrow' onClick={this.scrollDown.bind(this)}/>
-            </section>
-        );
-    }
+  render() {
+    return (
+      <section id="home" className='hero'>
+        <p className='hero__text'>
+          {heroText}
+        </p>
+        <ArrowDown className='hero__arrow' onClick={this.scrollDown.bind(this)}/>
+      </section>
+    );
+  }
 }
 
 export default Hero;

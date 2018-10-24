@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby";
+import {graphql} from "gatsby";
 
 import Layout from "../templates/layout/layout";
 
@@ -7,10 +7,6 @@ import BlogSummary from "./../components/BlogSummaryView";
 
 
 export default ({data}) => {
-  // FIXME
-  // console.error("!!!!!!!!!!!!!!!!!!!\n\n");
-  // console.error("!", data.blog.edges);
-  // console.error("!!!!!!!!!!!!!!!!!!!\n\n");
   return (
     <Layout>
       <BlogSummary posts={data.blog.edges}/>
@@ -43,10 +39,8 @@ export const pageQuery = graphql`
             summary
             author
             authorEmail
-            url
-            markdownUrl
+            path
             permalink
-            id
             date
           }
         }

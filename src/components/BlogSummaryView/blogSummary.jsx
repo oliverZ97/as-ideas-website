@@ -2,31 +2,26 @@ import React from "react";
 import "./blogSummary.scss";
 import posts from "./../../deprecated/blog-posts.js";
 
-import OneBlogPostContainer from "./OneBlogPostContainer/oneBlogPostContainer";
+import OneBlogPostContainer from "../OneBlogPostContainer/oneBlogPostContainer";
 import Loader from "../Loader/Loader";
 import InfiniteScroll from 'react-infinite-scroller';
 
 class BlogSummary extends React.Component {
   constructor(props) {
     super(props);
-    // FIXME
-    // console.info("BlogSummary", props.posts);
 
-    let edges = props.posts.map((edge) => {
-      return edge.node.frontmatter;
-    });
-    edges.forEach(element => {
-      // FIXME
-      // console.info("BlogSummary", element);
-      element.titlePicture = element.titlePicture.childImageSharp ? element.titlePicture.childImageSharp.resize.src : element.titlePicture;
-    });
+    let edges = props.posts
+      .map((edge) => {
+        return edge.node.frontmatter;
+      })
+      .sort((a, b) => {
+        return b.date.localeCompare(a.date);
+      });
 
     this.state = {
       loadedBlogPosts: [],
       posts: edges
     };
-
-    // console.info(this.state.posts);
 
     this.loadNewPosts = this.loadNewPosts.bind(this);
   }
