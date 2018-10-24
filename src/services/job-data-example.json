@@ -1,0 +1,296 @@
+[
+  {
+    _attributes: {
+      uid: '7616',
+      jobId: '23111',
+      jobNumber: '020700020'
+    },
+    title: {
+      _cdata: 'Backend Artist mit Frontend Foo & some Ops Skills (BAFFOS) (m/w/d)'
+    },
+    url: {
+      _cdata: 'https://career.axelspringer.com/job/backend-artist-mit-frontend-foo-some-ops-skills-baffos-m-w-d-berlin-1/'
+    },
+    urlApplicationUrl: {
+      _cdata: 'https://career.axelspringer.com/bewerbung/axel-springer/apply.html?jobId=P66FK026203F3VBQB8N68V771-23111&langCode=de_DE'
+    },
+    targetGroup: {
+      _attributes: [
+        Object
+      ],
+      _cdata: 'Fachkraft'
+    },
+    brand: {
+      _attributes: [
+        Object
+      ],
+      _cdata: 'Axel Springer Ideas Engineering GmbH'
+    },
+    location: {
+      _attributes: [
+        Object
+      ],
+      _cdata: 'Berlin'
+    },
+    otherLocation: {},
+    fieldOfActivity: {
+      _attributes: [
+        Object
+      ],
+      _cdata: 'IT'
+    },
+    fullTimePartTime: {
+      _attributes: [
+        Object
+      ],
+      _cdata: 'Vollzeit'
+    },
+    flagLeadershipResponsibility: {
+      _text: '0'
+    },
+    flagWorkExperience: {
+      _text: '1'
+    },
+    urlHeaderImage: {
+      _text: 'https://career.axelspringer.com/fileadmin/bilder/importiert/import_header_020700020_1_de.png'
+    },
+    htmlCompanyDescription: {
+      _cdata: '<p class="bodytext"><em>Axel Springer Ideas ist eine 100 prozentige Tochter der Axel Springer SE. Wir arbeiten als Startup im Konzern und finden Lösungen rund um das Thema Digitaler Content. Wir agieren als Innovationstreiber und setzen je nach Aufgabenstellung von Prototypen bis Plattformen das beste Ergebnis um.</em>\r</p>\n<p class="bodytext"><em>Hinter unseren Produkten versteckt sich ein Haufen cooler Technologie &amp; deshalb sind wir auf der Suche nach einem neuen Backend Artist mit einer Unze Frontend Foo &amp; einer Prise Ops Skills (BAFFOS) für unser umwerfendes Team.</em>\r</p>\n<p class="bodytext"> \r</p>\n<p class="bodytext"> </p>'
+    },
+    urlCompanyLogo: {
+      _text: 'https://career.axelspringer.com/fileadmin/bilder/importiert/import_logo_020700020_1_de.png'
+    },
+    titleTasks: {
+      _cdata: 'So kannst Du bei uns viel bewegen'
+    },
+    htmlTasks: {
+      _cdata: '<ul><li>Bring Deine Superkräfte bei der Lösung von komplexen Herausforderungen zum Vorschein und schreibe qualitativ hochwertigen Code als Teil unseres <strong>agilen Teams</strong></li> <li>Wir bauen die Zukunft von Axel Springer zusammen mit Dir und glaube uns, es wird fantastisch!</li></ul><p class="bodytext">Du hilfst uns dabei, unseren <strong>tech stack</strong> <strong>up-to-date</strong> zu halten und beteiligst Dich aktiv an unserer <strong>open source community</strong></p>'
+    },
+    titleProfile: {
+      _cdata: 'Warum wir Dich lieben werden'
+    },
+    htmlProfile: {
+      _cdata: '<ul><li>Du bist souverän im Umgang mit den folgenden Backend Technologien: <strong>Java8, Spring</strong>, dazu eine Prise <strong>AngularJS </strong>&amp;<strong> React</strong>; wir sind aber auch offen für Neues, wie z.B. <strong>Golang/Scala</strong></li> <li>Und wenn Dich <strong>RabbitMQ</strong> nicht nur an Alice im Wunderland erinnert, bist Du hier auch ganz richtig</li> <li>Du weisst, dass <strong>ElasticSearch</strong> nichts mit Gummitwist zu tun hat und bist ein Fan von Suchtechnologien</li> <li><strong>Heroku</strong> und <strong>Amazon AWS</strong> sind Dir in Fleisch und Blut übergegangen und <strong>Data Ingestion Pipelines</strong> machen Dir keine Angst</li> <li>Du kannst mit Mensch &amp; Maschine gleichermaßen gut umgehen</li></ul>'
+    },
+    titleOffer: {
+      _cdata: 'Warum Du uns lieben wirst'
+    },
+    htmlOffer: {
+      _cdata: '<ul><li>Du wirst mit dem „Best Team Ever“ arbeiten</li> <li><strong>Wir sind offen</strong> für neue <strong>Ideen, Methoden</strong> und - natürlich - <strong>Technologien</strong>. Unser Team arbeitet an Problemen, nicht an Tasks. Wir nutzen unsere Awesomeness, um anderen Teams und unseren Kunden zu helfen und einfach Hammer-Produkte zu stricken</li> <li>Wir nutzen <strong>Continuous Delivery/Deployment</strong> um alles in Schwung zu halten...</li></ul><p class="bodytext">Na, schon aufgeregt, Deinen Einfluss auf die Welt des Content wirken zu lassen? Warte nicht länger! Hau in die Tasten und meld Dich bei uns – wir können es kaum abwarten, mit Dir die Welt zu erobern.</p>'
+    },
+    titleContact: {
+      _cdata: 'Ihr Ansprechpartner'
+    },
+    htmlContact: {
+      _cdata: '<p class="bodytext">Fragen zu dieser Position (Referenznummer 020700020) beantwortet Dir gern: Hannes Witte, Telefon 030 2591 72221.\r</p>\n<p class="bodytext"> \r</p>\n<p class="bodytext"><strong>Hinweis an Personaldienstleister:</strong>\r</p>\n<p class="bodytext">Für diese Position nehmen wir und unsere Mitarbeiter/innen der Fachbereiche keine Profile von Personaldienstleistern entgegen. Unaufgeforderte Profilzusendungen können wir daher nicht berücksichtigen.\r</p>\n<p class="bodytext"> \r</p>\n<p class="bodytext"><strong>To all recruitment agencies:</strong>\r</p>\n<p class="bodytext">We, and our employees, do not accept unsolicited candidate profiles for this position. We will not be responsible for any unsolicited applications.</p>'
+    },
+    htmlInfoEqualRights: {
+      _cdata: '<p class="bodytext">Wir legen Wert auf Chancengleichheit und begrüßen die Bewerbung von Menschen mit Behinderung, deren Integration uns ein besonderes Anliegen ist.</p>'
+    },
+    timestampPostingStartDate: {
+      _text: '1522879200'
+    },
+    timestampPostingEndDate: {
+      _text: '2147483647'
+    },
+    timestampPostingChangedDate: {
+      _text: '1540366993'
+    }
+  },
+  {
+    _attributes: {
+      uid: '13998',
+      jobId: '30031',
+      jobNumber: '020700026'
+    },
+    title: {
+      _cdata: 'Software Engineer (w/m/d) aus Leidenschaft'
+    },
+    url: {
+      _cdata: 'https://career.axelspringer.com/job/software-engineer-w-m-d-aus-leidenschaft-berlin/'
+    },
+    urlApplicationUrl: {
+      _cdata: 'https://career.axelspringer.com/bewerbung/axel-springer/apply.html?jobId=P66FK026203F3VBQB8N68V771-30031&langCode=de_DE'
+    },
+    targetGroup: {
+      _attributes: [
+        Object
+      ],
+      _cdata: 'Fachkraft'
+    },
+    brand: {
+      _attributes: [
+        Object
+      ],
+      _cdata: 'Axel Springer Ideas Engineering GmbH'
+    },
+    location: {
+      _attributes: [
+        Object
+      ],
+      _cdata: 'Berlin'
+    },
+    otherLocation: {},
+    fieldOfActivity: {
+      _attributes: [
+        Object
+      ],
+      _cdata: 'IT'
+    },
+    fullTimePartTime: {
+      _attributes: [
+        Object
+      ],
+      _cdata: 'Vollzeit'
+    },
+    flagLeadershipResponsibility: {
+      _text: '0'
+    },
+    flagWorkExperience: {
+      _text: '1'
+    },
+    urlHeaderImage: {
+      _text: 'https://career.axelspringer.com/fileadmin/bilder/importiert/import_header_020700026_1_de.png'
+    },
+    htmlCompanyDescription: {
+      _cdata: '<p class="bodytext"><em>Die Axel Springer Ideas Engineering, eine 100%ige Tochter der Axel Springer SE, fokussiert sich auf die Entwicklung neuer Produkte, um zwei für den Konzern wichtige Ziele zu erreichen: Erstens das Eintauchen in die neuesten Technologie-Phänomene wie VR, AI, Chatbots, Big Data und Blockchain zum besseren Verständnis der sich immer schneller entwickelnden Märkte. Wir gestalten mit unserem Wissen den Konzern aktiv mit. Zweitens die Schaffung eines wirtschaftlichen Produkt-Inkubators für digitale innovative Produkte im Hinblick auf reale unternehmerische Herausforderungen aus der Axel Springer-Familie und darüber hinaus.</em>\r</p>\n<p class="bodytext"><em>Hinter unseren Produkten versteckt sich ein Haufen cooler Technologie und deshalb sind wir auf der Suche nach einem neuen Kollegen oder einer neuen Kollegin, der/die gemeinsam mit uns für unsere Produkte „brennt“ und die Mediennutzung von morgen gestalten will.</em></p>'
+    },
+    urlCompanyLogo: {
+      _text: 'https://career.axelspringer.com/fileadmin/bilder/importiert/import_logo_020700026_1_de.png'
+    },
+    titleTasks: {
+      _cdata: 'So kannst du bei uns viel bewegen'
+    },
+    htmlTasks: {
+      _cdata: '<ul><li>Bring deine Superkräfte bei der Lösung von komplexen Herausforderungen zum Vorschein und schreibe qualitativ hochwertigen Code</li> <li>Du hilfst uns dabei, unseren Tech Stack up-to-date zu halten und beteiligst dich aktiv an unserer Open Source Community</li></ul>'
+    },
+    titleProfile: {
+      _cdata: 'Warum wir dich lieben werden'
+    },
+    htmlProfile: {
+      _cdata: '<ul><li>Du bist souverän im Umgang mit der ein oder anderen Programmiersprache (deiner Wahl)</li> <li>Du bist wissensdurstig und willst neue Programmiersprachen und Technologien erlernen</li> <li>Du bist ein Fan von automatisierten Tests und Deployment (mit Docker und Kubernetes)</li> <li>Große Projekte in kleine, überschaubare Teilprojekte mit Microservices aufzuteilen ist für dich kein Neuland</li> <li>Du entwickelst bereits Software Full Stack, also vom Frontend über das Backend bis hin zur Persistenz oder du willst es bald sein</li> <li>Du hast unglaublich Spaß daran komplexe Probleme zu lösen und liebst es in einem Team zu arbeiten, dass deine Ambitionen teilt</li></ul>'
+    },
+    titleOffer: {
+      _cdata: 'Warum du uns lieben wirst'
+    },
+    htmlOffer: {
+      _cdata: '<ul><li>Du wirst mit dem „Best Team ever“ arbeiten</li> <li>Du bist involviert in alle Phasen des Software Engineering – von der Konzeption über Implementierung bis hin zum Testing und Deployment</li> <li>Du arbeitest in einem unabhängigen Team, um kundenorientierte Services und Anwendungen zu entwickeln</li> <li>Wir arbeiten agil mit Pair Programming, Code Reviews und Continuous Deployment</li> <li>Bei uns hast du eine steile Lernkurve gepaart mit einzigartiger Teamkultur und Freiräumen zur fachlichen und persönlichen Weiterentwicklung. Bei uns erhältst du die Chance, deine Fähigkeiten zu entfalten und Neue zu erwerben</li> <li>Es geht noch weiter: Du hast zudem flexible Arbeitszeiten und du bekommst eine überdurchschnittliche Anzahl an Urlaubstagen, kostenloser Getränke und gesundem Obst. Zur Standardausstattung gehören außerdem eine IT-Ausstattung deiner Wahl inklusive Telefon und allerlei Tech-Spielzeug, um den Kopf kurz frei zu bekommen</li></ul><p class="bodytext">Hau in die Tasten und melde dich bei uns – wir können es kaum abwarten, mit dir die digitale Welt zu erobern.</p>'
+    },
+    titleContact: {
+      _cdata: 'Fragen zur Position / Dein Ansprechpartner'
+    },
+    htmlContact: {
+      _cdata: '<p class="bodytext">Solltest Du Fragen haben, findest Du <span style="text-decoration: underline;"><a href="https://career.axelspringer.com/de/faq/" target="_blank">hier</a></span> erste Antworten.<br />Dein Ansprechpartner zu dieser Position (Referenznummer 020700026) ist: Hannes Witte, Telefon 030 2591 72221.</p>'
+    },
+    htmlInfoEqualRights: {
+      _cdata: '<p class="bodytext">Wir legen Wert auf Chancengleichheit und begrüßen die Bewerbung von Menschen mit Behinderung, deren Integration uns ein besonderes Anliegen ist.</p>'
+    },
+    timestampPostingStartDate: {
+      _text: '1526421600'
+    },
+    timestampPostingEndDate: {
+      _text: '2147483647'
+    },
+    timestampPostingChangedDate: {
+      _text: '1540367041'
+    }
+  },
+  {
+    _attributes: {
+      uid: '13243',
+      jobId: '39354',
+      jobNumber: '020700028'
+    },
+    title: {
+      _cdata: 'Platform Engineer / DevOps (f/m/d)'
+    },
+    url: {
+      _cdata: 'https://career.axelspringer.com/job/platform-engineer-devops-f-m-d-berlin-1/'
+    },
+    urlApplicationUrl: {
+      _cdata: 'https://career.axelspringer.com/bewerbung/axel-springer/apply.html?jobId=P66FK026203F3VBQB8N68V771-39354&langCode=de_DE'
+    },
+    targetGroup: {
+      _attributes: [
+        Object
+      ],
+      _cdata: 'Fachkraft'
+    },
+    brand: {
+      _attributes: [
+        Object
+      ],
+      _cdata: 'Axel Springer Ideas Engineering GmbH'
+    },
+    location: {
+      _attributes: [
+        Object
+      ],
+      _cdata: 'Berlin'
+    },
+    otherLocation: {},
+    fieldOfActivity: {
+      _attributes: [
+        Object
+      ],
+      _cdata: 'IT'
+    },
+    fullTimePartTime: {
+      _attributes: [
+        Object
+      ],
+      _cdata: 'Vollzeit'
+    },
+    flagLeadershipResponsibility: {
+      _text: '0'
+    },
+    flagWorkExperience: {
+      _text: '1'
+    },
+    urlHeaderImage: {
+      _text: 'https://career.axelspringer.com/fileadmin/bilder/importiert/import_header_020700028_1_de.png'
+    },
+    htmlCompanyDescription: {
+      _cdata: '<p class="bodytext"><em>Es wird spannend. Und es wird kreativ. Große Ideen, große Projekte.</em><br /> <br /><em> Als 100-prozentige Tochter der Axel Springer SE entwickelt die AS IdeAS Engineering GmbH Ideen, Produkte und Software für journalistische Verlagsmodelle in der digitalen Welt. Wir finden kreative Lösungen und Konzepte. Dabei fokussieren wir uns auf modernste Technologien und arbeiten nach agilen Vorgehensmodellen.</em><br /> <br /><em> Wir wollen Ihr Fachwissen und Ihr Engagement, Ihre Kreativität und ehrliche Begeisterung für die Mobil- und Online Welt. Wir bieten das Gleiche und suchen Menschen, die über sich und gewöhnliche Jobprofile hinauswachsen.</em> <br /></p>'
+    },
+    urlCompanyLogo: {
+      _text: 'https://career.axelspringer.com/fileadmin/bilder/importiert/import_logo_020700028_1_de.png'
+    },
+    titleTasks: {
+      _cdata: 'So kannst du bei uns viel bewegen'
+    },
+    htmlTasks: {
+      _cdata: '<ul><li>Du unterstützt dein Team als treibende Kraft bei allen Ops-Themen und hilfst ihnen, das Produkt auf stabile Beine zu stellen</li> <li>Wann immer Fragen aufkommen, dann weißt Du, welche Technologie wann die richtige Wahl ist und was gerade State-of-the-Art ist</li> <li>Als Ansprechpartner bist Du die erste Wahl, wenn es um die Konzeption sowie Umsetzung der Infrastruktur geht</li> <li>Du arbeitest direkt im Team mit unseren Entwicklern und bist, bei Interesse auch direkt an der Entwicklung beteiligt</li> <li>Du hilfst uns dabei, unseren Tech Stack up-to-date zu halten und beteiligst dich aktiv am Austausch zu Best Practices und an unserer Open Source Community</li></ul>'
+    },
+    titleProfile: {
+      _cdata: 'Warum wir dich lieben werden'
+    },
+    htmlProfile: {
+      _cdata: '<ul><li>Als begeisterter Engineer kennst du dich mit Containern und deren Orchestrierung bestens aus #docker #terraform #kubernetes</li> <li>Dank deiner angeborenen Aversion gegen manuelle Ausführung von Aufgaben ist bei dir alles automatisiert #ansible #packer</li> <li>Deine Leidenschaft für die Erstellung von stabilen und ausfallsicheren System ist ansteckend #ha #zerodowntime</li> <li>Du hast keine Angst vor Continious Deployment und CI/CD ist selbstverständlich für dich #jenkins #gocd</li> <li>Manuelle Konfiguration? Mit dir gibt es nur echtes Configuration Management und automatische Provisionierung von Systemen</li> <li>Du lebst in der Cloud. Echtes Blech gehört für dich auf den Schrottplatz #aws #heroku</li> <li>Du verlässt gern ausgetretene Pfade, um neue Wege zu gehen.</li> <li>Wir legen Wert auf wirklich gute Arbeit. Du auch!</li></ul>'
+    },
+    titleOffer: {
+      _cdata: 'Warum Du uns lieben wirst'
+    },
+    htmlOffer: {
+      _cdata: '<ul><li>Du bist Teil vom Team und arbeitest gemeinsam mit dem „Best Team ever“ am gesamten System, dass die DevOps Kultur lebt</li> <li>Abwechslungsreiche Aufgaben mit modernen Technologien – Ansible, Terraform, Continuous Integration und Docker sind seit langem Standard bei uns</li> <li>Du bist gefragt bei der aktiven Mitgestaltung unserer agilen Prozesse und Auswahl der eingesetzten Technologien. Top-Down gibt’s bei uns nicht</li> <li>Bei uns hast du eine steile Lernkurve gepaart mit einzigartiger Teamkultur und Freiräumen zur fachlichen und persönlichen Weiterentwicklung. Du erhältst die Chance, deine Fähigkeiten zu entfalten und Neue zu erwerben</li> <li>Es geht noch weiter: Du hast zudem flexible, familienfreundliche Arbeitszeiten und du bekommst eine überdurchschnittliche Anzahl an Urlaubstagen. Dazu kostenlose Getränke und gesundes Obst. Zur Standardausstattung gehören außerdem eine IT-Ausstattung deiner Wahl inklusive Telefon und allerlei Tech-Spielzeug, um den Kopf kurz frei zu bekommen. Ein großzügiges Weiterbildungsbudget gibt es oben drauf</li></ul><p class="bodytext">Hau in die Tasten und melde dich bei uns – wir können es kaum abwarten, mit dir die digitale Welt zu erobern.</p>'
+    },
+    titleContact: {
+      _cdata: 'Fragen zur Position / Dein Ansprechpartner'
+    },
+    htmlContact: {
+      _cdata: '<p class="bodytext">Solltest du Fragen haben, findest du <span style="text-decoration: underline;"><a href="https://career.axelspringer.com/de/faq/" target="_blank">hier</a></span> erste Antworten.<br />Dein Ansprechpartner zu dieser Position (Referenznummer 020700028) ist: Hannes Witte, Telefon 030 2591 72221.</p>'
+    },
+    htmlInfoEqualRights: {
+      _cdata: '<p class="bodytext">Wir legen Wert auf Chancengleichheit und begrüßen die Bewerbung von Menschen mit Behinderung, deren Integration uns ein besonderes Anliegen ist.</p>'
+    },
+    timestampPostingStartDate: {
+      _text: '1531346400'
+    },
+    timestampPostingEndDate: {
+      _text: '2147483647'
+    },
+    timestampPostingChangedDate: {
+      _text: '1540367013'
+    }
+  }
+]

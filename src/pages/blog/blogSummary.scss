@@ -1,0 +1,56 @@
+@import '../../variables';
+
+.blogSummary {
+    padding: 65px 0; /* safe area for nav */
+    min-height: 100vw;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__heading {
+        margin: 100px 0 70px;
+        font-family: $font-fam-secondary;
+        font-size: 64px;
+        font-weight: 300;
+        align-self: flex-start;
+
+        @include device(tablet) {
+            font-size: 54px;
+            margin: 40px 0 70px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+        width: 80%;
+
+        @include device(tablet) {
+            flex-direction: column;
+            width: 90%;
+        }
+
+        > div {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .loader {
+            width: 100%;
+            height: 200px;
+            min-height: auto;
+        }
+    }
+
+}

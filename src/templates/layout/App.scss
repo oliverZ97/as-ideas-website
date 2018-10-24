@@ -1,0 +1,78 @@
+@import "./settings";
+@import "./../../variables";
+
+.app {
+
+}
+
+// BASE
+html {
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+
+  font-family: $font-fam-primary;
+
+  scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, p, ul {
+  margin: 0;
+}
+
+/**
+ * Scale images in responsive context, see:
+ * https://davidwalsh.name/image-max-width or 
+ * https://teamtreehouse.com/community/maxwidth-instead-of-width-css-property-using-images
+ */
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  > * {
+    width: 90%;
+    max-width: 1200px;
+  }
+}
+
+.sectionHeading {
+  margin: 0 0 65px;
+
+  font-size: 40px;
+  font-weight: 700;
+
+  align-self: stretch;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+* {
+  color: $font-col-primary;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 100px 0;
+}
