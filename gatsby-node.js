@@ -8,8 +8,6 @@ const {BlogService} = require('./src/services/BlogService.js');
 exports.onCreateNode = ({node, actions, getNode}) => {
   if (node.internal.type === `MarkdownRemark`) {
 
-    console.info("onCreateNode");
-
     let post = node.frontmatter;
     BlogService.enrich(post, node);
 

@@ -22,8 +22,6 @@ export default class MainNav extends React.Component {
   }
 
   render() {
-    let history = this.props.history;
-
     let mobileMenu;
     if (this.state.showMobileMenu) mobileMenu = <MobileMenu history={this.props.history} close={this.toggleMenu.bind(this)}/>;
 
@@ -31,23 +29,23 @@ export default class MainNav extends React.Component {
       <nav className={'mainNav' + (this.state.showMobileMenu ? ' mainNav--open' : '')}>
         <ul className='mainNav__list'>
           <li className='mainNav__item'>
-            <Link className='mainNav__link' to='#services' history={history}>
+            <Link className='mainNav__link' to='#services'>
               Services
             </Link>
           </li>
           <li className='mainNav__item'>
-            <Link className='mainNav__link' to='#portfolio' history={history}>
-              Portfolio
+            <Link className='mainNav__link' to='#culture'>
+              Culture
             </Link>
           </li>
           <li className='mainNav__item mainNav__item--logo'>
-            <Link className='mainNav__link' to='#home' history={history} onClick={this.state.showMobileMenu ? this.toggleMenu.bind(this) : null}>
+            <Link className='mainNav__link' to='#home' onClick={this.state.showMobileMenu ? this.toggleMenu.bind(this) : null}>
               <IdeasLogo/>
             </Link>
           </li>
           <li className='mainNav__item'>
-            <Link className='mainNav__link' to='#culture' history={history}>
-              Culture
+            <Link className='mainNav__link' to='/jobs'>
+              Jobs
             </Link>
           </li>
           <li className='mainNav__item'>
