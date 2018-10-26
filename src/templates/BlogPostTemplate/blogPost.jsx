@@ -74,7 +74,7 @@ class BlogPost extends React.Component {
             <meta property="og:type" content="website"/>
             <meta property="og:title" content={post.title}/>
             <meta property="og:description" content={TextService.trimTo256(post.summary)}/>
-            <meta property="og:image" content={post.url + post.titlePicture.base}/>
+            <meta property="og:image" content={post.permalink + post.titlePicture.base}/>
 
             <script type="text/javascript" src="//axelspringerideas-de.disqus.com/embed.js"/>
             <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"/>

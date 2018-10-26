@@ -50,7 +50,7 @@ export default class JobsView extends React.Component {
             </p>
           </div>
           <div className='jobsView__container--video centered'>
-            <VideoPlayer src='https://s3-eu-west-1.amazonaws.com/ideas-engineering-io/kennst-du-schon-tom-hd.mp4' thumbnail='/tom.png' playingHeight={'600px'}/>
+            <VideoPlayer src='https://s3-eu-west-1.amazonaws.com/ideas-engineering-io/kennst-du-schon-tom-hd.mp4' thumbnail={require("./tom.png")} playingHeight={'600px'}/>
           </div>
 
           <div className='jobsView__container--tiles centered'>
