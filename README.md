@@ -71,5 +71,5 @@ Now open your browser and enter ``localhost:8000/___graphql``.You will see a Gra
 
 ## Publishing to prod
 ```
-scp -r ./public/* ec2-user@ec2-18-184-76-12.eu-central-1.compute.amazonaws.com:/usr/share/nginx/html/
+scp -r ./public/* ec2-user@ec2-18-184-76-12.eu-central-1.compute.amazonaws.com:/usr/share/nginx/apps/
 ```

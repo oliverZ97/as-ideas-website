@@ -116,6 +116,7 @@ function createBlogPosts(boundActionCreators, graphql) {
 
     const blogPostTemplate = path.resolve("src/templates/BlogPostTemplate/blogPost.jsx");
     const allPosts = result.data.allMarkdownRemark.edges.map(edge => edge.node.frontmatter);
+
     result.data.allMarkdownRemark.edges.forEach(({node}) => {
       createSingleBlogPost(createPage, node, blogPostTemplate, allPosts);
     });
@@ -130,12 +131,15 @@ function createSingleBlogPost(createPage, node, blogPostTemplate, allPosts) {
 
   // Data passed to context is available
   // in page queries as GraphQL variables.
-  createPage({
-    path: path,
-    component: blogPostTemplate,
-    context: {
-      slug: node.fields.slug,
-      nextPosts: BlogService.nextTwoPosts(node.frontmatter, allPosts)
-    },
-  })
+  if (!node.frontmatter.draft) {
+    createPage({
+      path: path,
+      component: blogPostTemplate,
+      context: {
+        slug: node.fields.slug,
+        nextPosts: BlogService.nextTwoPosts(node.frontmatter, allPosts)
+      },
+    })
+  }
+
 }
