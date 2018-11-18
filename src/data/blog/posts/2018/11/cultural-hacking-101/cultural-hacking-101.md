@@ -37,7 +37,9 @@ Und das sind hier sind unsere Erfahrungen, aus denen ihr vielleicht lernen könn
 * Kulturelle Wirkung / Cultural Impact: Wie stark wirkt sich dieser Hack auf die Kultur aus. Ist er nur ein weiterer kleiner Baustein? Oder kann er direkt die ganze Organisation umkrempeln?
 * Begeisterungsfähigkeit / Awesomness: Wie einfach begeistert man damit Leute? Wie originell und wie genial ist dieser Hack? Oder ist er zwar hilfreich, reizt aber wenig vom Hocker?
 
+
 # ![prototypen](ideas-prototypen.jpg)
+
 
 In den nächsten Tagen wird deswegen jeden zweiten Tag ein Cultural Hack veröffentlicht, hier habt ihr bereits die Liste:
 
