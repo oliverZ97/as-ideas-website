@@ -65,7 +65,10 @@ export default class BlogSummary extends React.Component {
 export const query = graphql`
   query BlogQuery {
     blog: allMarkdownRemark(
-     filter: { fileAbsolutePath: {regex : "\\/blog/"} },
+     filter: { 
+       fileAbsolutePath: {regex : "\\/blog/"}, 
+       frontmatter: { draft: { ne: true }}
+     },
      sort: { order: ASC, fields: [fileAbsolutePath] },
     ) {
       edges {
