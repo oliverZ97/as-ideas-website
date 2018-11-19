@@ -13,7 +13,7 @@ Als Axel Springer Ideas Engineering wurden wir im Jahr 2013 als "agile Firma fü
 
 Und die Antwort: Mit der richtigen Kultur. Kennt ihr die Aussage, "Kultur verspeist Strategie zum Frühstück”? Sie stammt angeblich von Peter Drucker. Er meint damit, dass die Kultur einer Organisation einen deutlich stärkeren Einfluss hat, als es Vision, Werte, Ziele, Strategien, Projekte, etc. je haben werden. In der heutigen "New Work" Arbeitswelt sprechen alle über Kultur. Alle wollen eine großartige Kultur! Nur leider kennen wir vor allem die Arbeitswelt der Vergangenheit. Diese haben wir erlebt, verinnerlicht, die kennen wir. Unsere Methoden und Herangehensweisen auf der Arbeit, unsere Verhaltensweise, sind davon geprägt. Das macht Dinge wie Verantwortung übernehmen und Selbstorganisation nicht einfacher - denn hier kennen wir weder die Werkzeuge, noch haben Übung darin.
 
-Gerade in Zeiten, in denen [intrinsische Motivation]() immer wichtiger wird, wo wir bereits von [Management 3.0]() sprechen und mit dem [Warum]() anfangen, ist die Aussage von Drucker so wahr wie noch nie. Kultur ist deswegen auch kein Selbstzweck! Sie ist heute der entscheidende Faktor für eine nachhaltige und erfolgreiche Firma. Sie beeinflußt nicht einfach nur die Verhaltensweise von Mitarbeitern, sondern auch deren Haltung. Die erste Frage bleibt aber: Was ist denn die Kultur einer Organisation eigentlich? Und die zweite Frage ist: Wie beeinfluße ich diese?
+Gerade in Zeiten, in denen [intrinsische Motivation](https://www.amazon.de/Drive-Surprising-Truth-About-Motivates/dp/1594484805/) immer wichtiger wird, wo wir bereits von [Management 3.0](https://www.amazon.de/Management-3-0-Developers-Developing-Addison-Wesley/dp/0321712471/) sprechen und mit dem [Warum](https://www.amazon.de/Start-Why-Leaders-Inspire-Everyone/dp/1591846447/) anfangen, ist die Aussage von Drucker so wahr wie noch nie. Kultur ist deswegen auch kein Selbstzweck! Sie ist heute der entscheidende Faktor für eine nachhaltige und erfolgreiche Firma. Sie beeinflußt nicht einfach nur die Verhaltensweise von Mitarbeitern, sondern auch deren Haltung. Die erste Frage bleibt aber: Was ist denn die Kultur einer Organisation eigentlich? Und die zweite Frage ist: Wie beeinfluße ich diese?
 
 # Kultur - das Gedächtnis der Organisation
 
@@ -31,15 +31,17 @@ Aber was sind jetzt "Cultural Hacks”? Als einen Hack bezeichnet man sehr grob 
 
 ![Rating](rating-intro.png)
 
-Und das sind hier sind unsere Erfahrungen, aus denen ihr vielleicht lernen könnt. Ein paar unserer Cultural Hacks, die ich gut fand. Dabei wir nicht nur der Hack selbst beschrieben, sonder auch *warum* dieser Hack unsere Kultur positiv beeinflußt hat und *wie* er durchgeführt wird. Um es euch einfach zu machen, wird jeder der Hacks bewertet, nach Punkte, wobei 5 das Maximum ist:
+Und das sind hier sind unsere Erfahrungen, aus denen ihr vielleicht lernen könnt. Ein paar unserer Cultural Hacks, die ich gut fand. Dabei wird nicht nur der Hack selbst beschrieben, sonder auch *warum* dieser Hack unsere Kultur positiv beeinflußt hat und *wie* er durchgeführt wird. Um es euch einfach zu machen, wird jeder der Hacks bewertet, nach Punkte, wobei 5 das Maximum ist:
 
 * Durchführbarkeit / Feasibility: Wie einfach kann man das einführen? Würde dieser Hack auch in einer Anwaltskanzlei möglich sein? Oder muss man bereits eine sehr fortgeschrittene Kultur haben? Braucht man viel Vorbereitung? Oder kann man schnell und einfach loslegen?
 * Kulturelle Wirkung / Cultural Impact: Wie stark wirkt sich dieser Hack auf die Kultur aus. Ist er nur ein weiterer kleiner Baustein? Oder kann er direkt die ganze Organisation umkrempeln?
-* Begeisterungsfähigkeit / Awesomness: Wie einfach begeistert man damit Leute? Wie originell und wie genial ist dieser Hack? Oder ist er zwar hilfreich, reizt aber wenig vom Hocker?
+* Begeisterungsfähigkeit / Awesomeness: Wie einfach begeistert man damit Leute? Wie originell und wie genial ist dieser Hack? Oder ist er zwar hilfreich, reizt aber wenig vom Hocker?
 
 
 # ![prototypen](ideas-prototypen.jpg)
 
+
+## Unsere Cultural Hacks
 
 In den nächsten Tagen wird deswegen jeden zweiten Tag ein Cultural Hack veröffentlicht, hier habt ihr bereits die Liste:
 
