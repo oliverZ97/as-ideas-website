@@ -13,7 +13,10 @@ class OneBlogPostContainer extends React.Component {
   render() {
     let post = this.props.post;
 
-    let imagePath = post.titlePicture.childImageSharp ? post.titlePicture.childImageSharp.resize.src : post.path + "/" + post.titlePicture.base;
+    let imagePath = "";
+    if (post.titlePicture) {
+      imagePath = post.titlePicture.childImageSharp ? post.titlePicture.childImageSharp.resize.src : post.path + "/" + post.titlePicture.base;
+    }
     if (post) {
       return (
         <li className="blogSummary__item" key={post.path}>
