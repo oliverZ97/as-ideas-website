@@ -120,7 +120,9 @@ export default BlogPost
 
 export const query = graphql`
   query OneBlogPost ($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(
+      fields: { slug: { eq: $slug } }
+    ) {
       html
         frontmatter {
           date

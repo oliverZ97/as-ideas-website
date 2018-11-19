@@ -82,6 +82,7 @@ function createBlogPosts(boundActionCreators, graphql) {
   const {createPage} = boundActionCreators;
   let graphqlPromise = graphql(`{
       allMarkdownRemark(
+        filter: { frontmatter: { draft: { ne: true }} }
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
       ) {
@@ -115,7 +116,9 @@ function createBlogPosts(boundActionCreators, graphql) {
     }
 
     const blogPostTemplate = path.resolve("src/templates/BlogPostTemplate/blogPost.jsx");
-    const allPosts = result.data.allMarkdownRemark.edges.map(edge => edge.node.frontmatter);
+    const allPosts = result.data.allMarkdownRemark.edges
+      .map(edge => edge.node.frontmatter)
+      .filter(post => !post.draft);
 
     result.data.allMarkdownRemark.edges.forEach(({node}) => {
       createSingleBlogPost(createPage, node, blogPostTemplate, allPosts);
@@ -131,15 +134,13 @@ function createSingleBlogPost(createPage, node, blogPostTemplate, allPosts) {
 
   // Data passed to context is available
   // in page queries as GraphQL variables.
-  if (!node.frontmatter.draft) {
-    createPage({
-      path: path,
-      component: blogPostTemplate,
-      context: {
-        slug: node.fields.slug,
-        nextPosts: BlogService.nextTwoPosts(node.frontmatter, allPosts)
-      },
-    })
-  }
-
+  // FIXME Check if DATE fits with the PATH, this needs to be the same!
+  createPage({
+    path: path,
+    component: blogPostTemplate,
+    context: {
+      slug: node.fields.slug,
+      nextPosts: BlogService.nextTwoPosts(node.frontmatter, allPosts)
+    },
+  })
 }

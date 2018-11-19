@@ -2,8 +2,10 @@
 date: "2018-11-15T09:30:00.000Z"
 title: "Hacksite"
 titlePicture: "01.jpg"
-summary: ""
+summary: "Schlagworte wie Workhacks, New Work und work-life-balance sind in aller Munde. Mit dem Ziel neue, das Gewohnte durchbrechende Ansätze für kreatives Arbeiten zu finden, hat das Team Enterprise der AS Ideas Engineering GmbH ein Experiment gewagt und ist eine Reise zu sich selbst angetreten."
+author: "Marco Böttcher"
 authorEmail: "marco.boettcher@asideas.de"
+draft: false
 ---
 
 <style type="text/css">
@@ -83,7 +85,7 @@ möglich sein Werte zu kreieren, welche im normalen Alltag wohl nicht umsetzbar 
 </aside>
 
 ## Der lange Weg zum Ziel
-Abfahrt war an einem sonnigen blogChart__ok blogChartBulltobermittwoch sehr früh direkt vor dem Büro. In einem gemieteten Van fuhr das gesamte Team in Richtung Mecklenburg-Vorpommern. Das gesamte Team? Nein, zwei Teammitglieder nutzten die wohl letzten schönen Tage des Jahres um ihren Motorrädern noch ein letztes Mal die Sporen zu geben. Angekommen in der traumhaften Unterkunft [direkt am Neuwarper See](https://goo.gl/maps/qkVH4s6D2iD2) und der polnischen Grenze, ging es zunächst darum die Verpflegung für die kommenden Tage zu sichern. 
+Abfahrt war an einem sonnigen Mittwoch sehr früh direkt vor dem Büro. In einem gemieteten Van fuhr das gesamte Team in Richtung Mecklenburg-Vorpommern. Das gesamte Team? Nein, zwei Teammitglieder nutzten die wohl letzten schönen Tage des Jahres um ihren Motorrädern noch ein letztes Mal die Sporen zu geben. Angekommen in der traumhaften Unterkunft [direkt am Neuwarper See](https://goo.gl/maps/qkVH4s6D2iD2) und der polnischen Grenze, ging es zunächst darum die Verpflegung für die kommenden Tage zu sichern. 
 Als das Team vom Einkaufen zurückkam, fand es die Unterkunft im Belagerungszustand vor. Ein gigantischer Schwarm Marienkäfer ([Coccinellidae](https://de.wikipedia.org/wiki/Marienk%C3%A4fer)) hatte nahezu jede freie Gebäudefläche in Beschlag genommen und war leider auch zu Hauf durch nicht komplett geschlossene Fenster in die Räume gelangt. Nach dem gewonnenen Kampf gegen den Schwarm konnte das Team beim gemeinsamen Kochen schon eine deutlich tiefere Bindung aufbauen. 
 
 # ![2](02.jpg)
