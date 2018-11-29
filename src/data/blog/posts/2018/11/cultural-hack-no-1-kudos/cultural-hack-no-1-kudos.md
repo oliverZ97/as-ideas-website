@@ -2,14 +2,14 @@
 date: "2018-11-26T12:00:00.000Z"
 title: "Cultural Hack #1: Die Kudos-Box aus dem Schuhkarton"
 titlePicture: "cover.jpg"
-summary: "Positives Feedback ist um ein vielfaches effektiver als Kritik, selbst bei sehr konstruktiver Kritik. Trotzdem tun wir uns nicht nur mit dem Geben von Feedback schwer, sondern insbesondere mit Lob. Einfach mal Danke sagen und Anerkenung ausdrücken. Noch schwerer wird es bei der Selbstorganisation: Wer ist eigentlich für Feedback zuständig? Sicherlich nicht mehr der Chef."
+summary: "Positives Feedback ist um ein vielfaches effektiver als Kritik, selbst bei sehr konstruktiver Kritik. Trotzdem tun wir uns nicht nur mit dem Geben von Feedback schwer, sondern insbesondere mit Lob. Einfach mal Danke sagen und Anerkennung ausdrücken. Noch schwerer wird es bei der Selbstorganisation: Wer ist eigentlich für Feedback zuständig? Sicherlich nicht mehr der Chef."
 author: "Sebastian Waschnick"
 authorEmail: "sebastian.waschnick@asideas.de"
 ---
 
 # ![Cover](cover.jpg)
 
-Positives Feedback ist um ein vielfaches effektiver als Kritik, selbst bei sehr konstruktiver Kritik. Trotzdem tun wir uns nicht nur mit dem Geben von Feedback schwer, sondern insbesondere mit Lob. Einfach mal Danke sagen und Anerkenung ausdrücken. Noch schwerer wird es bei der Selbstorganisation: Wer ist eigentlich für Feedback zuständig? Sicherlich nicht mehr der Chef.
+Positives Feedback ist um ein vielfaches effektiver als Kritik, selbst bei sehr konstruktiver Kritik. Trotzdem tun wir uns nicht nur mit dem Geben von Feedback schwer, sondern insbesondere mit Lob. Einfach mal Danke sagen und Anerkennung ausdrücken. Noch schwerer wird es bei der Selbstorganisation: Wer ist eigentlich für Feedback zuständig? Sicherlich nicht mehr der Chef.
 
 Deswegen kommt hier unser Cultural Hack #1! [Da man Kultur nicht managen kann](https://axelspringerideas.de/blog/2018/11/cultural-hacking-101/), braucht man manchmal ein paar Hacks, um an der eigenen Kultur zu arbeiten. Deswegen diese Serie - im [ersten Post](https://axelspringerideas.de/blog/2018/11/cultural-hacking-101/) erfahrt ihr nicht nur, was Kultur ist, sondern auch wie man sie beeinflußen kann. Und in diesem Post geht es dann ganz konkret um den ersten Hack.
 
