@@ -34,7 +34,7 @@ function compressImages() {
       while ((item = this.read())) {
         let extension = getFileExtensionFromPath(item.path);
         if (["png"].includes(extension)) {
-          compressPng(item.path);
+          // FIXME does not override compressPng(item.path);
         }
       }
     })
