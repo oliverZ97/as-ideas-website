@@ -2,6 +2,7 @@ node_modules/
 coverage/
 public/
 build/
+log/
 
 # IntelliJ
 .idea/

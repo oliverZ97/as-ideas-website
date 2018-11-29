@@ -74,15 +74,14 @@ function processImage(path) {
   }
 }
 
+// cf. https://www.npmjs.com/package/compress-images
 function compressPng(path) {
-  // console.info(`Compress PNG from '${path}' to '${removeFileNameFromPath(path)}'`);
   let pathWithoutFileName = removeFileNameFromPath(path);
   compress_images(path, pathWithoutFileName,
-    // compress_images(path, removeFileNameFromPath(path),
     {compress_force: true, statistic: false, autoupdate: true}, false,
     {jpg: {engine: false, command: false}},
     // {png: {engine: 'optipng', command: false}},
-    {png: {engine: 'pngquant', command: ['--quality=20-50']}},
+    {png: {engine: 'pngquant', command: ['--quality=20-50 --ext=.png2 --force']}},
     {svg: {engine: false, command: false}},
     {gif: {engine: false, command: false}},
     (err) => {

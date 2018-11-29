@@ -1,6 +1,6 @@
 ---
 date: "2018-11-30T12:00:00.000Z"
-title: "Cultural Hack #2: Und wie geht's uns denn heute? Digitaler Niko-niko Kalender "
+title: "Cultural Hack #2: Und wie geht's uns denn heute? Digitaler Niko-niko Kalender"
 titlePicture: "cover.png"
 summary: "Zufriedene Mitarbeiter sind eine der Säulen von selbstorganisiertem Arbeiten. Und die Stimmung und Probleme der Mitarbeiter muss man daher sichtbar machen. Sichtbarkeit ist enorm wichtig, gerade bei flachen Hierarchien. Nicht nur um rechtzeitig zu reagieren, sondern um eine Kultur von Offenheit und Vertrauen zu schaffen. Aber wie mache ich die Stimmung sichtbar?"
 author: "Sebastian Waschnick"
@@ -17,7 +17,7 @@ Deswegen kommt hier unser Cultural Hack #2! [Da man Kultur nicht managen kann](h
 
 Abhilfe schafft ein Niko-Niko Kalender. Und wo kommt's her? Natürlich aus Japan, dem Land des Toyota Production Systems. Das japanische Wort "niko" meint etwa "lächeln". Wenn man dem typischen wiederholen von Wörtern in der japanischen Sprache folgt, so bedeutet "niko-niko" grob "smiley" (also ein Symbol eines lächelnden Gesichtes). Oft wird es auch einfach als "Stimmungsboard" bzw. "mood board" bezeichnet. [Akinori Sakatahat hat 2006 in diesem Artikel]( http://www.geocities.jp/nikonikocalendar/index_en.html) zum ersten Mal über diese Kalender geschrieben, aber noch in der analogen Form.
 
-Kurz und knapp: Es ist eine tägliche Mitarbeiter-Umfrage. Dazu eine wöchentliche Zusammenfassung. Das verhindert effektiv, dass die Stimmung am Tiefpunkt ist, bevor jemand reagiert. Und es schafft eine Kultur von Offenheit und Vertrauen: Es wird oft genug negative Kommentare geben, mit denen ich nicht einverstanden bin. Oder bei denen ich mich angesprochen fühle. Und das ist auch gut so: Denn nur was offen für alle ist, kann auch angegangen werden!
+Kurz und knapp: Es ist eine tägliche Mitarbeiter-Umfrage. Dazu eine wöchentliche Zusammenfassung. Das verhindert effektiv, dass die Stimmung am Tiefpunkt ist, bevor jemand reagiert. Und es schafft eine Kultur von Offenheit und Vertrauen. Denn nur so lernt man, dass man seine Meinung sagen kann, ohne dass es negative persönliche Konsequenzen hat. Nur wenn der rosa Elefant im Raum angesprochen wird, wird auch über ihn disktuiert. Es wird oft genug negative Kommentare geben, mit denen ich nicht einverstanden bin. Oder bei denen ich mich angesprochen fühle. Und das ist auch gut so: Denn nur was offen für alle ist, kann auch angegangen werden!
 
 # ![](teammood-03.png)
 
@@ -53,7 +53,7 @@ Auch ohne TeamMood.com gibt es genung Anbieter am Markt, die das anbieten. Der A
 
 ![rating](rating-cultural-hack-no-02-niko-niko.png)
 
-??? Aktuell gibt es bei uns sogar Zweifel, ob TeamMood bei uns noch zeitgemäß ist, oder wir nicht schon erwachsener geworden sind und es bei uns nicht mehr den ursprünglich angedachten Zweck erfüllt.
+Insgesamt ein toller, aber auch ziemlich brisanter Hack. Denn hier kommt vieles ans Licht. Nur wie geht man damit um? Aktuell gibt es bei uns sogar Zweifel, ob TeamMood bei uns noch zeitgemäß ist, oder wir nicht schon erwachsener geworden sind und es bei uns nicht mehr den ursprünglich angedachten Zweck erfüllt.
 
 Wie einfach ist das Durchführbar? Super einfach: Ihr meldet euch an, gebt die E-Mail Adressen aller Mitarbeiter in der Admin-Oberfläche ein und seid fertig. Noch einfach kann man mit etwas nicht beginnen! Trotzdem darf man gerade in Deutschland den Betriebsrat nicht vernachlässigen: Wir haben es unserem BR vorgestellt, eine Präsentation ausgearbeitet und es gab sehr schnell ein OK. Solange wir uns an die Rahmenbedingungen halten: Nicht über Personen schreiben und mindestens 5 Personen, damit es ausreichend anonym ist.
 
