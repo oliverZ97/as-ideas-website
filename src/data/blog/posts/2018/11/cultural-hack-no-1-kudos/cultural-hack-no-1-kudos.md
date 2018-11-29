@@ -61,7 +61,7 @@ Dieser Hack ist Teil einer kleinen Serie, in der ich über unsere Cultural Hacks
 
 * [Kultur kann man nicht managen: Cultural Hacks zum selber Ausprobieren](https://axelspringerideas.de/blog/2018/11/cultural-hacking-101/)
 * [Cultural Hack #1: Die Kudos-Box aus dem Schuhkarton](https://axelspringerideas.de/blog/2018/11/cultural-hack-no-1-kudos/)
-* Cultural Hack #2: Und wie geht's uns denn heute? Nico-Nico Kalender mit TeamMood.com
+* [Cultural Hack #2: Und wie geht's uns denn heute? Digitaler Niko-niko Kalender mit TeamMood.com](https://axelspringerideas.de/blog/2018/11/cultural-hack-no-2-niko-niko/)
 * Cultural Hack #3: We are Legion: Anonyme Suggestion-Box
 * Cultural Hack #4: Zeitmessung mit Lego: Was haben wir eigentlich die ganze Zeit gemacht?
 * Cultural Hack #5: Team Budgets aka "Wir wollen einen Billiard-Tisch"
