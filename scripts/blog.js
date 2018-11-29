@@ -29,8 +29,6 @@ process.on('unhandledRejection', err => {
       fse.writeFileSync('./src/blog-posts.json', JSON.stringify(allBlogPosts, null, 2));
       createRssFeed(allBlogPosts);
     });
-
-
 })();
 
 
