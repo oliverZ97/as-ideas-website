@@ -72,7 +72,15 @@ function removeServiceWorker() {
       .catch(function (error) {
         console.error(error);
       })
+    
+    navigator.serviceWorker.ready.then(registration => {
+      registration.unregister();
+    });
   }
+  caches.keys().then(function (names) {
+    for (let name of names)
+      caches.delete(name);
+  });
 }
 
 function enableSmoothScolling() {

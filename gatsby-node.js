@@ -1,6 +1,8 @@
 const path = require("path");
-const {createFilePath, createFileNode} = require(`gatsby-source-filesystem`);
+
 const fse = require('fs-extra');
+const {createFilePath, createFileNode} = require(`gatsby-source-filesystem`);
+
 const {JobService} = require('./src/services/JobService.js');
 const {BlogService} = require('./src/services/BlogService.js');
 
@@ -20,12 +22,16 @@ exports.onCreateNode = ({node, actions, getNode}) => {
     });
   } else if (node.internal.type === 'File') {
     if (node.sourceInstanceName === 'pages' && ["jpg", "png", "jpeg", "gif"].includes(node.extension)) {
-      let path = `./src/data/blog/posts/${node.relativePath}`;
-      let toPath = `./public/blog/${node.relativePath}`;
-      fse.copySync(path, toPath);
+      copyAndProcessImages(node);
     }
   }
 };
+
+function copyAndProcessImages(node) {
+  let path = `./src/data/blog/posts/${node.relativePath}`;
+  let toPath = `./public/blog/${node.relativePath}`;
+  fse.copySync(path, toPath);
+}
 
 exports.onPreBootstrap = (args) => {
   const {actions} = args;
