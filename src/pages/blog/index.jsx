@@ -81,11 +81,7 @@ export const query = graphql`
             name
             title
             titlePicture {
-              childImageSharp {
-                resize(width: 500) {
-                  src
-                }
-              }
+              base
             }
             summary
             author

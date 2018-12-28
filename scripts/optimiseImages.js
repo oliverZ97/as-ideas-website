@@ -1,5 +1,5 @@
 const Jimp = require('jimp');
-const compress_images = require('compress-images');
+// const compress_images = require('compress-images');
 const fse = require('fs-extra');
 const klaw = require('klaw');
 const seperator = require('path').sep;
@@ -44,6 +44,7 @@ function compressImages() {
 }
 
 function processImage(path) {
+  console.info("Processing Image:", path);
   let extension = getFileExtensionFromPath(path);
 
   // cf. https://www.npmjs.com/package/jimp
@@ -74,21 +75,21 @@ function processImage(path) {
   }
 }
 
-// cf. https://www.npmjs.com/package/compress-images
-function compressPng(path) {
-  let pathWithoutFileName = removeFileNameFromPath(path);
-  compress_images(path, pathWithoutFileName,
-    {compress_force: true, statistic: false, autoupdate: true}, false,
-    {jpg: {engine: false, command: false}},
-    // {png: {engine: 'optipng', command: false}},
-    {png: {engine: 'pngquant', command: ['--quality=20-50 --ext=.png2 --force']}},
-    {svg: {engine: false, command: false}},
-    {gif: {engine: false, command: false}},
-    (err) => {
-      err ? console.error(err) : null
-    }
-  );
-}
+// // cf. https://www.npmjs.com/package/compress-images
+// function compressPng(path) {
+//   let pathWithoutFileName = removeFileNameFromPath(path);
+//   compress_images(path, pathWithoutFileName,
+//     {compress_force: true, statistic: false, autoupdate: true}, false,
+//     {jpg: {engine: false, command: false}},
+//     // {png: {engine: 'optipng', command: false}},
+//     {png: {engine: 'pngquant', command: ['--quality=20-50 --ext=.png2 --force']}},
+//     {svg: {engine: false, command: false}},
+//     {gif: {engine: false, command: false}},
+//     (err) => {
+//       err ? console.error(err) : null
+//     }
+//   );
+// }
 
 function getFileExtensionFromPath(path) {
   return path.substr(path.lastIndexOf('.') + 1);

@@ -15,7 +15,7 @@ class OneBlogPostContainer extends React.Component {
 
     let imagePath = "";
     if (post.titlePicture) {
-      imagePath = post.titlePicture.childImageSharp ? post.titlePicture.childImageSharp.resize.src : post.path + "/" + post.titlePicture.base;
+      imagePath = post.path + "/" + post.titlePicture.base;
     }
     if (post) {
       return (
