@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "gatsby develop",
-    "build": "gatsby build && node scripts/optimiseImages.js",
+    "build": "gatsby build",
+    "optimize": "node scripts/optimiseImages.js",
     "serve": "gatsby serve",
     "heroku-postbuild": "npm run build"
   },
