@@ -44,7 +44,6 @@ function compressImages() {
 }
 
 function processImage(path) {
-  console.info("Processing Image:", path);
   let extension = getFileExtensionFromPath(path);
 
   // cf. https://www.npmjs.com/package/jimp
@@ -64,7 +63,10 @@ function processImage(path) {
           image.quality(70); // set JPEG quality
         }
         if (wasEdited) {
+          console.info("Processing Image:", path);
           image.write(path); // save
+        } else {
+          console.info("Skipping Image:", path);
         }
         return image;
 
