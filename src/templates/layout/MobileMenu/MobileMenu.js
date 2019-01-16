@@ -24,17 +24,17 @@ export default class MobileMenu extends React.Component {
       <section className='mobileMenu'>
         <ul className='mobileMenu__list'>
           <li className='mobileMenu__item'>
-            <Link className='mobileMenu__link' to='services' history={history} onClick={this.close.bind(this)}>
+            <Link className='mobileMenu__link' to='#home' history={history} onClick={this.close.bind(this)}>
+              Home
+            </Link>
+          </li>
+          <li className='mobileMenu__item'>
+            <Link className='mobileMenu__link' to='#services' history={history} onClick={this.close.bind(this)}>
               Services
             </Link>
           </li>
           <li className='mobileMenu__item'>
-            <Link className='mobileMenu__link' to='portfolio' history={history} onClick={this.close.bind(this)}>
-              Portfolio
-            </Link>
-          </li>
-          <li className='mobileMenu__item'>
-            <Link className='mobileMenu__link' to='culture' history={history} onClick={this.close.bind(this)}>
+            <Link className='mobileMenu__link' to='#culture' history={history} onClick={this.close.bind(this)}>
               Culture
             </Link>
           </li>

@@ -20,11 +20,11 @@ const Footer = () => (
         <Column className={'footer__column--sitemap'}>
           <h3>Sitemap</h3>
           <ul>
-            <li><Link className='footer__link' to='hero'>Home</Link></li>
-            <li><Link className='footer__link' to='services'>Services</Link></li>
-            <li><Link className='footer__link' to='portfolio'>Portfolio</Link></li>
+            <li><Link className='footer__link' to='#home'>Home</Link></li>
+            <li><Link className='footer__link' to='#services'>Services</Link></li>
+            <li><Link className='footer__link' to='#culture'>Culture</Link></li>
+            <li><Link className='footer__link' to='#jobs'>Jobs</Link></li>
             <li><Link className='footer__link' to='/blog'>Blog</Link></li>
-            <li><Link className='footer__link' to='culture'>Culture</Link></li>
           </ul>
         </Column>
         <Column>
