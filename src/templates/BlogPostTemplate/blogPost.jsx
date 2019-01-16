@@ -16,11 +16,46 @@ class BlogPost extends React.Component {
 
     this.initHighlight.bind(this);
     this.initComments.bind(this);
+    this.initGallery.bind(this);
   }
 
   componentDidMount() {
     this.initHighlight();
     this.initComments();
+    this.initGallery();
+  }
+
+  initGallery() {
+    if (!window.lightGallery) {
+      window.setTimeout(() => {
+        this.initGallery();
+      }, 500);
+    } else {
+      let galleryNodes = document.querySelectorAll(".gallery");
+
+      console.info("galleryNodes", galleryNodes);
+      for (let i = 0; i < galleryNodes.length; i++) {
+        let galleryNode = galleryNodes[i];
+        console.info("galleryNode", i, galleryNode);
+        let imageNodes = galleryNode.querySelectorAll("img");
+        let newHtml = "";
+        console.info("imageNodes", imageNodes);
+        imageNodes.forEach((imageNode) => {
+          newHtml += `<a href="${imageNode.src}" target="_blank">
+        <img class="gallery-img" src="${imageNode.src}">
+        <img class="zoom" src="//sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+    </a>`
+        });
+
+        galleryNode.innerHTML = newHtml;
+        lightGallery(galleryNode);
+
+        // FIXME: Debug code if you can't close a window
+        // galleryNode.addEventListener('onBeforeClose', function (e) {
+        //   alert('onBeforeClose');
+        // }, false);
+      }
+    }
   }
 
   initHighlight() {
@@ -77,16 +112,19 @@ class BlogPost extends React.Component {
             <meta property="og:image" content={post.permalink + post.titlePicture.base}/>
 
             <script type="text/javascript" src="//axelspringerideas-de.disqus.com/embed.js"/>
-            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"/>
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"/>
+
+            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"/>
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css"/>
+
+            {/* cf. https://github.com/sachinchoolur/lightgallery.js */}
+            <script src="//cdn.jsdelivr.net/npm/lightgallery.js@1.1.2/dist/js/lightgallery.min.js"/>
+            <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/lightgallery.js@1.1.2/dist/css/lightgallery.min.css"/>
+            <script src="//cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"/>
+            <script src="//cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"/>
+            <script src="//cdn.rawgit.com/sachinchoolur/lg-thumbnail.js/master/dist/lg-thumbnail.js"/>
+            <script src="//cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"/>
           </Helmet>
-          {/*{this.state.isLightboxVisible ?*/}
-          {/*<div className="blog-lightbox" onClick={this.hideLightbox.bind(this)}>*/}
-          {/*<div className="blog-lightbox-image-container">*/}
-          {/*<img id="blog-lightbox-image" alt="Bild aus der Gallerie" src={this.state.lightboxUrl}/>*/}
-          {/*</div>*/}
-          {/*</div>*/}
-          {/*: ''}*/}
+
           <div className="blog-post centered">
             <h3 className="blog-post-meta">
               {BlogService.getMonth(post.month)} {post.year} | {post.author}
