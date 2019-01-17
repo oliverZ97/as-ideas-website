@@ -60,7 +60,7 @@
         padding-left: 20px;
 
         margin-left: 36px;
-        margin-bottom: 12px;
+        margin-bottom: 16px;
       }
 
       li {
@@ -167,38 +167,13 @@
     }
   }
 
-  .blog-lightbox {
-    position: fixed;
-    z-index: 999;
-    background: rgba(0, 0, 0, 0.7);
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-
-    .blog-lightbox-image-container {
-      height: 100vh;
-      width: 100vw;
-      padding: 12px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-
-      img {
-        display: block;
-        margin: auto;
-        width: auto;
-        max-height: 100%;
-      }
-    }
-  }
-
   .gallery {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+
+    margin-top: 6px;
+    margin-bottom: 18px;
 
     a {
       display: flex;
