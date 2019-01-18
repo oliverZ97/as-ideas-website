@@ -11,17 +11,12 @@ import './JobDetailsView.scss'
 class JobDetailsView extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      job: props.pageContext.job
-    };
   }
 
   render() {
-    let job = this.state.job;
-
+    let job = this.props.pageContext.job;
     let randomImage = '/recruiting/' + (Math.floor(Math.random() * 6) + 1) + '.jpg'
     let summary = "You love to develop cool technology? We do aswell. Become part of our unique team now! Let´s shape together tomorrow´s media usage.";
-
 
     let socialBarData;
     if (job) {
@@ -54,17 +49,23 @@ class JobDetailsView extends React.Component {
             </div>
             <div>
               <div className='jobDetailsView__hero'>
-                <div className='image' style={{backgroundImage: `url(${randomImage})`}}></div>
+                <div className='image' style={{backgroundImage: `url(${randomImage})`}}/>
               </div>
-              <p className='jobDetailsView__content--heading'>{job.titleTasks._cdata}</p>
-              <p className='jobDetailsView__content' dangerouslySetInnerHTML={{__html: job.htmlTasks._cdata}}/>
-              <p className='jobDetailsView__content--heading'>{job.titleProfile._cdata}</p>
-              <p className='jobDetailsView__content' dangerouslySetInnerHTML={{__html: job.htmlProfile._cdata}}/>
-              <p className='jobDetailsView__content--heading'>{job.titleOffer._cdata}</p>
-              <p className='jobDetailsView__content' dangerouslySetInnerHTML={{__html: job.htmlOffer._cdata}}/>
-              <p className='jobDetailsView__content--heading'>{job.titleContact._cdata}</p>
-              <p className='jobDetailsView__content' dangerouslySetInnerHTML={{__html: job.htmlContact._cdata}}/>
-              <p className='jobDetailsView__content jobDetailsView__content--no-heading' dangerouslySetInnerHTML={{__html: job.htmlInfoEqualRights._cdata}}/>
+
+              {/* HINT: dangerouslySetInnerHTML not reconciling for <p> tags https://github.com/facebook/react/issues/5479 */}
+              <div className='jobDetailsView__content--heading job-task'>{job.titleTasks._cdata}</div>
+              <div className='jobDetailsView__content job-task' dangerouslySetInnerHTML={{__html: job.htmlTasks._cdata}}/>
+
+              <div className='jobDetailsView__content--heading'>{job.titleProfile._cdata}</div>
+              <div className='jobDetailsView__content' dangerouslySetInnerHTML={{__html: job.htmlProfile._cdata}}/>
+
+              <div className='jobDetailsView__content--heading'>{job.titleOffer._cdata}</div>
+              <div className='jobDetailsView__content' dangerouslySetInnerHTML={{__html: job.htmlOffer._cdata}}/>
+
+              <div className='jobDetailsView__content--heading'>{job.titleContact._cdata}</div>
+              <div className='jobDetailsView__content' dangerouslySetInnerHTML={{__html: job.htmlContact._cdata}}/>
+
+              <div className='jobDetailsView__content jobDetailsView__content--no-heading' dangerouslySetInnerHTML={{__html: job.htmlInfoEqualRights._cdata}}/>
 
               <div className='jobDetailsView__shareApply'>
                 <SocialBar object={socialBarData}/>
