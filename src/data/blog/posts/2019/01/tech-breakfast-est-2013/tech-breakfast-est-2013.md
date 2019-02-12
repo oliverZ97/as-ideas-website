@@ -22,7 +22,6 @@ Eine Brown-Bag-Session ist ganz klassisch eine Veranstaltung, bei der die Teilne
 
 Deswegen war auch das Anmelden von Vorträgen immer unkompliziert: Auf einer Wiki-Seite hat sich einfach jeder eingetragen, der etwa zu einem Thema vorstellen wollte. Das Ganze sah dann so aus:
 
-
 <div class="gallery">
 
 ![](tt_no_01.png)
@@ -101,7 +100,7 @@ Und so wurde aus dem "OpenTechBreakfast" nur noch das "TechBreakfast", vorrangig
 
 </div>
 
-## 2016: 
+## 2016: Professionalisierung als Verlust?
 
 Ab 2016 haben wir das TechBreakfast 24 Mal veranstaltet. Was wirklich spannend ist: Die Qualität der Vorträge hat sich geändert. Insgesamt sind die Vorträge länger (20-30min) und professioneller geworden. Einige der Vorträge waren so gut, die könnte man auf verschiedenen Konferenzen halten. Ein großartiges Jahr. Hier eine Auswahl der Themen:
 
@@ -118,6 +117,8 @@ Ab 2016 haben wir das TechBreakfast 24 Mal veranstaltet. Was wirklich spannend i
 * Pipeline-as-code mit Jenkinsfiles
 * What’s new on iOS, tvOS, watchOS, macOS
 
+Und der Nachteil? Die Einstiegshürde ist höher geworden. Niemand hält mehr Vorträge ohne Folien. Längere Vorträge bedeutet auch mehr Arbeit in der Vorbereitung. Gerade auch ab Ende 2016 merkt man, dass die Anzahl der Vortäge sinkt.
+
 <div class="gallery">
 
 ![](TechBreakfast-2016-04-13.jpg)
@@ -129,6 +130,8 @@ Ab 2016 haben wir das TechBreakfast 24 Mal veranstaltet. Was wirklich spannend i
 # 2017: Eine kleine Flaute
 
 Die hohe Qualität der Vorträge im Jahr 2016 hatte auch einen Nachteil: Es war schwieriger, Leute als Vortragende zu gewinnen. Die Messlatte war sehr hoch und damit auch die extra Arbeit für die Kollegen. Dazu war nach 4 Jahren Organisation auch etwas die Luft raus. Denn die Organisation erfordert viel Energie. Und so gab es das TechBreakfast nur noch monatlich, da zu viele Veranstaltungen ausgefallen sind, da es keine Vorträge gab. Dafür haben wir uns dann aber Unterstützung von unserem internen Personalbereich "People & Culture" geholt, die uns seitdem bei der Organisation unterstützen (und den Raum und das Frühstück zahlen ;) ).
+
+Der Anspruch war am Anfang spontane, kurze Vorträge, niedrigschwellig. Die aktuelle hohe Qualität sorgt also im Jahr 2017 für Schmerzen. Wie schafft man es also, dass man wieder mehr Energie in das Format bekommen?
 
 <div class="gallery">
 
