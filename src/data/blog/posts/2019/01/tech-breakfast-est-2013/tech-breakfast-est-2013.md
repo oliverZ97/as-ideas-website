@@ -2,10 +2,10 @@
 date: "2019-01-01T11:00:00.000Z"
 title: "Techbreakfast est. 2013: Eine Geschichte von vielen Croissants"
 titlePicture: "cover.jpg"
-summary: "Als wir 2013 gegründet wurden, hatten wir den Anspruch eine von Entwicklern geführte Firma zu sein. Technische Exzellenz und moderne Technologie hat für uns daher immer dazu gehört. Aber wie verankert man das in seiner Kultur und wie bleibt man offen für neue Technologie? Eine Antwort für uns war im 2013 die Gründung des 'OpenTechBreakfast' als Ort des offenen Austausches. Eine Brown-Bag-Session mal anders!"
+summary: "Als wir 2013 gegründet wurden, hatten wir den Anspruch eine von Entwicklern geführte Firma zu sein. Technische Exzellenz und moderne Technologie hat für uns daher immer dazu gehört. Aber wie verankert man das in seiner Kultur? Und wie bleibt man offen für neue Technologie? Eine Antwort für uns war im Jahr 2013 die Gründung des 'OpenTechBreakfast' als Ort des offenen Austausches. Eine Brown-Bag-Session mal anders!"
 author: "Sebastian Waschnick"
 authorEmail: "sebastian.waschnick@asideas.de"
-draft: true
+draft: false
 ---
 # ![](logo_old.jpg)
 # Techbreakfast est. 2013: Eine Geschichte von vielen Croissants
@@ -38,7 +38,7 @@ Insgesamt 12 Mal gab es das OpenTechBreakfast im Jahr 2013, einfach in einer Sof
 * 16.10.2013: Media Hackday Result Presentation, REM
 * 23.10.2013: Immutable Infrastructure, Provisioning with Chef
 * 30.10.2013: cssConf, Design Thinking, Rebell
-* 13.11.2013: Varnish and Varnish Day at Axel Springer HQ, ommunity of Practice @ideAS, How to get rid of expensive Backend developers 
+* 13.11.2013: Varnish and Varnish Day at Axel Springer HQ, Community of Practice @ideAS, How to get rid of expensive Backend developers 
 * 20.11.2013: Core Media Ops and Dev, ideAS Ventures - Was ist das?, Kommunikationstest
 * 27.11.2013: Digitales Mentoring, Technische Visionen bei Star Trek und deren Umsetzung
 * 04.12.2013: Calabash - Mobile Art, Wissensdynamic in cross functional teams
@@ -54,7 +54,7 @@ Insgesamt 12 Mal gab es das OpenTechBreakfast im Jahr 2013, einfach in einer Sof
 
 ## 2014: Und wöchentlich grüßt der Kaffee
 
-Ein großartiges Jahr für das TechBreakfast: Insgesamt 41 Mal fand es statt! Das war quasi wöchentlich, bis auf einige Ausfälle. Da auch die Anzahl der Zuschauer gewachsen ist, wurde es immer öfters in einen großen Raum im Axel Springer Unternehmerclub verlegt.
+Ein großartiges Jahr für das TechBreakfast: Insgesamt 41 Mal fand es statt! Das war quasi wöchentlich, bis auf einige Ausfälle. Da auch die Anzahl der Zuschauer gewachsen ist, wurde es immer öfters in einen großen Raum im Axel Springer Unternehmerclub verlegt. Dafür musste man zwar das Gebäude wechseln, aber dafür war es als neutraler Raum auch für alle besser zugänglich. Nicht nur für unsere Mitarbeiter, sondern auch für Kollegen von anderen Axel Springer Marken. 
 
 Hier eine kleine Auswahl der Themen: 
 * Why do we need "Frontend Devops"??
@@ -66,6 +66,7 @@ Hier eine kleine Auswahl der Themen:
 * Event Tracking mit Logstash + ElasticSearch + Kibana
 * Agile Metrics
 
+Die komplette Liste wird viel zu lang! Denn es waren über 100 Vorträge, die wir hatten. Auch ich hatte hier meinen ersten Vortrag in meiner professionellen Karriere: "IntelliJ IDEA Version 14 - Was ist neu?". Und der war genau so, wie ein guter Vortrag sein sollte: Ohne Folien.
 
 <div class="gallery">
 
@@ -76,26 +77,21 @@ Hier eine kleine Auswahl der Themen:
 
 ## 2015: Es wird größer: OpenTechBreakfast wird zum TechBreakfast
 
-
-16x OpenTechBreakfast und 14x TechBreakfast
-* Ein Bericht aus dem Silicon Valley
- * REST with RAML
-* Datadog 
-* Bericht von der FOSDEM
-
+Wir als Ideas Engineering wurden immer kleiner (und später auch manchmal wieder größer), da einige unserer Teams an erfolgreichen Projekten gearbeitet haben, die dann ausgegründet wurden. Das hatte auch zu Folge, dass nicht mehr nur Ideas Engineer das TechBreakfast organisieren konnte und wollte, sondern es eine Kooperation mit anderen Axel Springer Marken wurde.
 
 # ![](logo_new.jpg)
 
--> Switch to TechBreakfast
+Und so wurde aus dem "OpenTechBreakfast" nur noch das "TechBreakfast", vorrangig organisiert zusammen mit den Kollegen von Welt und Bild. Insgesamt gab es 30 Veranstaltungen im Jahr 2015 mit wieder zwei oder drei Vorträgen.
 
-https://docs.google.com/document/d/1HXd8Bfqnc4vLSOaq_McAFEQDaxTzhuta_PiLOSlihxs/edit
-
+* Ein Bericht aus dem Silicon Valley
+* REST with RAML
+* Datadog 
+* Bericht von der FOSDEM
 * JavaScript auf Server-Seite
 * Acceptance Test-Driven Development (ATDD
 * Web-Typographie
 * Master the Art of CSS Fu – Part 1: How to write CSS Selectors
 * How to become a better developer (without coding)
-
 
 <div class="gallery">
 
@@ -105,11 +101,22 @@ https://docs.google.com/document/d/1HXd8Bfqnc4vLSOaq_McAFEQDaxTzhuta_PiLOSlihxs/
 
 </div>
 
-## 2016
+## 2016: 
 
+Ab 2016 haben wir das TechBreakfast 24x veranstaltet. Was wirklich spannend ist: Die Qualität der Vorträge hat sich geändert. Insgesamt sind die Vorträge länger (20-30min) und professioneller geworden. Einige der Vorträge waren so gut, die könnte man auf verschiedenen Konferenzen halten. Ein großartiges Jahr. Hier eine Auswahl der Themen:
 
-21.12.2016: Varnish@BILD
-
+* Varnish@BILD
+* H/2 - die neue Kuh im Dorf
+* VIPER - Our Experience
+* Tmux(P) in Action
+* Kubernetes
+* Domain-Driven-Design
+* CSS-Grids
+* Kotlin
+* Optimierung einer Ente !!!
+* DevOpsCon Recap
+* Pipeline-as-code mit Jenkinsfiles
+* What’s new on iOS, tvOS, watchOS, macOS
 
 <div class="gallery">
 
@@ -119,9 +126,9 @@ https://docs.google.com/document/d/1HXd8Bfqnc4vLSOaq_McAFEQDaxTzhuta_PiLOSlihxs/
 
 </div>
 
-# 2017: Business as usual
+# 2017: Eine kleine Flaute
 
-
+Die hohe Qualität der Vorträge im Jahr 2016 hatte auch einen Nachteil: Es war schwieriger, Leute als Vortragende zu gewinnen. Die Messlatte war sehr hoch und damit auch die extra Arbeit für die Kollegen. Dazu war nach 4 Jahren Organisation auch etwas die Luft raus. Denn die Organisation erfordert viel Energie. Und so gab es das TechBreakfast nur noch monatlich, da zu viele Veranstaltungen ausgefallen sind, da es keine Vorträge gab. Dafür haben wir uns dann aber Unterstützung von unserem internen Personalbereich "People & Culture" geholt, die uns seitdem bei der Organisation unterstützen (und den Raum und das Frühstück zahlen ;) ).
 
 <div class="gallery">
 
@@ -129,15 +136,38 @@ https://docs.google.com/document/d/1HXd8Bfqnc4vLSOaq_McAFEQDaxTzhuta_PiLOSlihxs/
 
 </div>
 
+Insgesamt also ein eher schwächeres Jahr, dafür aber trotzdem mit einigen tollen Themen:
+
+* Swagger und was es davor gab
+* Leveling up your React-App: Manage your State with Redux
+* Lasttests mit Gatling
+* Live Templates in IntelliJ
+
 # 2018: NewInTech als zusätzliches Format
+
+Auch im Jahr 2018 gab es das TechBreakfast insgesamt 12x und damit monatlich. Dafür gibt es aber noch ein zusätzliches Format, das frischen Wind gebracht hat: NewInTech.
+
+Beim **NewInTech** geht es um Vorträge zu technischen Themen, aber für Leute, die neu in diesem Bereich sind. Also Tech erklärt für Non-Techies. Hier sind die Vorträge länger (30-60min) und die Menge an Zuschauern ist unglaublich. Es war immer richtig richtig voll.
+
+* Trends im Digital Advertising
+* AWS und die Cloud
+* Blockchain oder die langsamste Datenbank des Internets
+* Artificial Intelligence
+* Agile Demystified
+* Silicon Valley Reise
+* Cybercrime Mythen
 
 <div class="gallery">
 
 ![](TechBreakfast-2018.png)
 ![](TechBreakfast-2018-b.png)
+![](NewInTech.png)
 
 </div>
 
+# 2019: Status Quo?
+
+Auch in diesem Jahr werden wir das TechBreakfast mindestens monatlich veranstalten. In diesem Jahr wollen vorallem die Organisation ändern, damit wir mehr Vorträge bekommen und ein volles Programm haben. Zuschauer und Nachfrage gibt es weiterhin mehr als genug!
 
 
 

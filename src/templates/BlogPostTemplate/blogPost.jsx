@@ -75,6 +75,8 @@ class BlogPost extends React.Component {
   initComments() {
     const post = this.props.data.markdownRemark.frontmatter;
 
+    console.info("###", JSON.stringify(post));
+
     if (window.DISQUS) {
       window.disqus_config = function () {
         this.page.url = post.permalink;
