@@ -29,38 +29,38 @@ const PortfolioText = {
 };
 
 export default class Portfolio extends React.Component {
-    renderItem(dataItem) {
-        return (
-            <li className='portfolio__item'>
-                <img className='portfolio__image' src={dataItem.imageUrl} alt={dataItem.title}/>
-                <h3 className='portfolio__subtitle'>
-                    {dataItem.category}
-                </h3>
-                <h2 className='portfolio__title'>
-                    {dataItem.title}
-                </h2>
-                <p className='portfolio__description'>
-                    {dataItem.description}
-                </p>
-            </li>
-        )
-    }
+  renderItem(dataItem) {
+    return (
+      <li className='portfolio__item'>
+        <img className='portfolio__image' src={dataItem.imageUrl} alt={dataItem.title}/>
+        <h3 className='portfolio__subtitle'>
+          {dataItem.category}
+        </h3>
+        <h2 className='portfolio__title'>
+          {dataItem.title}
+        </h2>
+        <p className='portfolio__description'>
+          {dataItem.description}
+        </p>
+      </li>
+    )
+  }
 
-    render() {
-        return (
-            <section id='portfolio' className='portfolio centered'>
-                <div className='portfolio__container'>
-                    <h1 className='portfolio__heading sectionHeading'>
-                        A Selection of our Work
-                    </h1>
-                    <ul className='portfolio__list'>
-                        {this.renderItem(PortfolioText.newsfinder)}
-                        {this.renderItem(PortfolioText.contentExchange)}
-                        {this.renderItem(PortfolioText.singleSignOn)}
-                        {this.renderItem(PortfolioText.optInLayer)}
-                    </ul>
-                </div>
-            </section>
-        )
-    }
+  render() {
+    return (
+      <section id='portfolio' className='portfolio centered'>
+        <div className='portfolio__container'>
+          <h1 className='portfolio__heading sectionHeading'>
+            A Selection of our Work
+          </h1>
+          <ul className='portfolio__list'>
+            {this.renderItem(PortfolioText.newsfinder)}
+            {this.renderItem(PortfolioText.contentExchange)}
+            {this.renderItem(PortfolioText.singleSignOn)}
+            {this.renderItem(PortfolioText.optInLayer)}
+          </ul>
+        </div>
+      </section>
+    )
+  }
 }

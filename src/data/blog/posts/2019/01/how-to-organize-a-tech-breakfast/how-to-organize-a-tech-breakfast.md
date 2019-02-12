@@ -1,128 +1,65 @@
 ---
 date: "2019-01-01T11:00:00.000Z"
-title: "Techbreakfast est. 2013: Eine Geschichte von vielen Croissants"
+title: "How to organize a Brown Bag Session: Kostenlose Tipps nach 6 Jahren TechBreakfast"
 titlePicture: "cover.jpg"
-summary: "asdf"
+summary: "Eine 'Brown Bag Session' ist ganz klassisch eine Veranstaltung, bei der die Teilnehmer essen, während einer ein Thema vorstellt. Bei uns war dies halt ein Frühstück mit Kaffee, Brötchen und Croissants. Das machen wir seit 2013 und haben dabei auch das ein oder andere gelernt. Und wollen daher hier unsere Tipps teilen."
 author: "Sebastian Waschnick"
 authorEmail: "sebastian.waschnick@asideas.de"
-draft: true
+draft: false
 ---
+# How to organize a Brown Bag Session
 
-# Kostenloser Tipps nach 5 Jahren TechBreakfast:
+Eine "Brown Bag Session" ist ganz klassisch eine Veranstaltung, bei der die Teilnehmer essen, während einer ein Thema vorstellt. Bei uns war dies halt ein Frühstück mit Kaffee, Brötchen und Croissants. Super zeitig am morgen um 9 Uhr oder später auch erst um 9.30 Uhr. Die Vorträge sind dabei zwischen 10 bis 15 Minuten lang und lieber kürzer und formloser. Power Point? Erzähl einfach! Oder stell uns dein Projekt und deinen Code vor. Das war damals unser Grundgedanke: Den Austausch fördern. 
 
-* Verwenden Sie einen neutralen Raum
-* Machen Sie die Eingabe so einfach wie möglich.
-* Erinnere die Leute ständig daran.
-* Führen Sie einige eigene Gespräche, um zu inspirieren.
-* Überkommunikation
-* Hol dir kostenlosen Kaffee und Snacks.
+Und woher kommt der Name "Brown Bag Session"? Das Mittagessen mit "brauner Tasche" bezog sich ursprünglich auf die Praxis von amerikanischen Arbeitern, die ein Mittagessen in einer braunen Tasche von zu Hause mitbringen. Und das dann zu einer informellen Lernmöglichkeit am Arbeitsplatz essen.
 
-* Use a neutral space
-* Make the entry as easy as possible
-* Steadily remind people
-* Do some talks on your own to inspire
-* Overcommunicate
-* Get free coffee and snacks
+Wieso man das machen sollte? Nun, Lernen ist wichtig und wird in der heutigen Zeit immer wichtiger. Eine Brown Bag Session ist dabei sehr informell, die Einstiegshüde niedrig. Man kann also lernen, dabei netzwerken und sich mit Gleichgesinnten austauschen. Und der Vortragene teilt sein Wissen mit seine Kollegen. Wissensaustausch pur, in einer sicheren Umgebung, um seine Vortragsfähigkeiten zu verbessern.
 
-# Und was haben wir noch dabei gelernt?
+# ![](cover.jpg)
 
-**asdf**: asdf
+Was wir so seit 2013 alles gemacht haben und wie das so war, erfahrt ihr [hier in einem eigenen Blog-Post](https://axelspringerideas.de/blog/2019/01/tech-breakfast-est-2013/).
 
-Time Is Always the Issue
+# Kostenlose Tipps nach 6 Jahren TechBreakfast
 
+#### Einfach anfangen
+Am Anfang ist es egal, ob man eine Webseite hat, einen Newsletter oder sonst irgendwas. Wir haben einfach eine Auftaktveranstaltung gemacht und haben dort erklärt, was wir vorhaben und wie es funktioniert. Danach hatten wir eine Wiki/Confluence-Seite, auf der sich einfach jeder für einen Vortrag eintragen konnte. [Das sah dann so aus.](https://axelspringerideas.de/blog/2019/01/tech-breakfast-est-2013/) Einer unser Agile Coaches hat die Organisation des Essens übernommen. Also: Schnappt euch einfach einen hungrigen Kollegen, macht einen Termin, ladet alle ein und organisiert Frühstück.
 
+#### Verwendet einen offenen und neutralen Raum
+Besser: Eine neutrale Fläche. Die im Idealfall frei zugänglich und sehr offen ist. So trauen sich die Leute eher dazu zu kommen. Wir hatten am Anfang das TechBreakfast in unseren Räumen. Auch wenn wir im gleichen Gebäude sitzen, wie ein paar andere Marken von Axel Springer, die wir eingeladen hatten, so haben die sich nicht wirklich zu uns getraut. Die Überwindung in eine andere Firma zu gehen ist hoch. Es wurde viel besser besucht von anderen Axel Springer Marken, als wir einen neutralen Raum im Erdgeschoss genutzt haben. Der war mietbar (ja, kostet etwas mehr als eigene Räume), aber komplett verglast und für alle zugänglich.
 
-All das können Sie beim TechBreakfast haben! In entspannter Atmosphäre treffen sich interessierte Kolleginnen und Kollegen regelmäßig, um sich über neue Technologien auszutauschen.
+#### Macht die Teilnahme als Vortragener so einfach wie möglich
+Wie erwähnt: Wir haben mit einer Wiki/Confluence-Seite angefangen. Später war eine ein freie und von jedem editierbares Google Sheets Seite. Am Anfang wollten wir zu den Vorträgen noch eine Beschreibung, worum es geht. Aber auch die haben wir für die Newsletter und den Kalender irgendwann selbst geschrieben. So wird die Einstiegshürde für Vortragene einfach niedriger. 
 
-Das Tech Breakfast ist eine monatliche Veranstaltungsreihe, um sich in einer lockeren Atmosphäre zu Digital- und Technologiethemen auszutauschen. Das Ziel ist es, den Teilnehmern Zugang zu relevantem Wissen zu bieten und wertvolle Kontakte zu vermitteln. Im Mittelpunkt jeder Veranstaltung steht ein Vortrag eines Experten oder Technologieunternehmens.
+#### Überkommunikation!
+Kommunikation gibt es nicht genug. Überkommunikation ist angesagt. Wenn ihr denkt, ihr kommuniziert auf genug Kanälen, dann ist es noch mindestens ein Kanal zu wenig. Die Ankündigungen sollten per Newsletter, per Social Media, per Messenger und über (digitale) Poster kommen. Macht Werbung! Wir haben über Mailchimp eine Newsletter, bei der die Ankündigungen und alle Informationen immer 3 Tage vorher raus gehen. Dazu einen großen Fernseher im Vortragsraum der nach außen zeigt, bei dem immer die nächsten Veranstaltungen angekündigt werden.
 
-Sich mit Kollegen und Kolleginnen darüber austauschen, was Sie in der Welt der Technologie beschäftigt? In einer entspannten Atmosphäre? Das Ganze bei Kaffee und einem Frühstück?
+#### Macht ein paar eigene Vorträge um zu inspirieren
+Es ist schwierig eine Richtung für Themen vorzugeben. Eigentlich will man so viele unterschiedliche Vorträge wie möglich. Abei die Leute kommen nicht auf die Idee, über bestimmte Themen zu sprechen, wenn ihnen niemand dabei hilft. Irgendwer muss die Richtung vorgeben, was alles für Vorträge möglich sein. Ein Vortrag über Bücher? Über Konferenzen? Über eigene Projekte oder Heim-Projekte? Oder Features einer neuen Version? Macht es einfach vor! Helft den Leuten, auch Ideen für tolle Themen zu Vorträgen zu kommen. Außerdem sind eigene Vorträge sind als Backup, wenn jemand sehr plötzlich ausfällt, immer sehr praktisch.
 
+#### Erinnere die Leute ständig daran
+Du hast letzte Woche daran erinnert, dass diese Woche TechBreakfast ist? Daran denkt doch keiner mehr! Ihr braucht mehr Vorträge, damit das Programm gefühlt ist? Dann müsst ihr ständig die Leute daran erinnern, wie und wo sie ihre Themen einreichen können. Auch hier gilt: Überkommunikation. Eine Woche vorher, 3 Tage vorher und 1 Tag vorher. Glaubt mir: Die Leute vergessen die Termine sonst verdammt schnell.
 
-logo_new.jpg
-logo_old.jpg
+#### Kostenloser Kaffee und freie Snacks
+Egal welche Veranstaltung ihr macht, zu egal welcher Zeit: Ihr braucht kostenlosen und genug Kaffee. Wir hatten am Anfang auch Angst, dass Leute nur wegen dem Frühstück kommen und bei den Vorträgen wieder gehen. Diese Angst war total unbegründet! Wer kommt, der bleibt für die Vorträge. Das kostenlose Frühstück ist nur ein angenehmer Bonus.
 
-<div class="gallery">
+#### Zeit ist immer ein Problem
+Machen wir uns nichts vor: Neben der täglichen Arbeit noch einen Vortrag ausarbeiten dankt einem niemand. Und auch bei den Zuschauern ist Zeit ein knappes Gut: Sich eine Stunde vom Tag regelmäßig Zeit nehmen und zu einem Vortrag gehen macht auch nicht jeder. Deswegen sollte man die Zeit von Vortragenen und von den Zuschauern immer respektieren.
 
-![](tt_no_01.png)
-![](tt_no_02.png)
+#### Keine. Redner. Von. Externen. Firmen.
+Nichts macht eine tolle Veranstaltung so schnell kaputt, wie eine schlechter Vortrag einer externen Firma. Ein Vortragener von MongoDB? Einer von Salesforce? AWS?! Vergesst es! Das sind Verkaufsveranstaltungen. Egal was die euch vorher versprecht - lasst es sein. Die Vorträge sollten nur von internen Kollegen kommen. Für externe Redner solltet ihr eigene Termine und eigene Formate aufsetzen.
 
-</div>
+# ![](TechBreakfast-2018.png)
 
-![](NewInTech-2018-01-10.jpg)
-![](NewInTech-2018-04-11.jpg)
+# Kurz und knapp: Und was haben wir sonst so dabei gelernt?
 
-12x in 2013, 41x in 2014, 16x in 2015 
+* Wenn du Leuten sagst, sie sollen eine Zusammenfassung für ihren Vortrag schreiben (z.B. für eine Newsletter), dann bekommst du im Normalfall den Titel des Vortrages mit einem zusätzlichen Verb. Sei konkreter, was du brauchst, oder schreib selbst einen Teaser.
+* Mach dir nichts vor: Die Organisation ist aufwendig. Das TechBreakfast über so lange Zeit am Laufen zu halten kostet viel Energie und individuellen Einsatz. Nebenbei so etwas zu organisieren und am Leben halten geht nicht.
+* Die meisten Leute wollen keine Vorträge halten, weil es für sie ungewohnt und Stress ist. Man muss ihnen deswegen eine sichere Umgebung schaffen und immer überzeugen, wieso es sinnvoll ist, Vorträge zu halten.
+* Wenn jemand sagt, er wäre bereit einen Vortrag zu halten, sollte man trotzdem weiter dabei unterstützen, dass sie de Vortrag auch eintragen und halten. Hier hilft es, direkt konkret den Termin einzutragen und in einer Newsletter zu erwähnen.
+* Nach fest kommt ab: Nervt die Leute nicht, dass sie einen Vortrag halten sollen. Fragen ist okay, aber wenn jemand nicht will, dann will er nicht. Auch wenn du denkst, dass er einen tollen Vortrag halten würde! Es ist ihre Entscheidung.
+* Irgendwann kommt immer der Zeitpunkt, wo etwas abflacht. Hier hilft frische Energie und neue Mitstreiter!
+* Nach einer Weile kann man sich auch einen externen Sponsor suchen - bei uns war es unsere zentrale HR Abteilung bei Axel Springer namens "People & Culture".
 
-"Learn at lunch"
-
-Yes, we did the TechBreakfast weekly at different time periods! 
-
-# 2013: Der Anfang
-
-* 25.09.2013: Introduction
-* 02.10.2013: Git for newbies & Vorstellung Mediahackday & Teamvorstellung Welt Online Dev
-* 09.10.2013: ART & SDP
-* 16.10.2013: Media Hackday Result Presentation & REM
-* 23.10.2013: Immutable Infrastructure & Provisioning with Chef
-* 30.10 cssConf & Design Thinking & Rebell
-* 13.11.
-* 20.11.
-* 27.11.
-* 04.12.
-* 11.12.
-* 18.12.
-
-TechBreakfast-2013-10-16.jpg
-TechBreakfast-2013-11-27.jpg
-
-# 2014: Und wöchentlich grüßt der Kaffee
-2014: 41x TechBreakfast
-
-<div class="gallery">
-TechBreakfast-2014-09-03.jpg
-TechBreakfast-2014-09-03b.jpg
-</div>
-
-# 2015: 
-
-<div class="gallery">
-TechBreakfast-2015-09-02.jpg
-TechBreakfast-2015-10-16.jpg
-TechBreakfast-2015-11-25.jpg
-</div>
-
-# 2016
-
-<div class="gallery">
-TechBreakfast-2016-04-13.jpg
-TechBreakfast-2016-05-11.jpg
-TechBreakfast-2016-11-09.jpg
-</div>
-
-# 2017
-
-TechBreakfast-2017-02-15.jpg
-
-# 2018
-
-<div class="gallery">
-TechBreakfast-2018.png
-TechBreakfast-2018-b.png
-<div class="gallery">
-
-
-2015: Es wird größer: OpenTechBreakfast wird zum TechBreakfast
-
-16x OpenTechBreakfast
-* 14.01. Unified Data Center & AS IT Inhouse-Server-Infrastruktur
-* 28.01. Ein Bericht aus dem Silicon Valley & REST with RAML
-* 11.02. HIX & Monitoring Tools & Datadog & FOSDEM
-* 25.02. 
-
--> Switch to TechBreakfast
-
-https://docs.google.com/document/d/1HXd8Bfqnc4vLSOaq_McAFEQDaxTzhuta_PiLOSlihxs/edit
 
 
 
