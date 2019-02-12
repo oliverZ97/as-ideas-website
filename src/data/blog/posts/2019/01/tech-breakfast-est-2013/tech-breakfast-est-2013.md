@@ -12,15 +12,15 @@ draft: false
 
 Als wir 2013 gegründet wurden, hatten wir den Anspruch eine von Entwicklern geführte Firma zu sein. Technische Exzellenz und moderne Technologie hat für uns daher immer dazu gehört. Aber wie verankert man das in seiner Kultur und wie bleibt man offen für neue Technologie? Eine Antwort für uns war die Gründung des "OpenTechBreakfast" als Ort des offenen Austausches. Eine [Brown-Bag-Session](https://de.wikipedia.org/wiki/Brownbag) mal anders! 
  
-Aber ist das etwas für Entwickler? Vorträge halten, sozial sein, nicht am Rechner sitzen? Wie sich gezeigt jat: Ja! Denn seit fast 6 Jahren ist das Format für uns extrem erfolgreich. Sich mit Kollegen und Kolleginnen darüber austauschen, was sie in der Welt der Technologie beschäftigt, oder die coolsten Projekte vorzustellen. Das trifft einfach einen Nerv. Deswegen hier eine kurze Geschichte und viele Bildern aus mehreren Jahren TechBreakfast.
+Aber ist das etwas für Entwickler? Vorträge halten, sozial sein, nicht am Rechner sitzen? Wie sich gezeigt hat: Ja! Denn seit fast 6 Jahren ist dieses Format für uns extrem erfolgreich. Sich mit Kollegen und Kolleginnen darüber austauschen, was sie in der Welt der Technologie beschäftigt, oder die coolsten Projekte vorzustellen. Das trifft einfach einen Nerv. Deswegen hier eine kurze Geschichte und viele Bildern aus mehreren Jahren TechBreakfast.
 
 Was wir bei der Organisation und dem Durchführen gelernt haben, erfahrt ihr [hier in einem extra Blog-Post](https://axelspringerideas.de/blog/2019/01/how-to-organize-a-tech-breakfast/).
 
 ## 2013: Was ist eigentlich eine Brown-Bag-Session oder ein Learning Lunch? 
 
-Eine Brown-Bag-Session ist ganz klassisch eine Veranstaltung, bei der die Teilnehmer essen, während einer ein Thema vorstellt. Bei uns war dies halt ein Frühstück mit Kaffee, Brötchen und Croissants. Super zeitig am morgen um 9 Uhr oder später auch erst um 9.30 Uhr. Die Vorträge sind dabei zwischen 10 bis 15 Minuten lang und lieber kürzer und formloser. Power Point? Erzähl einfach! Oder stell uns dein Projekt und deinen Code vor. Das war damals unser Grundgedanke: Den Austausch fördern.
+Eine Brown-Bag-Session ist ganz klassisch eine Veranstaltung, bei der die Teilnehmer essen, während ein ein Thema vorgestellt wird. Bei uns war dies halt ein Frühstück mit Kaffee, Brötchen und Croissants. Super zeitig am Morgen um 9 Uhr oder später auch erst um 9.30 Uhr. Die Vorträge sind dabei zwischen 10 bis 15 Minuten lang und lieber kürzer und formloser. Power Point? Erzähl einfach! Oder stell uns dein Projekt und deinen Code vor. Das war damals unser Grundgedanke: Den Austausch fördern.
 
-Deswegen war auch das Anmelden von Vorträge immer sehr einfach: Auf einer Wiki-Seite hat sich einfach jeder eingetragen, der etwa zu einem Thema vorstellen wollte. Das ganze sah dann so aus:
+Deswegen war auch das Anmelden von Vorträgen immer unkompliziert: Auf einer Wiki-Seite hat sich einfach jeder eingetragen, der etwa zu einem Thema vorstellen wollte. Das Ganze sah dann so aus:
 
 
 <div class="gallery">
@@ -30,7 +30,7 @@ Deswegen war auch das Anmelden von Vorträge immer sehr einfach: Auf einer Wiki-
 
 </div>
 
-Insgesamt 12 Mal gab es das OpenTechBreakfast im Jahr 2013, einfach in einer Sofa-Ecke, in der etwas Platz war. Hier eine Auswahl der Themen:
+Insgesamt 12 Mal gab es das OpenTechBreakfast im Jahr 2013, in einer Sofa-Ecke, in der etwas Platz war. Hier eine Auswahl der Themen:
  
 * 25.09.2013: Introduction meeting format
 * 02.10.2013: Git for newbies, Vorstellung Mediahackday, Teamvorstellung Welt Online Dev
@@ -66,7 +66,7 @@ Hier eine kleine Auswahl der Themen:
 * Event Tracking mit Logstash + ElasticSearch + Kibana
 * Agile Metrics
 
-Die komplette Liste wird viel zu lang! Denn es waren über 100 Vorträge, die wir hatten. Auch ich hatte hier meinen ersten Vortrag in meiner professionellen Karriere: "IntelliJ IDEA Version 14 - Was ist neu?". Und der war genau so, wie ein guter Vortrag sein sollte: Ohne Folien.
+Die komplette Liste wird viel zu lang! Denn es waren über 100 Vorträge, die wir hatten. Auch ich hatte hier meinen ersten Vortrag in meiner professionellen Karriere: "IntelliJ IDEA Version 14 - Was ist neu?". Und der war genau so, wie ein guter Vortrag sein sollte: Ohne Folien. Denn dadurch ist die Vorbereitungszeit viel gering. Denn die Einstiegshürde sollte bei uns immer sehr niedrig sein, damit sich alle trauen, einen Vortrag zu halten.
 
 <div class="gallery">
 
@@ -77,11 +77,11 @@ Die komplette Liste wird viel zu lang! Denn es waren über 100 Vorträge, die wi
 
 ## 2015: Es wird größer: OpenTechBreakfast wird zum TechBreakfast
 
-Wir als Ideas Engineering wurden immer kleiner (und später auch manchmal wieder größer), da einige unserer Teams an erfolgreichen Projekten gearbeitet haben, die dann ausgegründet wurden. Das hatte auch zu Folge, dass nicht mehr nur Ideas Engineer das TechBreakfast organisieren konnte und wollte, sondern es eine Kooperation mit anderen Axel Springer Marken wurde.
+Wir als Ideas Engineering wurden immer kleiner (und später auch manchmal wieder größer), da einige unserer Teams an erfolgreichen Projekten gearbeitet haben, die dann ausgegründet wurden. Das hatte auch zu Folge, dass nicht mehr nur Ideas Engineering das TechBreakfast organisieren konnte und wollte, sondern es eine Kooperation mit anderen Axel Springer Marken wurde.
 
 # ![](logo_new.jpg)
 
-Und so wurde aus dem "OpenTechBreakfast" nur noch das "TechBreakfast", vorrangig organisiert zusammen mit den Kollegen von Welt und Bild. Insgesamt gab es 30 Veranstaltungen im Jahr 2015 mit wieder zwei oder drei Vorträgen.
+Und so wurde aus dem "OpenTechBreakfast" nur noch das "TechBreakfast", vorrangig organisiert zusammen mit den Kollegen von Welt und Bild. Insgesamt gab es 30 Veranstaltungen im Jahr 2015. Mit zwei oder drei Vorträgen pro Veranstaltung.
 
 * Ein Bericht aus dem Silicon Valley
 * REST with RAML
@@ -103,7 +103,7 @@ Und so wurde aus dem "OpenTechBreakfast" nur noch das "TechBreakfast", vorrangig
 
 ## 2016: 
 
-Ab 2016 haben wir das TechBreakfast 24x veranstaltet. Was wirklich spannend ist: Die Qualität der Vorträge hat sich geändert. Insgesamt sind die Vorträge länger (20-30min) und professioneller geworden. Einige der Vorträge waren so gut, die könnte man auf verschiedenen Konferenzen halten. Ein großartiges Jahr. Hier eine Auswahl der Themen:
+Ab 2016 haben wir das TechBreakfast 24 Mal veranstaltet. Was wirklich spannend ist: Die Qualität der Vorträge hat sich geändert. Insgesamt sind die Vorträge länger (20-30min) und professioneller geworden. Einige der Vorträge waren so gut, die könnte man auf verschiedenen Konferenzen halten. Ein großartiges Jahr. Hier eine Auswahl der Themen:
 
 * Varnish@BILD
 * H/2 - die neue Kuh im Dorf
@@ -167,7 +167,7 @@ Beim **NewInTech** geht es um Vorträge zu technischen Themen, aber für Leute, 
 
 # 2019: Status Quo?
 
-Auch in diesem Jahr werden wir das TechBreakfast mindestens monatlich veranstalten. In diesem Jahr wollen vorallem die Organisation ändern, damit wir mehr Vorträge bekommen und ein volles Programm haben. Zuschauer und Nachfrage gibt es weiterhin mehr als genug!
+Auch in diesem Jahr werden wir das TechBreakfast mindestens monatlich veranstalten. In diesem Jahr wollen vor allem die Organisation ändern, damit wir mehr Vorträge bekommen und ein volles Programm haben. Zuschauer und Nachfrage gibt es weiterhin mehr als genug!
 
 
 
