@@ -1,6 +1,6 @@
 #!groovy​
 
-node('oil2') {
+node {
 
   try {
     stage('Checkout') {
