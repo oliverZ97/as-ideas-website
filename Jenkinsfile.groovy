@@ -1,6 +1,6 @@
 #!groovy​
 
-node {
+node('phantomjs') {
 
   try {
     stage('Checkout') {
